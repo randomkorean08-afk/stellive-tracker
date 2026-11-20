@@ -1,6 +1,6 @@
 ﻿import { h, clear, DISCLAIMER } from "./dom.js";
-import { mergedRatings, mergedOverrides, partialInputs, applyImported } from "./store.js";
-import { isValidVideoId } from "../lib/video-id.mjs";
+import { mergedRatings, mergedOverrides, partialInputs, applyImported, state } from "./store.js";
+import { validateImport, memberKeysFrom } from "../lib/import-validate.mjs";
 
 function sortKeys(v) {
   if (Array.isArray(v)) return v.map(sortKeys);
@@ -26,23 +26,21 @@ export function buildOverridesJson() {
   return JSON.stringify(sortKeys(doc), null, 2) + "\n";
 }
 
-/** Validate an imported file and return {kind, ...} or {error}. */
+/** Validate an imported file and return {kind, warnings, ...} or {error, errors}. */
 export function parseImport(text) {
   let j;
-  try { j = JSON.parse(text.replace(/^﻿/, "")); } catch { return { error: "JSON 형식이 아닙니다." }; }
-  if (!j || j.schemaVersion !== 1) return { error: "schemaVersion 1 파일이 아닙니다." };
-  const bad = (obj) => Object.keys(obj ?? {}).filter((k) => !isValidVideoId(k));
-  if (j.videoRatings || j.memberRubric) {
-    const badIds = bad(j.videoRatings);
-    if (badIds.length) return { error: `잘못된 영상 ID: ${badIds.slice(0, 3).join(", ")}` };
-    return { kind: "ratings", memberRubric: j.memberRubric ?? {}, videoRatings: j.videoRatings ?? {} };
+  try { j = JSON.parse(text.replace(/^﻿/, "")); } catch { return { error: "JSON 형식이 아닙니다.", errors: [] }; }
+  const repo = state.repo;
+  const { errors, warnings } = validateImport(j, {
+    memberKeys: memberKeysFrom(repo?.channels),
+    videoIds: Object.keys(repo?.videos?.videos ?? {}),
+  });
+  if (errors.length) {
+    const shown = errors.slice(0, 5).map((e) => `${e.path}: ${e.message}`).join(" / ");
+    return { error: `가져오기 거부 (오류 ${errors.length}건): ${shown}${errors.length > 5 ? " …" : ""}`, errors, warnings };
   }
-  if (j.videos && typeof j.videos === "object") {
-    const badIds = bad(j.videos);
-    if (badIds.length) return { error: `잘못된 영상 ID: ${badIds.slice(0, 3).join(", ")}` };
-    return { kind: "overrides", overrides: j.videos };
-  }
-  return { error: "ratings.json 또는 overrides.json 형식이 아닙니다." };
+  if (j.videoRatings || j.memberRubric) return { kind: "ratings", memberRubric: j.memberRubric ?? {}, videoRatings: j.videoRatings ?? {}, warnings };
+  return { kind: "overrides", overrides: j.videos, warnings };
 }
 
 function downloadText(name, text) {
@@ -113,6 +111,7 @@ export function renderExport(root, rerender) {
     if (res.kind === "ratings") { cmp("루브릭", cur.memberRubric, res.memberRubric); cmp("영상", cur.videoRatings, res.videoRatings); }
     else cmp("override", cur.videos, res.overrides);
     preview.append(
+      res.warnings?.length ? h("p", { class: "small muted" }, `경고: ${res.warnings.map((w) => w.path).join(", ")} (알 수 없는 키, 무시됨)`) : null,
       h("p", {}, `${res.kind}.json 미리보기: 변경 ${diffs.length}건`),
       h("ul", { class: "small" }, diffs.slice(0, 50).map((d) => h("li", {}, d))),
       diffs.length ? h("button", { type: "button", onclick: () => { applyImported(res); status.textContent = `초안에 ${diffs.length}건 반영했습니다.`; rerender(); } }, "초안에 반영") : null);
