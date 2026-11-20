@@ -1,5 +1,6 @@
 ﻿import { h, clear, DISCLAIMER } from "./dom.js";
-import { loadAll, state, subscribe, dirtyCount, discardDraft, storageOk } from "./store.js";
+import { loadAll, state, subscribe, dirtyCount, discardDraft, discardCount, storageOk } from "./store.js";
+import { renderStaleNotice, confirmDiscard } from "./stale-notice.js";
 import { renderScorecard } from "./scorecard.js";
 import { renderArchive } from "./archive.js";
 import { renderScoring, selectVideo } from "./scoring.js";
@@ -46,11 +47,16 @@ function header() {
     h("h1", {}, "스텔라이브 보컬 트래커"),
     h("span", { class: "muted small" }, `데이터 갱신 ${state.repo.videos.updatedAt ?? "-"}`),
     dirty,
-    h("button", { type: "button", class: "small-btn", onclick: () => { discardDraft(); show(current); } }, "초안 폐기"),
+    h("button", { type: "button", class: "small-btn", onclick: () => { if (discardCount() === 0 || confirmDiscard()) { discardDraft(); show(current); } } }, "초안 폐기"),
     link,
   );
   document.getElementById("banner").textContent = DISCLAIMER;
   if (!storageOk) document.getElementById("memwarn").hidden = false;
+  const stale = h("div", { id: "stale", class: "stale-warn", role: "alert", hidden: true });
+  document.getElementById("view").before(stale);
+  const paintStale = () => renderStaleNotice(stale, () => show(current));
+  subscribe(paintStale);
+  paintStale();
   const tabs = document.getElementById("tabs");
   for (const [k, l] of TABS) tabs.append(h("button", { type: "button", role: "tab", "data-tab": k, onclick: () => show(k) }, l));
 }
