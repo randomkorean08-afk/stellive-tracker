@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "_note": "merge(existingVideos, incomingFeedEntries) 및 normalizeVideoId(input) 검증용.",
+  "normalizeVideoId": [
+    { "in": "R_B4tmy2DVA", "out": "R_B4tmy2DVA" },
+    { "in": "  R_B4tmy2DVA  ", "out": "R_B4tmy2DVA" },
+    { "in": "https://www.youtube.com/watch?v=R_B4tmy2DVA&t=30s", "out": "R_B4tmy2DVA" },
+    { "in": "https://youtu.be/R_B4tmy2DVA?si=abc", "out": "R_B4tmy2DVA" },
+    { "in": "https://www.youtube.com/shorts/R_B4tmy2DVA", "out": "R_B4tmy2DVA" },
+    { "in": "https://www.youtube.com/live/R_B4tmy2DVA?feature=share", "out": "R_B4tmy2DVA" },
+    { "in": "https://www.youtube.com/embed/R_B4tmy2DVA", "out": "R_B4tmy2DVA" },
+    { "in": "yt:video:R_B4tmy2DVA", "out": "R_B4tmy2DVA", "_why": "RSS <id> 형식" },
+    { "in": "r_b4tmy2dva", "out": "r_b4tmy2dva", "_why": "대소문자 보존 — 다른 ID로 취급" },
+    { "in": "R_B4tmy2DV", "out": null, "_why": "10자리" },
+    { "in": "R_B4tmy2DVA1", "out": null, "_why": "12자리" },
+    { "in": "R_B4tmy2DV!", "out": null, "_why": "허용 외 문자" }
+  ],
+  "merge": [
+    {
+      "id": "M01-same-song-new-video",
+      "desc": "같은 곡(발묘)을 다시 부른 새 영상 → ID가 다르므로 신규 추가, 미채점",
+      "existing": ["R_B4tmy2DVA"],
+      "incoming": [{ "videoId": "Zz9Yy8Xx7Ww", "title": "출항 [抜錨(발묘)] 3D Live Clip | 아카네 리제", "channelKey": "akane-lize" }],
+      "expect": { "added": ["Zz9Yy8Xx7Ww"], "updated": [], "totalAfter": 2, "ratingsTouched": false }
+    },
+    {
+      "id": "M02-same-id-title-changed",
+      "desc": "같은 ID가 다른 제목으로 재등장 → 항목 1개 유지, 제목 갱신, 이전 제목 보관",
+      "existing": ["R_B4tmy2DVA"],
+      "incoming": [{ "videoId": "R_B4tmy2DVA", "title": "출항 [抜錨] / 아카네 리제 (Cover)", "channelKey": "akane-lize" }],
+      "expect": { "added": [], "updated": ["R_B4tmy2DVA"], "totalAfter": 1, "previousTitlesContains": "출항 [抜錨(발묘)]ㅣ아카네 리제 【COVER】" }
+    },
+    {
+      "id": "M03-same-id-two-feeds",
+      "desc": "같은 ID가 두 채널 피드에서 동시 관측 → 1개, seenOnChannels에 둘 다",
+      "existing": [],
+      "incoming": [
+        { "videoId": "EIii4EXsfsU", "title": "JANE DOE | 시라유키 히나 x 아오쿠모 린 Cover", "channelKey": "shirayuki-hina" },
+        { "videoId": "EIii4EXsfsU", "title": "JANE DOE | 시라유키 히나 x 아오쿠모 린 Cover", "channelKey": "aokumo-rin" }
+      ],
+      "expect": { "added": ["EIii4EXsfsU"], "totalAfter": 1, "seenOnChannels": ["shirayuki-hina", "aokumo-rin"] }
+    },
+    {
+      "id": "M04-case-sensitive",
+      "desc": "대소문자만 다른 ID는 별개",
+      "existing": ["R_B4tmy2DVA"],
+      "incoming": [{ "videoId": "r_b4tmy2dva", "title": "다른 영상", "channelKey": "akane-lize" }],
+      "expect": { "added": ["r_b4tmy2dva"], "totalAfter": 2 }
+    },
+    {
+      "id": "M05-not-in-feed-is-not-deleted",
+      "desc": "RSS는 최신 15개만 보여줌 → 피드에 없다는 이유로 삭제 처리 금지",
+      "existing": ["CyOAmEihVHs"],
+      "incoming": [],
+      "expect": { "statusAfter": { "CyOAmEihVHs": "unchanged" }, "totalAfter": 1 }
+    },
+    {
+      "id": "M06-deleted-needs-two-failures",
+      "desc": "oEmbed 404 1회 → failStreak=1, status 유지 / 2회 연속 → deleted. 평점·항목은 보존",
+      "existing": ["kNzGpNEdBqw"],
+      "oembedSequence": [404, 404],
+      "expect": { "afterFirst": { "status": "unverified", "failStreak": 1 }, "afterSecond": { "status": "deleted", "failStreak": 2 }, "entryKept": true, "ratingsTouched": false }
+    },
+    {
+      "id": "M07-recovered",
+      "desc": "404 후 200 → failStreak 0, active",
+      "existing": ["kNzGpNEdBqw"],
+      "oembedSequence": [404, 200],
+      "expect": { "afterSecond": { "status": "active", "failStreak": 0 } }
+    },
+    {
+      "id": "M08-new-video-unrated",
+      "desc": "신규 영상은 ratings.json에 아무것도 쓰지 않음 → derive에서 contribution=null, 순위·점수 불변",
+      "existing": [],
+      "incoming": [{ "videoId": "Aa1Bb2Cc3Dd", "title": "새 곡 / 아카네 리제 Cover", "channelKey": "akane-lize" }],
+      "expect": { "added": ["Aa1Bb2Cc3Dd"], "ratingsTouched": false, "deriveScoresUnchanged": true, "deriveSlotsDelta": { "akane-lize": { "solo_cover": 1 } } }
+    }
+  ]
+}

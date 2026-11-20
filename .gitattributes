@@ -1,0 +1,3 @@
+# Store and check out every file byte-for-byte (no CRLF/LF conversion).
+# Protects data/ SHA-256 integrity across worktrees and machines.
+* -text

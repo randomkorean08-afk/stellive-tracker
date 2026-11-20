@@ -1,0 +1,14 @@
+{
+  "name": "stellive-vocal-tracker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Stellive vocal tracker - data collection and derived calculation (no external dependencies)",
+  "scripts": {
+    "test": "node --test tests/",
+    "fetch": "node scripts/fetch-videos.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

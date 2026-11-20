@@ -1,0 +1,60 @@
+name: fetch-videos
+
+on:
+  schedule:
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+    inputs:
+      backfill:
+        description: "Backfill full upload history (needs YOUTUBE_API_KEY secret)"
+        type: boolean
+        default: false
+      status_limit:
+        description: "Max oEmbed status checks this run"
+        type: string
+        default: "60"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: fetch-videos
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Test
+        run: npm test
+
+      - name: Fetch videos
+        env:
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          BACKFILL: ${{ github.event.inputs.backfill }}
+          STATUS_LIMIT: ${{ github.event.inputs.status_limit }}
+        run: |
+          ARGS="--longform-feed"
+          if [ "$BACKFILL" = "true" ]; then ARGS="$ARGS --backfill"; fi
+          if [ -n "$STATUS_LIMIT" ]; then ARGS="$ARGS --status-limit $STATUS_LIMIT"; fi
+          node scripts/fetch-videos.mjs $ARGS
+
+      - name: Commit data/videos.json if changed
+        run: |
+          if git diff --quiet data/videos.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/videos.json
+          git commit -m "chore(data): update videos.json"
+          git pull --rebase
+          git push

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "baseline-2026-11-17",
+  "source": "StelLive 604-Track Archive & Vocal Evaluation Report.pdf (사용자 제공)",
+  "asOf": "2026-11-17",
+  "usage": "읽기 전용 참고 자료. 어떤 파생 계산에도 더하지 않는다. reportedCounts는 derive 결과와 '대조 표시'만 한다. registry 곡명은 중복 검사에 절대 사용하지 않는다(ID 전용).",
+  "countUnit": "member-slot (협동·단체곡은 참여 멤버마다 1씩 집계 — 고유 영상 수가 아님)",
+  "reportedCounts": {
+    "akane-lize":     { "solo_cover": 33, "collab_cover": 11, "live_special": 5,  "original": 15, "total": 64 },
+    "airi-kanna":     { "solo_cover": 17, "collab_cover": 5,  "live_special": 0,  "original": 9,  "total": 31 },
+    "tokino-meri":    { "solo_cover": 1,  "collab_cover": 4,  "live_special": 0,  "original": 1,  "total": 6 },
+    "hanako-nana":    { "solo_cover": 21, "collab_cover": 15, "live_special": 20, "original": 9,  "total": 65 },
+    "shirayuki-hina": { "solo_cover": 27, "collab_cover": 14, "live_special": 12, "original": 11, "total": 64 },
+    "aokumo-rin":     { "solo_cover": 31, "collab_cover": 22, "live_special": 13, "original": 8,  "total": 74 },
+    "yuzuha-riko":    { "solo_cover": 30, "collab_cover": 15, "live_special": 22, "original": 8,  "total": 75 },
+    "tenko-shibuki":  { "solo_cover": 18, "collab_cover": 13, "live_special": 6,  "original": 9,  "total": 46 },
+    "shizuki-toa":    { "solo_cover": 1,  "collab_cover": 4,  "live_special": 0,  "original": 1,  "total": 6 },
+    "neneko-mashiro": { "solo_cover": 13, "collab_cover": 15, "live_special": 28, "original": 9,  "total": 65 },
+    "arahashi-tabi":  { "solo_cover": 18, "collab_cover": 11, "live_special": 5,  "original": 10, "total": 44 },
+    "hanayo-hiyori":  { "solo_cover": 1,  "collab_cover": 4,  "live_special": 0,  "original": 1,  "total": 6 },
+    "sakihane-fuya":  { "solo_cover": 6,  "collab_cover": 6,  "live_special": 0,  "original": 4,  "total": 16 },
+    "kogane-rang":    { "solo_cover": 1,  "collab_cover": 4,  "live_special": 0,  "original": 1,  "total": 6 },
+    "ayatsuno-yuni":  { "solo_cover": 13, "collab_cover": 10, "live_special": 2,  "original": 11, "total": 36 }
+  },
+  "reportedTotals": {
+    "fromTable": { "solo_cover": 231, "collab_cover": 153, "live_special": 113, "original": 107, "total": 604 },
+    "fromIntro": { "solo_cover": 261, "collab_cover": 163, "live_special": 101, "original": 79,  "total": 604 }
+  },
+  "reportedRubricTotals": {
+    "akane-lize": 95.8, "airi-kanna": 95.5, "tokino-meri": 95.0, "hanako-nana": 93.8, "shirayuki-hina": 91.5,
+    "aokumo-rin": 91.0, "yuzuha-riko": 90.1, "tenko-shibuki": 88.1, "shizuki-toa": 87.7, "neneko-mashiro": 86.7,
+    "arahashi-tabi": 86.4, "hanayo-hiyori": 82.7, "sakihane-fuya": 81.9, "kogane-rang": 81.7, "ayatsuno-yuni": 79.0,
+    "_average": 88.46,
+    "_check": "ratings.json memberRubric 항목 합계와 15인 전원 일치 확인됨(Opus 0단계 검수)"
+  },
+  "seedPdfCategory": {
+    "_note": "PDF 표기 분류. auto 분류와 다르면 대조 화면에 표시만 함.",
+    "R_B4tmy2DVA": "개인커버", "CyOAmEihVHs": "개인커버", "liPEQZJLQh4": "개인커버", "FzefgoF26Ac": "개인커버",
+    "v094-E3Pmtk": "오리지널", "of5l0st1kA8": "개인커버", "iCCqSFvz9kM": "오리지널", "zNYEbJr1xj4": "라이브",
+    "eSI7RsjZy1E": "개인커버", "Ei7yWYi7x_E": "오리지널", "8lD-6Xyq4Lg": "개인커버", "L1haw5kPB7Q": "개인커버",
+    "EIii4EXsfsU": "협동커버", "O1MqvWf7q58": "개인커버", "Qi_JLmXBFFo": "개인커버", "fLLX2R-RwVE": "개인커버",
+    "bJqdy8925Oc": "개인커버", "3Xf1Wt7Z-RY": "개인커버", "MZNKiadMo3U": "개인커버", "ojV55hcIc4w": "라이브",
+    "_8uoathMY0A": "오리지널", "G5tTozKJRD4": "오리지널", "E_G9otMLf64": "3D라이브", "ouKcRBeyKbk": "개인커버",
+    "eeIMg68ug9Y": "개인커버", "iAoU1UGPoXc": "개인커버", "kNzGpNEdBqw": "개인커버"
+  },
+  "knownDiscrepancies": [
+    { "id": "D1", "desc": "카테고리 합계가 표(231/153/113/107)와 서문(261/163/101/79)에서 다름. 둘 다 합은 604.", "resolution": "어느 쪽도 사용하지 않고 derive 결과를 기준으로 함" },
+    { "id": "D2", "desc": "604는 고유 영상 수가 아니라 멤버 슬롯 합", "resolution": "uniqueVideos와 memberSlots를 분리 표시" },
+    { "id": "D3", "desc": "칸나 Live Clip(zNYEbJr1xj4), 토아 방종 라이브(ojV55hcIc4w)는 라이브인데 두 멤버의 3D·특수 집계는 0", "resolution": "live_special로 분류. 대조 화면에서 차이로 표시" },
+    { "id": "D4", "desc": "4기 4인의 루브릭은 공식 6트랙 외 노래방송 라이브 검증 기반", "resolution": "루브릭(A)은 사용자 직접 평가로 유지. 노래방송 풀 VOD는 수집 제외, 근거 표기만" },
+    { "id": "D5", "desc": "1기 유닛명이 칸나는 Mystic, 유니·후야는 Everys로 표기", "resolution": "channels-lock에 두 유닛으로 기록, 사용자 확인 대기" },
+    { "id": "D6", "desc": "MINGPLAYLIST(18트랙)가 영상 1개인지 18개인지 불명", "resolution": "수집 후 overrides로 확정" }
+  ],
+  "registry": {
+    "_note": "곡명 레지스트리(참고용, 곡명 ≠ 트랙). 중복 판정 금지.",
+    "ALL_GROUPS": ["Milky Way", "Starry Way", "Hit On Shot", "Dear My Fairy", "Stars Align", "Our Tales", "STAR TRAIL", "Twinkle", "히로인이 되고싶어", "별을 쫓던 빛에게", "유성우", "마음악보", "Colorful Strokes", "Maid My Way", "Hush Trap", "Berry Verry Strawberry (베리베리스트로베리)", "악당주의보", "별이 시작되는 곳", "소리가 나는 쪽으로", "Alice in Musicland", "Tell Your World", "Grand Escape", "언노운 마더구스", "Universe", "팝핀 캔디☆피버!", "SEKAI (セカイ)", "투니버스 메들리", "신의 뜻대로", "학원천국", "BLACKHOLE", "비바해피", "괴도 F의 대본"],
+    "akane-lize": ["Festa!", "Ready to Fire!", "DIVE 2 FIGHT", "SYNC 100%", "미몽", "꿈 너머의 꿈", "BURN IT UP", "Stranger", "목숨", "괴물", "나라는 것", "눈이 녹을 때", "절정찬가", "선잠", "괴수의 꽃노래", "프라이드 혁명", "멜트 (Melt)", "Drowning", "Viva La Vida", "밀월 Un・Deux・Trois", "끝나지 않은 노래", "J-POP Mashup!", "내일의 밤하늘 초계반", "벚꽃 너 나 (벚꽃, 너, 그리고 나)", "뱀파이어", "취한 줄을 모르고", "SHANTI", "Surges", "프로포즈", "Bunny Girl", "JANE DOE", "발묘 (출항)", "케세라세라", "주름맞추기", "Stellar Stellar", "Orion", "Hollowness", "무대에 서서", "청록", "미랫빛 라이더", "심월과 달의 노래", "로스트 원의 호곡", "실・부・프레지던트", "APT.", "그 나라의 왕가는 이상해", "Golden", "POP IN 2", "ray", "가면무도회", "STAR WALKIN'"],
+    "airi-kanna": ["ADDICT!ON", "색채", "최종화 (The Last Flower / 最終花)", "Frozen Eclipse", "푸른 보석과 어린 용", "너와 나의 RADIO", "나는 최강", "Cookie", "좋아하니까.", "신시대", "삼문소설", "스즈메", "-ERROR", "아이돌", "잠이 드는 거리", "LADY", "KICK BACK", "지구본", "사랑해줘 사랑해줘 사랑해줘", "감 그레이", "괴수의 꽃노래", "역광", "Love wins all", "애타는 한 가슴을 달랠 수 있다면", "8.32", "공주열차", "점묘의 노래"],
+    "tokino-meri": ["도쿄 테디베어", "열등상등", "블랙★록 슈터", "시스×러브", "GENTLEMAN", "실루엣", "JANE DOE", "01", "Brave Shine", "어른", "Mela!", "말해줘.", "고양이", "슈가송과 비터스텝", "로미오와 신데렐라", "감전", "Ref:rain", "낮에 뜨는 달", "Zeze", "벚꽃만월", "2002", "플레이", "오렌지", "백일", "걘 아니야 Pt.2", "Good Thing", "너는 내 세상이었어", "꽃다발", "무희", "사랑 감기에 실려", "Fly Me to the Moon", "시간을 거슬러", "신시대", "역광", "-ERROR", "내가 죽으려고 생각한 것은", "And July", "에잇", "겨울잠", "초침을 깨물다", "꽃점", "Born Hater", "Shout Baby", "소나기", "피스 사인"],
+    "hanako-nana": ["Hush Trap", "불꽃", "가짜 얼굴", "푸른 산호초", "사무라이 하트", "신 같네", "실・부・프레지던트", "비행정", "모니터링", "Enemy", "Summertime", "걘 아니야 Pt.1", "죽는 게 나아", "Summer", "수평선", "RAIN", "죄와 벌", "One Last Kiss", "drivers license", "Loveit?", "희극", "논브레스 오블리주", "BALALAIKA (발랄라이카)", "Beyond the way", "역몽", "야화", "W●RK", "Golden", "울려퍼져라", "TOMBOY", "조커 (Joker)", "오츠카레summer", "JANE DOE", "YIN & YANG", "Deja vu", "브레인 롯", "텔레파시", "Oddloop", "LAST STARDUST", "너에게 100퍼센트", "까탈레나", "Dynamite", "Dance the Night Away"],
+    "shirayuki-hina": ["하나", "꿈의 신호", "불꽃", "Seed of Hope", "Loop in June", "낙향", "드라마", "그저 네게 맑아라", "피날레.", "Sweet Dreams", "My Dear", "라푼젤", "봄을 기다리다", "17살의 노래.", "I Really Want to Stay at Your House", "새벽과 반딧불이", "하루카", "만찬가", "오렌지", "LADY", "군청", "악마의 아이", "사랑해줘 사랑해줘 사랑해줘", "깜빡임", "개화", "크리스마스 송", "멜트", "계절범죄", "바다의 유령", "Acacia", "춘수", "내일 또 보자", "아틀란티스 소녀", "론리 유니버스", "Summertime", "JANE DOE", "조커", "ray", "소녀 레이", "타상연화", "금요일의 아침인사", "Alice in 냉동고", "팬서비스", "이 지금", "세계는 사랑에 빠져있어", "Mela!"],
+    "aokumo-rin": ["Maid My Way", "불꽃", "유령도쿄", "안녕, 또 언젠가!", "루머 (Rumor)", "무희", "사랑 감기에 실려", "Overdose", "해피 엔드", "SPECIALZ", "꿈의 카니발", "To. X", "W/X/Y", "BOW AND ARROW", "Unbreakable Sphere", "Stand By You", "만찬가", "별자리가 될 수 있다면", "PLAY", "전방향 미소녀", "IRIS OUT", "STAY", "All I Want for Christmas Is You", "사신", "카가리비토", "AIZO", "Oh...", "아이네 클라이네", "댄스홀", "물떼새", "소녀 레이", "불가행력", "아 프리오리", "GETCHA!", "아이덴티티", "APT.", "Beyond the way", "역몽", "론리 유니버스", "쿵쿵 앞-으로!", "W●RK", "Golden", "잿빛과 푸름", "KING", "Dynamite", "JANE DOE", "chocolate box", "메이드 지상주의", "우리! 쓰레기 분류단", "타상연화", "복숭아색 열쇠", "식스 피트 언더", "차가운 상어 아가씨", "스위트 매직", "벌거벗은 용사", "댄스 로봇 댄스", "있잖아 있잖아 있잖아.", "에고 록", "귀엽기만 하면 안 되나요?", "POP/STARS", "완전감각Dreamer"],
+    "yuzuha-riko": ["악당주의보", "Lulala! Lululala!", "용사", "괴수의 꽃노래", "지구를 줄게", "맑은 날", "톤데모 원더즈", "케세라세라", "경화수월", "주름맞추기", "크리스마스송", "꽃의 탑", "마음 예보", "래빗 홀", "증표", "Henceforth", "도쿄 섄디 랑데부", "걘 아니야 Pt.2", "체리 팝", "미소녀 무죄♡파이레츠", "숙명", "목마름을 외치다", "히로인", "밤을 달리다", "포니", "숨바꼭질", "Orange", "서머타임 레코드", "라일락", "아이와 나의 바다", "CH4NGE", "Loveit?", "GETCHA!", "절대 적대 완전 싫어", "Beyond the way", "있잖아 있잖아 있잖아.", "That's Right Frank!", "잿빛과 푸름", "POP IN 2", "악마가 아닌걸", "우리! 쓰레기 분류단", "소녀 레이", "모니터링", "IRIS OUT", "네모네모", "No title", "사랑은 마치", "히로인 육성계획", "네가 아니면 안될 것 같아"],
+    "tenko-shibuki": ["도깨비꽃", "Colorful Tempo", "Berry Verry Strawberry", "너에게 메롱", "여우비", "레오", "사보타주", "겨울의 선물", "SOS", "눈싸움", "UNDEAD", "푸름과 여름", "생명에게 미움받고 있어.", "메리크리", "DAYBREAK FRONTLINE", "러브레터", "행복에 대해 내가 생각한 것", "나에게 꽃다발", "친애하는 소년이여", "mosi mosi?", "혁명도중", "아이덴티티", "절대 적대 완전 싫어", "있잖아 있잖아 있잖아.", "That's Right Frank!", "쿵쿵 앞-으로!", "KING", "울려퍼져라", "네, 기꺼이", "숨바꼭질", "잡어", "StaRt", "호시아이"],
+    "shizuki-toa": ["제육감", "忘れてください (방종 라이브)", "열등상등 (w. 토키노 메리 싱크룸)", "블랙★록 슈터", "toxic till the end", "하나둘 팬클럽", "실루엣", "instagram", "G4L", "별이 시작되는 곳"],
+    "neneko-mashiro": ["봄꿈", "퀘스천", "Pale", "우주비행사의 노래", "츄", "다양성", "안녕", "꽃 도둑씨", "댄스 로봇 댄스", "연예인", "슈가로스", "병명 상사병", "쿵쿵 앞으로!", "망상 아스파탐", "구르는 바위", "네게 아침이 내린다", "BUMPA", "사랑하고 있는 거야", "안녕, 또 언젠가!", "해피 신디사이저", "그 나라의 왕가는 이상해", "하나 둘 팬클럽", "메이드 지상주의", "악마가 아닌걸", "네, 기꺼이", "Land of Lola", "Alive 2", "웃는남자", "Confrontation", "사랑의 시", "방해쟁이", "달맞이 리사이틀", "MINGPLAYLIST (18트랙)"],
+    "arahashi-tabi": ["여로", "종이비행기", "민들레 꽃", "그 여름의 어느 날은", "그 여름에 피어나", "낮에 뜨는 달", "첫사랑", "히어로", "BE SOMEBODY", "사신", "새봄의 노래", "Ref:rain", "Healer", "SODA POP", "Number one rockstar", "사랑 감기에 실려", "행운을 빌어 줘", "밤새도록 널 생각해", "High Hopes", "물떼새", "우사기 랩", "사랑하고 있는거야", "안녕, 또 언젠가!", "야화", "한 페이지가 될 수 있게", "LADY", "순연애의 잉곳"],
+    "hanayo-hiyori": ["유령이 되고 싶어", "별이 시작되는 곳", "사랑하고 있는 거야", "블랙★록 슈터", "사랑하게 될 거야", "시스×러브", "실루엣", "멜랑콜릭", "봄 도둑", "나만", "봄"],
+    "sakihane-fuya": ["별자리가 될 수 있다면", "푸른 하늘의 랩소디", "CHEWING LUV", "Melt CPK! Remix", "Booo!", "푸른 산호초", "팝핀 캔디☆피버!", "오츠카레summer", "비바해피", "성간비행"],
+    "kogane-rang": ["호랑풍류가", "사랑하고 있는 거야", "블랙★록 슈터", "하나둘 팬클럽", "존시나", "실루엣", "태어나서 처음으로", "夏祭り", "루카루카★나이트 피버", "연결고리", "시대를 초월한 마음 (플루트 연주)", "느린심장박동", "별이 시작되는 곳"],
+    "ayatsuno-yuni": ["내꺼 하는 법", "SUPADOPA", "슈퍼삐질게하는법 (삐질게)", "CHEWING LUV", "자그만 기적", "긍지 높은 아이돌", "베텔기우스", "사랑의 말 Ⅳ", "굿바이 선언", "아이돌", "Mela!", "두근 어질", "SUPERPOWER", "연애 서큘레이션", "라일락", "참생활", "부탁해 달링 (오네가이 달링)", "오버라이드", "점묘의 노래 (w. 아이리 칸나)", "해피 신디사이저", "POP IN 2", "팝핀 캔디☆피버!", "chocolate box", "비바해피"]
+  }
+}
