@@ -2,6 +2,7 @@
 import { mergedRatings, mergedOverrides, partialInputs, applyImported, state } from "./store.js";
 import { renderStaleNotice } from "./stale-notice.js";
 import { validateImport, memberKeysFrom } from "../lib/import-validate.mjs";
+import { serializeRatings, serializeOverrides } from "../lib/serialize-export.mjs";
 
 function sortKeys(v) {
   if (Array.isArray(v)) return v.map(sortKeys);
@@ -10,21 +11,14 @@ function sortKeys(v) {
 }
 
 export function buildRatingsJson() {
-  const r = mergedRatings();
-  return JSON.stringify(sortKeys({
-    schemaVersion: 1,
-    disclaimer: DISCLAIMER.replace("큐레이터 개인 평가이며", "큐레이터 개인 평가(Personal Curated Ratings)이며"),
+  return serializeRatings(state.repo.ratings, mergedRatings(), {
     exportedAt: new Date().toISOString(),
-    memberRubric: r.memberRubric,
-    videoRatings: r.videoRatings,
-  }), null, 2) + "\n";
+    disclaimer: DISCLAIMER.replace("큐레이터 개인 평가이며", "큐레이터 개인 평가(Personal Curated Ratings)이며"),
+  });
 }
 
 export function buildOverridesJson() {
-  const o = mergedOverrides();
-  const doc = { schemaVersion: 1, videos: o.videos };
-  if (o._note) doc._note = o._note;
-  return JSON.stringify(sortKeys(doc), null, 2) + "\n";
+  return serializeOverrides(state.repo.overrides, mergedOverrides());
 }
 
 /** Validate an imported file and return {kind, warnings, ...} or {error, errors}. */
