@@ -1,9 +1,10 @@
 // Data loading, local draft (localStorage with in-memory fallback) and merged views of repo data + draft.
 // The browser never writes repository files: edits live in the draft and leave only via export.
 import { deriveAll, memberVideoScore, VIDEO_ITEMS } from "../lib/derive.mjs";
+import { fingerprintRepo, detectDraftConflicts, countDraftEntries } from "../lib/draft-guard.mjs";
 
 const DRAFT_KEY = "stellive-tracker:draft:v1";
-const emptyDraft = () => ({ ratings: { memberRubric: {}, videoRatings: {} }, overrides: { videos: {} }, updatedAt: null });
+const emptyDraft = () => ({ ratings: { memberRubric: {}, videoRatings: {} }, overrides: { videos: {} }, updatedAt: null, base: null });
 const clone = (x) => (x === undefined ? undefined : JSON.parse(JSON.stringify(x)));
 const today = () => {
   const d = new Date();
@@ -22,7 +23,8 @@ try {
 }
 export const storageOk = storage !== null;
 
-export const state = { repo: null, draft: emptyDraft() };
+// state.stale: a draft whose repo base changed (or is unknown). It is held aside, NOT applied, until the user decides.
+export const state = { repo: null, draft: emptyDraft(), stale: null };
 const listeners = new Set();
 let cache = null;
 
@@ -31,12 +33,14 @@ export const subscribe = (fn) => { listeners.add(fn); return () => listeners.del
 function changed() {
   cache = null;
   state.draft.updatedAt = new Date().toISOString();
+  if (!state.draft.base) state.draft.base = state.repo.fingerprint;
   persist();
   for (const fn of listeners) fn();
 }
 
 function persist() {
-  if (!storage) return;
+  // while a stale draft is held aside, never overwrite the stored copy
+  if (!storage || state.stale) return;
   try { storage.setItem(DRAFT_KEY, JSON.stringify(state.draft)); } catch { /* quota or blocked: keep memory mode */ }
 }
 
@@ -46,11 +50,15 @@ function loadDraft() {
     const raw = storage.getItem(DRAFT_KEY);
     if (!raw) return;
     const d = JSON.parse(raw);
-    state.draft = {
+    const loaded = {
       ratings: { memberRubric: d?.ratings?.memberRubric ?? {}, videoRatings: d?.ratings?.videoRatings ?? {} },
       overrides: { videos: d?.overrides?.videos ?? {} },
       updatedAt: d?.updatedAt ?? null,
+      base: d?.base ?? null, // old drafts without a base = unknown base
     };
+    const report = detectDraftConflicts(loaded, state.repo.fingerprint);
+    if (report.stale) state.stale = { draft: loaded, report };
+    else state.draft = loaded;
   } catch { /* corrupt draft: ignore */ }
 }
 
@@ -73,7 +81,8 @@ export async function loadAll() {
     getJson("./data/ratings.json", { schemaVersion: 1, memberRubric: {}, videoRatings: {} }),
     getJson("./data/baseline/baseline-2026-11-17.json", null),
   ]);
-  state.repo = { channels, videos, overrides, ratings, baseline };
+  state.repo = { channels, videos, overrides, ratings, baseline, fingerprint: fingerprintRepo(ratings, overrides) };
+  state.stale = null;
   loadDraft();
   cache = null;
 }
@@ -110,8 +119,33 @@ export const dirtyCount = () =>
   Object.keys(state.draft.ratings.videoRatings).length +
   Object.keys(state.draft.overrides.videos).length;
 
+/** Entries that "discard" would lose: active draft plus any held-aside stale draft. */
+export const discardCount = () => countDraftEntries(state.draft) + (state.stale ? countDraftEntries(state.stale.draft) : 0);
+
+function mergeInto(target, src) {
+  Object.assign(target.ratings.memberRubric, src.ratings.memberRubric);
+  Object.assign(target.ratings.videoRatings, src.ratings.videoRatings);
+  Object.assign(target.overrides.videos, src.overrides.videos);
+}
+
+/** User chose to keep the stale draft: apply it (edits made meanwhile win) and re-base it on the current repo. */
+export function keepStaleDraft() {
+  if (!state.stale) return;
+  const merged = emptyDraft();
+  mergeInto(merged, state.stale.draft);
+  mergeInto(merged, state.draft);
+  merged.base = state.repo.fingerprint;
+  merged.updatedAt = new Date().toISOString();
+  state.draft = merged;
+  state.stale = null;
+  cache = null;
+  persist();
+  for (const fn of listeners) fn();
+}
+
 export function discardDraft() {
   state.draft = emptyDraft();
+  state.stale = null;
   cache = null;
   persist();
   for (const fn of listeners) fn();

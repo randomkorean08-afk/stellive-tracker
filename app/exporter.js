@@ -1,5 +1,6 @@
 ﻿import { h, clear, DISCLAIMER } from "./dom.js";
 import { mergedRatings, mergedOverrides, partialInputs, applyImported } from "./store.js";
+import { renderStaleNotice } from "./stale-notice.js";
 import { isValidVideoId } from "../lib/video-id.mjs";
 
 function sortKeys(v) {
@@ -85,7 +86,10 @@ export function renderExport(root, rerender) {
   clear(root);
   const status = h("p", { class: "status", role: "status" });
   const partial = partialInputs();
+  const stale = h("div", { class: "stale-warn", role: "alert", hidden: true });
+  renderStaleNotice(stale, rerender);
   root.append(
+    stale,
     h("p", { class: "banner-inline" }, DISCLAIMER),
     partial.length ? h("p", { class: "warn-text" }, `경고: 멤버 5항목이 부분 입력된 ${partial.length}건이 있습니다. 이 값은 멤버 점수에 반영되지 않습니다(영상 ID: ${partial.slice(0, 3).map((p) => p.id).join(", ")}${partial.length > 3 ? " …" : ""}).`) : null,
     exportBlock("ratings.json", buildRatingsJson, status),
