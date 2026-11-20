@@ -46,7 +46,7 @@ test("guard: no external npm dependencies", () => {
 });
 
 test("guard: lib/ modules used by the browser have no Node-only imports", () => {
-  for (const f of ["video-id.mjs", "classify.mjs", "derive.mjs", "draft-guard.mjs"]) {
+  for (const f of ["video-id.mjs", "classify.mjs", "derive.mjs", "draft-guard.mjs", "serialize-export.mjs"]) {
     const src = readFileSync(path.join(ROOT, "lib", f), "utf8");
     assert.ok(!/from\s+["']node:/.test(src) && !/require\(/.test(src) && !/process\./.test(src), f);
   }
