@@ -16,6 +16,7 @@ export function selectVideo(id) { selectedId = id; embedOn = false; }
  * Slider + number + clear. Empty (null) state: grey handle, blank number. No default value is ever stored.
  * onChange(value|null) is called on every user edit.
  */
+const r1 = (v) => Math.round(v * 10) / 10;
 function sliderField({ label, min = 0, max, step, value, onChange }) {
   const range = h("input", { type: "range", min, max, step, value: value ?? min, "aria-label": label, class: value === null ? "empty" : "" });
   const num = h("input", { type: "number", min, max, step: 0.1, value: value === null ? "" : value, "aria-label": `${label} 숫자 입력`, placeholder: "-" });
@@ -31,10 +32,10 @@ function sliderField({ label, min = 0, max, step, value, onChange }) {
     }
     onChange(v);
   };
-  range.addEventListener("input", () => set(Number(range.value)));
+  range.addEventListener("input", () => set(r1(Number(range.value))));
   num.addEventListener("input", () => {
     if (num.value === "") return set(null);
-    const v = Math.max(min, Math.min(max, Number(num.value)));
+    const v = r1(Math.max(min, Math.min(max, Number(num.value))));
     if (Number.isFinite(v)) { range.classList.remove("empty"); range.value = v; onChange(v); }
   });
   const clearBtn = h("button", { type: "button", class: "small-btn", onclick: () => set(null) }, "비우기");
@@ -44,6 +45,7 @@ function sliderField({ label, min = 0, max, step, value, onChange }) {
 function memberSection(id, m) {
   const summary = h("span", {});
   const warn = h("p", { class: "warn-text", hidden: true }, "5개 모두 입력해야 멤버 점수에 반영됩니다");
+  const hint = h("p", { class: "muted small" }, "세부 5항목은 선택 입력입니다. 5개를 모두 입력한 경우에만 멤버 점수에 반영되고, 비워두면 곡 총점이 사용됩니다.");
   const refresh = () => {
     const items = getVideoRating(id)?.members?.[m] ?? {};
     const filled = VIDEO_ITEMS.filter((i) => items[i.key] != null).length;
@@ -53,8 +55,8 @@ function memberSection(id, m) {
   };
   const cur = getVideoRating(id)?.members?.[m] ?? {};
   const fields = VIDEO_ITEMS.map((it) =>
-    sliderField({ label: it.label, max: 100, step: 1, value: cur[it.key] ?? null, onChange: (v) => { setMemberItem(id, m, it.key, v); refresh(); } }));
-  const det = h("details", { class: "member-sec", open: Object.keys(cur).length > 0 }, h("summary", {}, summary), warn, fields,
+    sliderField({ label: it.label, max: 100, step: 0.1, value: cur[it.key] ?? null, onChange: (v) => { setMemberItem(id, m, it.key, v); refresh(); } }));
+  const det = h("details", { class: "member-sec", open: Object.keys(cur).length > 0 }, h("summary", {}, summary), hint, warn, fields,
     h("button", { type: "button", class: "small-btn", onclick: () => { clearMemberVideo(id, m); renderScoringInto(); } }, "이 멤버 5항목 모두 비우기"));
   refresh();
   return det;
