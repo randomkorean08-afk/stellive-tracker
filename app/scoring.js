@@ -4,6 +4,7 @@ import {
 } from "./store.js";
 import { VIDEO_ITEMS, RUBRIC_ITEMS, memberVideoScore, MIN_RATED } from "../lib/derive.mjs";
 import { memberName } from "./archive.js";
+import { RUBRIC_HINTS } from "./rubric-hints.js";
 
 let selectedId = null;
 let listQuery = "";
@@ -17,7 +18,7 @@ export function selectVideo(id) { selectedId = id; embedOn = false; }
  * onChange(value|null) is called on every user edit.
  */
 const r1 = (v) => Math.round(v * 10) / 10;
-function sliderField({ label, min = 0, max, step, value, onChange }) {
+function sliderField({ label, min = 0, max, step, value, title, onChange }) {
   const range = h("input", { type: "range", min, max, step, value: value ?? min, "aria-label": label, class: value === null ? "empty" : "" });
   const num = h("input", { type: "number", min, max, step: 0.1, value: value === null ? "" : value, "aria-label": `${label} 숫자 입력`, placeholder: "-" });
   const set = (v) => {
@@ -39,7 +40,7 @@ function sliderField({ label, min = 0, max, step, value, onChange }) {
     if (Number.isFinite(v)) { range.classList.remove("empty"); range.value = v; onChange(v); }
   });
   const clearBtn = h("button", { type: "button", class: "small-btn", onclick: () => set(null) }, "비우기");
-  return h("div", { class: "slider-field" }, h("span", { class: "slider-label" }, label), range, num, clearBtn);
+  return h("div", { class: "slider-field", title }, h("span", { class: "slider-label" }, label), range, num, clearBtn);
 }
 
 function memberSection(id, m) {
@@ -111,9 +112,13 @@ function rubricEditor() {
   const build = () => {
     clear(box);
     const items = mergedRatings().memberRubric[rubricMember]?.items ?? {};
-    box.append(RUBRIC_ITEMS.map((it) =>
-      sliderField({ label: `${it.label} (만점 ${it.max})`, max: it.max, step: 0.1, value: items[it.key] ?? null,
-        onChange: (v) => { setRubricItem(rubricMember, it.key, v); refreshPreview(); } })));
+    box.append(RUBRIC_ITEMS.map((it) => {
+      const hint = RUBRIC_HINTS[it.key];
+      return h("div", { class: "rubric-item" },
+        sliderField({ label: `${it.label} (만점 ${it.max})`, max: it.max, step: 0.1, value: items[it.key] ?? null, title: hint,
+          onChange: (v) => { setRubricItem(rubricMember, it.key, v); refreshPreview(); } }),
+        h("div", { class: "muted small" }, hint));
+    }));
     refreshPreview();
   };
   const sel = h("select", { onchange: (e) => { rubricMember = e.target.value; build(); } },
