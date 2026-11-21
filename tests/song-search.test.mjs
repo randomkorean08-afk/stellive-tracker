@@ -206,3 +206,9 @@ test("integration with deriveAll(): respects effective overrides and merged rati
   assert.equal(kaiju.length, 1);
   assert.equal(kaiju[0].videoId, "of5l0st1kA8");
 });
+
+test("keyword also matches previous titles (renamed videos stay findable)", () => {
+  const rows = [{ videoId: "of5l0st1kA8", title: "怪獣の花唄 (Vaundy) / 藍璃かんな Cover", category: "solo_cover", members: ["airi-kanna"], publishedAt: "2024-02-10", counted: true }];
+  assert.equal(filterSongs(rows, { query: "괴수의꽃노래" }).length, 0);
+  assert.equal(filterSongs(rows, { query: "괴수의꽃노래", altTitles: { of5l0st1kA8: ["괴수의 꽃노래 (怪獣の花唄) / 아이리 칸나 Cover"] } }).length, 1);
+});

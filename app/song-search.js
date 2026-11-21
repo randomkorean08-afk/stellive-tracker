@@ -15,7 +15,8 @@ export function songSearchSection(d) {
   const out = h("div", { class: "song-results" });
 
   function renderList() {
-    const rows = filterSongs(d.videoRows, filters);
+    const altTitles = Object.fromEntries(Object.entries(state.repo?.videos?.videos ?? {}).map(([id, v]) => [id, v.previousTitles ?? []]));
+    const rows = filterSongs(d.videoRows, { ...filters, altTitles });
     clear(out);
     out.append(h("p", { class: "muted small song-count" }, `검색 결과 ${rows.length}곡`));
     if (!rows.length) {
