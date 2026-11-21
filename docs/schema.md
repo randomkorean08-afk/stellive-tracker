@@ -233,7 +233,7 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 - `type` 4종 (v1.1, 2026-11-20 추가):
   - `group`: 그룹 공식 채널
   - `member`: 멤버 본채널. **멤버 카드(15장)는 이 유형에서만 만든다.**
-  - `member-sub`: 멤버의 보조 채널(예: `airi-kanna-music` = 아이리 칸나 Music Official). `memberKey`로 귀속 멤버를 지정하며, 업로드는 그 멤버의 영상으로 분류된다. 졸업일·검토 큐 규칙도 귀속 멤버 기준.
+  - `member-sub`: 멤버의 보조 채널(현재 사용 항목 없음. 2026-11-21에 칸나의 `airi-kanna-music`은 같은 채널 `@airikanna`로 확인되어 `airi-kanna`에 통합됨). `memberKey`로 귀속 멤버를 지정하며, 업로드는 그 멤버의 영상으로 분류된다. 졸업일·검토 큐 규칙도 귀속 멤버 기준.
   - `group-sub`: 그룹의 보조 채널(예: `stellive-topic` = YouTube 자동 생성 Topic). 그룹 확장 판단에서 `group`과 동일하게 취급.
 - `collect`: `active` | `archive-watch` | `none`. `none`이면 승인 여부와 무관하게 자동 수집하지 않는다(시드 귀속용 등록).
 - `verified: false` 채널은 수집하지 않는다(잘못된 채널 오염 방지).

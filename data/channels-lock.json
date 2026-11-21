@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lockedAt": null,
-  "_note": "초안. handle/channelId는 웹 검색으로 확정하지 못해 null. 사용자가 채널 '정보' 페이지에서 확인해 채우고 verified=true로 바꿀 것. verified=false 채널은 수집하지 않음. 유닛명·기수·joinedAt은 기준선 PDF(2026-11-17) 및 공개 자료 기준이며 확인 필요.",
+  "lockedAt": "2026-11-21",
+  "_note": "2026-11-21 Phase 3 검증(reports/phase3-channels.md) 후 사용자 승인으로 16개 채널 확정(verified=true). stellive-topic은 collect:none이라 미확정 유지. verified=false 채널은 수집하지 않음.",
   "units": [
     { "key": "gen1-mystic", "label": "1기 Mystic", "aliases": [], "_note": "칸나=Mystic, 유니·후야=Everys — 사용자 확인 완료(의도된 표기)" },
     { "key": "gen1-everys", "label": "1기 Everys", "aliases": [] },
@@ -12,8 +12,8 @@
   "channels": [
     {
       "key": "stellive", "type": "group", "displayName": "스텔라이브 StelLive Official", "unit": null,
-      "handle": null, "channelId": null, "verified": false,
-      "_candidate": "검색 결과(vling.net)에 UCMz3R3zOoJnrBC64jN7jeGw가 등장했으나 어느 채널인지 미확인",
+      "handle": "@stellive_official", "channelId": "UC2b4WRE5BZ6SIUWBeJU8rwg", "verified": true,
+      "_note": "2026-11-21 확정: @stellive_official. 이전 후보 UCMz3R3zOoJnrBC64jN7jeGw는 비공식 쇼츠 채널 '숏스텔라'로 확인되어 기각(Phase 3)",
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["스텔라이브", "StelLive"]
     },
@@ -26,102 +26,94 @@
     },
     {
       "key": "airi-kanna", "type": "member", "displayName": "아이리 칸나", "unit": "gen1-mystic",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@airikanna", "channelId": "UC6YnTqZidFg4WUiXpiCtSSQ", "verified": true,
       "status": "graduated", "joinedAt": null, "graduatedAt": "2024-12-02",
-      "_note": "졸업 콘서트 'The finale' 기준(사용자 확정). 이후 업로드는 post_graduation_upload로 검토 큐",
+      "_note": "졸업 콘서트 'The finale' 기준(사용자 확정). 이후 업로드는 post_graduation_upload로 검토 큐. 2026-11-21: 본채널 @airikanna가 졸업 후 '아이리 칸나 Music Official'로 개명된 동일 채널이라 airi-kanna-music 항목을 이 항목으로 통합(사용자 승인)",
       "collect": "archive-watch",
       "aliases": ["아이리 칸나", "칸나", "Airi Kanna", "Kanna"]
     },
     {
-      "key": "airi-kanna-music", "type": "member-sub", "memberKey": "airi-kanna",
-      "displayName": "아이리 칸나 Music Official", "unit": "gen1-mystic",
-      "handle": null, "channelId": null, "verified": false,
-      "_note": "칸나 음악 전용 채널(시드 iCCqSFvz9kM·of5l0st1kA8·zNYEbJr1xj4 업로더). 영상은 memberKey로 airi-kanna에 귀속. 졸업일·검토 큐 규칙은 귀속 멤버 기준 적용",
-      "status": "graduated", "joinedAt": null, "graduatedAt": "2024-12-02", "collect": "archive-watch",
-      "aliases": []
-    },
-    {
       "key": "ayatsuno-yuni", "type": "member", "displayName": "아야츠노 유니", "unit": "gen1-everys",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@ayatsunoyuni", "channelId": "UClbYIn9LDbbFZ9w2shX3K0g", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["아야츠노 유니", "유니", "Ayatsuno Yuni", "Yuni"]
     },
     {
       "key": "sakihane-fuya", "type": "member", "displayName": "사키하네 후야", "unit": "gen1-everys",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@Sakihanechannel", "channelId": "UC0YQnenKBCu5sGb7H61n6HA", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["사키하네 후야", "후야", "Sakihane Fuya", "Fuya", "Sakihane Huya", "Huya"]
     },
     {
       "key": "akane-lize", "type": "member", "displayName": "아카네 리제", "unit": "gen2-universe",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@akanelize", "channelId": "UC7-m6jQLinZQWIbwm9W-1iw", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["아카네 리제", "리제", "Akane Lize", "Lize"]
     },
     {
       "key": "shirayuki-hina", "type": "member", "displayName": "시라유키 히나", "unit": "gen2-universe",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@shirayukihina", "channelId": "UC1afpiIuBDcjYlmruAa0HiA", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["시라유키 히나", "히나", "Shirayuki Hina", "Hina"]
     },
     {
       "key": "neneko-mashiro", "type": "member", "displayName": "네네코 마시로", "unit": "gen2-universe",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@neneko_mashiro", "channelId": "UC_eeSpMBz8PG4ssdBPnP07g", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["네네코 마시로", "마시로", "Neneko Mashiro", "Mashiro"]
     },
     {
       "key": "arahashi-tabi", "type": "member", "displayName": "아라하시 타비", "unit": "gen2-universe",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@arahashitabi", "channelId": "UCAHVQ44O81aehLWfy9O6Elw", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["아라하시 타비", "타비", "Arahashi Tabi", "Tabi"]
     },
     {
       "key": "tenko-shibuki", "type": "member", "displayName": "텐코 시부키", "unit": "gen3-cliche",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@tenkoshibuki", "channelId": "UCYxLMfeX1CbMBll9MsGlzmw", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["텐코 시부키", "시부키", "Tenko Shibuki", "Shibuki"]
     },
     {
       "key": "aokumo-rin", "type": "member", "displayName": "아오쿠모 린", "unit": "gen3-cliche",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@aokumorin", "channelId": "UCQmcltnre6aG9SkDRYZqFIg", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["아오쿠모 린", "린", "Aokumo Rin", "Rin"]
     },
     {
       "key": "hanako-nana", "type": "member", "displayName": "하나코 나나", "unit": "gen3-cliche",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@hanako_nana", "channelId": "UCcA21_PzN1EhNe7xS4MJGsQ", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["하나코 나나", "나나", "Hanako Nana", "Nana"]
     },
     {
       "key": "yuzuha-riko", "type": "member", "displayName": "유즈하 리코", "unit": "gen3-cliche",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@yuzuhariko", "channelId": "UCj0c1jUr91dTetIQP2pFeLA", "verified": true,
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "active",
       "aliases": ["유즈하 리코", "리코", "Yuzuha Riko", "Riko"]
     },
     {
       "key": "tokino-meri", "type": "member", "displayName": "토키노 메리", "unit": "gen4-abyss",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@TokinoMaryChannel", "channelId": "UCGSt1yNG5l-jpYRLpJ5oNtA", "verified": true,
       "status": "active", "joinedAt": "2026-10-01", "graduatedAt": null, "collect": "active",
       "_note": "4기 joinedAt 2026-10-01 사용자 확정",
       "aliases": ["토키노 메리", "메리", "Tokino Meri", "Meri"]
     },
     {
       "key": "shizuki-toa", "type": "member", "displayName": "시즈키 토아", "unit": "gen4-abyss",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@ShizukiToa", "channelId": "UClcSEuDF_g_6g4snw_nAavw", "verified": true,
       "status": "active", "joinedAt": "2026-10-01", "graduatedAt": null, "collect": "active",
       "aliases": ["시즈키 토아", "토아", "Shizuki Toa", "Toa"]
     },
     {
       "key": "hanayo-hiyori", "type": "member", "displayName": "하나요 히요리", "unit": "gen4-abyss",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@HanayoHiyori", "channelId": "UCHAr9pWGS30akL4MQCQT4uQ", "verified": true,
       "status": "active", "joinedAt": "2026-10-01", "graduatedAt": null, "collect": "active",
       "aliases": ["하나요 히요리", "히요리", "Hanayo Hiyori", "Hiyori"]
     },
     {
       "key": "kogane-rang", "type": "member", "displayName": "코가네 랑", "unit": "gen4-abyss",
-      "handle": null, "channelId": null, "verified": false,
+      "handle": "@coganerang", "channelId": "UCQ6LlsI7Bbj2yhSqLMI1gGA", "verified": true,
       "status": "active", "joinedAt": "2026-10-01", "graduatedAt": null, "collect": "active",
       "aliases": ["코가네 랑", "랑", "Kogane Rang", "Rang", "Cogane Rang"]
     }
