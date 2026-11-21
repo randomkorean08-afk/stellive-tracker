@@ -111,3 +111,16 @@ table.diff th, table.diff td { border: 1px solid var(--line); padding: 4px 6px; 
 .stale-warn { background: var(--warn-bg); color: var(--warn); border: 1px solid var(--warn); padding: 8px 12px; margin: 8px 12px; font-size: 14px; }
 .stale-warn[hidden] { display: none; }
 .stale-warn button { margin-left: 8px; }
+.song-search { margin-top: 12px; }
+.song-search h2 { margin: 0 0 8px; font-size: 16px; }
+.song-search .filters { align-items: center; }
+.song-search .filters label { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; max-width: 100%; }
+.song-search .filters input[type=search], .song-search .filters select { max-width: 100%; min-width: 0; }
+.song-count { margin: 4px 0 8px; }
+.song-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; max-height: 380px; overflow: auto; }
+.song-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start; gap: 6px 12px; border: 1px solid var(--line); border-radius: 8px; padding: 8px 10px; }
+.song-row.faded { opacity: .6; }
+.song-main { min-width: 0; flex: 1 1 200px; }
+.song-meta { margin-top: 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
+.yt-link { color: var(--accent); text-decoration: none; font-weight: 600; white-space: nowrap; flex: none; padding: 2px 0; }
+.yt-link:hover { text-decoration: underline; }
