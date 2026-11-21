@@ -2,6 +2,7 @@ import { h, clear, fmt1 } from "./dom.js";
 import { derived, state } from "./store.js";
 import { RUBRIC_ITEMS, CATEGORIES, MIN_RATED } from "../lib/derive.mjs";
 import { radarChart, abChart, categoryChart } from "./charts.js";
+import { songSearchSection } from "./song-search.js";
 
 let sortMode = "A";
 let radarMember = null;
@@ -62,6 +63,7 @@ export function renderScorecard(root) {
       h("div", { class: "stat" }, h("b", {}, String(d.deletedCount)), h("span", {}, "삭제됨")),
       h("div", { class: "stat" }, h("b", {}, String(reviewN)), h("span", {}, "검토 필요")),
     ),
+    songSearchSection(d),
     h("label", { class: "inline" }, "정렬 ",
       h("select", { onchange: (e) => { sortMode = e.target.value; renderScorecard(root); } },
         h("option", { value: "A", selected: sortMode === "A" }, "A 루브릭 순"),
