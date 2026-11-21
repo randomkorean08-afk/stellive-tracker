@@ -121,12 +121,14 @@ test("deleted videos stay counted and are reported separately", () => {
 });
 
 test("overrides: exclude / reviewed / category / members", () => {
-  const base = run();
+  // 실제 overrides.json에서 STAR TRAIL(2026-11-21 사용자 확정)만 뺀 것을 기준으로 reviewed 경로를 검증한다
+  const { "v094-E3Pmtk": starTrail, ...restVideos } = overrides.videos;
+  const ovBase = { ...overrides, videos: restVideos };
+  const base = run({ overrides: ovBase });
   assert.equal(base.videoRows.find((r) => r.videoId === "v094-E3Pmtk").counted, false, "needs review -> not counted");
   assert.ok(base.reviewQueue.includes("v094-E3Pmtk"));
 
-  // 실제 overrides.json(사용자 제외 항목 포함) 위에 덧붙여 비교한다 — 통째로 바꾸면 기준선이 달라짐
-  const ov = (extra) => ({ overrides: { ...overrides, videos: { ...overrides.videos, ...extra } } });
+  const ov = (extra) => ({ overrides: { ...ovBase, videos: { ...ovBase.videos, ...extra } } });
   const reviewed = run(ov({ "v094-E3Pmtk": { reviewed: true } }));
   assert.equal(reviewed.videoRows.find((r) => r.videoId === "v094-E3Pmtk").counted, true);
   assert.equal(reviewed.uniqueVideos, base.uniqueVideos + 1);
@@ -144,6 +146,15 @@ test("overrides: exclude / reviewed / category / members", () => {
   assert.equal(card(mem, "shirayuki-hina").slots.solo_cover, card(base, "shirayuki-hina").slots.solo_cover + 1);
   assert.equal(mem.totalSlots, base.totalSlots + 1);
   assert.equal(mem.uniqueVideos, base.uniqueVideos);
+
+  // the real user override: STAR TRAIL counted, 9 members, review queue empty
+  assert.equal(starTrail.reviewed, true);
+  const real = run();
+  const st = real.videoRows.find((r) => r.videoId === "v094-E3Pmtk");
+  assert.equal(st.counted, true);
+  assert.equal(starTrail.members.length, 9);
+  assert.ok(!starTrail.members.includes("sakihane-fuya") && !starTrail.members.includes("airi-kanna"));
+  assert.deepEqual(real.reviewQueue, []);
 
   const e = effective({ auto: { category: "solo_cover", members: ["a"], reviewRequired: true } }, { reviewed: true, exclude: true });
   assert.deepEqual(e, { category: "solo_cover", members: ["a"], excluded: true, needsReview: false });

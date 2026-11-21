@@ -14,35 +14,42 @@ const overrides = readJson("data/overrides.json");
 const baseline = readJson("data/baseline/baseline-2026-11-17.json");
 const run = (over = {}) => deriveAll({ channels: lock, videos, overrides, ratings, baseline, ...over });
 const card = (d, k) => d.memberCards.find((c) => c.key === k);
+// 2026-11-21: airi-kanna-music was merged into airi-kanna (same channel @airikanna). member-sub support stays in
+// classify(), so these tests use a synthetic sub-channel attached to the real lock.
+const subLock = { ...lock, channels: [...lock.channels, { key: "test-kanna-sub", type: "member-sub", memberKey: "airi-kanna", unit: "gen1-mystic", verified: false, collect: "none", aliases: [] }] };
 
 test("member-sub channel: uploads are attributed to memberKey, not to the sub-channel", () => {
-  const sub = lock.channels.find((c) => c.key === "airi-kanna-music");
+  const sub = subLock.channels.find((c) => c.key === "test-kanna-sub");
   assert.equal(sub.type, "member-sub");
   assert.equal(sub.memberKey, "airi-kanna");
-  const r = classify({ title: "괴수의 꽃노래 (怪獣の花唄) / 아이리 칸나 Cover", channelKey: "airi-kanna-music", publishedAt: "2024-02-10" }, lock);
+  const r = classify({ title: "괴수의 꽃노래 (怪獣の花唄) / 아이리 칸나 Cover", channelKey: "test-kanna-sub", publishedAt: "2024-02-10" }, subLock);
   assert.equal(r.category, "solo_cover");
   assert.deepEqual(r.members, ["airi-kanna"]);
   assert.equal(r.reviewRequired, false);
 });
 
 test("member-sub channel: title without the member name is still attributed to the owner", () => {
-  const r = classify({ title: "최종화 (The Last Flower) Official MV", channelKey: "airi-kanna-music", publishedAt: "2024-03-01" }, lock);
+  const r = classify({ title: "최종화 (The Last Flower) Official MV", channelKey: "test-kanna-sub", publishedAt: "2024-03-01" }, subLock);
   assert.equal(r.category, "original");
   assert.deepEqual(r.members, ["airi-kanna"]);
 });
 
 test("member-sub channel: post-graduation upload goes to the review queue (owner's graduatedAt 2024-12-02)", () => {
-  const before = classify({ title: "새 노래 / 아이리 칸나 Cover", channelKey: "airi-kanna-music", publishedAt: "2024-12-02" }, lock);
+  const before = classify({ title: "새 노래 / 아이리 칸나 Cover", channelKey: "test-kanna-sub", publishedAt: "2024-12-02" }, subLock);
   assert.ok(!before.reviewReasons.includes("post_graduation_upload"), "graduation day itself is not 'after'");
-  const after = classify({ title: "새 노래 / 아이리 칸나 Cover", channelKey: "airi-kanna-music", publishedAt: "2024-12-03" }, lock);
+  const after = classify({ title: "새 노래 / 아이리 칸나 Cover", channelKey: "test-kanna-sub", publishedAt: "2024-12-03" }, subLock);
   assert.equal(after.reviewRequired, true);
   assert.ok(after.reviewReasons.includes("post_graduation_upload"));
 });
 
-test("Kanna seeds now point at the music channel and still classify identically", () => {
+test("Kanna: single merged channel entry; seeds point at it and still classify identically", () => {
+  assert.ok(!lock.channels.some((c) => c.key === "airi-kanna-music"), "merged into airi-kanna");
+  const k = lock.channels.find((c) => c.key === "airi-kanna");
+  assert.equal(k.handle, "@airikanna");
+  assert.equal(k.channelId, "UC6YnTqZidFg4WUiXpiCtSSQ");
   for (const id of ["iCCqSFvz9kM", "of5l0st1kA8", "zNYEbJr1xj4"]) {
     const v = videos.videos[id];
-    assert.equal(v.channelKey, "airi-kanna-music", id);
+    assert.equal(v.channelKey, "airi-kanna", id);
     const r = classify({ title: v.title, channelKey: v.channelKey, publishedAt: v.publishedAt }, lock);
     assert.deepEqual(r.members, ["airi-kanna"], id);
     assert.equal(r.category, v.auto.category, id);

@@ -9,6 +9,38 @@
     "ojV55hcIc4w": {
       "exclude": true,
       "note": "oEmbed 업로더가 파스텔 뮤즈 클립(비공식 클립 채널) — 공식 채널 범위 밖이라 집계 제외 (2026-11-20 사용자 확정)"
+    },
+    "v094-E3Pmtk": {
+      "category": "original",
+      "members": [
+        "ayatsuno-yuni",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi",
+        "hanako-nana",
+        "aokumo-rin",
+        "yuzuha-riko",
+        "tenko-shibuki"
+      ],
+      "reviewed": true,
+      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인). STAR TRAIL 참여 9인 확정(사키하네 후야·아이리 칸나·4기 제외)"
+    },
+    "E_G9otMLf64": {
+      "category": "live_special",
+      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인)"
+    },
+    "G5tTozKJRD4": {
+      "category": "original",
+      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인)"
+    },
+    "_8uoathMY0A": {
+      "category": "original",
+      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인)"
+    },
+    "Ei7yWYi7x_E": {
+      "category": "original",
+      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인)"
     }
   }
 }
