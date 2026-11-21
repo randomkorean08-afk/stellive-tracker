@@ -12,12 +12,12 @@
 2. The specialist reports to the lead via `reports/vocal/*.md` in its sandbox. Nothing from the sandbox is copied
    into this project except what the lead reviews.
 3. The specialist never writes, deletes or migrates anything in `data/`.
-4. Every change to the app is reviewed by the lead (diff + `npm test` green, currently 111/111).
+4. Every change to the app is reviewed by the lead (diff + `npm test` green, currently 152/152).
 5. Protected data — never modify without explicit user approval:
    `data/ratings.json`, `data/overrides.json`, `data/channels-lock.json`, `data/baseline/**`, `tests/fixtures/**`.
    The 604-track figure lives in `data/baseline/baseline-2026-11-17.json` (member-slot count, read-only reference).
    `data/videos.json` is written only by `scripts/fetch-videos.mjs` (merge never deletes).
-6. Independent implementation tasks use separate Git worktrees (blocked until Git is installed + repo initialized).
+6. Independent implementation tasks use separate Git worktrees (repo: C:devstellive-tracker).
 7. Destructive changes, schema changes (`schemaVersion`), or data migrations require user approval first.
 8. New phases start with read-only inspection and a plan.
 
