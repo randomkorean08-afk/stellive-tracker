@@ -124,6 +124,10 @@ test("overrides: exclude / reviewed / category / members", () => {
   // 실제 overrides.json에서 STAR TRAIL(2026-11-21 사용자 확정)만 뺀 것을 기준으로 reviewed 경로를 검증한다
   const { "v094-E3Pmtk": starTrail, ...restVideos } = overrides.videos;
   const ovBase = { ...overrides, videos: restVideos };
+  // collection rewrites auto from the real title; force the review-required state so this test does not depend on it
+  const vReview = clone(videos);
+  vReview.videos["v094-E3Pmtk"].auto = { ...vReview.videos["v094-E3Pmtk"].auto, category: "original", reviewRequired: true, reviewReasons: ["group_expansion"] };
+  const run = (over = {}) => deriveAll({ channels, videos: vReview, overrides, ratings, baseline, ...over });
   const base = run({ overrides: ovBase });
   assert.equal(base.videoRows.find((r) => r.videoId === "v094-E3Pmtk").counted, false, "needs review -> not counted");
   assert.ok(base.reviewQueue.includes("v094-E3Pmtk"));

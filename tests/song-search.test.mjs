@@ -203,8 +203,7 @@ test("integration with deriveAll(): respects effective overrides and merged rati
 
   // Real data match: 怪獣の花唄
   const kaiju = filterSongs(d.videoRows, { query: "怪獣の花唄" });
-  assert.equal(kaiju.length, 1);
-  assert.equal(kaiju[0].videoId, "of5l0st1kA8");
+  assert.ok(kaiju.some((r) => r.videoId === "of5l0st1kA8"), "Kanna seed found (other members may have covers too)");
 });
 
 test("keyword also matches previous titles (renamed videos stay findable)", () => {
