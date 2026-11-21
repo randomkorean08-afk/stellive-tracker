@@ -5,10 +5,10 @@
   "type": "module",
   "description": "Stellive vocal tracker - data collection and derived calculation (no external dependencies)",
   "scripts": {
-    "test": "node --test tests/",
+    "test": "node --test \"tests/*.test.mjs\"",
     "fetch": "node scripts/fetch-videos.mjs"
   },
   "engines": {
-    "node": ">=20"
+    "node": ">=22"
   }
 }
