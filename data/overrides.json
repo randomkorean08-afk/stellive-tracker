@@ -41,6 +41,31 @@
     "Ei7yWYi7x_E": {
       "category": "original",
       "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인)"
+    },
+    "iAoU1UGPoXc": {
+      "category": "solo_cover",
+      "reviewed": true,
+      "note": "실제 제목의 OST 표기로 original/cover 충돌 → 개인 커버로 고정해 집계 복구 (2026-11-21 사용자 확정, 검토 대기열 처리)"
+    },
+    "SRMTyNLUnZY": {
+      "category": "solo_cover",
+      "reviewed": true,
+      "note": "OST 곡 커버 — 개인 커버로 확정 (2026-11-21 사용자 확정, 검토 대기열 처리)"
+    },
+    "yef9r3wupm0": {
+      "category": "live_special",
+      "reviewed": true,
+      "note": "생일 3D 무대 — 3D·특수(live_special)로 확정 (2026-11-21 사용자 확정, 검토 대기열 처리)"
+    },
+    "vluNkVsFbUM": {
+      "category": "live_special",
+      "reviewed": true,
+      "note": "3D 데뷔 무대 — 3D·특수(live_special)로 확정 (2026-11-21 사용자 확정, 검토 대기열 처리)"
+    },
+    "YsGSukJofWI": {
+      "exclude": true,
+      "reviewed": true,
+      "note": "콘서트 티저(노래 영상 아님) — 집계 제외 (2026-11-21 사용자 확정, 검토 대기열 처리)"
     }
   }
 }
