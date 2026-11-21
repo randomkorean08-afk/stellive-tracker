@@ -1,61 +1,5603 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T00:00:00Z",
+  "updatedAt": "2026-11-21T00:24:54Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
-    "8lD-6Xyq4Lg": { "videoId": "8lD-6Xyq4Lg", "title": "발랄라이카 [BALALAIKA] / 하나코 나나 COVER", "previousTitles": [], "channelKey": "hanako-nana", "seenOnChannels": [], "publishedAt": "2026-11-11", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["hanako-nana"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "liPEQZJLQh4": { "videoId": "liPEQZJLQh4", "title": "로스트원의 호곡 [ロストワンの号哭]ㅣ아카네 리제 【COVER】", "previousTitles": [], "channelKey": "akane-lize", "seenOnChannels": [], "publishedAt": "2026-11-06", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["akane-lize"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "ojV55hcIc4w": { "videoId": "ojV55hcIc4w", "title": "「忘れてください」 방종 라이브 / 시즈키 토아", "previousTitles": [], "channelKey": "shizuki-toa", "seenOnChannels": [], "publishedAt": "2026-11-02", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "live_special", "members": ["shizuki-toa"], "matchedRules": ["R30-live"], "reviewRequired": false, "reviewReasons": [] } },
-    "Ei7yWYi7x_E": { "videoId": "Ei7yWYi7x_E", "title": "스텔라이브 4기 ABYSS | '별이 시작되는 곳' Official Audio", "previousTitles": [], "channelKey": "stellive-topic", "seenOnChannels": [], "publishedAt": "2026-10-20", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "original", "members": ["tokino-meri", "shizuki-toa", "hanayo-hiyori", "kogane-rang"], "matchedRules": ["R35-original"], "reviewRequired": false, "reviewReasons": ["unit_expansion"] } },
-    "3Xf1Wt7Z-RY": { "videoId": "3Xf1Wt7Z-RY", "title": "혁명도중 (革命道中) / 텐코 시부키 Cover", "previousTitles": [], "channelKey": "tenko-shibuki", "seenOnChannels": [], "publishedAt": "2026-10-20", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["tenko-shibuki"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "eSI7RsjZy1E": { "videoId": "eSI7RsjZy1E", "title": "도쿄 테디베어 [東京テディベア] / 토키노 메리 Cover", "previousTitles": [], "channelKey": "tokino-meri", "seenOnChannels": [], "publishedAt": "2026-10-18", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["tokino-meri"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "ouKcRBeyKbk": { "videoId": "ouKcRBeyKbk", "title": "유령이 되고 싶어 / 하나요 히요리 Cover", "previousTitles": [], "channelKey": "hanayo-hiyori", "seenOnChannels": [], "publishedAt": "2026-10-18", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["hanayo-hiyori"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "MZNKiadMo3U": { "videoId": "MZNKiadMo3U", "title": "제육감 [第六感] / 시즈키 토아 Cover", "previousTitles": [], "channelKey": "shizuki-toa", "seenOnChannels": [], "publishedAt": "2026-10-17", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["shizuki-toa"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "iAoU1UGPoXc": { "videoId": "iAoU1UGPoXc", "title": "호랑풍류가 / 코가네 랑 Cover", "previousTitles": [], "channelKey": "kogane-rang", "seenOnChannels": [], "publishedAt": "2026-10-17", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["kogane-rang"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "kNzGpNEdBqw": { "videoId": "kNzGpNEdBqw", "title": "오버라이드 「オーバーライド」 / 아야츠노 유니 Cover", "previousTitles": [], "channelKey": "ayatsuno-yuni", "seenOnChannels": [], "publishedAt": "2026-10-09", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["ayatsuno-yuni"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "Qi_JLmXBFFo": { "videoId": "Qi_JLmXBFFo", "title": "불가행력 (不可幸力) / 아오쿠모 린 Cover", "previousTitles": [], "channelKey": "aokumo-rin", "seenOnChannels": [], "publishedAt": "2026-09-30", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["aokumo-rin"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "FzefgoF26Ac": { "videoId": "FzefgoF26Ac", "title": "여우의 별자리 「심월과 달의 노래」ㅣ아카네 리제 【COVER】", "previousTitles": [], "channelKey": "akane-lize", "seenOnChannels": [], "publishedAt": "2026-09-26", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["akane-lize"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "v094-E3Pmtk": { "videoId": "v094-E3Pmtk", "title": "스텔라이브 (StelLive) | 'STAR TRAIL' Official MV", "previousTitles": [], "channelKey": "stellive", "seenOnChannels": [], "publishedAt": "2026-05-08", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "original", "members": ["ayatsuno-yuni", "sakihane-fuya", "akane-lize", "shirayuki-hina", "neneko-mashiro", "arahashi-tabi", "tenko-shibuki", "aokumo-rin", "hanako-nana", "yuzuha-riko"], "matchedRules": ["R35-original"], "reviewRequired": true, "reviewReasons": ["group_expansion"] } },
-    "fLLX2R-RwVE": { "videoId": "fLLX2R-RwVE", "title": "숨바꼭질 [かくれんぼ] / 유즈하 리코 Cover", "previousTitles": [], "channelKey": "yuzuha-riko", "seenOnChannels": [], "publishedAt": "2026-04-13", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["yuzuha-riko"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "R_B4tmy2DVA": { "videoId": "R_B4tmy2DVA", "title": "출항 [抜錨(발묘)]ㅣ아카네 리제 【COVER】", "previousTitles": [], "channelKey": "akane-lize", "seenOnChannels": [], "publishedAt": "2025-12-04", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["akane-lize"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "bJqdy8925Oc": { "videoId": "bJqdy8925Oc", "title": "생명에게 미움받고 있어 / 텐코 시부키 Cover", "previousTitles": [], "channelKey": "tenko-shibuki", "seenOnChannels": [], "publishedAt": "2025-11-14", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["tenko-shibuki"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "EIii4EXsfsU": { "videoId": "EIii4EXsfsU", "title": "JANE DOE | 시라유키 히나 x 아오쿠모 린 Cover", "previousTitles": [], "channelKey": null, "seenOnChannels": [], "publishedAt": "2025-10-27", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "collab_cover", "members": ["shirayuki-hina", "aokumo-rin"], "matchedRules": ["R41-collab"], "reviewRequired": false, "reviewReasons": [] } },
-    "eeIMg68ug9Y": { "videoId": "eeIMg68ug9Y", "title": "별자리가 될 수 있다면 / 사키하네 후야 Cover", "previousTitles": [], "channelKey": "sakihane-fuya", "seenOnChannels": [], "publishedAt": "2025-08-20", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["sakihane-fuya"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "E_G9otMLf64": { "videoId": "E_G9otMLf64", "title": "[4K 3D Live] 아라하시 타비 3D 데뷔 라이브 무대", "previousTitles": [], "channelKey": "arahashi-tabi", "seenOnChannels": [], "publishedAt": "2025-05-15", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "live_special", "members": ["arahashi-tabi"], "matchedRules": ["R30-live"], "reviewRequired": false, "reviewReasons": [] } },
-    "L1haw5kPB7Q": { "videoId": "L1haw5kPB7Q", "title": "만찬가『晩餐歌』 | 시라유키 히나 Cover", "previousTitles": [], "channelKey": "shirayuki-hina", "seenOnChannels": [], "publishedAt": "2025-01-05", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["shirayuki-hina"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "G5tTozKJRD4": { "videoId": "G5tTozKJRD4", "title": "아라하시 타비 | '여로' Official MV", "previousTitles": [], "channelKey": "arahashi-tabi", "seenOnChannels": [], "publishedAt": "2024-12-11", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "original", "members": ["arahashi-tabi"], "matchedRules": ["R35-original"], "reviewRequired": false, "reviewReasons": [] } },
-    "_8uoathMY0A": { "videoId": "_8uoathMY0A", "title": "네네코 마시로 | '봄꿈 (Spring Dream)' Official MV", "previousTitles": [], "channelKey": "neneko-mashiro", "seenOnChannels": [], "publishedAt": "2024-10-16", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "original", "members": ["neneko-mashiro"], "matchedRules": ["R35-original"], "reviewRequired": false, "reviewReasons": [] } },
-    "O1MqvWf7q58": { "videoId": "O1MqvWf7q58", "title": "무희 (踊り子) / 아오쿠모 린 Cover", "previousTitles": [], "channelKey": "aokumo-rin", "seenOnChannels": [], "publishedAt": "2024-09-15", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["aokumo-rin"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "CyOAmEihVHs": { "videoId": "CyOAmEihVHs", "title": "Drowningㅣ아카네 리제 【Cover】", "previousTitles": [], "channelKey": "akane-lize", "seenOnChannels": [], "publishedAt": "2024-07-20", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["akane-lize"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "iCCqSFvz9kM": { "videoId": "iCCqSFvz9kM", "title": "아이리 칸나 | 최종화 (The Last Flower Acoustic Ver.)", "previousTitles": [], "channelKey": "airi-kanna", "seenOnChannels": [], "publishedAt": "2024-03-01", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "original", "members": ["airi-kanna"], "matchedRules": ["R35-original"], "reviewRequired": false, "reviewReasons": [] } },
-    "of5l0st1kA8": { "videoId": "of5l0st1kA8", "title": "괴수의 꽃노래 (怪獣の花唄) / 아이리 칸나 Cover", "previousTitles": [], "channelKey": "airi-kanna", "seenOnChannels": [], "publishedAt": "2024-02-10", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "solo_cover", "members": ["airi-kanna"], "matchedRules": ["R40-cover"], "reviewRequired": false, "reviewReasons": [] } },
-    "zNYEbJr1xj4": { "videoId": "zNYEbJr1xj4", "title": "아이리 칸나 - 최종화 (The Last Flower) Live Clip", "previousTitles": [], "channelKey": "airi-kanna", "seenOnChannels": [], "publishedAt": "2024-01-15", "source": "seed", "firstSeenAt": "2026-11-17T00:00:00Z", "lastSeenInFeedAt": null, "status": "unverified", "statusCheckedAt": null, "failStreak": 0,
-      "auto": { "category": "live_special", "members": ["airi-kanna"], "matchedRules": ["R30-live"], "reviewRequired": false, "reviewReasons": [] } }
+    "A9r_pgioImc": {
+      "videoId": "A9r_pgioImc",
+      "title": "대화가 통하는 후배 등장",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-19T09:30:08+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "IlsD7q1YVYY": {
+      "videoId": "IlsD7q1YVYY",
+      "title": "부키TV랑 마짱뚜기로 했어요!! 지면 유튜브 접기!",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-19T08:30:17+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ueLay9g19KI": {
+      "videoId": "ueLay9g19KI",
+      "title": "ㅇ..우릴 만만하게 보지마라 인간들..!!",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-19T08:19:53+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "MfEqYi6RY8U": {
+      "videoId": "MfEqYi6RY8U",
+      "title": "빤스, 곤란",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-19T08:00:34+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "K-u1kP1uB3s": {
+      "videoId": "K-u1kP1uB3s",
+      "title": "오늘따라 더욱 보고 싶은 그 얼굴",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-19T07:12:12+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "poDHJR5y_VA": {
+      "videoId": "poDHJR5y_VA",
+      "title": "콧ㅁ뮬ㅇㅣ 쥬ㄹ륵 흐ㅎ르느ㄴ뇨 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-11-18T09:00:29+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "4IWNsg2AUAE": {
+      "videoId": "4IWNsg2AUAE",
+      "title": "네 엄마가 내 엄마잖아...",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-18T09:00:20+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "qXHucZdigV0": {
+      "videoId": "qXHucZdigV0",
+      "title": "선물을 받았는데 선배님의 질투가 너무 무섭다;;;",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-18T08:00:25+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9Y4RzbsRZ90": {
+      "videoId": "9Y4RzbsRZ90",
+      "title": "저는 속물입니다",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-11-18T07:30:29+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "NV2C7XrA1Wo": {
+      "videoId": "NV2C7XrA1Wo",
+      "title": "파도파도 또 나오는 리제의 스텔 입사 비하인드",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-18T05:30:39+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "RO_yGBsd5Hs": {
+      "videoId": "RO_yGBsd5Hs",
+      "title": "눈나 호소인",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-17T09:00:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "gM1LI0q0Sjc": {
+      "videoId": "gM1LI0q0Sjc",
+      "title": "드디어 4기생 모두 만났습니다【스텔마크】",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-17T08:30:00+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "OMHAFfFYeA4": {
+      "videoId": "OMHAFfFYeA4",
+      "title": "다들 고소당하고 싶구나",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-17T08:00:30+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "GgqoMkl2FhA": {
+      "videoId": "GgqoMkl2FhA",
+      "title": "배그에 한 획을 그으신 분들께 인정받았습니다",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-17T07:59:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "EPo_5q6dnI0": {
+      "videoId": "EPo_5q6dnI0",
+      "title": "4기생은 3기생을 존중해야만 한다",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-17T06:00:51+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Sduc2GwDnOI": {
+      "videoId": "Sduc2GwDnOI",
+      "title": "부키야 꽉잡아!!!",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-11-16T09:00:25+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "aa2B9DWrGtE": {
+      "videoId": "aa2B9DWrGtE",
+      "title": "아니 그 여우가 아니라.. 아니 맞나?",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-16T08:00:23+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "8BOsN1CaS3M": {
+      "videoId": "8BOsN1CaS3M",
+      "title": "그쪽 말고 나를 보라고 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-11-15T09:00:21+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "eFmbIvWfVPI": {
+      "videoId": "eFmbIvWfVPI",
+      "title": "타타TV 서열정리해씁니다 붘키즈 여러분!!!!",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-15T09:00:19+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "lvpQQu0teTU": {
+      "videoId": "lvpQQu0teTU",
+      "title": "스텔라이브에서 갈틱폰을 하면 안되는 이유...",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-15T08:31:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "X8DrZaVqZF8": {
+      "videoId": "X8DrZaVqZF8",
+      "title": "결국 끝나버린 정리제 보호 기간",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-15T05:30:35+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "92bV6nyUI_Y": {
+      "videoId": "92bV6nyUI_Y",
+      "title": "4기생의 첫 번째 시련",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-15T05:00:35+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9Sp97hs8CM8": {
+      "videoId": "9Sp97hs8CM8",
+      "title": "제발 약 먹게 해주세요!!!!!!!!!!!!!!!!!",
+      "previousTitles": [],
+      "channelKey": "tokino-meri",
+      "seenOnChannels": [
+        "tokino-meri"
+      ],
+      "publishedAt": "2026-11-14T09:00:36+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "_ZSMUNNs6Gc": {
+      "videoId": "_ZSMUNNs6Gc",
+      "title": "일반인도 유기하는 망아지",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-14T09:00:34+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "CjQ2QH9AJ5Q": {
+      "videoId": "CjQ2QH9AJ5Q",
+      "title": "돌아버린거 같은 마시로 갈틱폰",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-11-14T07:30:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "kmtYRlmScdk": {
+      "videoId": "kmtYRlmScdk",
+      "title": "이 집은 이제 제 것이 아닙니다",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-14T06:30:02+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "7OQLPfWzpMo": {
+      "videoId": "7OQLPfWzpMo",
+      "title": "이제는 더이상 물러날 곳이 없다",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-14T05:30:16+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ugO-Z8V5BVc": {
+      "videoId": "ugO-Z8V5BVc",
+      "title": "눈을 떴구나",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-14T05:00:10+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9lCpWyk67Ew": {
+      "videoId": "9lCpWyk67Ew",
+      "title": "[봉누도2] EMS 폐급듀오, 인연에서 이X까지",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-11-13T09:00:18+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "JPREvwQroko": {
+      "videoId": "JPREvwQroko",
+      "title": "심상치 않은 변태 후배가 들어왔다",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-13T08:51:02+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "SzObO36vV-c": {
+      "videoId": "SzObO36vV-c",
+      "title": "토아야 내 집이다 생각하고 들어가.",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-13T08:12:35+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "enWE_c4lGAY": {
+      "videoId": "enWE_c4lGAY",
+      "title": "나는 싱싱한 후배 보러 왔어",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-12T09:00:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "VVKTWA6AvAY": {
+      "videoId": "VVKTWA6AvAY",
+      "title": "세계관 대충돌 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-11-12T09:00:06+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "EX6K_IkVVpM": {
+      "videoId": "EX6K_IkVVpM",
+      "title": "4기생 기강 다지기 벌써 실패..?? 【스텔마크】",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-12T08:30:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "e7SIet8fE7U": {
+      "videoId": "e7SIet8fE7U",
+      "title": "늙은(?)이들과 젊은(?)이들의 애교 벌칙을 건 대전!! [씨드머니vs로동당 후열 합방]",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-12T08:00:36+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "h2pVWwkBvxI": {
+      "videoId": "h2pVWwkBvxI",
+      "title": "선배라고 선배!!",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-11T11:00:38+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "pEdApL8oxdA": {
+      "videoId": "pEdApL8oxdA",
+      "title": "나한테만 그 말 한거 맞죠 메리씨??",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-11T10:28:41+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "b5FqDbZ8J7Q": {
+      "videoId": "b5FqDbZ8J7Q",
+      "title": "심~연",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-11T08:00:08+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "onnIsv3Z3NU": {
+      "videoId": "onnIsv3Z3NU",
+      "title": "리코야 잘 가",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-11-11T07:30:28+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "8lD-6Xyq4Lg": {
+      "videoId": "8lD-6Xyq4Lg",
+      "title": "발랄라이카 [ BALALAIKA / 9Lana ] / 하나코 나나 COVER",
+      "previousTitles": [
+        "발랄라이카 [BALALAIKA] / 하나코 나나 COVER"
+      ],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-11",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "_DF_Vn0vBjk": {
+      "videoId": "_DF_Vn0vBjk",
+      "title": "참을 수 없는 호랑이 꼬순내",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-10T09:00:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Sgg7Ixpzy7I": {
+      "videoId": "Sgg7Ixpzy7I",
+      "title": "스텔라이브에 숨어든 마녀를 찾아라【스텔 할로윈 합방】",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-10T08:30:28+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "3U1_9HKUf14": {
+      "videoId": "3U1_9HKUf14",
+      "title": "동생이 생겼습니다",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-10T08:23:23+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ql9U1PR9xNQ": {
+      "videoId": "ql9U1PR9xNQ",
+      "title": "린이 청초가 맞는 이유",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-10T05:30:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "rIyw9PTW90Y": {
+      "videoId": "rIyw9PTW90Y",
+      "title": "대선배의 품격 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-11-09T09:30:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "XDfm2L-VdBw": {
+      "videoId": "XDfm2L-VdBw",
+      "title": "언어 교육의 중요성",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-09T09:00:37+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "UxeJg71y37g": {
+      "videoId": "UxeJg71y37g",
+      "title": "부족장님 왜 이제야 오셨어우! 우! 우! 우! 🛖",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-11-09T09:00:14+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "4kPpFhOay0M": {
+      "videoId": "4kPpFhOay0M",
+      "title": "그치만 언니라고 부르는 건 부끄럽단 말이에요",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-09T08:13:49+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "M7c9yk3_clQ": {
+      "videoId": "M7c9yk3_clQ",
+      "title": "처음 뵙겠습니다 후배님들",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-09T08:00:04+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "IySRKlK5-iw": {
+      "videoId": "IySRKlK5-iw",
+      "title": "노크리스티아누 히날두(18)",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-09T07:00:30+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "nK5N2VDV8O0": {
+      "videoId": "nK5N2VDV8O0",
+      "title": "나랑 좀 잘 맞을 듯?",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-09T06:17:34+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Z5N_XqM9Nl8": {
+      "videoId": "Z5N_XqM9Nl8",
+      "title": "BUMPA [비비 (BIBI)] - 네네코 마시로 Cover",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-11-08T10:00:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "vjsNrFXknn0": {
+      "videoId": "vjsNrFXknn0",
+      "title": "타비와 함께하는 파 파 파야이야",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-08T08:39:47+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "yef9r3wupm0": {
+      "videoId": "yef9r3wupm0",
+      "title": "[4K] STELLIVE 아카네 리제 생일 3D 🍷",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-08T05:30:00+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "unknown",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R50-weak-live"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "weak_live_token"
+        ]
+      }
+    },
+    "2X7ZSY5HqyA": {
+      "videoId": "2X7ZSY5HqyA",
+      "title": "명조 대회에서도 여전히 사이좋은 기특 듀오 [띵킹 2]",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-07T11:30:04+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "TM-uVDKQxhg": {
+      "videoId": "TM-uVDKQxhg",
+      "title": "Loveit? [ biz×ZERA feat LOLUET ] / 유즈하 리코 Yuzuha Riko cover",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-07T10:35:18+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Lrv4BqX33-A": {
+      "videoId": "Lrv4BqX33-A",
+      "title": "시로님 너무 불건전하시네요",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-11-07T07:30:26+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "qCRD78-OPQo": {
+      "videoId": "qCRD78-OPQo",
+      "title": "하핫이 누나와 즈하핫 누나 [10월 핫클립]",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-07T06:00:29+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wPNjEn3Wv0Y": {
+      "videoId": "wPNjEn3Wv0Y",
+      "title": "후배가 생긴 게 너무너무너무너무 좋은 용사님",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-07T05:30:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "jhN1rQdNjyY": {
+      "videoId": "jhN1rQdNjyY",
+      "title": "고로시가 난무하는 동물 울음소리 내기 씨드머니 합방ㅋㅋㅋㅋㅋ",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-07T04:00:16+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "zfAKm9rNlJM": {
+      "videoId": "zfAKm9rNlJM",
+      "title": "엄마 친구가 자꾸 말 놓으래요",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-07T03:15:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Kj4Y2W4QoeA": {
+      "videoId": "Kj4Y2W4QoeA",
+      "title": "존경스러운 발음 대결",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-06T09:10:37+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "CI0eJlYF6Jo": {
+      "videoId": "CI0eJlYF6Jo",
+      "title": "[봉누도2] EMS 구해영, 마지막 출근 했습니다!",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-11-06T09:00:30+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "lKjqLiX6ZOc": {
+      "videoId": "lKjqLiX6ZOc",
+      "title": "유즈하 리코, 신의상 공개! - [신의상 공개 티저]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-11-06T09:00:17+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "5pXqgxEweKw": {
+      "videoId": "5pXqgxEweKw",
+      "title": "사장님한테 조련 당하고 있어",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-06T08:01:19+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "liPEQZJLQh4": {
+      "videoId": "liPEQZJLQh4",
+      "title": "로스트원의 호곡 [ロストワンの号哭 / Neru]ㅣ아카네 리제(Akane Lize) 【COVER】",
+      "previousTitles": [
+        "로스트원의 호곡 [ロストワンの号哭]ㅣ아카네 리제 【COVER】"
+      ],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-06",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ofMvPhLOqu4": {
+      "videoId": "ofMvPhLOqu4",
+      "title": "블랙리스트 오늘도 정상영업 합니다ㅋㅋㅋ [블랙리스트 합방]",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-05T08:30:18+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "UlXoiaNpDbI": {
+      "videoId": "UlXoiaNpDbI",
+      "title": "대화가 된다",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-04T09:00:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "KPF9DpCMcvU": {
+      "videoId": "KPF9DpCMcvU",
+      "title": "이런 게 언니가 되는 기분일까요?",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-04T08:26:06+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "BN6eWXn4ogw": {
+      "videoId": "BN6eWXn4ogw",
+      "title": "선배 이제 없어",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-04T08:00:29+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "pu3GRsT44b8": {
+      "videoId": "pu3GRsT44b8",
+      "title": "너불님 패럿 실종사건",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-11-04T07:30:36+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "6l4ktpu_fN8": {
+      "videoId": "6l4ktpu_fN8",
+      "title": "쓰레기 같은 선배라 죄송합니다",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-04T06:06:05+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "nlTC61ISQA8": {
+      "videoId": "nlTC61ISQA8",
+      "title": "본심이 나와버린 망아지",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-04T06:00:34+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "w3J30Bqph4U": {
+      "videoId": "w3J30Bqph4U",
+      "title": "이리 타락 3초전",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-03T09:00:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wud3W7IdkFc": {
+      "videoId": "wud3W7IdkFc",
+      "title": "숨겨왔던 출생의 비밀...",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-03T09:00:10+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "u6Pj0TYGx8k": {
+      "videoId": "u6Pj0TYGx8k",
+      "title": "🚨잠깐🖐️어비스🪦🐯🌸🪡에게🦾예쁘고✨고운말💘그리고😮응원의 말🎉부탁 드립니다🙏따뜻한❤️🔥채팅💬언제나👀감사합니다🍎어비스 화이팅🤩- [어비스 단체 합방]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-11-03T08:30:35+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "-uy9MIi0b-c": {
+      "videoId": "-uy9MIi0b-c",
+      "title": "나나야.. 선배야 선배..!!",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-03T08:30:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "xpPFsXmml7g": {
+      "videoId": "xpPFsXmml7g",
+      "title": "나 불렀어? 나 불렀어?? 나 불렀어??!",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-03T08:09:23+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "LFpdE3GByD4": {
+      "videoId": "LFpdE3GByD4",
+      "title": "갑자기 이상한 후야",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-11-02T09:00:17+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ojV55hcIc4w": {
+      "videoId": "ojV55hcIc4w",
+      "title": "「忘れてください」 방종 라이브 / 시즈키 토아",
+      "previousTitles": [],
+      "channelKey": "shizuki-toa",
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-02",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "live_special",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "R30-live"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "QPKA-czX-w4": {
+      "videoId": "QPKA-czX-w4",
+      "title": "스텔 대표 농농즈! 바로 전장에 투입ㅋㅋㅋ",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-01T08:30:06+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "5Hfe4V5oNpM": {
+      "videoId": "5Hfe4V5oNpM",
+      "title": "\"오늘은 우리 모두 동기인 거다?\"",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-01T08:26:19+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "hKvow6Fo5GE": {
+      "videoId": "hKvow6Fo5GE",
+      "title": "가끔은 선배가 후배처럼 느껴질 때가 있다",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-01T08:20:01+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "zDoIbeh4uT4": {
+      "videoId": "zDoIbeh4uT4",
+      "title": "Mother",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-11-01T06:30:13+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "WJY5hlCY4qo": {
+      "videoId": "WJY5hlCY4qo",
+      "title": "\"얘들아 왜 말을 안 해? 말 좀 해봐\"",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-11-01T05:30:20+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "cTDv9rIJjKQ": {
+      "videoId": "cTDv9rIJjKQ",
+      "title": "웰컴, 히요리",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-11-01T05:00:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "AdwDMrkwCfs": {
+      "videoId": "AdwDMrkwCfs",
+      "title": "동기가 또 이상한 말을 한다..",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-11-01T04:00:25+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "hqbF9y-0l4Y": {
+      "videoId": "hqbF9y-0l4Y",
+      "title": "아예?아뇨아뇨아뇨 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-31T11:30:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "qNOFi7GzpfM": {
+      "videoId": "qNOFi7GzpfM",
+      "title": "괴도 F의 대본 ~사라진 다이아몬드의 수수께끼~ [ひとしずく×やま△] / 스텔라이브 (STELLIVE) Cover",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-31T11:00:10+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "00S87yCwkuc": {
+      "videoId": "00S87yCwkuc",
+      "title": "우물 안 망아지",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-31T09:00:34+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "xyuFMD4MaOU": {
+      "videoId": "xyuFMD4MaOU",
+      "title": "점심 나가서 먹을 거 같은 사장님",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-31T07:30:19+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "nPmLVSuDXVU": {
+      "videoId": "nPmLVSuDXVU",
+      "title": "정리제는 이 일을 기억할 것입니다",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-10-31T05:30:34+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "fncCNV0qumg": {
+      "videoId": "fncCNV0qumg",
+      "title": "당한 만큼 갚아주라고 배웠어요",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-10-30T06:46:12+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "YafKZwic7yY": {
+      "videoId": "YafKZwic7yY",
+      "title": "사장님.. 감사합니다 뇨흐흑",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-29T09:00:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "4nVpnXyxSwM": {
+      "videoId": "4nVpnXyxSwM",
+      "title": "야호 캥초딩 졸업이다!!!",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-10-29T08:56:49+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "NW0PDB_0E4s": {
+      "videoId": "NW0PDB_0E4s",
+      "title": "얘들아 제발 그만해…ㅜㅜ [방해 점프맵]",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-10-29T08:30:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wFVcuJSuG98": {
+      "videoId": "wFVcuJSuG98",
+      "title": "소문이 대체 어디까지 퍼진 거야?;;;",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-29T08:00:19+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "RF51-QYLYfs": {
+      "videoId": "RF51-QYLYfs",
+      "title": "웃기지 마 절대 인정 못 해",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-29T07:00:17+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2eY4iUGa0HU": {
+      "videoId": "2eY4iUGa0HU",
+      "title": "나나 유기 당하다",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-28T09:03:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "RkjoG2wGt30": {
+      "videoId": "RkjoG2wGt30",
+      "title": "디스전 찢고 왔습니다",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-28T07:30:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "-hzvVoNTvXI": {
+      "videoId": "-hzvVoNTvXI",
+      "title": "사장님 절 속인 거예요...?",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-10-28T05:30:10+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ZtqGY-p6fmU": {
+      "videoId": "ZtqGY-p6fmU",
+      "title": "사장님한텐 항상 뉴비고 아가에요!",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-10-27T09:03:54+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "DRNyBTlsFEc": {
+      "videoId": "DRNyBTlsFEc",
+      "title": "묵직한 한 방 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-27T09:00:29+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "z8ycMb_Ij60": {
+      "videoId": "z8ycMb_Ij60",
+      "title": "안녕하세요 청초즈입니다",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-27T09:00:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "P9n3fnju_9Q": {
+      "videoId": "P9n3fnju_9Q",
+      "title": "스텔의 청초가 뭔지 보여드리겠습니다",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-27T08:44:31+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "1epe9GzV0Pc": {
+      "videoId": "1epe9GzV0Pc",
+      "title": "이 멤버로 회식하고 왔습니다 (w. 달콤레나, 티뭉)",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-10-27T08:30:16+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Et1OjYM74Bw": {
+      "videoId": "Et1OjYM74Bw",
+      "title": "\"이세계 출신.. 양갈래...어?\"",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-10-27T07:26:06+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "dxVjFQqeNnw": {
+      "videoId": "dxVjFQqeNnw",
+      "title": "스텔라이브 4기생 ABYSS 데뷔! - [4기생 데뷔 모음집]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-26T10:00:02+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ES51I7NA1OM": {
+      "videoId": "ES51I7NA1OM",
+      "title": "타이어의 원수는 반드시 갚는다 [봉누도2]",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-26T09:30:21+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Xl0Jk0Md5K0": {
+      "videoId": "Xl0Jk0Md5K0",
+      "title": "[봉누도2] 우리보다 더한 폐급이 들어왔다",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-26T09:00:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "5JTC7M_4BY0": {
+      "videoId": "5JTC7M_4BY0",
+      "title": "뿡댕아 내가 다 잡아준다니까?? 【몬스터헌터 아웃랜더스】",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-10-26T08:30:24+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Q9ZruxmzoU0": {
+      "videoId": "Q9ZruxmzoU0",
+      "title": "보호 기간이 필요한 이유 [핫클립]",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-26T08:00:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "IP_mOtJaBP4": {
+      "videoId": "IP_mOtJaBP4",
+      "title": "레나야 친구한테 돈 좀 잃을 수도 있지ㅋㅋㅋ 【스다주밸리】",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-10-25T08:32:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "urqCbHGF_d0": {
+      "videoId": "urqCbHGF_d0",
+      "title": "남바가 또 바뀌었습니다 【봉누도2 마지막화】",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-10-25T08:04:50+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "v2qdpBGHUrE": {
+      "videoId": "v2qdpBGHUrE",
+      "title": "IA - オツキミリサイタル 달맞이 리사이틀 / 네네코 마시로 (4K)",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-25T07:30:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "0s6PDldWutQ": {
+      "videoId": "0s6PDldWutQ",
+      "title": "스텔라이브의 유명한 복주머니",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-10-25T07:09:43+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "6lF8-xlIFB4": {
+      "videoId": "6lF8-xlIFB4",
+      "title": "당신 오늘 나랑 얘기 좀 해...",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-10-25T05:30:19+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "otWzq5HdD1s": {
+      "videoId": "otWzq5HdD1s",
+      "title": "사장님의 안산식 애정표현 【스텔 마크 서버】",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-25T05:00:13+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "tUFo0uFE3Iw": {
+      "videoId": "tUFo0uFE3Iw",
+      "title": "아니 탬탬님 마크 사진으로 3만원은 좀... 【스다주밸리】",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-10-24T08:30:13+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "dIUSGByWvqE": {
+      "videoId": "dIUSGByWvqE",
+      "title": "흑수염 광팬 정지해의 선장님 덕질 일기 【봉누도2 흑수염 핫클립】",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-10-24T07:51:26+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "1CDBu4CO6zY": {
+      "videoId": "1CDBu4CO6zY",
+      "title": "히요리님의 청초즈 가입을 환영합니다",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-24T07:30:33+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2mSwdmlssH4": {
+      "videoId": "2mSwdmlssH4",
+      "title": "애들 게임에서 말조심 해야하는 이유",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-24T07:30:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "SRMTyNLUnZY": {
+      "videoId": "SRMTyNLUnZY",
+      "title": "Letters to me [이환 OST / 아카네 린] l 사키하네 후야(Sakihane Huya) Cover",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-23T09:00:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "category_conflict"
+        ]
+      }
+    },
+    "q4ABdGflPbc": {
+      "videoId": "q4ABdGflPbc",
+      "title": "스텔라이브 4기생 저주인형 메리 키타!!",
+      "previousTitles": [],
+      "channelKey": "tokino-meri",
+      "seenOnChannels": [
+        "tokino-meri"
+      ],
+      "publishedAt": "2026-10-23T09:00:02+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Mj0QTMXlbHw": {
+      "videoId": "Mj0QTMXlbHw",
+      "title": "으스스한 유령! 하나요 히요리 데뷔!! 제가 보이시나요..?",
+      "previousTitles": [],
+      "channelKey": "hanayo-hiyori",
+      "seenOnChannels": [
+        "hanayo-hiyori"
+      ],
+      "publishedAt": "2026-10-23T08:44:35+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "3D_JLEvSjYE": {
+      "videoId": "3D_JLEvSjYE",
+      "title": "안녕하세요~ '여자랑만듀오함' 입니다~",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-23T08:00:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "T4m3DcLTefo": {
+      "videoId": "T4m3DcLTefo",
+      "title": "[봉누도2] 나 잡아봐라~ 🏃‍♀️🏃",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-23T08:00:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "_6b7b91jFrU": {
+      "videoId": "_6b7b91jFrU",
+      "title": "4기생 후배분들이 내 방송을 보고 있다고...?",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-10-23T05:30:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Lf08O_xAp8Q": {
+      "videoId": "Lf08O_xAp8Q",
+      "title": "애들 싸움에 엄마 부르는 건 반칙이야 선배!",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-10-22T09:06:30+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Hj4rh7V2Yok": {
+      "videoId": "Hj4rh7V2Yok",
+      "title": "그림은 일단 제가 이길 것 같아요",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-10-22T09:05:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "iiz4JaAsK3w": {
+      "videoId": "iiz4JaAsK3w",
+      "title": "극악무도한 즙유동 [봉누도2]",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-22T09:00:37+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "4SdCVy40Xew": {
+      "videoId": "4SdCVy40Xew",
+      "title": "후야야 빨리 선택해💜 [에버리스 1주년]",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-22T09:00:32+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "DKwAoyid-b0": {
+      "videoId": "DKwAoyid-b0",
+      "title": "어흥! 영물 호랑이 코가네 랑 등장!!",
+      "previousTitles": [],
+      "channelKey": "kogane-rang",
+      "seenOnChannels": [
+        "kogane-rang"
+      ],
+      "publishedAt": "2026-10-22T09:00:13+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "YUD_TY5Sja4": {
+      "videoId": "YUD_TY5Sja4",
+      "title": "갸루 퇴마사 시즈키 토아 등장 야호 !!!",
+      "previousTitles": [],
+      "channelKey": "shizuki-toa",
+      "seenOnChannels": [
+        "shizuki-toa"
+      ],
+      "publishedAt": "2026-10-22T08:33:32+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "LmOl01G4DR4": {
+      "videoId": "LmOl01G4DR4",
+      "title": "타상연화『打上花火』[DAOKO × 요네즈켄시] | 시라유키 히나 x 아오쿠모 린 Cover 스",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-21T11:30:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "collab_cover",
+        "members": [
+          "shirayuki-hina",
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R41-collab"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "0ZKymrDzz_o": {
+      "videoId": "0ZKymrDzz_o",
+      "title": "허접이에요 허접 - [에버리스 1주년 콘텐츠]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-21T09:00:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2eFIGyFsCaQ": {
+      "videoId": "2eFIGyFsCaQ",
+      "title": "진짜 그냥 친구 맞죠 아빠?",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-10-21T08:43:36+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2EUAL6Xatro": {
+      "videoId": "2EUAL6Xatro",
+      "title": "선배는 내가 욕해주길 바라고 있는 걸지도 모른다..",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-21T08:00:33+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "N1vqEjWdbvc": {
+      "videoId": "N1vqEjWdbvc",
+      "title": "백곰파님 안녕하세요?",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-21T07:30:16+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "uiVIzh684-c": {
+      "videoId": "uiVIzh684-c",
+      "title": "저건... 분명 묻었을텐데...? [봉누도2 完]",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-10-21T05:30:30+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "XJbiTXlL23s": {
+      "videoId": "XJbiTXlL23s",
+      "title": "엥무새를 말하게 하는 방법 [봉누도2]",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-20T09:00:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Svo-5Q5K_HM": {
+      "videoId": "Svo-5Q5K_HM",
+      "title": "사장님이 맞고 다니지 말래서 그만..",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-10-20T08:16:23+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "8KJA6DoI5qs": {
+      "videoId": "8KJA6DoI5qs",
+      "title": "진짜 신기한 사람",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-20T07:00:30+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "EKEts5IShas": {
+      "videoId": "EKEts5IShas",
+      "title": "[STELLIVE] ABYSS - 별이 시작되는 곳 (Where Stars Begin)",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-20T03:00:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "3Xf1Wt7Z-RY": {
+      "videoId": "3Xf1Wt7Z-RY",
+      "title": "혁명도중 (革命道中) / 텐코 시부키 Cover",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-20",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Ei7yWYi7x_E": {
+      "videoId": "Ei7yWYi7x_E",
+      "title": "스텔라이브 4기 ABYSS | '별이 시작되는 곳' Official Audio",
+      "previousTitles": [],
+      "channelKey": "stellive-topic",
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-20",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "tokino-meri",
+          "shizuki-toa",
+          "hanayo-hiyori",
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": [
+          "unit_expansion"
+        ]
+      }
+    },
+    "VuyZF2VYAfU": {
+      "videoId": "VuyZF2VYAfU",
+      "title": "CH4NGE [Giga ft.可不] / 유즈하 리코 Yuzuha Riko cover",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-10-19T10:00:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "LTmE50OPGkM": {
+      "videoId": "LTmE50OPGkM",
+      "title": "에버리스 1주년기념 유니와 싸웠습니다 (물리적 대결은 ❌)",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-19T09:00:18+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "M2VWzVN5-Lc": {
+      "videoId": "M2VWzVN5-Lc",
+      "title": "그 말, 취소할 수는 없겠지만!!! [봉누도2]",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-19T09:00:14+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "zD5nlue58PQ": {
+      "videoId": "zD5nlue58PQ",
+      "title": "강제 납치혼 추격전과 사랑의(?) 도피 [봉누도2]",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-19T08:00:00+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "qodSKQIOZ8w": {
+      "videoId": "qodSKQIOZ8w",
+      "title": "4기생 차렷. - [4기생 반응 모음집]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-18T12:00:20+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "-B_5aG0QQEs": {
+      "videoId": "-B_5aG0QQEs",
+      "title": "ABYSS - 별이 시작되는 곳 (Where Stars Begin) Teaser",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-18T11:08:26+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "VjLC811FeTc": {
+      "videoId": "VjLC811FeTc",
+      "title": "하츠네 미쿠 - おじゃま虫 방해쟁이 / 네네코 마시로 (4K)",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-18T07:30:15+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "R1AKOEzy-dQ": {
+      "videoId": "R1AKOEzy-dQ",
+      "title": "바보협회에서 퇴출당했습니다",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [
+        "aokumo-rin"
+      ],
+      "publishedAt": "2026-10-18T06:40:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ebSfmm3yb3I": {
+      "videoId": "ebSfmm3yb3I",
+      "title": "상상도 못했던 유니 어머님의 또 다른 모습",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [
+        "akane-lize"
+      ],
+      "publishedAt": "2026-10-18T05:30:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "eSI7RsjZy1E": {
+      "videoId": "eSI7RsjZy1E",
+      "title": "도쿄 테디베어 [東京テディベア] / 토키노 메리 Cover",
+      "previousTitles": [],
+      "channelKey": "tokino-meri",
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-18",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ouKcRBeyKbk": {
+      "videoId": "ouKcRBeyKbk",
+      "title": "유령이 되고싶어 [ゆうれいになりたい / 유이카] / 하나요 히요리 (Hanayo Hiyori) Cover",
+      "previousTitles": [
+        "유령이 되고 싶어 / 하나요 히요리 Cover"
+      ],
+      "channelKey": "hanayo-hiyori",
+      "seenOnChannels": [
+        "hanayo-hiyori"
+      ],
+      "publishedAt": "2026-10-18",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "brsd0gJ42Ss": {
+      "videoId": "brsd0gJ42Ss",
+      "title": "그냥 너무 좋잖아요.",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-17T08:18:39+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "SVWt3iyke0I": {
+      "videoId": "SVWt3iyke0I",
+      "title": "코스프레 해봤는데 어때요...?😳 [뱅드림:아워노트]",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-17T08:00:33+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ObfmBcrG6D4": {
+      "videoId": "ObfmBcrG6D4",
+      "title": "LamazeP - 愛の詩 사랑의 시 / 네네코 마시로 (4K)",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-17T07:30:14+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "MZNKiadMo3U": {
+      "videoId": "MZNKiadMo3U",
+      "title": "제육감 [第六感 l Reol] / 시즈키 토아(Shizuki Toa) Cover",
+      "previousTitles": [
+        "제육감 [第六感] / 시즈키 토아 Cover"
+      ],
+      "channelKey": "shizuki-toa",
+      "seenOnChannels": [
+        "shizuki-toa"
+      ],
+      "publishedAt": "2026-10-17",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "iAoU1UGPoXc": {
+      "videoId": "iAoU1UGPoXc",
+      "title": "호랑풍류가 [나와 호랑이님 OST] / 코가네 랑 (Cogane Rang) Cover",
+      "previousTitles": [
+        "호랑풍류가 / 코가네 랑 Cover"
+      ],
+      "channelKey": "kogane-rang",
+      "seenOnChannels": [
+        "kogane-rang"
+      ],
+      "publishedAt": "2026-10-17",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "category_conflict"
+        ]
+      }
+    },
+    "rKQptWhAvO0": {
+      "videoId": "rKQptWhAvO0",
+      "title": "도쿄 테디베어 [東京テディベア l Neru] / 토키노 메리 (Tokino Mary) Cover",
+      "previousTitles": [],
+      "channelKey": "tokino-meri",
+      "seenOnChannels": [
+        "tokino-meri"
+      ],
+      "publishedAt": "2026-10-16T10:00:10+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "gbmHlFmQfgw": {
+      "videoId": "gbmHlFmQfgw",
+      "title": "후야의 4기생 심층분석!",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-16T08:00:26+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "RJEENzy4XEY": {
+      "videoId": "RJEENzy4XEY",
+      "title": "4기생이 나와도 변하지 않는 것",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-16T08:00:00+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "OPsRrVxmOR8": {
+      "videoId": "OPsRrVxmOR8",
+      "title": "바보협회 후보생들",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-16T07:00:22+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "zac-EnGyQWc": {
+      "videoId": "zac-EnGyQWc",
+      "title": "츄베릅 - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-15T09:00:39+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "sSOTUKJ9EEo": {
+      "videoId": "sSOTUKJ9EEo",
+      "title": "이렇게 귀여운 거 처음 봐요",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-15T07:30:27+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ytEcyehm06o": {
+      "videoId": "ytEcyehm06o",
+      "title": "나야, 갱맘",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2026-10-15T07:00:33+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Tk-qfBU3iGg": {
+      "videoId": "Tk-qfBU3iGg",
+      "title": "모리가 너무 큰 탓일까... [워독스]",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-10-14T08:00:26+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "TmSiRgQdC-g": {
+      "videoId": "TmSiRgQdC-g",
+      "title": "교정공 아들이 많이 힘든갑다... [봉누도2]",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-14T08:00:16+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "w-Tb4vsSHrg": {
+      "videoId": "w-Tb4vsSHrg",
+      "title": "수선으로 후배 삥뜯기",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [
+        "neneko-mashiro"
+      ],
+      "publishedAt": "2026-10-14T07:30:12+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ub8FHFvNkgA": {
+      "videoId": "ub8FHFvNkgA",
+      "title": "다 마로 때문이야 ㅠㅠ - [스텔라 핫클립]",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [
+        "stellive"
+      ],
+      "publishedAt": "2026-10-12T09:00:17+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wEx8UCiyods": {
+      "videoId": "wEx8UCiyods",
+      "title": "[봉누도2] 구쌤의 왁뿌볼",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-12T09:00:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9tm8bQvOaBc": {
+      "videoId": "9tm8bQvOaBc",
+      "title": "매력도 있고 얼굴도 잘생깄고 근데 여자친구가 없다? [봉누도2 클립모음]",
+      "previousTitles": [],
+      "channelKey": "hanako-nana",
+      "seenOnChannels": [
+        "hanako-nana"
+      ],
+      "publishedAt": "2026-10-12T08:00:32+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "vluNkVsFbUM": {
+      "videoId": "vluNkVsFbUM",
+      "title": "[4K] 후하요! 통통꼬리 용가리 3D 데뷔!",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-09T06:00:01+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "unknown",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R50-weak-live"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "weak_live_token"
+        ]
+      }
+    },
+    "kNzGpNEdBqw": {
+      "videoId": "kNzGpNEdBqw",
+      "title": "오버라이드 「オーバーライド」 / 아야츠노 유니 Cover",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-09",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "DL5cJ7f18v4": {
+      "videoId": "DL5cJ7f18v4",
+      "title": "[봉누도2] 와 붕대 금보다 비싸다!",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-07T09:00:16+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "5xHOedZ4P5g": {
+      "videoId": "5xHOedZ4P5g",
+      "title": "이거 아내 찾기 게임 맞죠? 😳 [애니모]",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-10-05T09:00:38+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Qi_JLmXBFFo": {
+      "videoId": "Qi_JLmXBFFo",
+      "title": "불가행력 (不可幸力) / 아오쿠모 린 Cover",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [],
+      "publishedAt": "2026-09-30",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "FzefgoF26Ac": {
+      "videoId": "FzefgoF26Ac",
+      "title": "여우의 별자리 「심월과 달의 노래」ㅣ아카네 리제 【COVER】",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [],
+      "publishedAt": "2026-09-26",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "v094-E3Pmtk": {
+      "videoId": "v094-E3Pmtk",
+      "title": "스텔라이브 (StelLive) | 'STAR TRAIL' Official MV",
+      "previousTitles": [],
+      "channelKey": "stellive",
+      "seenOnChannels": [],
+      "publishedAt": "2026-05-08",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "ayatsuno-yuni",
+          "sakihane-fuya",
+          "akane-lize",
+          "shirayuki-hina",
+          "neneko-mashiro",
+          "arahashi-tabi",
+          "tenko-shibuki",
+          "aokumo-rin",
+          "hanako-nana",
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "group_expansion"
+        ]
+      }
+    },
+    "fLLX2R-RwVE": {
+      "videoId": "fLLX2R-RwVE",
+      "title": "숨바꼭질 [かくれんぼ] / 유즈하 리코 Cover",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [],
+      "publishedAt": "2026-04-13",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "R_B4tmy2DVA": {
+      "videoId": "R_B4tmy2DVA",
+      "title": "출항 [抜錨(발묘)]ㅣ아카네 리제 【COVER】",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [],
+      "publishedAt": "2025-12-04",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "bJqdy8925Oc": {
+      "videoId": "bJqdy8925Oc",
+      "title": "생명에게 미움받고 있어 / 텐코 시부키 Cover",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [],
+      "publishedAt": "2025-11-14",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "EIii4EXsfsU": {
+      "videoId": "EIii4EXsfsU",
+      "title": "JANE DOE | 시라유키 히나 x 아오쿠모 린 Cover",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [
+        "shirayuki-hina"
+      ],
+      "publishedAt": "2025-10-27",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "collab_cover",
+        "members": [
+          "shirayuki-hina",
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R41-collab"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "eeIMg68ug9Y": {
+      "videoId": "eeIMg68ug9Y",
+      "title": "별자리가 될 수 있다면 / 사키하네 후야 Cover",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [],
+      "publishedAt": "2025-08-20",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "E_G9otMLf64": {
+      "videoId": "E_G9otMLf64",
+      "title": "[4K 3D Live] 아라하시 타비 3D 데뷔 라이브 무대",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [],
+      "publishedAt": "2025-05-15",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "live_special",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R30-live"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "L1haw5kPB7Q": {
+      "videoId": "L1haw5kPB7Q",
+      "title": "만찬가『晩餐歌』 | 시라유키 히나 Cover",
+      "previousTitles": [],
+      "channelKey": "shirayuki-hina",
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-05",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "G5tTozKJRD4": {
+      "videoId": "G5tTozKJRD4",
+      "title": "아라하시 타비 | '여로' Official MV",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [],
+      "publishedAt": "2024-12-11",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "_8uoathMY0A": {
+      "videoId": "_8uoathMY0A",
+      "title": "네네코 마시로 | '봄꿈 (Spring Dream)' Official MV",
+      "previousTitles": [],
+      "channelKey": "neneko-mashiro",
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-16",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "O1MqvWf7q58": {
+      "videoId": "O1MqvWf7q58",
+      "title": "무희 (踊り子) / 아오쿠모 린 Cover",
+      "previousTitles": [],
+      "channelKey": "aokumo-rin",
+      "seenOnChannels": [],
+      "publishedAt": "2024-09-15",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "6A04OifrfR0": {
+      "videoId": "6A04OifrfR0",
+      "title": "空奏列車 (Orangestar) Coverㅣ 藍璃かんな x VESPERBELL ヨミ",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-09-06T10:58:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Nr3AhMP1lVg": {
+      "videoId": "Nr3AhMP1lVg",
+      "title": "Love wins all (IU) / 아이리 칸나 Cover",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-08-18T11:58:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "gq3gzxPBOK0": {
+      "videoId": "gq3gzxPBOK0",
+      "title": "藍璃かんな(Airi Kanna) | ‘青い宝石と竜の子’",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-07-25T09:00:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "tZHAWd6yIz4": {
+      "videoId": "tZHAWd6yIz4",
+      "title": "아이리 칸나(Airi Kanna) | ‘푸른 보석과 어린 용’ Teaser",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-07-24T03:02:33+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "CyOAmEihVHs": {
+      "videoId": "CyOAmEihVHs",
+      "title": "Drowningㅣ아카네 리제 【Cover】",
+      "previousTitles": [],
+      "channelKey": "akane-lize",
+      "seenOnChannels": [],
+      "publishedAt": "2024-07-20",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "RbQv87f4mvg": {
+      "videoId": "RbQv87f4mvg",
+      "title": "에픽세븐 x 아이리 칸나(Airi Kanna) | ‘Frozen Eclipse’",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-07-06T09:00:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "q-QjjmJjU_8": {
+      "videoId": "q-QjjmJjU_8",
+      "title": "逆光 (Ado)  from ONE PIECE FILM RED ㅣ 藍璃かんな Cover",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-06-09T12:29:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "IRvrDhVYXHQ": {
+      "videoId": "IRvrDhVYXHQ",
+      "title": "傷つく誰かの心を守ることができたなら / 藍璃かんな Cover",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-05-15T11:00:08+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "active",
+      "statusCheckedAt": "2026-11-21T00:24:54Z",
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "iCCqSFvz9kM": {
+      "videoId": "iCCqSFvz9kM",
+      "title": "아이리 칸나(Airi Kanna) | 최종화 (Acoustic Ver.)",
+      "previousTitles": [
+        "아이리 칸나 | 최종화 (The Last Flower Acoustic Ver.)"
+      ],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-03-01",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "original",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R35-original"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "of5l0st1kA8": {
+      "videoId": "of5l0st1kA8",
+      "title": "怪獣の花唄 (Vaundy) / 藍璃かんな Cover",
+      "previousTitles": [
+        "괴수의 꽃노래 (怪獣の花唄) / 아이리 칸나 Cover"
+      ],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-02-10",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "zNYEbJr1xj4": {
+      "videoId": "zNYEbJr1xj4",
+      "title": "아이리 칸나 (Airi Kanna) - 최종화 (The Last Flower) Live Clip",
+      "previousTitles": [
+        "아이리 칸나 - 최종화 (The Last Flower) Live Clip"
+      ],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2024-01-15",
+      "source": "seed",
+      "firstSeenAt": "2026-11-17T00:00:00Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "live_special",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R30-live"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "YsGSukJofWI": {
+      "videoId": "YsGSukJofWI",
+      "title": "Airi Kanna 1st solo Concert [ KANNA ] Teaser",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2023-12-02T15:13:44+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "unknown",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R50-weak-live"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "weak_live_token"
+        ]
+      }
+    },
+    "eLJENPbBe8A": {
+      "videoId": "eLJENPbBe8A",
+      "title": "勘ぐれい (ZUTOMAYO) / 藍璃かんな Cover",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2023-11-18T13:58:07+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ajDAmJYPQ-U": {
+      "videoId": "ajDAmJYPQ-U",
+      "title": "藍璃かんな(Airi Kanna) | ‘最終花’",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2023-11-09T09:00:10+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "fOw2MYv4-uo": {
+      "videoId": "fOw2MYv4-uo",
+      "title": "藍璃かんな(Airi Kanna) | ‘最終花’ Teaser",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2023-11-08T11:00:09+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "OgwD6f_tdIY": {
+      "videoId": "OgwD6f_tdIY",
+      "title": "愛して愛して愛して (Kikuo) / 藍璃かんな Cover",
+      "previousTitles": [],
+      "channelKey": "airi-kanna",
+      "seenOnChannels": [
+        "airi-kanna"
+      ],
+      "publishedAt": "2023-10-31T10:00:11+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-21T00:24:54Z",
+      "lastSeenInFeedAt": "2026-11-21T00:24:54Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "solo_cover",
+        "members": [
+          "airi-kanna"
+        ],
+        "matchedRules": [
+          "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    }
   }
 }

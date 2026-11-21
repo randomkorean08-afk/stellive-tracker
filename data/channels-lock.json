@@ -19,7 +19,7 @@
     },
     {
       "key": "stellive-topic", "type": "group-sub", "displayName": "StelLive - Topic", "unit": null,
-      "handle": null, "channelId": null, "verified": false,
+      "handle": null, "channelId": "UCbiWR9pa5YTRknGPzn0l8Ww", "verified": true,
       "_note": "YouTube 자동 생성 Topic 채널. 시드(Ei7yWYi7x_E) 귀속용으로만 등록하고 자동 수집 대상에서 제외(collect: none)",
       "status": "active", "joinedAt": null, "graduatedAt": null, "collect": "none",
       "aliases": []

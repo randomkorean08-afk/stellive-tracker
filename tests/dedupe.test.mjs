@@ -96,8 +96,8 @@ test("status: 401/403 -> private after 2; 5xx / network error -> no change", () 
 test("status fills null channelKey only via locked handle", () => {
   const l = clone(lock);
   l.channels.find((c) => c.key === "shirayuki-hina").handle = "@HinaChannel";
-  const entry = clone(seed.videos["EIii4EXsfsU"]);
-  assert.equal(entry.channelKey, null);
+  // collection may already have filled the real seed via the locked handle; start from an unattributed copy
+  const entry = { ...clone(seed.videos["EIii4EXsfsU"]), channelKey: null };
   const filled = applyStatusAndAuthor(entry, { code: 200, authorUrl: "https://www.youtube.com/@hinachannel" }, l, NOW);
   assert.equal(filled.channelKey, "shirayuki-hina");
   const unknown = applyStatusAndAuthor(entry, { code: 200, authorUrl: "https://www.youtube.com/@someoneelse" }, l, NOW);

@@ -154,7 +154,7 @@ test("overrides: exclude / reviewed / category / members", () => {
   assert.equal(st.counted, true);
   assert.equal(starTrail.members.length, 9);
   assert.ok(!starTrail.members.includes("sakihane-fuya") && !starTrail.members.includes("airi-kanna"));
-  assert.deepEqual(real.reviewQueue, []);
+  assert.ok(!real.reviewQueue.includes("v094-E3Pmtk"), "STAR TRAIL no longer waits for review");
 
   const e = effective({ auto: { category: "solo_cover", members: ["a"], reviewRequired: true } }, { reviewed: true, exclude: true });
   assert.deepEqual(e, { category: "solo_cover", members: ["a"], excluded: true, needsReview: false });
