@@ -1,4 +1,4 @@
-﻿import { h, clear, DISCLAIMER, add } from "./dom.js";
+﻿import { h, clear, DISCLAIMER, add, formatKst } from "./dom.js";
 import { loadAll, state, subscribe, dirtyCount, discardDraft, discardCount, storageOk } from "./store.js";
 import { renderStaleNotice, confirmDiscard } from "./stale-notice.js";
 import { renderScorecard } from "./scorecard.js";
@@ -41,7 +41,7 @@ function header() {
   const link = h("a", { href: location.href, target: "_blank", rel: "noopener", class: "newwin" }, "새 창에서 열기");
   add(document.getElementById("topbar"), 
     h("h1", {}, "스텔라이브 보컬 트래커"),
-    h("span", { class: "muted small" }, `데이터 갱신 ${state.repo.videos.updatedAt ?? "-"}`),
+    h("span", { class: "muted small" }, `데이터 갱신 ${formatKst(state.repo.videos.updatedAt)}`),
     ADMIN ? dirty : null,
     ADMIN && h("button", { type: "button", class: "small-btn", onclick: () => { if (discardCount() === 0 || confirmDiscard()) { discardDraft(); show(current); } } }, "초안 폐기"),
     link,

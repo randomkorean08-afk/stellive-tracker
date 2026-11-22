@@ -38,6 +38,14 @@ export function s(tag, attrs, ...kids) {
 }
 
 export const clear = (el) => { while (el.firstChild) el.removeChild(el.firstChild); return el; };
+/** ISO/UTC timestamp -> "YYYY-MM-DD HH:mm (KST)". Korea has no DST, so a fixed UTC+9 offset is exact. */
+export function formatKst(iso) {
+  const t = Date.parse(iso ?? "");
+  if (!Number.isFinite(t)) return "-";
+  const k = new Date(t + 9 * 3600e3);
+  const p = (n) => String(n).padStart(2, "0");
+  return `${k.getUTCFullYear()}-${p(k.getUTCMonth() + 1)}-${p(k.getUTCDate())} ${p(k.getUTCHours())}:${p(k.getUTCMinutes())} (KST)`;
+}
 export const fmt1 = (x) => (x === null || x === undefined || Number.isNaN(x) ? "-" : (Math.round(x * 10) / 10).toFixed(1));
 export const DISCLAIMER = "모든 점수는 큐레이터 개인 평가이며 공식 평가가 아닙니다.";
 

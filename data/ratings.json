@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "disclaimer": "모든 점수는 큐레이터 개인 평가(Personal Curated Ratings)이며 공식 평가가 아닙니다.",
-  "exportedAt": "2026-11-17T00:00:00+09:00",
+  "exportedAt": "2026-11-22T14:15:24Z",
   "memberRubric": {
     "akane-lize":     { "items": { "vocalization": 14.3, "pitch": 9.5, "rhythm": 9.5, "range": 9.7, "volume": 9.3, "tone": 9.9, "technique": 9.8, "expression": 9.9, "breath": 9.1, "live": 4.8 }, "ratedAt": "2026-11-17", "source": "baseline-2026-11-17" },
     "airi-kanna":     { "items": { "vocalization": 14.4, "pitch": 9.4, "rhythm": 9.4, "range": 9.6, "volume": 9.8, "tone": 9.6, "technique": 9.5, "expression": 9.8, "breath": 9.3, "live": 4.7 }, "ratedAt": "2026-11-17", "source": "baseline-2026-11-17" },
@@ -46,6 +46,7 @@
     "ouKcRBeyKbk": { "songScore": 86.2, "members": {}, "ratedAt": "2026-11-17", "note": "baseline" },
     "eeIMg68ug9Y": { "songScore": 85.4, "members": {}, "ratedAt": "2026-11-17", "note": "baseline" },
     "iAoU1UGPoXc": { "songScore": 85.8, "members": {}, "ratedAt": "2026-11-17", "note": "baseline" },
-    "kNzGpNEdBqw": { "songScore": 83.5, "members": {}, "ratedAt": "2026-11-17", "note": "baseline" }
+    "kNzGpNEdBqw": { "songScore": 83.5, "members": {}, "ratedAt": "2026-11-17", "note": "baseline" },
+    "rKQptWhAvO0": { "songScore": 97.5, "members": {}, "ratedAt": "2026-11-22", "note": "PDF 시드 eSI7RsjZy1E(ID 오류, Neru OFFICIAL 업로드)의 기준 점수 97.5를 실제 메리 채널 커버로 복구 (사용자 승인 2026-11-22). 원 항목은 보존" }
   }
 }

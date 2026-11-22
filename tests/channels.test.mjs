@@ -96,9 +96,10 @@ test("excluded seeds: rows/ratings kept, but no longer counted in slots or B", (
     assert.equal(typeof ratings.videoRatings[id].songScore, "number", `${id} rating preserved`);
   }
   const meri = card(d, "tokino-meri");
-  // her only other rated video is the 4기 group song Ei7yWYi7x_E (단체곡, 4 members) -> not evaluated in B
-  assert.equal(meri.songAvgN, 0);
-  assert.equal(meri.songAvg, null);
+  // the excluded seed's 97.5 was restored on the real cover rKQptWhAvO0 (2026-11-22); the 4기 group song
+  // Ei7yWYi7x_E (단체곡, 4 members) is not evaluated in B
+  assert.equal(meri.songAvgN, 1);
+  assert.equal(meri.songAvg, 97.5);
   assert.equal(meri.rankB, null);
   const toa = card(d, "shizuki-toa");
   assert.equal(toa.songAvgN, 1); // MZNKiadMo3U only; the 4기 group song is not evaluated

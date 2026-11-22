@@ -92,6 +92,37 @@
       "category": "stream_song",
       "reviewed": true,
       "note": "방송노래로 승인 (사용자 승인 2026-11-22, 검토 대기열 처리). 평가 제외"
+    },
+    "EKEts5IShas": {
+      "category": "original",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa",
+        "hanayo-hiyori",
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "4기 ABYSS 단체곡 별이 시작되는 곳 공식 영상 — 제목에 MV 표기가 없어 비음악으로 분류되던 것을 오리지널로 지정. 단체곡(평가 제외) (사용자 승인 2026-11-22)"
+    },
+    "sNoTEc2zuDU": {
+      "exclude": true,
+      "reviewed": true,
+      "note": "노래가 아닌 일반 클립(방송노래 약한 키워드 오탐) — 제외 (사용자 승인 2026-11-22)"
+    },
+    "If1cVtIYBe8": {
+      "exclude": true,
+      "reviewed": true,
+      "note": "노래가 아닌 일반 클립(방송노래 약한 키워드 오탐) — 제외 (사용자 승인 2026-11-22)"
+    },
+    "3Rm8bludTaU": {
+      "exclude": true,
+      "reviewed": true,
+      "note": "노래가 아닌 일반 클립(방송노래 약한 키워드 오탐) — 제외 (사용자 승인 2026-11-22)"
+    },
+    "XgKWVaiACgE": {
+      "exclude": true,
+      "reviewed": true,
+      "note": "노래가 아닌 일반 클립(방송노래 약한 키워드 오탐) — 제외 (사용자 승인 2026-11-22)"
     }
   }
 }
