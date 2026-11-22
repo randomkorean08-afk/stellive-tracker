@@ -43,6 +43,23 @@ test("different members, different songs, or official uploads are never folded",
   assert.equal(collapseDuplicateClips(rows, { aliasesOf }).rows.length, 5);
 });
 
+test("review fixes: same artist / different song, boilerplate, one-token Latin names, no chaining", () => {
+  const mary = ["토키노 메리", "메리", "Tokino Meri", "Meri"];
+  const tok = (t) => songTokens(t, mary);
+  // same artist (IU), different songs, same day -> different stages
+  assert.ok(!sameSong(tok("[겨울잠 | 아이유 (IU)] 토키노 메리 (TOKINO MERY) Live Cover"), tok("[에잇 | 아이유 (IU)] 토키노 메리 (TOKINO MERY) Live Cover")));
+  // channel boilerplate must not glue different songs
+  assert.ok(!sameSong(tok("[싱크룸/어비스] 토키노메리 × 코가네 랑 - 실루엣 lyrics 가사"), tok("[싱크룸/어비스] 토키노메리 × 코가네 랑 - 블랙록슈터 lyrics 가사")));
+  // one-token Latin name: exact only
+  assert.ok(!sameSong(["king"], ["king", "gnu"]));
+  assert.ok(sameSong(["king"], ["king"]));
+  // one-token Korean title may be contained in a bilingual title
+  assert.ok(sameSong(["만찬가"], ["만찬가", "晩餐歌"]));
+  // no chaining: 0d / 3d / 6d -> the 6d upload is a separate stage
+  const rows = [clip("a", "리제 만찬가", "2026-11-01T00:00:00Z"), clip("b", "리제 만찬가", "2026-11-04T00:00:00Z"), clip("c", "리제 만찬가", "2026-11-07T00:00:00Z")];
+  assert.equal(collapseDuplicateClips(rows, { aliasesOf }).rows.length, 2);
+});
+
 test("no view counts: the newest clip represents the stage; input not mutated", () => {
   const rows = [clip("a", "리제 만찬가", "2026-11-01T00:00:00Z"), clip("b", "리제 만찬가 클립", "2026-11-02T00:00:00Z")];
   const { rows: out } = collapseDuplicateClips(rows, { aliasesOf });

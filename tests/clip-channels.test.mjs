@@ -5,6 +5,7 @@ import { readFileSync } from "node:fs";
 import path from "node:path";
 import { clipAuto, reclassify, mergeEntries } from "../lib/collector.mjs";
 import { readJson, ROOT } from "./load.mjs";
+import { parseArgs, resolveMembers } from "../scripts/add-clip.mjs";
 
 const lock = readJson("data/channels-lock.json");
 const NOW = "2026-11-22T00:00:00Z";
@@ -54,6 +55,33 @@ test("clip modes: mixed keeps chat clips non-music; multi needs a StelLive membe
   assert.equal(ok.category, "stream_song");
   assert.deepEqual(ok.members, ["tokino-meri"]);
   assert.equal(clipAuto(e("잡담 클립"), lock).category, "stream_song", "song mode (default): everything is a song clip");
+});
+
+test("review fixes: 라이브커버, spaceless full names, search hits must name a member", async () => {
+  const { classify } = await import("../lib/classify.mjs");
+  const { namesStelliveMember } = await import("../lib/collector.mjs");
+  const mixed = (t) => clipAuto(e(t, { clipMode: "mixed" }), lock);
+  assert.equal(mixed("LOSER - 하나코 나나 라이브커버 [하나코 나나 클립]").category, "stream_song");
+  const r = classify({ title: "[싱크룸/어비스] 토키노메리 × 코가네 랑 × 시즈키 토아 × 하나요 히요리 - 실루엣", channelKey: null, publishedAt: "2026-11-01" }, lock);
+  assert.ok(r.members.includes("tokino-meri"), "토키노메리 (no space) detected");
+  assert.equal(namesStelliveMember("토키노메리 노래 모음", lock), true);
+  assert.equal(namesStelliveMember("다른 버튜버 노래 모음", lock), false);
+});
+
+test("workflow: daily clip search has its own cron slot (not tied to the hourly run's start hour)", () => {
+  const wf = readFileSync(path.join(ROOT, ".github", "workflows", "fetch-videos.yml"), "utf8");
+  assert.match(wf, /cron: "30 0 \* \* \*"/);
+  assert.match(wf, /\$SCHEDULE" = "30 0 \* \* \*"/);
+  assert.ok(!/date -u \+%H/.test(wf));
+});
+
+test("add-clip: URL after --members is not swallowed; 11-char member keys stay members", () => {
+  const o = parseArgs(["--members", "아카네", "리제", "https://youtu.be/ZZZZZZZZZZZ"]);
+  assert.equal(o.target, "https://youtu.be/ZZZZZZZZZZZ");
+  assert.deepEqual(resolveMembers(o.members, lock), ["akane-lize"]);
+  const k = parseArgs(["ZZZZZZZZZZZ", "--members", "kogane-rang"]);
+  assert.equal(k.target, "ZZZZZZZZZZZ");
+  assert.deepEqual(resolveMembers(k.members, lock), ["kogane-rang"]);
 });
 
 test("fetch script picks up every configured clip channel (regex not mangled)", () => {

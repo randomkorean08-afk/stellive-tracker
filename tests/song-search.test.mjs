@@ -179,6 +179,9 @@ test("formatDateOnly: returns YYYY-MM-DD or '-' when missing", () => {
   assert.equal(formatDateOnly("2026-11-11"), "2026-11-11");
   assert.equal(formatDateOnly(null), "-");
   assert.equal(formatDateOnly(""), "-");
+  // timestamps are shown as the Korean (KST) date: 2026-11-08 20:00 UTC = 2026-11-09 05:00 KST
+  assert.equal(formatDateOnly("2026-11-08T20:00:00Z"), "2026-11-09");
+  assert.equal(formatDateOnly("2026-11-08T14:59:59Z"), "2026-11-08");
 });
 
 test("integration with deriveAll(): respects effective overrides and merged ratings", () => {

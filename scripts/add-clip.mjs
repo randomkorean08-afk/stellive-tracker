@@ -35,7 +35,10 @@ export function parseArgs(argv) {
     if (a === "--members") {
       // allow "아카네 리제" (space) as well as "akane-lize,shirayuki-hina": consume until the next --flag
       const parts = [];
-      while (i + 1 < argv.length && !argv[i + 1].startsWith("--")) parts.push(argv[++i]);
+      // stop at the next --flag, or at a YouTube URL given after the members (bare 11-char ids are NOT detected
+      // here: a member key such as "kogane-rang" is also 11 characters — put a bare id first)
+      const isVideoArg = (x) => /youtu\.?be|^https?:\/\//i.test(x);
+      while (i + 1 < argv.length && !argv[i + 1].startsWith("--") && !(isVideoArg(argv[i + 1]) && !o.target)) parts.push(argv[++i]);
       o.members = parts.join(" ").split(",").map((s) => s.trim()).filter(Boolean);
     } else if (a === "--song") o.song = argv[++i] ?? null;
     else if (a === "--note") o.note = argv[++i] ?? null;

@@ -58,16 +58,18 @@ test("pickViewTargets: music only, not excluded/deleted, never-fetched first, 55
   assert.deepEqual(pickViewTargets(videos, { overrides, now: NOW, refreshHours: 0 }), ["m1aaaaaaaaa", "o1aaaaaaaaa", "m2aaaaaaaaa", "m3aaaaaaaaa"], "force: all, no cooldown");
 });
 
-test("view refresh: hourly cooldown (55 min); group songs and 방송노래 included", () => {
-  assert.equal(VIEW_REFRESH_HOURS, 55 / 60);
+test("view refresh: hourly cooldown (45 min, tolerates cron jitter); group songs and 방송노래 included", () => {
+  assert.equal(VIEW_REFRESH_HOURS, 45 / 60);
   const at = (min) => new Date(Date.parse(NOW) - min * 60e3).toISOString();
-  const v = (id, cat, min, members = ["a"]) => ({ videoId: id, status: "active", auto: { category: cat, members }, viewCount: 1, viewCountAt: at(min) });
+  const v = (id, cat, min, members = ["a"], extra = {}) => ({ videoId: id, status: "active", auto: { category: cat, members, ...extra }, viewCount: 1, viewCountAt: at(min) });
   const videos = {
     g: v("g", "original", 60, ["a", "b", "c"]), // 단체곡
-    s: v("s", "stream_song", 56),               // 방송노래
-    f: v("f", "solo_cover", 50),                // fetched 50 min ago -> not due
+    s: v("s", "stream_song", 50),               // 방송노래, previous run started 10 min late -> still due
+    f: v("f", "solo_cover", 40),                // fetched 40 min ago -> not due
+    r: v("r", "stream_song", 90, ["a"], { reviewRequired: true }), // unreviewed candidate -> not refreshed
   };
   assert.deepEqual(pickViewTargets(videos, { now: NOW }).sort(), ["g", "s"]);
+  assert.deepEqual(pickViewTargets(videos, { now: NOW, overrides: { r: { reviewed: true } } }).sort(), ["g", "r", "s"], "approved -> refreshed");
 });
 
 test("applyViewCounts: sets viewCount + viewCountAt, leaves others untouched", () => {

@@ -17,7 +17,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
   parseAtomFeed, mergeEntries, applyStatusAndAuthor, pickStatusTargets, checkOembed, httpGet,
-  parseVideoStats, pickViewTargets, applyViewCounts, checkShortFormat, pickShortTargets, applyShortFormat,
+  parseVideoStats, pickViewTargets, applyViewCounts, checkShortFormat, pickShortTargets, applyShortFormat, namesStelliveMember,
   videosEqual, serializeVideosDoc,
 }from "../lib/collector.mjs";
 import { normalizeVideoId } from "../lib/video-id.mjs";
@@ -187,6 +187,7 @@ async function main() {
       try {
         for (const e of await searchRecentClips(q, apiKey, now)) {
           if (known.has(e.channelId) || prevVideos[e.videoId]) continue; // official/clip channels are collected directly
+          if (!namesStelliveMember(e.title, lock)) continue; // keep videos.json from filling up with unrelated results
           incoming.push({ videoId: e.videoId, title: e.title, publishedAt: e.publishedAt, channelKey: null, searchQuery: q, source: "search" });
           searchFound++;
         }
@@ -248,10 +249,12 @@ async function main() {
 
   // ---- summary ----
   const perChannel = {};
-  for (const e of incoming) perChannel[e.channelKey] ??= { added: new Set(), updated: new Set() };
+  const clipName = Object.fromEntries(clipChannels.map((c) => [c.channelId, `clip:${c.name ?? c.channelId}`]));
+  const keyOf = (e) => e.channelKey ?? (e.clipChannel ? clipName[e.clipChannel] ?? `clip:${e.clipChannel}` : e.searchQuery ? `search:${e.searchQuery}` : "?");
+  for (const e of incoming) perChannel[keyOf(e)] ??= { added: new Set(), updated: new Set() };
   for (const e of incoming) {
-    if (merged.added.includes(e.videoId)) perChannel[e.channelKey].added.add(e.videoId);
-    else if (merged.updated.includes(e.videoId)) perChannel[e.channelKey].updated.add(e.videoId);
+    if (merged.added.includes(e.videoId)) perChannel[keyOf(e)].added.add(e.videoId);
+    else if (merged.updated.includes(e.videoId)) perChannel[keyOf(e)].updated.add(e.videoId);
   }
   console.log(`== fetch-videos ${opts.dryRun ? "(dry-run) " : ""}${now} ==`);
   console.log(`channels collected: ${collectable.length}, feed entries: ${incoming.length}`);

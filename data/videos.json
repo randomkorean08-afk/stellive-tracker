@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T15:24:46Z",
+  "updatedAt": "2026-11-22T15:36:30Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
     "8lOHsl4Qsm8": {
@@ -6201,6 +6201,7 @@
       "auto": {
         "category": "stream_song",
         "members": [
+          "tokino-meri",
           "shizuki-toa",
           "hanayo-hiyori",
           "kogane-rang"
@@ -6560,6 +6561,7 @@
       "auto": {
         "category": "stream_song",
         "members": [
+          "tokino-meri",
           "shizuki-toa",
           "hanayo-hiyori",
           "kogane-rang"
@@ -8360,14 +8362,14 @@
       "clipMode": "song",
       "auto": {
         "category": "stream_song",
-        "members": [],
+        "members": [
+          "tokino-meri"
+        ],
         "matchedRules": [
           "C01-clip-channel"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "no_member_detected"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "FjrHb-TRf6s": {
@@ -10578,14 +10580,14 @@
       "clipMode": "song",
       "auto": {
         "category": "stream_song",
-        "members": [],
+        "members": [
+          "tokino-meri"
+        ],
         "matchedRules": [
           "C01-clip-channel"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "no_member_detected"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "dxVjFQqeNnw": {
@@ -11302,14 +11304,14 @@
       "clipMode": "song",
       "auto": {
         "category": "stream_song",
-        "members": [],
+        "members": [
+          "tokino-meri"
+        ],
         "matchedRules": [
           "C01-clip-channel"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "no_member_detected"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "nPIWoO2fBN8": {
@@ -11600,14 +11602,14 @@
       "clipMode": "song",
       "auto": {
         "category": "stream_song",
-        "members": [],
+        "members": [
+          "tokino-meri"
+        ],
         "matchedRules": [
           "C01-clip-channel"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "no_member_detected"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "o8FI-GbPemc": {
@@ -32028,15 +32030,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R90-none"
+          "C01-clip-channel"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -37505,15 +37508,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R90-none"
+          "C01-clip-channel"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -144714,7 +144718,8 @@
       "auto": {
         "category": "excluded_short",
         "members": [
-          "neneko-mashiro"
+          "neneko-mashiro",
+          "arahashi-tabi"
         ],
         "matchedRules": [
           "R10-short"
