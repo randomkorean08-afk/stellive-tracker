@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T20:35:49Z",
+  "updatedAt": "2026-11-22T21:33:01Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
     "Kcvrp3L58p4": {
@@ -70,7 +70,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 48,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -100,7 +100,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 14,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -129,8 +129,8 @@
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
-      "viewCount": 21,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 42,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -159,8 +159,8 @@
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
-      "viewCount": 19,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 38,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -190,7 +190,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 17,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -220,7 +220,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 22,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -250,7 +250,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 24,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -273,14 +273,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 31,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -309,8 +309,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 152403,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 155058,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -524,8 +524,8 @@
       "isShort": false,
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
-      "viewCount": 112,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 129,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -555,7 +555,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 80,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -609,8 +609,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 1699,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1732,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -639,8 +639,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 1054,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1059,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -773,8 +773,8 @@
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
-      "viewCount": 143,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 146,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -830,8 +830,8 @@
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
-      "viewCount": 151,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 154,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -861,7 +861,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 70,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -890,8 +890,8 @@
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
-      "viewCount": 112,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 118,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -948,7 +948,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 91,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1367,8 +1367,8 @@
       "isShort": false,
       "clipChannel": "UCx-84_T0bPxpdlVwwj3ceFw",
       "clipMode": "multi",
-      "viewCount": 39393,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 39331,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1398,7 +1398,7 @@
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
       "viewCount": 2357,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1453,7 +1453,7 @@
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
       "viewCount": 2622,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1695,7 +1695,7 @@
       "clipChannel": "UCcNQppu168MEZgM0U5F8H-w",
       "clipMode": "mixed",
       "viewCount": 2120,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1751,8 +1751,8 @@
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
-      "viewCount": 247,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 245,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1781,8 +1781,8 @@
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
-      "viewCount": 196,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 198,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1812,7 +1812,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 289,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1835,14 +1835,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 186,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -1872,7 +1872,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 122,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2218,8 +2218,8 @@
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
-      "viewCount": 194,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 196,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2249,7 +2249,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 163,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2278,8 +2278,8 @@
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
-      "viewCount": 166,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 167,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2309,7 +2309,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 92,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2384,14 +2384,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 735,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2451,7 +2451,7 @@
       "clipChannel": "UCD1kZxoOcGqLwN0r8UeA26A",
       "clipMode": "song",
       "viewCount": 203,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2506,7 +2506,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 228,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2536,7 +2536,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 224,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2566,7 +2566,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 111,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2596,7 +2596,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 132,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2626,7 +2626,7 @@
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
       "viewCount": 9569,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -2924,8 +2924,8 @@
       "isShort": false,
       "clipChannel": "UCx-84_T0bPxpdlVwwj3ceFw",
       "clipMode": "multi",
-      "viewCount": 88679,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 88768,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3079,8 +3079,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 5164,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5181,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3243,7 +3243,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 194,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3273,7 +3273,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 85,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3303,7 +3303,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 235,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3333,7 +3333,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 199,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3363,7 +3363,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 180,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3393,7 +3393,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 345,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3416,14 +3416,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 206,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3453,7 +3453,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 406,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3483,7 +3483,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 517,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3513,7 +3513,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 272,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3543,7 +3543,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 365,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3573,7 +3573,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 395,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3603,7 +3603,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 367,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3633,7 +3633,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 470,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3663,7 +3663,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 363,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3693,7 +3693,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 119,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3845,14 +3845,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 2818,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3936,7 +3936,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 406,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3965,8 +3965,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 3826,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3849,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -3995,8 +3995,8 @@
       "isShort": false,
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
-      "viewCount": 312,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 313,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4026,7 +4026,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 309,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4081,7 +4081,7 @@
       "clipChannel": "UCzJXIUpHY5Pb2klkZ-okpLA",
       "clipMode": "song",
       "viewCount": 126,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4111,7 +4111,7 @@
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
       "viewCount": 17277,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4140,8 +4140,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 12190,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 12196,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4170,8 +4170,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 5463,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5560,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4200,8 +4200,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 17950,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 17968,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4230,8 +4230,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 5331,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5402,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4260,8 +4260,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 5134,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5192,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4291,7 +4291,7 @@
       "clipChannel": "UCx-84_T0bPxpdlVwwj3ceFw",
       "clipMode": "multi",
       "viewCount": 40114,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4323,7 +4323,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 667,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4460,8 +4460,8 @@
       "isShort": false,
       "clipChannel": "UCktSB6yDIE-QTOVGECXhXsQ",
       "clipMode": "mixed",
-      "viewCount": 22569,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 22649,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4598,8 +4598,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 179348,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 179491,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4628,8 +4628,8 @@
       "isShort": false,
       "clipChannel": "UCx-84_T0bPxpdlVwwj3ceFw",
       "clipMode": "multi",
-      "viewCount": 29268,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 29323,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4659,7 +4659,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 651,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4689,7 +4689,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 571,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4718,8 +4718,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 15577,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 15688,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4748,8 +4748,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 39924,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 39996,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4779,7 +4779,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 997,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4890,7 +4890,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 22875,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4919,8 +4919,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 38905,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 39076,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4943,14 +4943,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 46256,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 46346,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -4979,8 +4979,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 27943,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 27940,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5010,7 +5010,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 13443,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5093,8 +5093,8 @@
       "isShort": false,
       "clipChannel": "UCx-84_T0bPxpdlVwwj3ceFw",
       "clipMode": "multi",
-      "viewCount": 184321,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 184444,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5124,7 +5124,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 20954,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5203,8 +5203,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 26942,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 26954,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5234,7 +5234,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 14166,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5263,8 +5263,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 106376,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 106433,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5294,7 +5294,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 46225,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5430,7 +5430,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 225888,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5460,7 +5460,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 64748,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5490,7 +5490,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 17704,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5519,8 +5519,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 27562,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 27780,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5577,7 +5577,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 1145,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5607,7 +5607,7 @@
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
       "viewCount": 13532,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5663,8 +5663,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 107909,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 108257,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5745,8 +5745,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 149218,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 149256,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5775,8 +5775,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 53798,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 53804,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5944,7 +5944,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 246,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -5967,8 +5967,8 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
@@ -6003,8 +6003,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 765400,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 765162,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -6060,8 +6060,8 @@
       "isShort": false,
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
-      "viewCount": 1244,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1246,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6090,8 +6090,8 @@
       "isShort": false,
       "clipChannel": "UC9TXPz9A--ZmDIajoZ8B86A",
       "clipMode": "song",
-      "viewCount": 35802,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 35826,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6120,8 +6120,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 23159,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 23341,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6338,8 +6338,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 3468,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3512,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6362,14 +6362,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
       "viewCount": 6628,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6398,8 +6398,8 @@
       "isShort": false,
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
-      "viewCount": 4913,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4933,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6429,7 +6429,7 @@
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
       "viewCount": 2425,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6459,7 +6459,7 @@
       "clipChannel": "UCJy0HyRg47N3glFYmI47hrg",
       "clipMode": "song",
       "viewCount": 1593,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6489,7 +6489,7 @@
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
       "viewCount": 7993,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6733,8 +6733,8 @@
       "isShort": false,
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
-      "viewCount": 368,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 373,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6763,8 +6763,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 223912,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 224051,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -6820,8 +6820,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 240478,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 240559,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "unknown",
         "members": [
@@ -6846,14 +6846,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
       "viewCount": 28677,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6886,7 +6886,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 38143,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -6992,8 +6992,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 360735,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 360853,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -7050,7 +7050,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 2701,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7187,8 +7187,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 25649,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 25754,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7219,7 +7219,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 669,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7249,7 +7249,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 788,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7279,7 +7279,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 283,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7309,7 +7309,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 968,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7339,7 +7339,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 632,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7369,7 +7369,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 334,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7399,7 +7399,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 547,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7429,7 +7429,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 433,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7452,14 +7452,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 2069,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7489,7 +7489,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 597,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7512,14 +7512,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 472,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7549,7 +7549,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 2959,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7579,7 +7579,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 546,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7609,7 +7609,7 @@
       "clipChannel": "UCl2SH9lHeIC6HP5bGsTeNNg",
       "clipMode": "song",
       "viewCount": 323,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7639,7 +7639,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 687,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7669,7 +7669,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 647,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7699,7 +7699,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 339,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7729,7 +7729,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 320,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7759,7 +7759,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 276,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7789,7 +7789,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 344,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7819,7 +7819,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 452,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7849,7 +7849,7 @@
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
       "viewCount": 333,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7878,8 +7878,8 @@
       "isShort": false,
       "clipChannel": "UC604vjGYtJoj6DjUe-lM5jg",
       "clipMode": "song",
-      "viewCount": 244,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 245,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7909,7 +7909,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 99594,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -7938,8 +7938,8 @@
       "isShort": false,
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
-      "viewCount": 27229,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 27273,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8097,14 +8097,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 7044,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8133,8 +8133,8 @@
       "isShort": false,
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
-      "viewCount": 224263,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 224363,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8166,8 +8166,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2212698,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2212447,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -8197,7 +8197,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 55703,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8220,14 +8220,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 20274,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8257,7 +8257,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 2517,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8287,7 +8287,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 26195,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8317,7 +8317,7 @@
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
       "viewCount": 24198,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8454,7 +8454,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 33138,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8484,7 +8484,7 @@
       "clipChannel": "UCdkFiFR2T9zoZDlhacivNtg",
       "clipMode": "song",
       "viewCount": 200,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8568,7 +8568,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 2231,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8732,8 +8732,8 @@
       "isShort": false,
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
-      "viewCount": 2165,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2171,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8763,7 +8763,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 62313,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8818,7 +8818,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 2975,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -8848,7 +8848,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 3684,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9114,8 +9114,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 1579,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1577,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9145,7 +9145,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 678,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9310,7 +9310,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 2820,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9446,7 +9446,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 54687,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9634,7 +9634,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 829042,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -9770,7 +9770,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 41393,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9800,7 +9800,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 54887,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9830,7 +9830,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 33648,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9860,7 +9860,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 1363,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9890,7 +9890,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 73090,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9913,14 +9913,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 8309,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -9950,7 +9950,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 5984,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10004,8 +10004,8 @@
       "isShort": false,
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
-      "viewCount": 193288,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 193322,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10035,7 +10035,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 6626,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10089,8 +10089,8 @@
       "isShort": false,
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
-      "viewCount": 11536,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 11553,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10222,14 +10222,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCZ8XM84roUJ1Z3Zm0w9OD8w",
       "clipMode": "mixed",
       "viewCount": 3073,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10310,8 +10310,8 @@
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 2073,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2074,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10638,7 +10638,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 68962,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10902,14 +10902,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 65532,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10939,7 +10939,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 1881,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10969,7 +10969,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 6335,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -10998,8 +10998,8 @@
       "isShort": false,
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
-      "viewCount": 46316,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 46375,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11047,14 +11047,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 7411,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11084,7 +11084,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 13140,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11141,7 +11141,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 38080,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11197,8 +11197,8 @@
       "isShort": false,
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
-      "viewCount": 30062,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 30109,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11228,7 +11228,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 503,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11258,7 +11258,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 96078,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11369,7 +11369,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 2872,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11426,7 +11426,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 5563,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11456,7 +11456,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 830,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11487,7 +11487,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 2515,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11517,7 +11517,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 1622,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11550,7 +11550,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 1415,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11580,8 +11580,8 @@
       "isShort": false,
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
-      "viewCount": 5676,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5736,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11611,7 +11611,7 @@
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
       "viewCount": 1611,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11640,8 +11640,8 @@
       "isShort": false,
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
-      "viewCount": 7369,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 7405,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11670,8 +11670,8 @@
       "isShort": false,
       "clipChannel": "UCorgDgaYZ0ABl-25bmlKbqA",
       "clipMode": "song",
-      "viewCount": 2693,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2699,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11701,7 +11701,7 @@
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
       "viewCount": 228,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11730,8 +11730,8 @@
       "isShort": false,
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
-      "viewCount": 25256,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 25280,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11761,7 +11761,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 5859,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11791,7 +11791,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 62483,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -11820,8 +11820,8 @@
       "isShort": false,
       "clipChannel": "UCUNohnMK4WPSkqgK1qNeCaA",
       "clipMode": "song",
-      "viewCount": 294,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 301,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12065,7 +12065,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 207830,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12095,7 +12095,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 2364,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12124,8 +12124,8 @@
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 2371,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2381,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12154,8 +12154,8 @@
       "isShort": false,
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
-      "viewCount": 142960,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 143028,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12185,8 +12185,8 @@
       "isShort": false,
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
-      "viewCount": 27540,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 27572,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12458,7 +12458,7 @@
       "clipChannel": "UC-Qc1zF_4_F036Ywf2lhw_w",
       "clipMode": "song",
       "viewCount": 5399,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12487,8 +12487,8 @@
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 5706,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5741,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12517,8 +12517,8 @@
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 7633,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 7638,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12548,7 +12548,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 2106,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12578,7 +12578,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 1134,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12607,8 +12607,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 226572,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 226685,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -12829,7 +12829,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 1611,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12859,7 +12859,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 1327,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12889,7 +12889,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 7369,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12919,7 +12919,7 @@
       "clipChannel": "UCaJmUgbqueEd6Tlqrr39Mbg",
       "clipMode": "song",
       "viewCount": 10699,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -12973,8 +12973,8 @@
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 63361,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 63572,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -13004,7 +13004,7 @@
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
       "viewCount": 4935,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -13027,14 +13027,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 11124,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 11189,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -13091,8 +13091,8 @@
       "isShort": false,
       "clipChannel": "UCktSB6yDIE-QTOVGECXhXsQ",
       "clipMode": "mixed",
-      "viewCount": 247517,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 247500,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -13392,7 +13392,7 @@
       "clipChannel": "UCoTOEre_2WykyF5izueZTOA",
       "clipMode": "song",
       "viewCount": 200143,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -13422,7 +13422,7 @@
       "clipChannel": "UCJzxA7hEiP3VYwyPbaHi3FQ",
       "clipMode": "song",
       "viewCount": 5371,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -13477,7 +13477,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 649025,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -14097,8 +14097,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1522260,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1522207,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "non_music",
         "members": [],
@@ -14127,8 +14127,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 956141,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 956064,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -14155,8 +14155,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 603353,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 603382,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -14191,7 +14191,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 306911,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -14220,8 +14220,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 473616,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 473699,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -14678,7 +14678,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1537739,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -14871,8 +14871,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2391075,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2390984,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -14899,12 +14899,12 @@
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
       "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1694450,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1694907,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -14935,8 +14935,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4974180,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4974753,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -15985,8 +15985,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1315374,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1315566,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -16176,7 +16176,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1014712,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -16442,12 +16442,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 241623,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -16793,7 +16793,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 149438,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "unknown",
         "members": [
@@ -16853,8 +16853,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 671388,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 671509,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -17312,7 +17312,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 42317,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -18363,7 +18363,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 95019,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -18557,7 +18557,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1348901,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -19067,7 +19067,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 466362,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -19778,7 +19778,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 167311,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -20553,8 +20553,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 166840,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 166842,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -21467,8 +21467,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 757539,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 757744,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -21739,7 +21739,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 2109,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -21984,8 +21984,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 230174,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 230253,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -22041,8 +22041,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 657783,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 658083,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -22206,8 +22206,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 879689,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 879695,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -22533,7 +22533,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 299111,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -23047,7 +23047,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 976214,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -23157,8 +23157,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 606229,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 606275,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -23941,8 +23941,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 600590,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 600603,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -23972,7 +23972,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1252385,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -24130,12 +24130,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 704889,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 704926,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -24164,8 +24164,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 175226,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 175227,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -24328,7 +24328,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1272691,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -24358,7 +24358,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 658866,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -24734,8 +24734,8 @@
       "statusCheckedAt": "2026-11-22T13:16:27Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1201960,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1201932,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -25923,8 +25923,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 225276,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 225280,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -26599,8 +26599,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 15567,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 15582,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -26735,8 +26735,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1181060,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1181131,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -27519,8 +27519,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 695300,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 695327,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -27629,7 +27629,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 293475,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -27715,7 +27715,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 812917,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -27880,7 +27880,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 3966,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -28254,12 +28254,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 800418,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 800412,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -28850,7 +28850,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 234259,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -28906,8 +28906,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 11009,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 11016,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -29686,8 +29686,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 765768,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 765815,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -30658,8 +30658,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 245974,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 246045,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -31898,7 +31898,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 174558,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -32278,7 +32278,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 277427,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -32307,8 +32307,8 @@
       "isShort": false,
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
-      "viewCount": 92646,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 92717,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -32552,7 +32552,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 4399,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -32897,12 +32897,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 749931,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 749986,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -33633,8 +33633,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 8643,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 8636,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -34177,8 +34177,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 5423,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5422,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -34396,8 +34396,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 448904,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 449109,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -34965,7 +34965,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 4351,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -34994,8 +34994,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1989156,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1989577,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -35268,7 +35268,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 4942,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -35484,8 +35484,8 @@
       "isShort": false,
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
-      "viewCount": 5137,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5149,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -35998,8 +35998,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1689999,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1689952,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -36136,8 +36136,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2190129,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2190307,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -37036,7 +37036,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 70758,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -37253,7 +37253,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 929600,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -37500,8 +37500,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 749787,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 750019,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -38044,7 +38044,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 97626,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -38838,8 +38838,8 @@
       "statusCheckedAt": "2026-11-22T01:29:35Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 46413,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 46437,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -38869,7 +38869,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 114174,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -39006,8 +39006,8 @@
       "statusCheckedAt": "2026-11-22T13:16:27Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 245912,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 246013,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -39225,8 +39225,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1378640,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1378630,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -39256,7 +39256,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 688359,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -39446,7 +39446,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 697054,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -39496,12 +39496,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 232743,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -39720,7 +39720,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 245679,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -40125,8 +40125,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 435301,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 435417,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -40290,8 +40290,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 330936,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 331037,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -40593,8 +40593,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1410807,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1410899,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -40681,7 +40681,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 500594,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -40954,7 +40954,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 376055,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -40985,7 +40985,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 175617,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -41286,7 +41286,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 437407,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -41452,7 +41452,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 333210,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -41669,7 +41669,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 3862,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -41860,8 +41860,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 238375,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 238377,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -42162,7 +42162,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 752828,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -42327,8 +42327,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 631611,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 631622,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -42411,8 +42411,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 337574,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 337728,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -43012,8 +43012,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 544114,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 544130,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -43151,7 +43151,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1004590,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -43315,8 +43315,8 @@
       "isShort": false,
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
-      "viewCount": 12596,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 12597,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -43505,8 +43505,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 286725,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 286763,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -43589,8 +43589,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 508531,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 508674,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -44158,7 +44158,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 542482,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -45721,7 +45721,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 509309,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -45991,8 +45991,8 @@
       "isShort": false,
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
-      "viewCount": 61901,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 61916,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -46159,7 +46159,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2735570,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "non_music",
         "members": [],
@@ -46779,8 +46779,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2354328,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2354479,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -46945,7 +46945,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 6966,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -47272,8 +47272,8 @@
       "statusCheckedAt": "2026-11-22T00:05:08Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 493682,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 493687,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -47329,8 +47329,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 928027,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 928014,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -47414,7 +47414,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 19357,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -47577,7 +47577,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 1178,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -47739,8 +47739,8 @@
       "isShort": false,
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
-      "viewCount": 56160,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 56162,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -47796,8 +47796,8 @@
       "isShort": false,
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
-      "viewCount": 70345,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 70379,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -48223,14 +48223,14 @@
       "source": "clip-channel",
       "firstSeenAt": "2026-11-22T15:39:25Z",
       "lastSeenInFeedAt": "2026-11-22T15:39:25Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 4259,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -49121,8 +49121,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1181807,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1181888,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -49152,7 +49152,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1086658,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -49317,7 +49317,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 868135,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -49482,7 +49482,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 3122,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -50291,7 +50291,7 @@
       "clipChannel": "UCXN7c84ft1lgsO1-PS93yYQ",
       "clipMode": "mixed",
       "viewCount": 16874,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -50345,12 +50345,12 @@
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3336156,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3336334,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -50970,7 +50970,7 @@
       "clipChannel": "UC5AWm5mgrnL6NghNzceEEtA",
       "clipMode": "mixed",
       "viewCount": 760,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -51027,7 +51027,7 @@
       "clipChannel": "UCm4aofdqHmbuqAjaTuyE-Ow",
       "clipMode": "song",
       "viewCount": 54715,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -52809,7 +52809,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 984041,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -52973,8 +52973,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1122650,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1122899,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -53163,8 +53163,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1157863,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1157918,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -53513,12 +53513,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1172943,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1173236,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -53736,8 +53736,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1539203,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1539301,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -54498,8 +54498,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1644850,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1644889,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -55176,8 +55176,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1584329,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1584377,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -55748,8 +55748,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 343863,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 343929,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -57261,7 +57261,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 140014,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -57911,7 +57911,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 350289,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -58264,8 +58264,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 863214,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 863179,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -58724,8 +58724,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1879984,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1880363,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -59802,7 +59802,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 287994,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -59994,7 +59994,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 744337,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -60212,8 +60212,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1048125,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1048167,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -60619,7 +60619,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 406477,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -60703,7 +60703,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 564670,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -60733,8 +60733,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 392445,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 392568,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -60791,8 +60791,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1092225,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1092236,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -60821,8 +60821,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1106615,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1106654,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -61471,7 +61471,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 649860,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -61636,7 +61636,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 276506,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -62417,8 +62417,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 254914,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 254959,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -63306,12 +63306,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1814301,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -63513,8 +63513,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1607442,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1607476,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -63544,7 +63544,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2069863,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -64030,8 +64030,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 294150,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 294157,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -64461,12 +64461,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 549280,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -64818,7 +64818,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1063695,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -64955,8 +64955,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1007422,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1007458,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -68679,7 +68679,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1248157,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -70060,8 +70060,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2755084,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2755439,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -71145,8 +71145,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 627809,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 627850,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -71176,7 +71176,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 853223,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -71206,7 +71206,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 411217,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -71235,8 +71235,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3657421,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3657602,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -71261,12 +71261,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 542846,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -71406,8 +71406,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2581510,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2581612,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -72703,8 +72703,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3047438,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3048284,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -73406,8 +73406,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1238967,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1238984,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -74951,7 +74951,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 405704,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -75464,8 +75464,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1418491,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1418508,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -75766,8 +75766,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 17345106,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 17345734,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -76843,12 +76843,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2415700,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2415746,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -77307,8 +77307,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1763706,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1763773,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -78066,7 +78066,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1492556,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -79470,8 +79470,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3563864,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3563910,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -79581,8 +79581,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2463018,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2463831,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -79962,8 +79962,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4247840,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4247776,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -80179,8 +80179,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 788836,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 788978,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -80402,7 +80402,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1217009,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -80459,7 +80459,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 460882,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -80542,8 +80542,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1022845,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1022847,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -80865,12 +80865,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 981955,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 982077,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -81921,8 +81921,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 387448,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 387523,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -82618,12 +82618,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1733118,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -83273,8 +83273,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2085801,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2085994,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -83352,12 +83352,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1518287,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -83606,7 +83606,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1527185,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -83932,8 +83932,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1453804,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1453809,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -84554,8 +84554,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1178643,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1178686,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -84858,8 +84858,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2830298,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2830353,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -85023,8 +85023,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 411141,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 411144,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -85131,7 +85131,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 526587,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -86158,12 +86158,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2035660,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2035956,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -86485,12 +86485,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 463245,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -86658,7 +86658,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 936701,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -87310,8 +87310,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 285656,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 285672,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -88013,7 +88013,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 594243,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -88775,8 +88775,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2642043,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2642609,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -89347,7 +89347,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1193886,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -89377,7 +89377,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 350957,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -89541,8 +89541,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2262500,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2262729,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -89602,7 +89602,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 916308,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -90709,8 +90709,8 @@
       "isShort": false,
       "clipChannel": "UCvDGuxTRaP_9ta2QplUmgBA",
       "clipMode": "song",
-      "viewCount": 26043,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 26047,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -90771,8 +90771,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 679164,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 679245,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -90936,8 +90936,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 5426390,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5426588,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -91315,8 +91315,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2418519,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2418502,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -91345,8 +91345,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1807752,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1807773,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -91403,7 +91403,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1395089,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -91513,8 +91513,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1341305,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1341406,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -92903,8 +92903,8 @@
       "statusCheckedAt": "2026-11-22T00:43:14Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1076829,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1076836,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -93849,8 +93849,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1131758,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1131761,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -94396,7 +94396,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1066715,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -94479,8 +94479,8 @@
       "statusCheckedAt": "2026-11-22T04:13:58Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1315597,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1315632,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -94804,8 +94804,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1741015,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1741212,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -95240,8 +95240,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4639712,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4639793,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -95619,12 +95619,12 @@
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1579694,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1579728,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -95869,8 +95869,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2101394,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2101447,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -96412,7 +96412,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 997061,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -97275,12 +97275,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2428298,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2428350,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -97498,8 +97498,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1350221,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1350236,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -97767,12 +97767,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3235992,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3236136,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -97802,7 +97802,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3106994,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -98372,7 +98372,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 4063192,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -98590,8 +98590,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1938394,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1938578,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -99458,8 +99458,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1098646,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1098648,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -101238,8 +101238,8 @@
       "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2648996,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2649032,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -101291,12 +101291,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 640676,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 640753,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -101538,8 +101538,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 588388,
@@ -102277,7 +102277,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1659563,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -102307,7 +102307,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 4735049,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -102390,8 +102390,8 @@
       "statusCheckedAt": "2026-11-22T07:30:32Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2269998,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2270211,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -102420,8 +102420,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2467785,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2467993,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -103119,12 +103119,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1994963,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1995150,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -103825,7 +103825,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 483940,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -104580,8 +104580,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 476288,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 476337,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -105310,8 +105310,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1926717,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1927002,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -105501,8 +105501,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2462265,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2462316,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -105909,8 +105909,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3185557,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3185626,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -105939,8 +105939,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 782706,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 782768,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -106104,8 +106104,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1511719,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1511789,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -106137,7 +106137,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 562383,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -106476,7 +106476,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2769742,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -107280,12 +107280,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2020048,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2020193,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -108473,7 +108473,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1092841,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -108774,7 +108774,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 854840,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -108858,7 +108858,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 425539,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -109050,8 +109050,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2288568,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2289016,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -111281,8 +111281,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1916486,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1916654,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -111964,7 +111964,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 58293,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -112207,8 +112207,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2034746,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2034985,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -112427,7 +112427,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1752831,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -113261,12 +113261,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 150728,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -114268,8 +114268,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2040202,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2040436,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -114433,8 +114433,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2142197,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2142220,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -114757,7 +114757,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 732513,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -115516,7 +115516,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2933980,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -117979,7 +117979,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 897096,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -118604,8 +118604,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2886241,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2886248,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -119444,7 +119444,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1881366,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -119712,12 +119712,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2936592,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2936653,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -119907,7 +119907,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 5609218,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -121955,8 +121955,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1112853,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1112977,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -122309,8 +122309,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2696487,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2696490,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -123013,7 +123013,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 5033953,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -123284,7 +123284,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1227775,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -124469,7 +124469,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1721084,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -124710,12 +124710,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 11611717,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 11611838,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -125899,8 +125899,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3207233,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3207154,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -126011,8 +126011,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 6301384,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 6301540,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -126579,8 +126579,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1536567,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1536571,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -128381,7 +128381,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1359515,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -129083,8 +129083,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3096228,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3096295,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -129113,8 +129113,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1974497,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1974500,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -129546,8 +129546,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1339410,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1339566,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -129870,7 +129870,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 41692,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -130436,7 +130436,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1290076,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -130461,12 +130461,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1338708,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -131354,12 +131354,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3370697,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -132247,12 +132247,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2539161,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2539170,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -132578,8 +132578,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1590123,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1590116,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "non_music",
         "members": [
@@ -133172,7 +133172,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1123331,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -133203,7 +133203,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1547050,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -133955,8 +133955,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3144196,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3144221,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -133986,8 +133986,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2463471,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2463634,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -134234,7 +134234,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 606248,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -134773,8 +134773,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2688104,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2688395,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -134885,7 +134885,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2317557,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -135340,12 +135340,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2897640,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -135775,8 +135775,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3544307,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3544513,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -135914,7 +135914,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1131154,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -137958,8 +137958,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3706069,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3706093,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -138042,8 +138042,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3003052,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3003151,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -138771,8 +138771,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2156449,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2156494,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -138802,7 +138802,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2051657,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -139512,7 +139512,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 760479,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -140023,12 +140023,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1487808,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1487847,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -140352,8 +140352,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1695946,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1696036,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "non_music",
         "members": [
@@ -140866,8 +140866,8 @@
       "statusCheckedAt": "2026-11-22T00:43:14Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3217743,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3217766,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -141889,8 +141889,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4627661,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4627744,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -142081,8 +142081,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2442374,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2442628,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -142221,7 +142221,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 19765,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "collab_cover",
         "members": [
@@ -142544,8 +142544,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1076261,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1076342,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -142683,7 +142683,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3461614,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -143738,8 +143738,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2027050,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2027293,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -144900,8 +144900,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4698681,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4698673,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -145960,7 +145960,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1733817,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -147094,7 +147094,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2485929,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -147231,8 +147231,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1463555,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1463677,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -148172,8 +148172,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 884161,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 884171,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -148793,7 +148793,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2278863,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -149610,8 +149610,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3003142,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3003417,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -149694,8 +149694,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 248380,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 248408,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -149859,8 +149859,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 5130431,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5130511,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -152095,8 +152095,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3280718,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3280827,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -152125,8 +152125,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3835533,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3835582,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -152453,7 +152453,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 12554254,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -154445,7 +154445,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 777431,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -154983,8 +154983,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4497566,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4497580,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -155151,8 +155151,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 5388232,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5388209,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -157788,7 +157788,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2424503,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -157840,12 +157840,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2235458,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2235627,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -158037,7 +158037,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2645905,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -158150,8 +158150,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 12404237,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 12404377,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -160206,7 +160206,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1405360,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -161228,8 +161228,8 @@
       "statusCheckedAt": "2026-11-22T07:30:32Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 260247,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 260252,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -161717,8 +161717,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2636901,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2636939,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -161774,8 +161774,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3712553,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3712604,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -161831,8 +161831,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 5531352,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5531326,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -161888,8 +161888,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 7906208,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 7906242,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -161945,8 +161945,8 @@
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2873973,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2874083,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -162349,8 +162349,8 @@
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2130213,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2130330,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -162755,8 +162755,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 4350683,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 4350994,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -164103,8 +164103,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 728669,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 728680,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -165237,7 +165237,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1505654,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -165454,7 +165454,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1973683,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -165616,8 +165616,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3174165,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3174205,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -166131,7 +166131,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 326560,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "stream_song",
         "members": [
@@ -166430,8 +166430,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2941260,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2941267,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -167346,8 +167346,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 6628962,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 6629051,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -167563,12 +167563,12 @@
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
       "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 4890161,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -168587,7 +168587,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1036089,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -168639,12 +168639,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3249382,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -169209,8 +169209,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 5111187,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5111244,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -169403,8 +169403,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 15351505,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 15351556,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -169724,12 +169724,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1351548,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1351590,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -170087,7 +170087,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 169587,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "original",
         "members": [
@@ -171175,7 +171175,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1698224,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "live_special",
         "members": [
@@ -171286,7 +171286,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3651103,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -172280,7 +172280,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 754028,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -173224,7 +173224,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1145350,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -173333,7 +173333,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 4248035,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -174625,12 +174625,12 @@
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
       "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3808027,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -175253,8 +175253,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 72129,
@@ -175582,8 +175582,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3674818,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3674931,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -175802,7 +175802,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2406100,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -176613,8 +176613,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2410816,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2410837,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -177207,7 +177207,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3597874,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -179090,8 +179090,8 @@
       "statusCheckedAt": "2026-11-22T17:34:33Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 6197300,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 6197349,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -179386,8 +179386,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1281706,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1281821,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -180358,7 +180358,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2136945,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -180710,7 +180710,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 40833,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -182595,7 +182595,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1640028,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -183511,8 +183511,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 786171,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 786192,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -185397,7 +185397,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 1835812,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -185426,8 +185426,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 7928785,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 7928877,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -185510,8 +185510,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2260389,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2260396,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -185536,12 +185536,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 8327212,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 8327297,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -185891,7 +185891,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2069409,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -185974,8 +185974,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 2114433,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 2114442,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -186513,12 +186513,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 10041000,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 10040973,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -186737,7 +186737,7 @@
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2705769,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -187115,8 +187115,8 @@
       "statusCheckedAt": "2026-11-22T15:35:50Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 5469615,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 5469678,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -187332,8 +187332,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 3869373,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 3869585,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -187684,8 +187684,8 @@
       "statusCheckedAt": null,
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 736392,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 736447,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -188007,8 +188007,8 @@
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 1731705,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 1731801,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -188139,12 +188139,12 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 3567455,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -188252,8 +188252,8 @@
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
       "isShort": false,
-      "viewCount": 7585815,
-      "viewCountAt": "2026-11-22T20:35:49Z",
+      "viewCount": 7585811,
+      "viewCountAt": "2026-11-22T21:33:01Z",
       "auto": {
         "category": "solo_cover",
         "members": [
