@@ -1,4 +1,4 @@
-import { h, clear, fmt1 } from "./dom.js";
+import { h, clear, fmt1, add } from "./dom.js";
 import {
   derived, state, getVideoRating, setSongScore, setMemberItem, clearMemberVideo, setRubricItem, mergedRatings,
 } from "./store.js";
@@ -75,7 +75,7 @@ function videoEditor(id) {
   const toggle = h("button", { type: "button", onclick: () => {
     embedOn = !embedOn;
     clear(embedBox);
-    if (embedOn) embedBox.append(h("iframe", { src: `https://www.youtube-nocookie.com/embed/${id}`, title: "YouTube 미리보기", loading: "lazy", allowfullscreen: true }));
+    if (embedOn) add(embedBox, h("iframe", { src: `https://www.youtube-nocookie.com/embed/${id}`, title: "YouTube 미리보기", loading: "lazy", allowfullscreen: true }));
     toggle.textContent = embedOn ? "미리보기 닫기" : "YouTube 미리보기 열기";
   } }, "YouTube 미리보기 열기");
   const scoreLine = h("span", { class: "muted small" });
@@ -112,7 +112,7 @@ function rubricEditor() {
   const build = () => {
     clear(box);
     const items = mergedRatings().memberRubric[rubricMember]?.items ?? {};
-    box.append(RUBRIC_ITEMS.map((it) => {
+    add(box, RUBRIC_ITEMS.map((it) => {
       const hint = RUBRIC_HINTS[it.key];
       return h("div", { class: "rubric-item" },
         sliderField({ label: `${it.label} (만점 ${it.max})`, max: it.max, step: 0.1, value: items[it.key] ?? null, title: hint,
@@ -136,13 +136,13 @@ export function renderScoring(root) {
   const listBox = h("ul", { class: "pick-list" });
   const fill = () => {
     const q = listQuery.trim().toLowerCase();
-    clear(listBox).append(d.videoRows.filter((r) => !q || r.title.toLowerCase().includes(q)).slice(0, 300).map((r) =>
+    add(clear(listBox), d.videoRows.filter((r) => !q || r.title.toLowerCase().includes(q)).slice(0, 300).map((r) =>
       h("li", {}, h("button", { type: "button", class: `pick${r.videoId === selectedId ? " on" : ""}`, onclick: () => { selectVideo(r.videoId); renderScoring(root); } },
         r.title, h("span", { class: "muted small" }, ` ${r.videoId}`),
         r.songScore !== null ? h("span", { class: "badge" }, fmt1(r.songScore)) : h("span", { class: "badge unrated" }, "미채점")))));
   };
   fill();
-  root.append(
+  add(root, 
     h("div", { class: "split" },
       h("section", { class: "card" },
         h("h3", {}, "영상 선택"),

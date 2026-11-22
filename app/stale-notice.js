@@ -1,5 +1,5 @@
 // Warning shown (top banner + export view) while a stale draft is held aside. Offers keep / discard.
-import { h, clear } from "./dom.js";
+import { h, clear, add } from "./dom.js";
 import { state, keepStaleDraft, discardDraft, discardCount } from "./store.js";
 import { describeStale } from "../lib/draft-guard.mjs";
 
@@ -14,7 +14,7 @@ export function renderStaleNotice(el, onChange) {
   const st = state.stale;
   el.hidden = !st;
   if (!st) return el;
-  el.append(
+  add(el, 
     h("strong", {}, "⚠ 오래된 초안이 감지되어 적용을 보류했습니다. "),
     describeStale(st.report),
     " 지금은 저장소 값이 표시·내보내기에 사용됩니다. ",

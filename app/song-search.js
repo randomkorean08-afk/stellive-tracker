@@ -1,4 +1,4 @@
-import { h, clear, fmt1, STATUS_LABELS } from "./dom.js";
+import { h, clear, fmt1, STATUS_LABELS, add } from "./dom.js";
 import { state } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
 import { CATEGORY_FILTERS, filterSongs, formatDateOnly } from "../lib/song-search.mjs";
@@ -18,12 +18,12 @@ export function songSearchSection(d) {
     const altTitles = Object.fromEntries(Object.entries(state.repo?.videos?.videos ?? {}).map(([id, v]) => [id, v.previousTitles ?? []]));
     const rows = filterSongs(d.videoRows, { ...filters, altTitles });
     clear(out);
-    out.append(h("p", { class: "muted small song-count" }, `검색 결과 ${rows.length}곡`));
+    add(out, h("p", { class: "muted small song-count" }, `검색 결과 ${rows.length}곡`));
     if (!rows.length) {
-      out.append(h("p", { class: "muted small" }, "조건에 맞는 곡이 없습니다."));
+      add(out, h("p", { class: "muted small" }, "조건에 맞는 곡이 없습니다."));
       return;
     }
-    out.append(
+    add(out, 
       h("ul", { class: "song-list" }, rows.map((r) => {
         const ytUrl = `https://www.youtube.com/watch?v=${encodeURIComponent(r.videoId)}`;
         const faded = r.excluded || r.status === "deleted" || r.status === "private";

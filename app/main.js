@@ -1,4 +1,4 @@
-﻿import { h, clear, DISCLAIMER } from "./dom.js";
+﻿import { h, clear, DISCLAIMER, add } from "./dom.js";
 import { loadAll, state, subscribe, dirtyCount, discardDraft, discardCount, storageOk } from "./store.js";
 import { renderStaleNotice, confirmDiscard } from "./stale-notice.js";
 import { renderScorecard } from "./scorecard.js";
@@ -33,7 +33,7 @@ function show(tab) {
     else if (tab === "export") renderExport(root, rerender);
   } catch (e) {
     console.error(e);
-    clear(root).append(h("p", { class: "warn-text" }, `화면 표시 중 오류: ${e.message}`));
+    add(clear(root), h("p", { class: "warn-text" }, `화면 표시 중 오류: ${e.message}`));
   }
 }
 
@@ -43,7 +43,7 @@ function header() {
   subscribe(refresh);
   refresh();
   const link = h("a", { href: location.href, target: "_blank", rel: "noopener", class: "newwin" }, "새 창에서 열기");
-  document.getElementById("topbar").append(
+  add(document.getElementById("topbar"), 
     h("h1", {}, "스텔라이브 보컬 트래커"),
     h("span", { class: "muted small" }, `데이터 갱신 ${state.repo.videos.updatedAt ?? "-"}`),
     dirty,
@@ -58,7 +58,7 @@ function header() {
   subscribe(paintStale);
   paintStale();
   const tabs = document.getElementById("tabs");
-  for (const [k, l] of TABS) tabs.append(h("button", { type: "button", role: "tab", "data-tab": k, onclick: () => show(k) }, l));
+  for (const [k, l] of TABS) add(tabs, h("button", { type: "button", role: "tab", "data-tab": k, onclick: () => show(k) }, l));
 }
 
 (async function boot() {

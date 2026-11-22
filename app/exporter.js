@@ -1,4 +1,4 @@
-﻿import { h, clear, DISCLAIMER } from "./dom.js";
+﻿import { h, clear, DISCLAIMER, add } from "./dom.js";
 import { mergedRatings, mergedOverrides, partialInputs, applyImported, state } from "./store.js";
 import { renderStaleNotice } from "./stale-notice.js";
 import { validateImport, memberKeysFrom } from "../lib/import-validate.mjs";
@@ -42,7 +42,7 @@ function downloadText(name, text) {
   try {
     const url = URL.createObjectURL(new Blob([text], { type: "application/json" }));
     const a = h("a", { href: url, download: name });
-    document.body.append(a);
+    add(document.body, a);
     a.click();
     a.remove();
     setTimeout(() => URL.revokeObjectURL(url), 5000);
@@ -80,7 +80,7 @@ export function renderExport(root, rerender) {
   const partial = partialInputs();
   const stale = h("div", { class: "stale-warn", role: "alert", hidden: true });
   renderStaleNotice(stale, rerender);
-  root.append(
+  add(root, 
     stale,
     h("p", { class: "banner-inline" }, DISCLAIMER),
     partial.length ? h("p", { class: "warn-text" }, `경고: 멤버 5항목이 부분 입력된 ${partial.length}건이 있습니다. 이 값은 멤버 점수에 반영되지 않습니다(영상 ID: ${partial.slice(0, 3).map((p) => p.id).join(", ")}${partial.length > 3 ? " …" : ""}).`) : null,
@@ -96,7 +96,7 @@ export function renderExport(root, rerender) {
     const f = e.target.files?.[0];
     if (!f) return;
     const res = parseImport(await f.text());
-    if (res.error) { preview.append(h("p", { class: "warn-text" }, res.error)); return; }
+    if (res.error) { add(preview, h("p", { class: "warn-text" }, res.error)); return; }
     const cur = res.kind === "ratings" ? mergedRatings() : mergedOverrides();
     const diffs = [];
     const cmp = (label, a, b) => {
@@ -108,11 +108,11 @@ export function renderExport(root, rerender) {
     };
     if (res.kind === "ratings") { cmp("루브릭", cur.memberRubric, res.memberRubric); cmp("영상", cur.videoRatings, res.videoRatings); }
     else cmp("override", cur.videos, res.overrides);
-    preview.append(
+    add(preview, 
       res.warnings?.length ? h("p", { class: "small muted" }, `경고: ${res.warnings.map((w) => w.path).join(", ")} (알 수 없는 키, 무시됨)`) : null,
       h("p", {}, `${res.kind}.json 미리보기: 변경 ${diffs.length}건`),
       h("ul", { class: "small" }, diffs.slice(0, 50).map((d) => h("li", {}, d))),
       diffs.length ? h("button", { type: "button", onclick: () => { applyImported(res); status.textContent = `초안에 ${diffs.length}건 반영했습니다.`; rerender(); } }, "초안에 반영") : null);
   } });
-  root.append(h("section", { class: "card" }, h("h3", {}, "가져오기"), h("p", { class: "small muted" }, "ratings.json / overrides.json 파일을 선택하면 검증 후 변경 내용을 미리 보여주고, 확인하면 초안에 반영합니다."), file, preview));
+  add(root, h("section", { class: "card" }, h("h3", {}, "가져오기"), h("p", { class: "small muted" }, "ratings.json / overrides.json 파일을 선택하면 검증 후 변경 내용을 미리 보여주고, 확인하면 초안에 반영합니다."), file, preview));
 }

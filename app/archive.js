@@ -1,4 +1,4 @@
-import { h, clear, fmt1, STATUS_LABELS, REASON_LABELS } from "./dom.js";
+import { h, clear, fmt1, STATUS_LABELS, REASON_LABELS, add } from "./dom.js";
 import { derived, state } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
 
@@ -16,7 +16,7 @@ export function renderArchive(root, openScoring) {
     h("select", { onchange: (e) => { f[name] = e.target.value; renderArchive(root, openScoring); } },
       opts.map(([v, l]) => h("option", { value: v, selected: f[name] === v }, l)));
   const members = state.repo.channels.channels.filter((c) => c.type === "member");
-  root.append(
+  add(root, 
     h("div", { class: "filters" },
       h("label", {}, "멤버 ", sel("member", [["", "전체"], ...members.map((m) => [m.key, m.displayName])])),
       h("label", {}, "카테고리 ", sel("category", [["", "전체"], ...CATEGORIES.map((c) => [c.key, c.label])])),
@@ -27,7 +27,7 @@ export function renderArchive(root, openScoring) {
         h("input", { type: "search", value: f.q, oninput: (e) => { f.q = e.target.value; list(); } }))),
   );
   const out = h("div", { class: "table-wrap" });
-  root.append(out);
+  add(root, out);
 
   function list() {
     const q = f.q.trim().toLowerCase();
@@ -42,7 +42,7 @@ export function renderArchive(root, openScoring) {
       if (q && !r.title.toLowerCase().includes(q)) return false;
       return true;
     });
-    clear(out).append(
+    add(clear(out), 
       h("p", { class: "muted small" }, `${rows.length}건 표시 (ID 기준, 같은 곡명이라도 영상이 다르면 별개 항목)`),
       h("div", { class: "vlist" }, rows.map((r) => {
         const rated = r.songScore !== null || Object.values(r.memberScores).some((v) => v !== null);

@@ -1,4 +1,4 @@
-import { h, clear } from "./dom.js";
+import { h, clear, add } from "./dom.js";
 import { derived, state } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
 
@@ -8,10 +8,10 @@ export function renderBaseline(root) {
   clear(root);
   const d = derived();
   const base = state.repo.baseline;
-  if (!base) { root.append(h("p", { class: "muted" }, "기준선 파일을 불러오지 못했습니다.")); return; }
+  if (!base) { add(root, h("p", { class: "muted" }, "기준선 파일을 불러오지 못했습니다.")); return; }
   const cols = [...COUNTED.map((c) => [c.key, c.label]), ["total", "합계"]];
   const sign = (n) => (n === null ? "" : n > 0 ? `+${n}` : String(n));
-  root.append(
+  add(root, 
     h("p", { class: "muted" }, "기준선(PDF 2026-11-17)은 참고용 라벨로만 표시하며 계산에는 더해지지 않습니다. 기준선 수치는 멤버 슬롯(참여 멤버마다 1) 기준입니다."),
     h("div", { class: "table-wrap" }, h("table", { class: "diff" },
       h("thead", {}, h("tr", {}, h("th", {}, "멤버"), cols.map(([, l]) => h("th", {}, l, h("br"), h("span", { class: "tiny" }, "계산 / 기준선(참고) / 차이"))))),

@@ -2,6 +2,9 @@
 const SVG_NS = "http://www.w3.org/2000/svg";
 const PROPS = new Set(["value", "checked", "disabled", "selected", "textContent", "htmlFor"]);
 
+/** Safe append: flattens nested arrays and skips null/undefined/false. Never pass arrays to native Element.append. */
+export function add(el, ...kids) { append(el, kids); return el; }
+
 function append(el, kids) {
   for (const k of kids) {
     if (k == null || k === false) continue;

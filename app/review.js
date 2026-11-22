@@ -1,4 +1,4 @@
-import { h, clear, REASON_LABELS } from "./dom.js";
+import { h, clear, REASON_LABELS, add } from "./dom.js";
 import { derived, state, setOverride, mergedOverrides } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
 import { memberName } from "./archive.js";
@@ -9,8 +9,8 @@ export function renderReview(root, rerender) {
   clear(root);
   const d = derived();
   const members = state.repo.channels.channels.filter((c) => c.type === "member");
-  root.append(h("p", { class: "muted" }, `검토 대기 ${d.reviewQueue.length}건. 카테고리·멤버를 고르면 overrides 초안에 추가되고, 내보내기 탭에서 overrides.json으로 내보냅니다.`));
-  if (!d.reviewQueue.length) root.append(h("p", {}, "검토할 영상이 없습니다."));
+  add(root, h("p", { class: "muted" }, `검토 대기 ${d.reviewQueue.length}건. 카테고리·멤버를 고르면 overrides 초안에 추가되고, 내보내기 탭에서 overrides.json으로 내보냅니다.`));
+  if (!d.reviewQueue.length) add(root, h("p", {}, "검토할 영상이 없습니다."));
   for (const id of d.reviewQueue) {
     const row = d.videoRows.find((r) => r.videoId === id);
     const video = state.repo.videos.videos[id];
@@ -32,7 +32,7 @@ export function renderReview(root, rerender) {
       setOverride(id, entry);
       rerender();
     };
-    root.append(h("article", { class: "card review-item", "data-id": id },
+    add(root, h("article", { class: "card review-item", "data-id": id },
       h("strong", {}, row.title),
       h("div", { class: "small muted" }, `${id} · ${row.publishedAt ?? "-"} · 자동 분류: ${CATEGORIES.find((c) => c.key === video.auto.category)?.label}`),
       h("div", { class: "chips" }, row.reviewReasons.map((r) => h("span", { class: "chip warn" }, REASON_LABELS[r] ?? r)),

@@ -1,4 +1,4 @@
-import { h, clear, fmt1 } from "./dom.js";
+import { h, clear, fmt1, add } from "./dom.js";
 import { derived, state } from "./store.js";
 import { RUBRIC_ITEMS, CATEGORIES, MIN_RATED } from "../lib/derive.mjs";
 import { radarChart, abChart, categoryChart } from "./charts.js";
@@ -56,7 +56,7 @@ export function renderScorecard(root) {
   clear(root);
   const d = derived();
   const reviewN = d.reviewQueue.length;
-  root.append(
+  add(root, 
     h("section", { class: "summary" },
       h("div", { class: "stat" }, h("b", {}, String(d.uniqueVideos)), h("span", {}, "고유 영상 수 (영상 1개 = 1)")),
       h("div", { class: "stat" }, h("b", {}, String(d.totalSlots)), h("span", {}, "멤버 슬롯 합 (참여 멤버마다 1)")),
@@ -71,7 +71,7 @@ export function renderScorecard(root) {
   );
   let cards = d.memberCards;
   if (sortMode === "B") cards = [...cards].sort((a, b) => (a.rankB ?? 1e9) - (b.rankB ?? 1e9) || a.rankA - b.rankA);
-  root.append(h("div", { class: "grid" }, cards.map(memberCard)));
+  add(root, h("div", { class: "grid" }, cards.map(memberCard)));
 
   radarMember ??= d.memberCards[0]?.key;
   const sel = h("select", { onchange: (e) => { radarMember = e.target.value; renderScorecard(root); } },
@@ -82,5 +82,5 @@ export function renderScorecard(root) {
     radarChart(d.memberCards.find((c) => c.key === radarMember) ?? d.memberCards[0]),
     abChart(d.memberCards),
     categoryChart(d.memberCards));
-  root.append(charts);
+  add(root, charts);
 }
