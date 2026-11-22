@@ -1,0 +1,6 @@
+{
+  "schemaVersion": 1,
+  "_note": "사용자 관리 파일. 노래 전문 키리누키(클리퍼) 채널을 channels에 추가하면 매시간 수집해 방송노래(stream_song)로 분류한다(쇼츠·노래방송 풀 VOD 제외, 멤버는 제목에서 감지, 못 찾으면 검토 대기). channelId는 UC로 시작하는 24자. collect:false면 수집 중지. searchQueries는 --search-clips(매일 00 UTC = 09 KST)로 최근 24시간 업로드를 검색해 검토 대기열에 후보로 넣는다(쿼리당 100 quota). 예시: { \"channelId\": \"UCxxxxxxxxxxxxxxxxxxxxxx\", \"name\": \"채널 이름\", \"note\": \"메모\" }",
+  "channels": [],
+  "searchQueries": ["스텔라이브 노래", "스텔라이브 노래방송", "스텔라이브 커버 클립"]
+}

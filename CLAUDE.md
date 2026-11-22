@@ -14,7 +14,7 @@
 3. The specialist never writes, deletes or migrates anything in `data/`.
 4. Every change to the app is reviewed by the lead (diff + `npm test` green, currently 152/152).
 5. Protected data — never modify without explicit user approval:
-   `data/ratings.json`, `data/overrides.json`, `data/channels-lock.json`, `data/baseline/**`, `tests/fixtures/**`.
+   `data/ratings.json`, `data/overrides.json`, `data/channels-lock.json`, `data/clip-channels.json`, `data/baseline/**`, `tests/fixtures/**`.
    The 604-track figure lives in `data/baseline/baseline-2026-11-17.json` (member-slot count, read-only reference).
    `data/videos.json` is written only by `scripts/fetch-videos.mjs` (merge never deletes).
 6. Independent implementation tasks use separate Git worktrees (repo: C:devstellive-tracker).

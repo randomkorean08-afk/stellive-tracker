@@ -9,6 +9,10 @@ on:
         description: "Backfill full upload history (needs YOUTUBE_API_KEY secret)"
         type: boolean
         default: false
+      search_clips:
+        description: "Search last-24h singing clips now (needs YOUTUBE_API_KEY; 100 quota per query)"
+        type: boolean
+        default: false
       status_limit:
         description: "Max oEmbed status checks this run"
         type: string
@@ -41,11 +45,14 @@ jobs:
           BACKFILL: ${{ github.event.inputs.backfill }}
           STATUS_LIMIT: ${{ github.event.inputs.status_limit }}
           EVENT: ${{ github.event_name }}
+          SEARCH_CLIPS: ${{ github.event.inputs.search_clips }}
         run: |
           ARGS="--longform-feed"
           if [ "$BACKFILL" = "true" ]; then ARGS="$ARGS --backfill"; fi
           if [ -n "$STATUS_LIMIT" ]; then ARGS="$ARGS --status-limit $STATUS_LIMIT"; fi
           if [ "$EVENT" = "workflow_dispatch" ]; then ARGS="$ARGS --force-views"; fi
+          # daily clip search: the 00 UTC (09 KST) hourly run, or on demand
+          if [ "$(date -u +%H)" = "00" ] || [ "$SEARCH_CLIPS" = "true" ]; then ARGS="$ARGS --search-clips"; fi
           node scripts/fetch-videos.mjs $ARGS
 
       - name: Commit data/videos.json if changed

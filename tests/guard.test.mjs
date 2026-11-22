@@ -14,7 +14,7 @@ const sources = ["lib", "scripts"].flatMap((d) => walk(path.join(ROOT, d))).filt
 
 test("guard: lib/ and scripts/ never write to ratings/overrides/lock/baseline/docs/fixtures", () => {
   assert.ok(sources.length >= 5);
-  const forbidden = /(ratings|overrides|channels-lock|baseline|fixtures|docs)/i;
+  const forbidden = /(ratings|overrides|channels-lock|clip-channels|baseline|fixtures|docs)/i;
   for (const f of sources) {
     const src = readFileSync(f, "utf8");
     // every writeFile-like call must not mention a protected target in its argument list
@@ -46,7 +46,7 @@ test("guard: no external npm dependencies", () => {
 });
 
 test("guard: lib/ modules used by the browser have no Node-only imports", () => {
-  for (const f of ["video-id.mjs", "classify.mjs", "derive.mjs", "draft-guard.mjs", "serialize-export.mjs", "song-search.mjs"]) {
+  for (const f of ["video-id.mjs", "classify.mjs", "derive.mjs", "draft-guard.mjs", "serialize-export.mjs", "song-search.mjs", "clip-dedupe.mjs"]) {
     const src = readFileSync(path.join(ROOT, "lib", f), "utf8");
     assert.ok(!/from\s+["']node:/.test(src) && !/require\(/.test(src) && !/process\./.test(src), f);
   }

@@ -3,7 +3,9 @@
 // (ratings / overrides / channels-lock / baseline / docs / fixtures are read-only for the bot.)
 //
 // Usage: node scripts/fetch-videos.mjs [--dry-run] [--no-status] [--status-limit N]
-//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--force-views] [--no-shorts-check] [--shorts-limit N] [--reclassify-all]
+//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--force-views] [--no-shorts-check] [--shorts-limit N] [--reclassify-all] [--search-clips]
+// Clips: data/clip-channels.json channels are collected as 방송노래; --search-clips (daily, needs key, 100 quota/query)
+// queues last-24h search results as 방송노래 candidates in the review queue.
 // Existing videos keep their stored classification; only new/renamed videos are classified (use --reclassify-all after rule changes).
 // Status checks: music videos only; deleted/private are final.
 // Shorts: music/unknown videos are checked once via youtube.com/shorts/<id> (200 = Shorts) and excluded.
@@ -24,11 +26,12 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const VIDEOS_PATH = path.join(ROOT, "data", "videos.json");
 const LOCK_PATH = path.join(ROOT, "data", "channels-lock.json");
 const OVERRIDES_PATH = path.join(ROOT, "data", "overrides.json"); // read-only (view-count targeting)
+const CLIP_CHANNELS_PATH = path.join(ROOT, "data", "clip-channels.json"); // read-only: clipper channels + search queries
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const DELAY_MS = 400;
 
 function parseArgs(argv) {
-  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, forceViews: false, shorts: true, shortsLimit: 500, reclassifyAll: false };
+  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, forceViews: false, shorts: true, shortsLimit: 500, reclassifyAll: false, searchClips: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry-run") o.dryRun = true;
@@ -39,6 +42,7 @@ function parseArgs(argv) {
     else if (a === "--force-views") o.forceViews = true;
     else if (a === "--no-shorts-check") o.shorts = false;
     else if (a === "--reclassify-all") o.reclassifyAll = true;
+    else if (a === "--search-clips") o.searchClips = true;
     else if (a === "--shorts-limit") o.shortsLimit = Number(argv[++i]);
     else if (a === "--views-limit") o.viewsLimit = Number(argv[++i]);
     else if (a.startsWith("--views-limit=")) o.viewsLimit = Number(a.split("=")[1]);
@@ -116,6 +120,18 @@ async function fetchViewCounts(ids, apiKey) {
   return stats;
 }
 
+/** search.list (100 quota units per call): videos uploaded in the last 24h matching q. Never prints the URL. */
+async function searchRecentClips(q, apiKey, now) {
+  const after = new Date(Date.parse(now) - 24 * 3600e3).toISOString().replace(/.d{3}Z$/, "Z");
+  const url = "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&order=date&maxResults=50&regionCode=KR&relevanceLanguage=ko" +
+    `&publishedAfter=${encodeURIComponent(after)}&q=${encodeURIComponent(q)}&key=${encodeURIComponent(apiKey)}`;
+  const res = await httpGet(url);
+  if (res.status !== 200) throw new Error(`search.list HTTP ${res.status}`);
+  const j = await res.json();
+  return (j.items ?? []).map((it) => ({ videoId: normalizeVideoId(it.id?.videoId ?? ""), title: it.snippet?.title ?? "", publishedAt: it.snippet?.publishedAt ?? null, channelId: it.snippet?.channelId ?? null }))
+    .filter((e) => e.videoId);
+}
+
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const lock = await readJson(LOCK_PATH);
@@ -148,6 +164,32 @@ async function main() {
       } catch (e) {
         feedErrors.push(`${ch.key} (backfill): ${e.message}`);
       }
+    }
+  }
+
+  // ---- 1b) clipper channels (방송노래) + daily keyword search ----
+  let clipCfg = { channels: [], searchQueries: [] };
+  try { clipCfg = { ...clipCfg, ...(await readJson(CLIP_CHANNELS_PATH)) }; } catch { /* optional file */ }
+  const clipChannels = (clipCfg.channels ?? []).filter((c) => /^UC[w-]{22}$/.test(c.channelId ?? "") && c.collect !== false);
+  for (const c of clipChannels) {
+    try {
+      const entries = await fetchFeed({ channelId: c.channelId }, true); // long-form playlist first (no Shorts)
+      for (const e of entries) incoming.push({ ...e, channelKey: null, clipChannel: c.channelId, source: "clip-channel" });
+    } catch (e) { feedErrors.push(`clip ${c.name ?? c.channelId}: ${e.message}`); }
+    await sleep(DELAY_MS);
+  }
+  let searchFound = 0;
+  if (opts.searchClips && !apiKey) console.warn("[warn] --search-clips requested but YOUTUBE_API_KEY is not set; skipping search.");
+  if (opts.searchClips && apiKey) {
+    const known = new Set([...(lock.channels ?? []).map((c) => c.channelId), ...clipChannels.map((c) => c.channelId)].filter(Boolean));
+    for (const q of clipCfg.searchQueries ?? []) {
+      try {
+        for (const e of await searchRecentClips(q, apiKey, now)) {
+          if (known.has(e.channelId) || prevVideos[e.videoId]) continue; // official/clip channels are collected directly
+          incoming.push({ videoId: e.videoId, title: e.title, publishedAt: e.publishedAt, channelKey: null, searchQuery: q, source: "search" });
+          searchFound++;
+        }
+      } catch (e) { feedErrors.push(`search "${q}": ${e.message}`); }
     }
   }
 
@@ -214,6 +256,8 @@ async function main() {
   console.log(`channels collected: ${collectable.length}, feed entries: ${incoming.length}`);
   for (const [k, v] of Object.entries(perChannel)) console.log(`  ${k}: new ${v.added.size}, updated ${v.updated.size}`);
   console.log(`new: ${merged.added.length}, updated(existing): ${merged.updated.length}, total videos: ${Object.keys(videos).length}`);
+  if (clipChannels.length) console.log(`clip channels: ${clipChannels.length}`);
+  if (opts.searchClips) console.log(`search candidates (new): ${searchFound}`);
   if (shortsChecked) console.log(`shorts check: ${shortsChecked} checked, ${shortsFound} are Shorts (excluded)`);
   if (viewsUpdated) console.log(`view counts updated: ${viewsUpdated}`);
   const reviewNew = merged.added.filter((id) => videos[id].auto.reviewRequired).length;

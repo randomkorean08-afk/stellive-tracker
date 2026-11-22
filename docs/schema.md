@@ -277,3 +277,9 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 - 자동 분류: 강한 키워드(노래방송·가창·열창·sing·노래 클립 등) → R45 자동. 약한 키워드(노래·歌·부른·불러) → R46 후보 + `stream_song_weak` 검토 대기(관리자 승인 후 노출). 노래방송 풀 VOD는 계속 `excluded_stream`(D4).
 - R25(클립+노래 맥락, 노래방송 컷·하이라이트) → `stream_song` (픽스처 T07 변경 사용자 승인 2026-11-22).
 - 수동 추가: `node scripts/add-clip.mjs <URL|ID> --members <키|이름>[,...] [--song 곡명]`. 어느 채널이든 가능하며 `source: "manual"`로 저장되고 재분류하지 않는다. 쇼츠는 거부한다.
+
+## 부록: 멤버별 보기·키리누키 수집·중복 클립 (2026-11-22)
+
+- 멤버별 보기: 멤버가 effective `members`에 포함된 노출 곡만 보여준다. 단체곡은 실제 참여 멤버 창에만 나타난다. 요약에는 참여곡, 솔로·듀엣, 단체곡, 방송노래 수와 평균 기준 점수(B: 단체곡·방송노래 제외)를 표시한다.
+- `data/clip-channels.json`(사용자 소유, 스크립트는 읽기만 함): `channels[]`(`channelId` UC…24자, `name`, `note`, `collect`)는 매시간 수집해 방송노래로 분류한다(쇼츠·풀 VOD 제외). 제목에서 멤버를 못 찾으면 검토 대기로 보낸다. `searchQueries[]`는 `--search-clips`(매일 00 UTC = 09 KST, 쿼리당 100 quota)로 최근 24시간 업로드를 검색해 검토 대기(`search_candidate`)로 넣는다. 영상 필드는 `clipChannel` / `searchQuery`.
+- 중복 클립 접기(`lib/clip-dedupe.mjs`): 같은 멤버 구성, 같은 정규화 곡명, 업로드 3일 이내인 방송노래 클립은 조회수가 가장 높은 1개만 기본 노출하고 나머지는 접는다("중복 클립 모두 보기"로 펼침). 3일을 넘으면 다른 무대로 본다. 표시 전용이며 데이터는 지우지 않는다.

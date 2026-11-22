@@ -3,6 +3,7 @@ import { loadAll, state, subscribe, dirtyCount, discardDraft, discardCount, stor
 import { renderStaleNotice, confirmDiscard } from "./stale-notice.js";
 import { renderScorecard } from "./scorecard.js";
 import { renderGallery } from "./gallery.js";
+import { renderMembers } from "./members.js";
 import { renderReview } from "./review.js";
 import { renderBaseline } from "./baseline.js";
 import { renderExport } from "./exporter.js";
@@ -12,6 +13,7 @@ const ADMIN = new URLSearchParams(location.search).has("admin");
 const TABS = [
   ["scorecard", "대시보드"],
   ["gallery", "노래 갤러리"],
+  ["members", "멤버별 보기"],
   ...(ADMIN ? [["review", "검토 큐"], ["baseline", "기준선 대조"], ["export", "내보내기"]] : []),
 ];
 let current = "scorecard";
@@ -24,6 +26,7 @@ function show(tab) {
   try {
     if (tab === "scorecard") renderScorecard(root);
     else if (tab === "gallery") renderGallery(root);
+    else if (tab === "members") renderMembers(root);
     else if (tab === "review" && ADMIN) renderReview(root, rerender);
     else if (tab === "baseline" && ADMIN) renderBaseline(root);
     else if (tab === "export" && ADMIN) renderExport(root, rerender);
