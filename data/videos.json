@@ -1,8 +1,89 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T07:30:32Z",
+  "updatedAt": "2026-11-22T10:03:41Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
+    "XquY5tYP2eU": {
+      "videoId": "XquY5tYP2eU",
+      "title": "알아 1115! 사장님 생일 준비 대작전",
+      "previousTitles": [],
+      "channelKey": "arahashi-tabi",
+      "seenOnChannels": [
+        "arahashi-tabi"
+      ],
+      "publishedAt": "2026-11-22T08:30:29+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-22T10:03:41Z",
+      "lastSeenInFeedAt": "2026-11-22T10:03:41Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "4nY06Nb4rrg": {
+      "videoId": "4nY06Nb4rrg",
+      "title": "\"넌 뭐야\"",
+      "previousTitles": [],
+      "channelKey": "yuzuha-riko",
+      "seenOnChannels": [
+        "yuzuha-riko"
+      ],
+      "publishedAt": "2026-11-22T08:16:45+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-22T10:03:41Z",
+      "lastSeenInFeedAt": "2026-11-22T10:03:41Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "6Cjwydy5Nrs": {
+      "videoId": "6Cjwydy5Nrs",
+      "title": "첫 후배가 역대급 변태 같습니다..",
+      "previousTitles": [],
+      "channelKey": "tenko-shibuki",
+      "seenOnChannels": [
+        "tenko-shibuki"
+      ],
+      "publishedAt": "2026-11-22T08:13:47+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-22T10:03:41Z",
+      "lastSeenInFeedAt": "2026-11-22T10:03:41Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "JW2x2W__0W4": {
       "videoId": "JW2x2W__0W4",
       "title": "사장님 친구들한테 대들었습니다",
@@ -283,8 +364,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -11155,8 +11236,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -16050,8 +16131,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -17695,8 +17776,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -19648,8 +19729,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -19921,8 +20002,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -22705,8 +22786,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -23254,8 +23335,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -24932,8 +25013,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -28324,8 +28405,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -28796,8 +28877,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -29581,8 +29662,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -31201,8 +31282,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -38291,8 +38372,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -45934,8 +46015,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -46418,8 +46499,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -49204,8 +49285,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -60673,8 +60754,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -62020,8 +62101,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -66975,8 +67056,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -74878,8 +74959,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -75634,8 +75715,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -78031,8 +78112,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -78220,8 +78301,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -79590,8 +79671,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 915213,
@@ -80457,8 +80538,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -91189,8 +91270,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 2644097,
@@ -94964,8 +95045,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -100661,8 +100742,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -100945,8 +101026,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "isShort": false,
       "viewCount": 38422,
@@ -104460,8 +104541,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -112766,8 +112847,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -113661,8 +113742,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -114957,8 +115038,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -115873,8 +115954,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -116579,8 +116660,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -117568,8 +117649,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -117811,8 +117892,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -118485,8 +118566,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -120491,8 +120572,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -123388,8 +123469,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -123550,8 +123631,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -125422,8 +125503,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -131590,8 +131671,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -138249,8 +138330,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -140017,8 +140098,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -145847,8 +145928,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -146816,8 +146897,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -147192,8 +147273,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -150254,8 +150335,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -150871,8 +150952,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -154796,8 +154877,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -155231,8 +155312,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -156745,8 +156826,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -158309,8 +158390,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "excluded_short",
@@ -161948,8 +162029,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -163969,8 +164050,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -167975,8 +168056,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -169159,8 +169240,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
@@ -173690,8 +173771,8 @@
       "source": "backfill",
       "firstSeenAt": "2026-11-21T00:54:02Z",
       "lastSeenInFeedAt": null,
-      "status": "unverified",
-      "statusCheckedAt": null,
+      "status": "active",
+      "statusCheckedAt": "2026-11-22T10:03:41Z",
       "failStreak": 0,
       "auto": {
         "category": "non_music",
