@@ -196,10 +196,10 @@ test("integration with deriveAll(): respects effective overrides and merged rati
   assert.equal(allCounted.length, d.uniqueVideos);
   assert.equal(allCounted.find((r) => r.videoId === "CyOAmEihVHs").songScore, 99.1);
 
-  // ojV55hcIc4w is excluded by overrides.json: hidden by default, shown with includeHidden
-  assert.ok(!allCounted.some((r) => r.videoId === "ojV55hcIc4w"));
+  // eSI7RsjZy1E is excluded by overrides.json: hidden by default, shown with includeHidden
+  assert.ok(!allCounted.some((r) => r.videoId === "eSI7RsjZy1E"));
   const withHidden = filterSongs(d.videoRows, { includeHidden: true });
-  assert.ok(withHidden.some((r) => r.videoId === "ojV55hcIc4w" && r.excluded));
+  assert.ok(withHidden.some((r) => r.videoId === "eSI7RsjZy1E" && r.excluded));
 
   // Real data match: 怪獣の花唄
   const kaiju = filterSongs(d.videoRows, { query: "怪獣の花唄" });

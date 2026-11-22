@@ -3,7 +3,8 @@
 // (ratings / overrides / channels-lock / baseline / docs / fixtures are read-only for the bot.)
 //
 // Usage: node scripts/fetch-videos.mjs [--dry-run] [--no-status] [--status-limit N]
-//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N]
+//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--no-shorts-check] [--shorts-limit N]
+// Shorts: music/unknown videos are checked once via youtube.com/shorts/<id> (200 = Shorts) and excluded.
 // View counts: with YOUTUBE_API_KEY set, music videos' statistics.viewCount is refreshed at most once per 24h.
 
 import { readFile, writeFile } from "node:fs/promises";
@@ -11,7 +12,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
   parseAtomFeed, mergeEntries, applyStatusAndAuthor, pickStatusTargets, checkOembed, httpGet,
-  parseVideoStats, pickViewTargets, applyViewCounts,
+  parseVideoStats, pickViewTargets, applyViewCounts, checkShortFormat, pickShortTargets, applyShortFormat,
   videosEqual, serializeVideosDoc,
 }from "../lib/collector.mjs";
 import { normalizeVideoId } from "../lib/video-id.mjs";
@@ -24,7 +25,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const DELAY_MS = 400;
 
 function parseArgs(argv) {
-  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000 };
+  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, shorts: true, shortsLimit: 500 };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry-run") o.dryRun = true;
@@ -32,6 +33,8 @@ function parseArgs(argv) {
     else if (a === "--longform-feed") o.longform = true;
     else if (a === "--backfill") o.backfill = true;
     else if (a === "--no-views") o.views = false;
+    else if (a === "--no-shorts-check") o.shorts = false;
+    else if (a === "--shorts-limit") o.shortsLimit = Number(argv[++i]);
     else if (a === "--views-limit") o.viewsLimit = Number(argv[++i]);
     else if (a.startsWith("--views-limit=")) o.viewsLimit = Number(a.split("=")[1]);
     else if (a === "--status-limit") o.statusLimit = Number(argv[++i]);
@@ -67,8 +70,9 @@ async function fetchFeed(channel, longform) {
   throw new Error(lastErr ?? "feed fetch failed");
 }
 
-async function fetchBackfill(channel, apiKey) {
-  const playlist = `UU${channel.channelId.slice(2)}`;
+async function fetchBackfill(channel, apiKey, longform = false) {
+  // UULF = long-form uploads only (no Shorts); UU = every upload
+  const playlist = `${longform ? "UULF" : "UU"}${channel.channelId.slice(2)}`;
   const out = [];
   let pageToken = "";
   for (let page = 0; page < 200; page++) {
@@ -134,7 +138,7 @@ async function main() {
     await sleep(DELAY_MS);
     if (opts.backfill && apiKey) {
       try {
-        const entries = await fetchBackfill(ch, apiKey);
+        const entries = await fetchBackfill(ch, apiKey, opts.longform);
         for (const e of entries) incoming.push({ ...e, channelKey: ch.key, source: "backfill" });
       } catch (e) {
         feedErrors.push(`${ch.key} (backfill): ${e.message}`);
@@ -158,6 +162,18 @@ async function main() {
       videos[id] = after;
       statusLog.push({ id, code: res.code ?? `ERR(${res.error})`, authorName: res.authorName ?? "", filledChannel: !before.channelKey && !!after.channelKey ? after.channelKey : null });
       if (before.status !== after.status) statusChanges.push(`${id}: ${before.status} -> ${after.status}`);
+      await sleep(DELAY_MS);
+    }
+  }
+
+  // ---- 3a) Shorts format check (music/unknown only, once per video) ----
+  let shortsFound = 0, shortsChecked = 0;
+  let overridesForChecks = {};
+  try { overridesForChecks = (await readJson(OVERRIDES_PATH)).videos ?? {}; } catch { /* optional */ }
+  if (opts.shorts && opts.shortsLimit > 0) {
+    for (const id of pickShortTargets(videos, { overrides: overridesForChecks, limit: opts.shortsLimit })) {
+      const r = await checkShortFormat(id);
+      if (r !== null) { shortsChecked++; if (r) shortsFound++; videos[id] = applyShortFormat(videos[id], r, lock); }
       await sleep(DELAY_MS);
     }
   }
@@ -192,6 +208,7 @@ async function main() {
   console.log(`channels collected: ${collectable.length}, feed entries: ${incoming.length}`);
   for (const [k, v] of Object.entries(perChannel)) console.log(`  ${k}: new ${v.added.size}, updated ${v.updated.size}`);
   console.log(`new: ${merged.added.length}, updated(existing): ${merged.updated.length}, total videos: ${Object.keys(videos).length}`);
+  if (shortsChecked) console.log(`shorts check: ${shortsChecked} checked, ${shortsFound} are Shorts (excluded)`);
   if (viewsUpdated) console.log(`view counts updated: ${viewsUpdated}`);
   const reviewNew = merged.added.filter((id) => videos[id].auto.reviewRequired).length;
   console.log(`new needing review: ${reviewNew}`);

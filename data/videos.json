@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T00:43:14Z",
+  "updatedAt": "2026-11-22T00:51:13Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
     "fZcEplfGYb4": {
@@ -1713,15 +1713,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 265105,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "ayatsuno-yuni"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -1771,6 +1772,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 735196,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -2176,6 +2178,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 218550,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -2232,6 +2235,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 235889,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -2290,6 +2294,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 355743,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -2591,6 +2596,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2147102,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -3156,13 +3162,14 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "live_special",
+        "category": "excluded_short",
         "members": [
           "shizuki-toa"
         ],
         "matchedRules": [
-          "R30-live"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -3397,6 +3404,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 819530,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -4718,6 +4726,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 224601,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -5208,6 +5217,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 641653,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -5830,6 +5840,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 945537,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -5857,6 +5868,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 597750,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -5891,6 +5903,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 306500,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -5920,6 +5933,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 470341,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -6321,6 +6335,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "solo_cover",
         "members": [
@@ -6350,6 +6365,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1527038,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -6543,6 +6559,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2364804,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -6574,6 +6591,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1684556,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -6605,6 +6623,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4927931,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -7604,6 +7623,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1304170,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -7793,6 +7813,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1007874,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -8063,6 +8084,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 240481,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -8333,6 +8355,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 149228,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -8393,6 +8416,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 666001,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -9658,6 +9682,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -9795,6 +9820,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 94973,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -9988,6 +10014,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1339327,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -10447,6 +10474,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 463597,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -10830,6 +10858,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 605242,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -11156,6 +11185,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 166361,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -11831,6 +11861,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 166201,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -12076,6 +12107,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 407205,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -12618,6 +12650,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 754709,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -13104,6 +13137,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 228983,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -13160,6 +13194,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 655083,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -13324,6 +13359,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 874998,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -13649,6 +13685,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 298152,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -14162,6 +14199,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 970147,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -14272,6 +14310,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 603515,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15055,6 +15094,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 598535,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15084,6 +15124,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1245206,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15246,6 +15287,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 702715,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15275,6 +15317,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 174725,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15437,6 +15480,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1268885,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15466,6 +15510,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 655800,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -15842,6 +15887,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1198705,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -16838,6 +16884,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -17029,6 +17076,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 224136,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -17810,6 +17858,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1174466,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -18593,6 +18642,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 692331,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -18701,6 +18751,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 292235,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -18786,6 +18837,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 796445,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -19274,6 +19326,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 796504,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -19814,6 +19867,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 233277,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -20570,6 +20624,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 763628,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -21516,6 +21571,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 245272,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -22273,6 +22329,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -22678,6 +22735,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 174028,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -22707,6 +22765,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -23006,6 +23065,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 276647,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -23519,6 +23579,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 747536,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -23575,6 +23636,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -24194,6 +24256,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -24707,6 +24770,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-22T00:43:14Z",
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -24925,6 +24989,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 447573,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -25492,6 +25557,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1982755,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -26435,6 +26501,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1683520,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -26572,6 +26639,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2182012,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -27218,6 +27286,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 302115,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -27382,6 +27451,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 103589,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -27411,6 +27481,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -27654,6 +27725,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 925578,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -27818,6 +27890,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [],
@@ -27900,6 +27973,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 747278,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -28442,6 +28516,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -29206,6 +29281,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 46332,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -29343,6 +29419,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 245199,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -29561,6 +29638,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1373883,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -29590,6 +29668,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 686263,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -29779,6 +29858,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 695360,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -29833,6 +29913,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 232140,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -30051,6 +30132,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 244507,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -30456,6 +30538,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 434402,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -30620,6 +30703,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 330379,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -30838,6 +30922,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -30921,6 +31006,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1405518,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -31007,6 +31093,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 499196,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -31279,6 +31366,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 374899,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -31309,6 +31397,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 174960,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -31609,6 +31698,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 436319,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -31774,6 +31864,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 332249,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -32152,6 +32243,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 237919,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -32181,6 +32273,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -32451,6 +32544,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 750643,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -32616,6 +32710,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 630114,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -32699,6 +32794,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 336631,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -32915,6 +33011,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -33268,6 +33365,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -33297,6 +33395,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 542814,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -33434,6 +33533,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1001512,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -33758,6 +33858,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 286129,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -33841,6 +33942,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 507307,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -34408,6 +34510,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 541305,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -34570,6 +34673,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 142097,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -34626,6 +34730,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -35297,28 +35402,15 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "unknown",
-        "members": [
-          "ayatsuno-yuni",
-          "sakihane-fuya",
-          "akane-lize",
-          "shirayuki-hina",
-          "neneko-mashiro",
-          "arahashi-tabi",
-          "tenko-shibuki",
-          "aokumo-rin",
-          "hanako-nana",
-          "yuzuha-riko"
-        ],
+        "category": "excluded_short",
+        "members": [],
         "matchedRules": [
-          "R50-weak-live"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "weak_live_token",
-          "group_expansion"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "NGyCzUHjorI": {
@@ -35981,6 +36073,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 508262,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -36388,6 +36481,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2731624,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -37008,6 +37102,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2347084,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -37278,6 +37373,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -37469,6 +37565,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-22T00:05:08Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 492508,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -37525,6 +37622,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 925337,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -39139,6 +39237,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1178481,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -39168,6 +39267,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1084351,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -39332,6 +39432,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 866915,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -40304,6 +40405,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3325581,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -40975,6 +41077,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -42674,6 +42777,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 981784,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -42838,6 +42942,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1120354,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -43027,6 +43132,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1154918,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -43380,6 +43486,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1169817,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -43598,6 +43705,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1534210,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -44165,6 +44273,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 858759,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -44358,6 +44467,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1642288,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -45035,6 +45145,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1581399,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -45549,6 +45660,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -45605,6 +45717,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 343272,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -47116,6 +47229,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 139342,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -47765,6 +47879,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 349655,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -48118,6 +48233,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 861163,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -48577,6 +48693,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1876581,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -49653,6 +49770,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 287364,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -49844,6 +49962,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 742809,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -50062,6 +50181,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1046201,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -50467,6 +50587,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 405640,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -50550,6 +50671,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 563898,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -50580,6 +50702,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 391838,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -50637,6 +50760,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1090392,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -50666,6 +50790,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1104708,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -51314,6 +51439,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 648774,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -51478,6 +51604,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 276058,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -52259,6 +52386,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 254438,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -53151,6 +53279,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1811086,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -53353,6 +53482,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1604799,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -53382,6 +53512,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2066301,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -53868,6 +53999,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 293685,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -54302,6 +54434,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 548377,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -54653,6 +54786,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1061672,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -54790,6 +54924,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1005794,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -55841,6 +55976,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2255163,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -57243,6 +57379,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -58510,6 +58647,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1246620,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -59347,6 +59485,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -59887,6 +60026,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2748114,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -60454,6 +60594,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -60805,6 +60946,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -60969,6 +61111,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 625588,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -60998,6 +61141,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 851841,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -61027,6 +61171,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 410601,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -61056,6 +61201,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3647814,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -61085,6 +61231,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 541908,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -61114,6 +61261,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -61224,6 +61372,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2570804,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -62520,6 +62669,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3041583,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -63222,6 +63372,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1236830,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -63979,15 +64130,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 671622,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "akane-lize"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -64764,6 +64916,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 405318,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -65277,6 +65430,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1416686,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -65578,6 +65732,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 17310770,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -66658,6 +66813,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2411188,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -67117,6 +67273,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1760032,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -67874,6 +68031,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1490471,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -69278,6 +69436,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3556387,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -69388,6 +69547,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2456310,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -69768,6 +69928,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4239411,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -69984,6 +70145,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 787822,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -70175,15 +70337,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 179864,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "tenko-shibuki"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -70204,6 +70367,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1215634,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -70260,6 +70424,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 460321,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -70343,6 +70508,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1021344,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -70669,6 +70835,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 980389,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -71720,6 +71887,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 386952,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -72420,6 +72588,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1729609,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -73070,6 +73239,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2084263,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -73152,6 +73322,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1516879,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -73262,6 +73433,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -73399,6 +73571,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1525711,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -73725,6 +73898,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1451982,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -74346,6 +74520,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1176533,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -74457,15 +74632,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 274229,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "aokumo-rin"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -74648,6 +74824,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2828312,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -74812,6 +74989,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 410306,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -74918,6 +75096,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 525789,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -75539,6 +75718,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 605185,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -75948,6 +76128,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2033350,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -76274,6 +76455,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 462222,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -76411,15 +76593,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 303849,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -76440,6 +76623,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 935258,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -76575,15 +76759,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 276682,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -77061,15 +77246,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 130129,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -77090,6 +77276,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 284931,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -77790,6 +77977,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 593479,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -78089,15 +78277,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 798986,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -78494,15 +78683,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 1074161,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -78550,6 +78740,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2636751,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -79063,6 +79254,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -79119,6 +79311,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1192268,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -79148,6 +79341,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 350579,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -79312,6 +79506,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2259553,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -79341,15 +79536,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 415318,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "tenko-shibuki"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -79370,6 +79566,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 915213,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -79856,6 +80053,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [],
@@ -80503,6 +80701,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 678420,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -80667,6 +80866,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5413192,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -81045,6 +81245,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2415091,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -81074,6 +81275,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1805606,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -81130,6 +81332,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1392987,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -81240,6 +81443,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1339608,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -81593,6 +81797,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -81622,6 +81827,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -81651,6 +81857,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -81680,6 +81887,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -82625,6 +82833,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-22T00:43:14Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1075531,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -83570,6 +83779,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1129972,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -83651,6 +83861,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1243586,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -84114,6 +84325,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1065676,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -84197,6 +84409,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1313766,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -84521,6 +84734,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1738662,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -84956,6 +85170,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4633273,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -85338,6 +85553,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1577969,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -85583,6 +85799,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2098761,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -86124,6 +86341,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 995808,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -86988,6 +87206,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2425327,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -87206,6 +87425,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1347714,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -87478,6 +87698,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3230297,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -87507,6 +87728,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3102035,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -88076,6 +88298,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4059516,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -88294,6 +88517,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1937110,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -89161,6 +89385,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1096755,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -90911,6 +91136,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [],
@@ -90939,6 +91165,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2644097,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -90995,6 +91222,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 640210,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -91241,6 +91469,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 588040,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -91974,6 +92203,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1658006,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -92003,6 +92233,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4726285,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -92086,6 +92317,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2268435,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -92115,6 +92347,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2465755,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -92817,6 +93050,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1993571,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -93517,6 +93751,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 483446,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -94272,6 +94507,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 475874,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -95001,6 +95237,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1924686,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -95191,6 +95428,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2459984,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -95598,6 +95836,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3181975,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -95627,6 +95866,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 782100,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -95818,6 +96058,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 561802,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -95847,6 +96088,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2118041,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -96155,6 +96397,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2761082,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -96963,6 +97206,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2018541,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -97206,6 +97450,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -98149,6 +98394,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1091872,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -98449,6 +98695,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 853937,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -98532,6 +98779,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 425053,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -98724,6 +98972,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2283937,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -99271,6 +99520,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 213189,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -99759,6 +100009,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1908444,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -100548,6 +100799,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1530629,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -100669,6 +100921,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 38422,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -100950,6 +101203,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1914965,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -101356,6 +101610,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 773638,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -101630,6 +101885,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 58283,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -101873,6 +102129,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2033094,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -102091,6 +102348,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1751179,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -102929,6 +103187,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 150686,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -103928,6 +104187,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2038358,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -104092,6 +104352,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2139652,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -104414,6 +104675,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 731835,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -105172,6 +105434,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2931552,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -105226,6 +105489,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -105265,6 +105529,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -105672,15 +105937,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 260833,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "arahashi-tabi"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -105836,18 +106102,17 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "unknown",
+        "category": "excluded_short",
         "members": [
           "arahashi-tabi"
         ],
         "matchedRules": [
-          "R50-weak-live"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "weak_live_token"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "JMMakZ21HAY": {
@@ -106050,15 +106315,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 459704,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "arahashi-tabi"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -106079,6 +106345,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [],
@@ -106161,6 +106428,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -106190,18 +106458,17 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "unknown",
+        "category": "excluded_short",
         "members": [
           "neneko-mashiro"
         ],
         "matchedRules": [
-          "R50-weak-live"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "weak_live_token"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "LMQGL_5nwvM": {
@@ -106327,18 +106594,17 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "unknown",
+        "category": "excluded_short",
         "members": [
           "arahashi-tabi"
         ],
         "matchedRules": [
-          "R50-weak-live"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "weak_live_token"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "dHquwp45yEc": {
@@ -106734,28 +107000,15 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "unknown",
-        "members": [
-          "ayatsuno-yuni",
-          "sakihane-fuya",
-          "akane-lize",
-          "shirayuki-hina",
-          "neneko-mashiro",
-          "arahashi-tabi",
-          "tenko-shibuki",
-          "aokumo-rin",
-          "hanako-nana",
-          "yuzuha-riko"
-        ],
+        "category": "excluded_short",
+        "members": [],
         "matchedRules": [
-          "R50-weak-live"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "weak_live_token",
-          "group_expansion"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "yhc8Xzts19o": {
@@ -107176,6 +107429,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -107205,6 +107459,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -107234,6 +107489,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -107641,6 +107897,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 896485,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -108075,6 +108332,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -108131,28 +108389,15 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "unknown",
-        "members": [
-          "ayatsuno-yuni",
-          "sakihane-fuya",
-          "akane-lize",
-          "shirayuki-hina",
-          "neneko-mashiro",
-          "arahashi-tabi",
-          "tenko-shibuki",
-          "aokumo-rin",
-          "hanako-nana",
-          "yuzuha-riko"
-        ],
+        "category": "excluded_short",
+        "members": [],
         "matchedRules": [
-          "R50-weak-live"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "weak_live_token",
-          "group_expansion"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "fHASMH5tKSQ": {
@@ -108278,6 +108523,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2881469,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -109116,6 +109362,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1879206,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -109388,6 +109635,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2934651,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -109577,6 +109825,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5601647,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -111625,6 +111874,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1111678,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -111978,6 +112228,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2693344,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -112680,6 +112931,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5027400,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -112950,6 +113202,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1226453,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -114134,6 +114387,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1719965,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -114379,6 +114633,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 11597283,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -115563,6 +115818,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3204207,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -115674,6 +115930,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 6290652,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -116241,6 +116498,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1535603,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -118040,6 +118298,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1358368,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -118742,6 +119001,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3092592,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -118771,6 +119031,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1972616,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -119203,6 +119464,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1338252,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -119525,6 +119787,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 41693,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -120090,6 +120353,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1288938,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -120119,6 +120383,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1335842,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -120657,6 +120922,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -121010,6 +121276,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3366476,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -121039,15 +121306,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 693712,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -121901,6 +122169,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2534762,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -122227,6 +122496,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1587714,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -122819,6 +123089,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1122505,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -122849,6 +123120,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1546181,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -123601,6 +123873,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3141861,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -123631,6 +123904,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2462100,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -123877,6 +124151,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 605516,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -124416,6 +124691,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2685692,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -124526,6 +124802,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2315481,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -124985,6 +125262,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2894878,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -125415,6 +125693,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3539914,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -125552,6 +125831,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1130415,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -127596,6 +127876,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3702722,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -127679,6 +127960,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2998369,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -128407,6 +128689,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2154595,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -128436,6 +128719,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-22T00:43:14Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2049780,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -128520,15 +128804,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 344802,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -128819,15 +129104,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 157916,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "aokumo-rin"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -129143,6 +129429,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 759975,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -129658,6 +129945,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1486699,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -129982,6 +130270,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1692885,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -130495,6 +130784,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-22T00:43:14Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3215194,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -131517,6 +131807,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4622799,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -131708,6 +131999,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2440620,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -131846,6 +132138,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 19762,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -132169,6 +132462,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1075228,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -132306,6 +132600,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3458937,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -132979,15 +133274,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 40021,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -133143,15 +133439,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 72549,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -133359,6 +133656,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2024793,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -134520,6 +134818,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4693912,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -134630,15 +134929,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 184496,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -135357,15 +135657,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 383926,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -135575,6 +135876,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1732586,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -135926,15 +136228,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 443729,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "aokumo-rin"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -136707,6 +137010,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2483849,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -136844,6 +137148,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1462110,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -137060,15 +137365,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 124927,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -137783,6 +138089,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 883570,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -138402,6 +138709,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2277043,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -138807,20 +139115,19 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 101441,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "original",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R35-original"
+          "R05-short-format"
         ],
-        "reviewRequired": true,
-        "reviewReasons": [
-          "category_conflict"
-        ]
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "-WgxoccABnY": {
@@ -139136,15 +139443,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 52861,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "ayatsuno-yuni"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -139219,6 +139527,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3000783,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -139302,6 +139611,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 248211,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -139466,6 +139776,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5125883,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -139709,15 +140020,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 251740,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -139925,15 +140237,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 42858,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -141699,6 +142012,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3277551,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -141728,6 +142042,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3832351,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -142054,6 +142369,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 12547326,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -142083,15 +142399,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 172969,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -144044,6 +144361,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 776553,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -144582,6 +144900,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4493612,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -144719,15 +145038,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 131540,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -144748,6 +145068,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5382939,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -145743,15 +146064,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 180073,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -147382,6 +147704,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2423010,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -147438,6 +147761,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2233005,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -147629,6 +147953,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2644791,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -147685,15 +148010,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 638343,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -147741,6 +148067,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 12396683,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -147770,6 +148097,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1318770,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -147892,15 +148220,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 170223,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -148054,15 +148383,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 119298,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -148326,15 +148656,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 362757,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -148569,15 +148900,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 627991,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -148706,15 +149038,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 321189,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -148868,15 +149201,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 680440,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "yuzuha-riko"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -149785,6 +150119,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1404264,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -150807,6 +151142,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 260225,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -151295,6 +151631,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2634862,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -151351,6 +151688,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3709353,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -151407,6 +151745,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5527646,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -151463,6 +151802,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 7898723,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -151519,6 +151859,7 @@
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2872218,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -151922,6 +152263,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2129506,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -152327,6 +152669,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4347596,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -152572,6 +152915,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -153673,6 +154017,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 727963,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -154805,6 +155150,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1504877,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -155021,6 +155367,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1972813,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -155183,6 +155530,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3171983,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -155696,6 +156044,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -155993,6 +156342,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2939582,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -156907,6 +157257,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 6624470,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -157127,6 +157478,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4887622,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -158145,6 +158497,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1035610,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -158201,6 +158554,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3247711,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -158766,6 +159120,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5108652,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -158959,6 +159314,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 15340203,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -159283,6 +159639,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1350781,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -159501,15 +159858,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 295826,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "live_special",
+        "category": "excluded_short",
         "members": [
           "airi-kanna"
         ],
         "matchedRules": [
-          "R30-live"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -159582,15 +159940,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 457179,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "live_special",
+        "category": "excluded_short",
         "members": [
           "airi-kanna"
         ],
         "matchedRules": [
-          "R30-live"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -159638,6 +159997,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 169535,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -159856,6 +160216,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -160072,15 +160433,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 296809,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "live_special",
+        "category": "excluded_short",
         "members": [
           "airi-kanna"
         ],
         "matchedRules": [
-          "R30-live"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -160531,15 +160893,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 310287,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "live_special",
+        "category": "excluded_short",
         "members": [
           "airi-kanna"
         ],
         "matchedRules": [
-          "R30-live"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -160722,6 +161085,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1697393,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -160832,6 +161196,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3649180,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -161825,6 +162190,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 753348,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -162768,6 +163134,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1144742,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -162876,6 +163243,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 4244844,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -163173,6 +163541,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -163738,6 +164107,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
         "category": "unknown",
         "members": [
@@ -164170,6 +164540,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3805498,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -164415,15 +164786,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 372283,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "neneko-mashiro"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -164444,15 +164816,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 229139,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "neneko-mashiro"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -164795,6 +165168,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 72125,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -165119,6 +165493,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3671290,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -165337,6 +165712,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2404289,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -165902,6 +166278,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3715957,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -166147,6 +166524,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2408696,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -166739,6 +167117,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3595556,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -167653,15 +168032,16 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "viewCount": 94696,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
-        "category": "solo_cover",
+        "category": "excluded_short",
         "members": [
           "neneko-mashiro"
         ],
         "matchedRules": [
-          "R40-cover"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -168619,6 +168999,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 6193888,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -168914,6 +169295,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1280743,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -169884,6 +170266,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2134609,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -170235,6 +170618,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 40827,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -172119,6 +172503,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1639325,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -173035,6 +173420,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 785812,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -174919,6 +175305,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1834986,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -174948,6 +175335,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 7923822,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -175031,6 +175419,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2258886,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -175060,6 +175449,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 8323853,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -175409,6 +175799,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2068463,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -175492,6 +175883,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2113306,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -176034,6 +176426,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 10032766,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -176252,6 +176645,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 2704303,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -176630,6 +177024,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 5466865,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -176846,6 +177241,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3866989,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -177197,6 +177593,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 735942,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -177519,6 +177916,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 1730896,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -177654,6 +178052,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 3565510,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {
@@ -177762,6 +178161,7 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "viewCount": 7581812,
       "viewCountAt": "2026-11-22T00:43:14Z",
       "auto": {

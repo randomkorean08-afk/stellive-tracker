@@ -24,7 +24,7 @@ test("seed count is 27", () => assert.equal(seeds.length, 27));
 
 for (const v of seeds) {
   test(`seed ${v.videoId} reclassifies to stored auto`, () => {
-    const r = classify({ title: v.title, channelKey: v.channelKey, publishedAt: v.publishedAt }, lock);
+    const r = classify({ title: v.title, channelKey: v.channelKey, publishedAt: v.publishedAt, isShort: v.isShort ?? null }, lock);
     assert.equal(r.category, v.auto.category);
     assert.deepEqual([...r.members].sort(), [...v.auto.members].sort());
     assert.equal(r.reviewRequired, v.auto.reviewRequired);
