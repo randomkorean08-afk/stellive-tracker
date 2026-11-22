@@ -38,7 +38,7 @@ export function songSearchSection(d) {
                 : h("span", { class: "chip warn" }, "멤버 없음")),
             h("div", { class: "song-meta small muted" },
               `${catLabel(r.category)} · ${formatDateOnly(r.publishedAt)}${formatViews(views[r.videoId]) ? ` · 조회수 ${formatViews(views[r.videoId])}` : ""}`,
-              r.songScore !== null ? h("span", { class: "badge" }, `점수 ${fmt1(r.songScore)}`) : null,
+              r.groupSong ? h("span", { class: "badge muted", title: "다인원 단체곡은 개별 보컬 평가 대상이 아닙니다" }, "단체곡 · 평가 제외") : r.songScore !== null ? h("span", { class: "badge" }, `점수 ${fmt1(r.songScore)}`) : null,
               r.needsReview ? h("span", { class: "badge warn" }, "검토 대기") : null,
               r.excluded ? h("span", { class: "badge" }, "제외") : null,
               showStatus ? h("span", { class: `badge st-${r.status}` }, STATUS_LABELS[r.status] ?? r.status) : null,

@@ -96,11 +96,12 @@ test("excluded seeds: rows/ratings kept, but no longer counted in slots or B", (
     assert.equal(typeof ratings.videoRatings[id].songScore, "number", `${id} rating preserved`);
   }
   const meri = card(d, "tokino-meri");
-  assert.equal(meri.songAvgN, 1);
-  assert.equal(meri.songAvg, 94.2);
+  // her only other rated video is the 4기 group song Ei7yWYi7x_E (단체곡, 4 members) -> not evaluated in B
+  assert.equal(meri.songAvgN, 0);
+  assert.equal(meri.songAvg, null);
   assert.equal(meri.rankB, null);
   const toa = card(d, "shizuki-toa");
-  assert.equal(toa.songAvgN, 2);
+  assert.equal(toa.songAvgN, 1); // MZNKiadMo3U only; the 4기 group song is not evaluated
   assert.equal(toa.rankB, null);
   // A(루브릭)는 영상 제외와 무관
   assert.equal(meri.rubricTotal, 95);

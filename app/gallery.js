@@ -50,7 +50,7 @@ export function renderGallery(root) {
       : h("button", { type: "button", class: "poster", "aria-label": `${r.title} 재생`, onclick: () => { playing = true; paintPreview(); } },
           h("img", { alt: "", src: thumb(id, "maxresdefault"), onerror: (e) => { if (!e.target.src.includes("hqdefault")) e.target.src = thumb(id); } }),
           h("span", { class: "play" }, "▶"));
-    const scoreBadges = [
+    const scoreBadges = r.groupSong ? [h("span", { class: "badge muted", title: "다인원 단체곡은 개별 보컬 평가 대상이 아닙니다" }, "단체곡 · 평가 제외")] : [
       r.songScore !== null ? h("span", { class: "badge" }, `기준 점수 ${fmt1(r.songScore)}`) : null,
       Object.entries(r.memberScores ?? {}).filter(([, s]) => s !== null).map(([m, s]) => h("span", { class: "badge" }, `${memberName(m)} ${fmt1(s)}`)),
     ];
@@ -87,7 +87,7 @@ export function renderGallery(root) {
       h("span", { class: "gtitle" }, r.title),
       h("span", { class: "gmembers small" }, r.members.map(memberName).join(", ")),
       h("span", { class: "gmeta tiny muted" }, metaLine(r)),
-      r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
+      r.groupSong ? h("span", { class: "badge gscore muted" }, "단체곡") : r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
     )));
     paintPreview();
   }

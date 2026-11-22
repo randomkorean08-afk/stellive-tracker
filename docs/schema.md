@@ -264,3 +264,9 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 - 분류: 신규 ID만 1회 분류한다. 기존 영상은 저장된 `auto`를 유지하며, 제목·채널이 바뀐 경우에만 재분류한다. 분류 규칙을 바꾼 뒤에는 `--reclassify-all`로 1회 전체 재분류한다.
 - 상태 확인(oEmbed): 음악 카테고리(override 우선, `exclude` 제외)만 대상이다. `deleted`·`private` 판정은 최종이라 다시 확인하지 않는다.
 - 쇼츠 판정: 음악·판단 보류 영상만 대상이며 영상당 1회(`isShort`) 확인한다. 조회수: 음악·공개 영상만 대상이며 24시간에 1회 갱신한다.
+
+## 부록: 단체곡 평가 제외 (2026-11-22)
+
+- 단체곡 = 유효 멤버 수가 `GROUP_SONG_MIN_MEMBERS`(3) 이상인 영상(`lib/derive.mjs` `isGroupSong`). 듀엣(2인)은 평가 대상이다.
+- 단체곡은 목록·검색·미리보기에 그대로 노출되고 멤버 슬롯에도 집계되지만, B(곡 평균)·`songAvgN`·B 순위에는 반영하지 않는다. `videoRows[].groupSong`, `memberCards[].groupSongCount`로 표시한다.
+- `ratings.json`의 단체곡 점수(예: STAR TRAIL 96.8)는 원본 보존을 위해 그대로 두며, UI에서는 점수 대신 "단체곡 · 평가 제외" 배지를 보인다. 루브릭 A는 영상과 무관하므로 영향이 없다.
