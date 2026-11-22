@@ -20,8 +20,7 @@ test("category exists: listed, not counted", () => {
 });
 
 test("classify: strong singing keywords -> stream_song automatically", () => {
-  // (clip + song titles such as "노래 클립 모음" still hit R25 -> live_special until fixture T07 is approved to change)
-  for (const t of ["리제 가창 모음", "히나 열창 컷", "Lize singing session"]) {
+  for (const t of ["리제 가창 모음", "히나 열창 컷", "Lize singing session", "노래 클립 모음 - 리제", "노래방송 하이라이트 - 만찬가 | 시라유키 히나"]) {
     const r = c(t);
     assert.equal(r.category, "stream_song", t);
     assert.equal(r.reviewRequired, false, t);

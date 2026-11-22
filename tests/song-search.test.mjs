@@ -193,7 +193,8 @@ test("integration with deriveAll(): respects effective overrides and merged rati
   const d = deriveAll({ channels, videos, overrides, ratings, baseline });
 
   const allCounted = filterSongs(d.videoRows);
-  assert.equal(allCounted.length, d.uniqueVideos);
+  assert.equal(allCounted.length, d.videoRows.filter((r) => r.listed).length, "listed = counted music + 방송노래");
+  assert.ok(allCounted.filter((r) => r.counted).length === d.uniqueVideos);
   assert.equal(allCounted.find((r) => r.videoId === "CyOAmEihVHs").songScore, 99.1);
 
   // eSI7RsjZy1E is excluded by overrides.json: hidden by default, shown with includeHidden

@@ -45,7 +45,7 @@ class FakeEl extends FakeNode {
 }
 const all = (el, pred, out = []) => { if (pred(el)) out.push(el); for (const c of el.children ?? []) all(c, pred, out); return out; };
 
-test("gallery renders only counted music videos, with a preview and no stringified nodes", async () => {
+test("gallery renders only listed song videos (counted music + 방송노래), with a preview and no stringified nodes", async () => {
   globalThis.Node = FakeNode;
   globalThis.document = { createElement: (t) => new FakeEl(t), createElementNS: (_n, t) => new FakeEl(t), createTextNode: (t) => new FakeText(t) };
   const { state } = await import("../app/store.js");
@@ -57,12 +57,12 @@ test("gallery renders only counted music videos, with a preview and no stringifi
   };
   state.repo = { ...repo, fingerprint: fingerprintRepo(repo.ratings, repo.overrides) };
   const d = deriveAll(repo);
-  const music = new Set(d.videoRows.filter((r) => r.counted).map((r) => r.videoId));
+  const music = new Set(d.videoRows.filter((r) => r.listed).map((r) => r.videoId));
 
   const root = new FakeEl("div");
   renderGallery(root);
   const cards = all(root, (e) => e instanceof FakeEl && String(e.attrs.class ?? "").split(" ").includes("gcard"));
-  assert.equal(cards.length, music.size, "one card per counted music video");
+  assert.equal(cards.length, music.size, "one card per listed song video");
   for (const c of cards) assert.ok(music.has(c.dataset.id), `non-music card ${c.dataset.id}`);
   const shorts = Object.values(repo.videos.videos).filter((v) => v.isShort === true).map((v) => v.videoId);
   assert.ok(shorts.every((id) => !cards.some((c) => c.dataset.id === id)), "no Shorts in gallery");

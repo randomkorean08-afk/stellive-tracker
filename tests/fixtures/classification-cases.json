@@ -18,7 +18,7 @@
     { "id": "T06-full-stream-excluded", "input": { "title": "【歌枠】 노래방송 다시보기 | 하나코 나나", "channelKey": "hanako-nana", "publishedAt": "2026-11-01" },
       "expected": { "category": "excluded_stream", "members": ["hanako-nana"], "reviewRequired": false } },
     { "id": "T07-stream-highlight-included", "input": { "title": "노래방송 하이라이트 - 만찬가 | 시라유키 히나", "channelKey": "shirayuki-hina", "publishedAt": "2026-11-01" },
-      "expected": { "category": "live_special", "members": ["shirayuki-hina"], "reviewRequired": false } },
+      "expected": { "category": "stream_song", "members": ["shirayuki-hina"], "reviewRequired": false } },
     { "id": "T08-shorts-excluded", "input": { "title": "발묘 한 소절 #shorts | 아카네 리제", "channelKey": "akane-lize", "publishedAt": "2026-11-01" },
       "expected": { "category": "excluded_short", "members": ["akane-lize"], "reviewRequired": false } },
     { "id": "T09-weak-live-unknown", "input": { "title": "LIVE 방송 일정 안내", "channelKey": "stellive", "publishedAt": "2026-11-01" },

@@ -275,5 +275,5 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 
 - 방송에서 부른 노래 컷·클립. 목록·검색·미리보기에는 노출(`listed`)하지만 슬롯·고유 영상 수·B 평가에는 넣지 않는다(`counted: false`).
 - 자동 분류: 강한 키워드(노래방송·가창·열창·sing·노래 클립 등) → R45 자동. 약한 키워드(노래·歌·부른·불러) → R46 후보 + `stream_song_weak` 검토 대기(관리자 승인 후 노출). 노래방송 풀 VOD는 계속 `excluded_stream`(D4).
-- R25(클립+노래 맥락)는 현재 `live_special` 유지. `stream_song`으로 바꾸려면 보호 픽스처 T07 변경 승인이 필요하다.
+- R25(클립+노래 맥락, 노래방송 컷·하이라이트) → `stream_song` (픽스처 T07 변경 사용자 승인 2026-11-22).
 - 수동 추가: `node scripts/add-clip.mjs <URL|ID> --members <키|이름>[,...] [--song 곡명]`. 어느 채널이든 가능하며 `source: "manual"`로 저장되고 재분류하지 않는다. 쇼츠는 거부한다.
