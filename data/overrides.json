@@ -66,6 +66,22 @@
       "exclude": true,
       "reviewed": true,
       "note": "콘서트 티저(노래 영상 아님) — 집계 제외 (2026-11-21 사용자 확정, 검토 대기열 처리)"
+    },
+    "hGzklPRul4w": {
+      "members": [
+        "ayatsuno-yuni",
+        "sakihane-fuya",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi",
+        "tenko-shibuki",
+        "aokumo-rin",
+        "hanako-nana",
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "단체 세카이(SEKAI) 커버 — 참여 10인 확정(사용자 승인 2026-11-22). 단체곡이라 개별 보컬 평가 제외"
     }
   }
 }
