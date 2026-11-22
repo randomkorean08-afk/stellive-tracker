@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-22T13:16:27Z",
+  "updatedAt": "2026-11-22T13:58:59Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
     "QuPmTX-GcAU": {
@@ -59249,16 +59249,19 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "shirayuki-hina"
         ],
         "matchedRules": [
-          "R90-none"
+          "R46-stream-song-weak"
         ],
-        "reviewRequired": false,
-        "reviewReasons": []
+        "reviewRequired": true,
+        "reviewReasons": [
+          "stream_song_weak"
+        ]
       }
     },
     "i9preZ_2qpI": {
@@ -77554,13 +77557,14 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "non_music",
+        "category": "excluded_short",
         "members": [
           "ayatsuno-yuni"
         ],
         "matchedRules": [
-          "R90-none"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -86538,16 +86542,19 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "ayatsuno-yuni"
         ],
         "matchedRules": [
-          "R90-none"
+          "R46-stream-song-weak"
         ],
-        "reviewRequired": false,
-        "reviewReasons": []
+        "reviewRequired": true,
+        "reviewReasons": [
+          "stream_song_weak"
+        ]
       }
     },
     "4yMBaG6cKxs": {
@@ -96171,16 +96178,19 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "shirayuki-hina"
         ],
         "matchedRules": [
-          "R90-none"
+          "R46-stream-song-weak"
         ],
-        "reviewRequired": false,
-        "reviewReasons": []
+        "reviewRequired": true,
+        "reviewReasons": [
+          "stream_song_weak"
+        ]
       }
     },
     "bW_htBZ_emA": {
@@ -104030,16 +104040,19 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "ayatsuno-yuni"
         ],
         "matchedRules": [
-          "R90-none"
+          "R46-stream-song-weak"
         ],
-        "reviewRequired": false,
-        "reviewReasons": []
+        "reviewRequired": true,
+        "reviewReasons": [
+          "stream_song_weak"
+        ]
       }
     },
     "BIPnrZaOTa4": {
@@ -118195,13 +118208,14 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "non_music",
+        "category": "excluded_short",
         "members": [
           "akane-lize"
         ],
         "matchedRules": [
-          "R90-none"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -149097,16 +149111,19 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": false,
       "auto": {
-        "category": "non_music",
+        "category": "stream_song",
         "members": [
           "hanako-nana"
         ],
         "matchedRules": [
-          "R90-none"
+          "R46-stream-song-weak"
         ],
-        "reviewRequired": false,
-        "reviewReasons": []
+        "reviewRequired": true,
+        "reviewReasons": [
+          "stream_song_weak"
+        ]
       }
     },
     "OQl_hnx0SRs": {
@@ -156186,16 +156203,16 @@
       "failStreak": 0,
       "isShort": false,
       "auto": {
-        "category": "unknown",
+        "category": "stream_song",
         "members": [
           "shirayuki-hina"
         ],
         "matchedRules": [
-          "R50-weak-live"
+          "R46-stream-song-weak"
         ],
         "reviewRequired": true,
         "reviewReasons": [
-          "weak_live_token"
+          "stream_song_weak"
         ]
       }
     },
@@ -156620,13 +156637,14 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "non_music",
+        "category": "excluded_short",
         "members": [
           "akane-lize"
         ],
         "matchedRules": [
-          "R90-none"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -168202,13 +168220,14 @@
       "status": "active",
       "statusCheckedAt": "2026-11-22T13:16:27Z",
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "non_music",
+        "category": "excluded_short",
         "members": [
           "akane-lize"
         ],
         "matchedRules": [
-          "R90-none"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -168578,13 +168597,14 @@
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
+      "isShort": true,
       "auto": {
-        "category": "non_music",
+        "category": "excluded_short",
         "members": [
           "neneko-mashiro"
         ],
         "matchedRules": [
-          "R90-none"
+          "R05-short-format"
         ],
         "reviewRequired": false,
         "reviewReasons": []

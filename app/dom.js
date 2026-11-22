@@ -42,6 +42,7 @@ export const fmt1 = (x) => (x === null || x === undefined || Number.isNaN(x) ? "
 export const DISCLAIMER = "모든 점수는 큐레이터 개인 평가이며 공식 평가가 아닙니다.";
 
 export const REASON_LABELS = {
+  stream_song_weak: "방송노래 후보 (약한 키워드: 노래·부른 등)",
   weak_live_token: "약한 라이브 단어만 있음",
   unit_expansion: "유닛 별칭으로 멤버 확장",
   group_expansion: "그룹 별칭으로 전 재적 멤버 확장",

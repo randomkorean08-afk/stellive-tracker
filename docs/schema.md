@@ -270,3 +270,10 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 - 단체곡 = 유효 멤버 수가 `GROUP_SONG_MIN_MEMBERS`(3) 이상인 영상(`lib/derive.mjs` `isGroupSong`). 듀엣(2인)은 평가 대상이다.
 - 단체곡은 목록·검색·미리보기에 그대로 노출되고 멤버 슬롯에도 집계되지만, B(곡 평균)·`songAvgN`·B 순위에는 반영하지 않는다. `videoRows[].groupSong`, `memberCards[].groupSongCount`로 표시한다.
 - `ratings.json`의 단체곡 점수(예: STAR TRAIL 96.8)는 원본 보존을 위해 그대로 두며, UI에서는 점수 대신 "단체곡 · 평가 제외" 배지를 보인다. 루브릭 A는 영상과 무관하므로 영향이 없다.
+
+## 부록: 방송노래 (stream_song, 2026-11-22)
+
+- 방송에서 부른 노래 컷·클립. 목록·검색·미리보기에는 노출(`listed`)하지만 슬롯·고유 영상 수·B 평가에는 넣지 않는다(`counted: false`).
+- 자동 분류: 강한 키워드(노래방송·가창·열창·sing·노래 클립 등) → R45 자동. 약한 키워드(노래·歌·부른·불러) → R46 후보 + `stream_song_weak` 검토 대기(관리자 승인 후 노출). 노래방송 풀 VOD는 계속 `excluded_stream`(D4).
+- R25(클립+노래 맥락)는 현재 `live_special` 유지. `stream_song`으로 바꾸려면 보호 픽스처 T07 변경 승인이 필요하다.
+- 수동 추가: `node scripts/add-clip.mjs <URL|ID> --members <키|이름>[,...] [--song 곡명]`. 어느 채널이든 가능하며 `source: "manual"`로 저장되고 재분류하지 않는다. 쇼츠는 거부한다.

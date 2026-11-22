@@ -8,6 +8,7 @@ import { CATEGORY_FILTERS, SORT_OPTIONS, filterSongs, sortSongs, formatDateOnly,
 
 export const memberName = (k) => state.repo?.channels?.channels?.find((c) => c.key === k)?.displayName ?? k;
 const catLabel = (k) => CATEGORIES.find((c) => c.key === k)?.label ?? k;
+const noEvalLabel = (r) => (r.category === "stream_song" ? "방송노래" : r.groupSong ? "단체곡" : null); // 평가 제외 대상
 const thumb = (id, q = "hqdefault") => `https://i.ytimg.com/vi/${encodeURIComponent(id)}/${q}.jpg`;
 
 const f = { member: "", category: "", query: "", sort: "newest" };
@@ -50,7 +51,8 @@ export function renderGallery(root) {
       : h("button", { type: "button", class: "poster", "aria-label": `${r.title} 재생`, onclick: () => { playing = true; paintPreview(); } },
           h("img", { alt: "", src: thumb(id, "maxresdefault"), onerror: (e) => { if (!e.target.src.includes("hqdefault")) e.target.src = thumb(id); } }),
           h("span", { class: "play" }, "▶"));
-    const scoreBadges = r.groupSong ? [h("span", { class: "badge muted", title: "다인원 단체곡은 개별 보컬 평가 대상이 아닙니다" }, "단체곡 · 평가 제외")] : [
+    const ne = noEvalLabel(r);
+    const scoreBadges = ne ? [h("span", { class: "badge muted", title: "단체곡·방송노래는 개별 보컬 평가 대상이 아닙니다 (감상·조회수 정렬용)" }, `${ne} · 평가 제외`)] : [
       r.songScore !== null ? h("span", { class: "badge" }, `기준 점수 ${fmt1(r.songScore)}`) : null,
       Object.entries(r.memberScores ?? {}).filter(([, s]) => s !== null).map(([m, s]) => h("span", { class: "badge" }, `${memberName(m)} ${fmt1(s)}`)),
     ];
@@ -63,6 +65,7 @@ export function renderGallery(root) {
           memberName(m), c?.grade ? h("span", { class: "tiny muted" }, ` ${c.grade}`) : null);
       })),
       h("p", { class: "small muted" }, metaLine(r)),
+      vids[id]?.manual?.uploader ? h("p", { class: "tiny muted" }, `클립 출처: ${vids[id].manual.uploader}${vids[id].manual.song ? ` · 곡: ${vids[id].manual.song}` : ""}`) : null,
       h("div", { class: "badges" }, scoreBadges),
       h("p", { class: "small" }, h("a", { href: `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`, target: "_blank", rel: "noopener" }, "YouTube에서 보기 ↗")),
     );
@@ -87,7 +90,7 @@ export function renderGallery(root) {
       h("span", { class: "gtitle" }, r.title),
       h("span", { class: "gmembers small" }, r.members.map(memberName).join(", ")),
       h("span", { class: "gmeta tiny muted" }, metaLine(r)),
-      r.groupSong ? h("span", { class: "badge gscore muted" }, "단체곡") : r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
+      noEvalLabel(r) ? h("span", { class: "badge gscore muted" }, noEvalLabel(r)) : r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
     )));
     paintPreview();
   }
@@ -110,6 +113,6 @@ export function renderGallery(root) {
   );
 
   add(root, preview, controls, count, grid,
-    h("p", { class: "tiny muted" }, "음악 영상(개인커버·협동커버·오리지널·3D/라이브)만 표시합니다. 쇼츠·클립·방송 다시보기·제외/검토 대기 영상은 나오지 않습니다. 점수는 기존 기준 데이터(개인 평가)의 읽기 전용 표시입니다."));
+    h("p", { class: "tiny muted" }, "노래 영상(개인커버·협동커버·오리지널·3D/라이브)과 방송노래(방송에서 부른 노래 클립)만 표시합니다. 쇼츠·잡담 클립·방송 다시보기·제외/검토 대기 영상은 나오지 않습니다. 점수는 기존 기준 데이터(개인 평가)의 읽기 전용 표시이며, 단체곡·방송노래는 평가하지 않습니다."));
   paintGrid();
 }
