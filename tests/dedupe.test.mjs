@@ -107,10 +107,10 @@ test("status fills null channelKey only via locked handle", () => {
 
 test("pickStatusTargets: null first, oldest first, limit, recheck window", () => {
   const v = {
-    a: { videoId: "a", statusCheckedAt: null, status: "unverified", failStreak: 0 },
-    b: { videoId: "b", statusCheckedAt: "2026-11-01T00:00:00Z", status: "active", failStreak: 0 },
-    c: { videoId: "c", statusCheckedAt: "2026-10-01T00:00:00Z", status: "active", failStreak: 0 },
-    d: { videoId: "d", statusCheckedAt: "2026-11-20T01:00:00Z", status: "active", failStreak: 0 },
+    a: { videoId: "a", statusCheckedAt: null, status: "unverified", failStreak: 0, auto: { category: "solo_cover" } },
+    b: { videoId: "b", statusCheckedAt: "2026-11-01T00:00:00Z", status: "active", failStreak: 0, auto: { category: "solo_cover" } },
+    c: { videoId: "c", statusCheckedAt: "2026-10-01T00:00:00Z", status: "active", failStreak: 0, auto: { category: "solo_cover" } },
+    d: { videoId: "d", statusCheckedAt: "2026-11-20T01:00:00Z", status: "active", failStreak: 0, auto: { category: "solo_cover" } },
   };
   assert.deepEqual(pickStatusTargets(v, { limit: 2, now: NOW }), ["a", "c"]);
   assert.deepEqual(pickStatusTargets(v, { limit: 10, now: NOW }), ["a", "c", "b"]);
@@ -160,4 +160,31 @@ test("no-op merge of seed produces no change", () => {
   const r = mergeEntries(seed.videos, [], lock, NOW);
   assert.ok(videosEqual(seed.videos, r.videos));
   assert.deepEqual(r.updated, []);
+});
+
+test("pickStatusTargets: music only; deleted/private never re-checked; override category/exclude respected", () => {
+  const v = (id, cat, extra = {}) => ({ videoId: id, statusCheckedAt: null, status: "unverified", failStreak: 0, auto: { category: cat }, ...extra });
+  const videos = {
+    m: v("m", "solo_cover"), n: v("n", "non_music"), s: v("s", "excluded_short"),
+    del: v("del", "original", { status: "deleted", statusCheckedAt: "2026-01-01T00:00:00Z" }),
+    prv: v("prv", "original", { status: "private", failStreak: 1, statusCheckedAt: "2026-01-01T00:00:00Z" }),
+    o: v("o", "non_music"), x: v("x", "solo_cover"),
+  };
+  const overrides = { o: { category: "original" }, x: { exclude: true } };
+  assert.deepEqual(pickStatusTargets(videos, { now: NOW, overrides }), ["m", "o"]);
+});
+
+test("mergeEntries: existing videos keep stored classification; only new/renamed ones are classified", () => {
+  const existing = { R_B4tmy2DVA: { ...clone(seed.videos["R_B4tmy2DVA"]), auto: { category: "solo_cover", members: ["akane-lize"], matchedRules: ["STORED"], reviewRequired: false, reviewReasons: [] } } };
+  const same = mergeEntries(existing, [], lock, NOW);
+  assert.deepEqual(same.videos.R_B4tmy2DVA.auto.matchedRules, ["STORED"], "not re-classified");
+  assert.deepEqual(same.updated, []);
+  const seen = mergeEntries(existing, [{ videoId: "R_B4tmy2DVA", title: existing.R_B4tmy2DVA.title, channelKey: "akane-lize", source: "rss" }], lock, NOW);
+  assert.deepEqual(seen.videos.R_B4tmy2DVA.auto.matchedRules, ["STORED"], "seen again with same title: still not re-classified");
+  const renamed = mergeEntries(existing, [{ videoId: "R_B4tmy2DVA", title: "출항 / 아카네 리제 Cover (new title)", channelKey: "akane-lize", source: "rss" }], lock, NOW);
+  assert.notDeepEqual(renamed.videos.R_B4tmy2DVA.auto.matchedRules, ["STORED"], "renamed -> classified");
+  const all = mergeEntries(existing, [], lock, NOW, { reclassifyAll: true });
+  assert.notDeepEqual(all.videos.R_B4tmy2DVA.auto.matchedRules, ["STORED"], "reclassifyAll -> classified");
+  const fresh = mergeEntries(existing, [{ videoId: "AAAAAAAAAAA", title: "새 노래 / 아카네 리제 Cover", channelKey: "akane-lize", source: "rss" }], lock, NOW);
+  assert.equal(fresh.videos.AAAAAAAAAAA.auto.category, "solo_cover", "new ID classified once");
 });

@@ -3,7 +3,9 @@
 // (ratings / overrides / channels-lock / baseline / docs / fixtures are read-only for the bot.)
 //
 // Usage: node scripts/fetch-videos.mjs [--dry-run] [--no-status] [--status-limit N]
-//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--no-shorts-check] [--shorts-limit N]
+//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--no-shorts-check] [--shorts-limit N] [--reclassify-all]
+// Existing videos keep their stored classification; only new/renamed videos are classified (use --reclassify-all after rule changes).
+// Status checks: music videos only; deleted/private are final.
 // Shorts: music/unknown videos are checked once via youtube.com/shorts/<id> (200 = Shorts) and excluded.
 // View counts: with YOUTUBE_API_KEY set, music videos' statistics.viewCount is refreshed at most once per 24h.
 
@@ -25,7 +27,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const DELAY_MS = 400;
 
 function parseArgs(argv) {
-  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, shorts: true, shortsLimit: 500 };
+  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, shorts: true, shortsLimit: 500, reclassifyAll: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry-run") o.dryRun = true;
@@ -34,6 +36,7 @@ function parseArgs(argv) {
     else if (a === "--backfill") o.backfill = true;
     else if (a === "--no-views") o.views = false;
     else if (a === "--no-shorts-check") o.shorts = false;
+    else if (a === "--reclassify-all") o.reclassifyAll = true;
     else if (a === "--shorts-limit") o.shortsLimit = Number(argv[++i]);
     else if (a === "--views-limit") o.viewsLimit = Number(argv[++i]);
     else if (a.startsWith("--views-limit=")) o.viewsLimit = Number(a.split("=")[1]);
@@ -147,14 +150,15 @@ async function main() {
   }
 
   // ---- 2) merge (+ reclassify with current rules) ----
-  const merged = mergeEntries(prevVideos, incoming, lock, now);
+  const merged = mergeEntries(prevVideos, incoming, lock, now, { reclassifyAll: opts.reclassifyAll });
   let videos = merged.videos;
 
   // ---- 3) status checks ----
   const statusChanges = [];
   const statusLog = [];
   if (opts.status && opts.statusLimit > 0) {
-    const targets = pickStatusTargets(videos, { limit: opts.statusLimit, now, recheckHours: opts.recheckHours });
+    const statusOverrides = (await readJson(OVERRIDES_PATH).catch(() => ({}))).videos ?? {};
+    const targets = pickStatusTargets(videos, { limit: opts.statusLimit, now, recheckHours: opts.recheckHours, overrides: statusOverrides });
     for (const id of targets) {
       const res = await checkOembed(id);
       const before = videos[id];
