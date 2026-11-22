@@ -256,14 +256,14 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 
 - `videos.<id>.viewCount` (number, 선택): YouTube `videos.list` `statistics.viewCount`. 영상 1개의 원시 값이며 집계값이 아니다.
 - `videos.<id>.viewCountAt` (ISO 시각, 선택): 마지막 조회수 갱신 시각.
-- 수집: `YOUTUBE_API_KEY`가 있을 때만 음악 카테고리(override 우선) 영상을 24시간에 한 번 갱신한다(50개당 1 quota). `--no-views`로 끔, `--views-limit N`으로 상한 조정.
+- 수집: `YOUTUBE_API_KEY`가 있을 때 노출되는 모든 노래 영상(정식 음악·단체곡·방송노래, override 우선)을 매시간 실행마다 갱신한다(55분 쿨타임, `--force-views`·수동 실행은 즉시 전체; 50개당 1 quota). `--no-views`로 끔, `--views-limit N`으로 상한 조정.
 - 표시 전용: 점수·순위 계산(`lib/derive.mjs`)에는 쓰지 않는다.
 
 ## 부록: 수집 파이프라인 범위 (2026-11-22)
 
 - 분류: 신규 ID만 1회 분류한다. 기존 영상은 저장된 `auto`를 유지하며, 제목·채널이 바뀐 경우에만 재분류한다. 분류 규칙을 바꾼 뒤에는 `--reclassify-all`로 1회 전체 재분류한다.
 - 상태 확인(oEmbed): 음악 카테고리(override 우선, `exclude` 제외)만 대상이다. `deleted`·`private` 판정은 최종이라 다시 확인하지 않는다.
-- 쇼츠 판정: 음악·판단 보류 영상만 대상이며 영상당 1회(`isShort`) 확인한다. 조회수: 음악·공개 영상만 대상이며 24시간에 1회 갱신한다.
+- 쇼츠 판정: 음악·판단 보류 영상만 대상이며 영상당 1회(`isShort`) 확인한다. 조회수: 노출되는 노래 영상(공개)만 대상이며 매시간(55분 쿨타임) 갱신한다.
 
 ## 부록: 단체곡 평가 제외 (2026-11-22)
 

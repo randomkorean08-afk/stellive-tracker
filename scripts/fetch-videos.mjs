@@ -3,11 +3,12 @@
 // (ratings / overrides / channels-lock / baseline / docs / fixtures are read-only for the bot.)
 //
 // Usage: node scripts/fetch-videos.mjs [--dry-run] [--no-status] [--status-limit N]
-//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--no-shorts-check] [--shorts-limit N] [--reclassify-all]
+//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--force-views] [--no-shorts-check] [--shorts-limit N] [--reclassify-all]
 // Existing videos keep their stored classification; only new/renamed videos are classified (use --reclassify-all after rule changes).
 // Status checks: music videos only; deleted/private are final.
 // Shorts: music/unknown videos are checked once via youtube.com/shorts/<id> (200 = Shorts) and excluded.
-// View counts: with YOUTUBE_API_KEY set, music videos' statistics.viewCount is refreshed at most once per 24h.
+// View counts: with YOUTUBE_API_KEY set, every listed song video's statistics.viewCount is refreshed when >= 55 min old
+// (hourly schedule); --force-views refreshes all immediately.
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
@@ -27,7 +28,7 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const DELAY_MS = 400;
 
 function parseArgs(argv) {
-  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, shorts: true, shortsLimit: 500, reclassifyAll: false };
+  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000, forceViews: false, shorts: true, shortsLimit: 500, reclassifyAll: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry-run") o.dryRun = true;
@@ -35,6 +36,7 @@ function parseArgs(argv) {
     else if (a === "--longform-feed") o.longform = true;
     else if (a === "--backfill") o.backfill = true;
     else if (a === "--no-views") o.views = false;
+    else if (a === "--force-views") o.forceViews = true;
     else if (a === "--no-shorts-check") o.shorts = false;
     else if (a === "--reclassify-all") o.reclassifyAll = true;
     else if (a === "--shorts-limit") o.shortsLimit = Number(argv[++i]);
@@ -187,7 +189,7 @@ async function main() {
   if (opts.views && apiKey && opts.viewsLimit > 0) {
     let overridesVideos = {};
     try { overridesVideos = (await readJson(OVERRIDES_PATH)).videos ?? {}; } catch { /* read-only, optional */ }
-    const targets = pickViewTargets(videos, { overrides: overridesVideos, now, limit: opts.viewsLimit });
+    const targets = pickViewTargets(videos, { overrides: overridesVideos, now, limit: opts.viewsLimit, ...(opts.forceViews ? { refreshHours: 0 } : {}) });
     try {
       const stats = await fetchViewCounts(targets, apiKey);
       videos = applyViewCounts(videos, stats, now);
