@@ -251,3 +251,10 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
   - 실행당 최대 N개(기본 60)씩 순환 확인(오래 확인 안 된 순).
 - 선택: `--backfill` + `YOUTUBE_API_KEY`(playlistItems, 1유닛/50개)로 과거 전체 수집. 기본 비활성.
 - 주기: 3시간마다(`17 */3 * * *`, 정각 혼잡 회피). 변경이 있을 때만 커밋.
+
+## 부록: 조회수 필드 (2026-11-22)
+
+- `videos.<id>.viewCount` (number, 선택): YouTube `videos.list` `statistics.viewCount`. 영상 1개의 원시 값이며 집계값이 아니다.
+- `videos.<id>.viewCountAt` (ISO 시각, 선택): 마지막 조회수 갱신 시각.
+- 수집: `YOUTUBE_API_KEY`가 있을 때만 음악 카테고리(override 우선) 영상을 24시간에 한 번 갱신한다(50개당 1 quota). `--no-views`로 끔, `--views-limit N`으로 상한 조정.
+- 표시 전용: 점수·순위 계산(`lib/derive.mjs`)에는 쓰지 않는다.

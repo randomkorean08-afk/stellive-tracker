@@ -1,9 +1,9 @@
 import { h, clear, fmt1, STATUS_LABELS, add } from "./dom.js";
 import { state } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
-import { CATEGORY_FILTERS, filterSongs, formatDateOnly } from "../lib/song-search.mjs";
+import { CATEGORY_FILTERS, SORT_OPTIONS, filterSongs, sortSongs, formatDateOnly, formatViews } from "../lib/song-search.mjs";
 
-const filters = { member: "", query: "", category: "", includeHidden: false };
+const filters = { member: "", query: "", category: "", includeHidden: false, sort: "newest" };
 const catLabel = (k) => CATEGORIES.find((c) => c.key === k)?.label ?? k;
 
 /**
@@ -16,7 +16,8 @@ export function songSearchSection(d) {
 
   function renderList() {
     const altTitles = Object.fromEntries(Object.entries(state.repo?.videos?.videos ?? {}).map(([id, v]) => [id, v.previousTitles ?? []]));
-    const rows = filterSongs(d.videoRows, { ...filters, altTitles });
+    const views = Object.fromEntries(Object.entries(state.repo?.videos?.videos ?? {}).filter(([, v]) => typeof v.viewCount === "number").map(([id, v]) => [id, v.viewCount]));
+    const rows = sortSongs(filterSongs(d.videoRows, { ...filters, altTitles }), filters.sort, views);
     clear(out);
     add(out, h("p", { class: "muted small song-count" }, `검색 결과 ${rows.length}곡`));
     if (!rows.length) {
@@ -36,7 +37,7 @@ export function songSearchSection(d) {
                 ? r.members.map((m) => h("span", { class: "chip" }, memberNames.get(m) ?? m))
                 : h("span", { class: "chip warn" }, "멤버 없음")),
             h("div", { class: "song-meta small muted" },
-              `${catLabel(r.category)} · ${formatDateOnly(r.publishedAt)}`,
+              `${catLabel(r.category)} · ${formatDateOnly(r.publishedAt)}${formatViews(views[r.videoId]) ? ` · 조회수 ${formatViews(views[r.videoId])}` : ""}`,
               r.songScore !== null ? h("span", { class: "badge" }, `점수 ${fmt1(r.songScore)}`) : null,
               r.needsReview ? h("span", { class: "badge warn" }, "검토 대기") : null,
               r.excluded ? h("span", { class: "badge" }, "제외") : null,
@@ -57,6 +58,9 @@ export function songSearchSection(d) {
     h("label", {}, "카테고리 ",
       h("select", { "aria-label": "카테고리 선택", onchange: (e) => { filters.category = e.target.value; renderList(); } },
         CATEGORY_FILTERS.map((c) => h("option", { value: c.key, selected: filters.category === c.key }, c.label)))),
+    h("label", {}, "정렬 ",
+      h("select", { "aria-label": "정렬", onchange: (e) => { filters.sort = e.target.value; renderList(); } },
+        SORT_OPTIONS.map((o) => h("option", { value: o.key, selected: filters.sort === o.key }, o.label)))),
     h("label", {}, "곡 검색 ",
       h("input", { type: "search", value: filters.query, placeholder: "곡명 입력…", "aria-label": "곡 키워드 검색",
         oninput: (e) => { filters.query = e.target.value; renderList(); } })),

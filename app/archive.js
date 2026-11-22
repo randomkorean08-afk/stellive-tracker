@@ -1,4 +1,5 @@
 import { h, clear, fmt1, STATUS_LABELS, REASON_LABELS, add } from "./dom.js";
+import { formatViews } from "../lib/song-search.mjs";
 import { derived, state } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
 
@@ -54,7 +55,7 @@ export function renderArchive(root, openScoring) {
           h("div", { class: "vinfo" },
             h("div", { class: "vtitle" }, r.title),
             h("div", { class: "chips" }, r.members.map((m) => h("span", { class: "chip" }, memberName(m))), r.members.length ? null : h("span", { class: "chip warn" }, "멤버 없음")),
-            h("div", { class: "small muted" }, `${catLabel(r.category)} · ${r.publishedAt ?? "-"} · ${r.videoId}`),
+            h("div", { class: "small muted" }, `${catLabel(r.category)} · ${r.publishedAt ?? "-"}${formatViews(state.repo.videos.videos[r.videoId]?.viewCount) ? ` · 조회수 ${formatViews(state.repo.videos.videos[r.videoId].viewCount)}` : ""} · ${r.videoId}`),
             h("div", { class: "badges" },
               r.songScore !== null ? h("span", { class: "badge" }, `점수 ${fmt1(r.songScore)}`) : h("span", { class: "badge unrated" }, "미채점"),
               Object.entries(r.memberScores).filter(([, v]) => v !== null).map(([m, v]) => h("span", { class: "badge" }, `${memberName(m)} ${fmt1(v)}`)),

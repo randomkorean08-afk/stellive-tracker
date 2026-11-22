@@ -3,13 +3,15 @@
 // (ratings / overrides / channels-lock / baseline / docs / fixtures are read-only for the bot.)
 //
 // Usage: node scripts/fetch-videos.mjs [--dry-run] [--no-status] [--status-limit N]
-//        [--recheck-hours N] [--longform-feed] [--backfill]
+//        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N]
+// View counts: with YOUTUBE_API_KEY set, music videos' statistics.viewCount is refreshed at most once per 24h.
 
 import { readFile, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
   parseAtomFeed, mergeEntries, applyStatusAndAuthor, pickStatusTargets, checkOembed, httpGet,
+  parseVideoStats, pickViewTargets, applyViewCounts,
   videosEqual, serializeVideosDoc,
 }from "../lib/collector.mjs";
 import { normalizeVideoId } from "../lib/video-id.mjs";
@@ -17,17 +19,21 @@ import { normalizeVideoId } from "../lib/video-id.mjs";
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const VIDEOS_PATH = path.join(ROOT, "data", "videos.json");
 const LOCK_PATH = path.join(ROOT, "data", "channels-lock.json");
+const OVERRIDES_PATH = path.join(ROOT, "data", "overrides.json"); // read-only (view-count targeting)
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const DELAY_MS = 400;
 
 function parseArgs(argv) {
-  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false };
+  const o = { dryRun: false, status: true, statusLimit: 60, recheckHours: 24, longform: false, backfill: false, views: true, viewsLimit: 1000 };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--dry-run") o.dryRun = true;
     else if (a === "--no-status") o.status = false;
     else if (a === "--longform-feed") o.longform = true;
     else if (a === "--backfill") o.backfill = true;
+    else if (a === "--no-views") o.views = false;
+    else if (a === "--views-limit") o.viewsLimit = Number(argv[++i]);
+    else if (a.startsWith("--views-limit=")) o.viewsLimit = Number(a.split("=")[1]);
     else if (a === "--status-limit") o.statusLimit = Number(argv[++i]);
     else if (a.startsWith("--status-limit=")) o.statusLimit = Number(a.split("=")[1]);
     else if (a === "--recheck-hours") o.recheckHours = Number(argv[++i]);
@@ -86,6 +92,21 @@ async function fetchBackfill(channel, apiKey) {
   return out;
 }
 
+/** videos.list?part=statistics in batches of 50 (1 quota unit per call). Never prints the URL (contains key). */
+async function fetchViewCounts(ids, apiKey) {
+  const stats = {};
+  for (let i = 0; i < ids.length; i += 50) {
+    const batch = ids.slice(i, i + 50);
+    const url = "https://www.googleapis.com/youtube/v3/videos?part=statistics&maxResults=50" +
+      `&id=${batch.map(encodeURIComponent).join(",")}&key=${encodeURIComponent(apiKey)}`;
+    const res = await httpGet(url);
+    if (res.status !== 200) throw new Error(`videos.list HTTP ${res.status}`);
+    Object.assign(stats, parseVideoStats(await res.json()));
+    await sleep(DELAY_MS);
+  }
+  return stats;
+}
+
 async function main() {
   const opts = parseArgs(process.argv.slice(2));
   const lock = await readJson(LOCK_PATH);
@@ -141,6 +162,21 @@ async function main() {
     }
   }
 
+  // ---- 3b) view counts (needs YOUTUBE_API_KEY; music videos only, max once per 24h) ----
+  let viewsUpdated = 0;
+  if (opts.views && apiKey && opts.viewsLimit > 0) {
+    let overridesVideos = {};
+    try { overridesVideos = (await readJson(OVERRIDES_PATH)).videos ?? {}; } catch { /* read-only, optional */ }
+    const targets = pickViewTargets(videos, { overrides: overridesVideos, now, limit: opts.viewsLimit });
+    try {
+      const stats = await fetchViewCounts(targets, apiKey);
+      videos = applyViewCounts(videos, stats, now);
+      viewsUpdated = Object.keys(stats).length;
+    } catch (e) {
+      feedErrors.push(`view counts: ${e.message}`);
+    }
+  } else if (opts.views && !apiKey) console.log("view counts: skipped (YOUTUBE_API_KEY not set)");
+
   // ---- 4) write only when something actually changed ----
   const changed = !videosEqual(prevVideos, videos);
   const text = serializeVideosDoc(prevDoc, videos, { now, changed });
@@ -156,6 +192,7 @@ async function main() {
   console.log(`channels collected: ${collectable.length}, feed entries: ${incoming.length}`);
   for (const [k, v] of Object.entries(perChannel)) console.log(`  ${k}: new ${v.added.size}, updated ${v.updated.size}`);
   console.log(`new: ${merged.added.length}, updated(existing): ${merged.updated.length}, total videos: ${Object.keys(videos).length}`);
+  if (viewsUpdated) console.log(`view counts updated: ${viewsUpdated}`);
   const reviewNew = merged.added.filter((id) => videos[id].auto.reviewRequired).length;
   console.log(`new needing review: ${reviewNew}`);
   if (statusLog.length) {
