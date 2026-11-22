@@ -3,7 +3,7 @@ import { state } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
 import { CATEGORY_FILTERS, SORT_OPTIONS, filterSongs, sortSongs, formatDateOnly, formatViews } from "../lib/song-search.mjs";
 
-const filters = { member: "", query: "", category: "", includeHidden: false, sort: "newest" };
+const filters = { member: "", query: "", category: "", sort: "newest" }; // music only (counted); no hidden toggle
 const catLabel = (k) => CATEGORIES.find((c) => c.key === k)?.label ?? k;
 
 /**
@@ -64,10 +64,6 @@ export function songSearchSection(d) {
     h("label", {}, "곡 검색 ",
       h("input", { type: "search", value: filters.query, placeholder: "곡명 입력…", "aria-label": "곡 키워드 검색",
         oninput: (e) => { filters.query = e.target.value; renderList(); } })),
-    h("label", {},
-      h("input", { type: "checkbox", checked: filters.includeHidden,
-        onchange: (e) => { filters.includeHidden = e.target.checked; renderList(); } }),
-      "검토 대기·제외 포함"),
   );
 
   renderList();

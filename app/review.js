@@ -1,7 +1,7 @@
 import { h, clear, REASON_LABELS, add } from "./dom.js";
 import { derived, state, setOverride, mergedOverrides } from "./store.js";
 import { CATEGORIES } from "../lib/derive.mjs";
-import { memberName } from "./archive.js";
+import { memberName } from "./gallery.js";
 
 const sameSet = (a, b) => a.length === b.length && a.every((x) => b.includes(x));
 

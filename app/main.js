@@ -2,19 +2,17 @@
 import { loadAll, state, subscribe, dirtyCount, discardDraft, discardCount, storageOk } from "./store.js";
 import { renderStaleNotice, confirmDiscard } from "./stale-notice.js";
 import { renderScorecard } from "./scorecard.js";
-import { renderArchive } from "./archive.js";
-import { renderScoring, selectVideo } from "./scoring.js";
+import { renderGallery } from "./gallery.js";
 import { renderReview } from "./review.js";
 import { renderBaseline } from "./baseline.js";
 import { renderExport } from "./exporter.js";
 
+// Public viewer: dashboard + song gallery. Curator tools (overrides review, baseline, export) only with ?admin=1.
+const ADMIN = new URLSearchParams(location.search).has("admin");
 const TABS = [
-  ["scorecard", "스코어카드"],
-  ["archive", "영상 아카이브"],
-  ["scoring", "채점"],
-  ["review", "검토 큐"],
-  ["baseline", "기준선 대조"],
-  ["export", "내보내기"],
+  ["scorecard", "대시보드"],
+  ["gallery", "노래 갤러리"],
+  ...(ADMIN ? [["review", "검토 큐"], ["baseline", "기준선 대조"], ["export", "내보내기"]] : []),
 ];
 let current = "scorecard";
 
@@ -23,14 +21,12 @@ function show(tab) {
   const root = document.getElementById("view");
   document.querySelectorAll("[role=tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
   const rerender = () => show(tab);
-  const open = (id) => { selectVideo(id); show("scoring"); };
   try {
     if (tab === "scorecard") renderScorecard(root);
-    else if (tab === "archive") renderArchive(root, open);
-    else if (tab === "scoring") renderScoring(root);
-    else if (tab === "review") renderReview(root, rerender);
-    else if (tab === "baseline") renderBaseline(root);
-    else if (tab === "export") renderExport(root, rerender);
+    else if (tab === "gallery") renderGallery(root);
+    else if (tab === "review" && ADMIN) renderReview(root, rerender);
+    else if (tab === "baseline" && ADMIN) renderBaseline(root);
+    else if (tab === "export" && ADMIN) renderExport(root, rerender);
   } catch (e) {
     console.error(e);
     add(clear(root), h("p", { class: "warn-text" }, `화면 표시 중 오류: ${e.message}`));
@@ -46,8 +42,8 @@ function header() {
   add(document.getElementById("topbar"), 
     h("h1", {}, "스텔라이브 보컬 트래커"),
     h("span", { class: "muted small" }, `데이터 갱신 ${state.repo.videos.updatedAt ?? "-"}`),
-    dirty,
-    h("button", { type: "button", class: "small-btn", onclick: () => { if (discardCount() === 0 || confirmDiscard()) { discardDraft(); show(current); } } }, "초안 폐기"),
+    ADMIN ? dirty : null,
+    ADMIN && h("button", { type: "button", class: "small-btn", onclick: () => { if (discardCount() === 0 || confirmDiscard()) { discardDraft(); show(current); } } }, "초안 폐기"),
     link,
   );
   document.getElementById("banner").textContent = DISCLAIMER;

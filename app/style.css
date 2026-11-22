@@ -124,3 +124,21 @@ table.diff th, table.diff td { border: 1px solid var(--line); padding: 4px 6px; 
 .song-meta { margin-top: 4px; display: flex; flex-wrap: wrap; align-items: center; gap: 4px 6px; }
 .yt-link { color: var(--accent); text-decoration: none; font-weight: 600; white-space: nowrap; flex: none; padding: 2px 0; }
 .yt-link:hover { text-decoration: underline; }
+
+/* 노래 갤러리 (preview viewer) */
+.preview { display: grid; gap: 6px; }
+.player-wrap { width: 100%; max-width: 960px; aspect-ratio: 16/9; background: #000; border-radius: 8px; overflow: hidden; }
+.player-wrap .player { width: 100%; height: 100%; border: 0; display: block; }
+.poster { position: relative; width: 100%; height: 100%; padding: 0; border: 0; background: #000; cursor: pointer; display: block; }
+.poster img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.poster .play { position: absolute; inset: 0; margin: auto; width: 72px; height: 72px; border-radius: 50%; background: rgba(0,0,0,.6); color: #fff; font-size: 30px; line-height: 72px; text-align: center; }
+.poster:hover .play, .poster:focus-visible .play { background: var(--accent); }
+.ptitle { margin: 4px 0 0; }
+.gallery { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.gcard { position: relative; display: flex; flex-direction: column; gap: 4px; text-align: left; padding: 6px; background: var(--card); color: var(--fg); border: 1px solid var(--line); border-radius: 8px; cursor: pointer; }
+.gcard:hover, .gcard.on { border-color: var(--accent); }
+.gcard.on { box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 40%, transparent); }
+.gthumb { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 4px; background: var(--line); }
+.gtitle { font-size: 14px; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.gscore { position: absolute; top: 10px; right: 10px; }
+@media (max-width: 480px) { .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gtitle { font-size: 13px; } }
