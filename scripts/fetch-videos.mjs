@@ -122,7 +122,7 @@ async function fetchViewCounts(ids, apiKey) {
 
 /** search.list (100 quota units per call): videos uploaded in the last 24h matching q. Never prints the URL. */
 async function searchRecentClips(q, apiKey, now) {
-  const after = new Date(Date.parse(now) - 24 * 3600e3).toISOString().replace(/.d{3}Z$/, "Z");
+  const after = new Date(Date.parse(now) - 24 * 3600e3).toISOString().replace(/\.\d{3}Z$/, "Z");
   const url = "https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&order=date&maxResults=50&regionCode=KR&relevanceLanguage=ko" +
     `&publishedAfter=${encodeURIComponent(after)}&q=${encodeURIComponent(q)}&key=${encodeURIComponent(apiKey)}`;
   const res = await httpGet(url);
@@ -170,11 +170,12 @@ async function main() {
   // ---- 1b) clipper channels (방송노래) + daily keyword search ----
   let clipCfg = { channels: [], searchQueries: [] };
   try { clipCfg = { ...clipCfg, ...(await readJson(CLIP_CHANNELS_PATH)) }; } catch { /* optional file */ }
-  const clipChannels = (clipCfg.channels ?? []).filter((c) => /^UC[w-]{22}$/.test(c.channelId ?? "") && c.collect !== false);
+  const clipChannels = (clipCfg.channels ?? []).filter((c) => /^UC[\w-]{22}$/.test(c.channelId ?? "") && c.collect !== false);
   for (const c of clipChannels) {
     try {
       const entries = await fetchFeed({ channelId: c.channelId }, true); // long-form playlist first (no Shorts)
-      for (const e of entries) incoming.push({ ...e, channelKey: null, clipChannel: c.channelId, source: "clip-channel" });
+      const clipMode = ["song", "mixed", "multi"].includes(c.mode) ? c.mode : "song";
+      for (const e of entries) incoming.push({ ...e, channelKey: null, clipChannel: c.channelId, clipMode, source: "clip-channel" });
     } catch (e) { feedErrors.push(`clip ${c.name ?? c.channelId}: ${e.message}`); }
     await sleep(DELAY_MS);
   }

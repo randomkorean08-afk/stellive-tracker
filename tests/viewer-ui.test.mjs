@@ -58,11 +58,16 @@ test("gallery renders only listed song videos (counted music + 방송노래), wi
   state.repo = { ...repo, fingerprint: fingerprintRepo(repo.ratings, repo.overrides) };
   const d = deriveAll(repo);
   const music = new Set(d.videoRows.filter((r) => r.listed).map((r) => r.videoId));
+  const { collapseDuplicateClips } = await import("../lib/clip-dedupe.mjs");
+  const aliasesOf = (k) => { const c = repo.channels.channels.find((x) => x.key === k); return c ? [c.displayName, ...(c.aliases ?? [])] : []; };
+  const views = Object.fromEntries(Object.values(repo.videos.videos).filter((v) => typeof v.viewCount === "number").map((v) => [v.videoId, v.viewCount]));
+  const { hidden } = collapseDuplicateClips(d.videoRows.filter((r) => r.listed), { views, aliasesOf });
 
   const root = new FakeEl("div");
   renderGallery(root);
   const cards = all(root, (e) => e instanceof FakeEl && String(e.attrs.class ?? "").split(" ").includes("gcard"));
-  assert.equal(cards.length, music.size, "one card per listed song video");
+  assert.equal(cards.length, music.size - hidden.size, "one card per listed song video, same-stage duplicate clips folded");
+  for (const c of cards) assert.ok(!hidden.has(c.dataset.id), `folded duplicate shown ${c.dataset.id}`);
   for (const c of cards) assert.ok(music.has(c.dataset.id), `non-music card ${c.dataset.id}`);
   const shorts = Object.values(repo.videos.videos).filter((v) => v.isShort === true).map((v) => v.videoId);
   assert.ok(shorts.every((id) => !cards.some((c) => c.dataset.id === id)), "no Shorts in gallery");
