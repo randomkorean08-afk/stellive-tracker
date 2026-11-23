@@ -1,8 +1,89 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-23T13:18:25Z",
+  "updatedAt": "2026-11-23T13:58:32Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
+    "8biW_jthZDQ": {
+      "videoId": "8biW_jthZDQ",
+      "title": "💛스텔 마크에 메리 키타!!💛",
+      "previousTitles": [],
+      "channelKey": "tokino-meri",
+      "seenOnChannels": [
+        "tokino-meri"
+      ],
+      "publishedAt": "2026-11-23T10:00:13+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "8IdduTBzQxU": {
+      "videoId": "8IdduTBzQxU",
+      "title": "이상한 상상 하는 거 아니지?",
+      "previousTitles": [],
+      "channelKey": "ayatsuno-yuni",
+      "seenOnChannels": [
+        "ayatsuno-yuni"
+      ],
+      "publishedAt": "2026-11-23T09:00:38+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "ayatsuno-yuni"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Zt1nq3IMpwQ": {
+      "videoId": "Zt1nq3IMpwQ",
+      "title": "마크스텔서버에 오카리나 괴인 등장",
+      "previousTitles": [],
+      "channelKey": "sakihane-fuya",
+      "seenOnChannels": [
+        "sakihane-fuya"
+      ],
+      "publishedAt": "2026-11-23T09:00:20+00:00",
+      "source": "rss",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "auto": {
+        "category": "non_music",
+        "members": [
+          "sakihane-fuya"
+        ],
+        "matchedRules": [
+          "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "QuPmTX-GcAU": {
       "videoId": "QuPmTX-GcAU",
       "title": "HELP!! [Kobo Kanaeru] / 시즈키 토아 (Shizuki Toa) Cover",
@@ -14,7 +95,7 @@
       "publishedAt": "2026-11-22T10:31:17+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T13:16:27Z",
-      "lastSeenInFeedAt": "2026-11-22T13:16:27Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
@@ -44,7 +125,7 @@
       "publishedAt": "2026-11-22T08:30:29+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T10:03:41Z",
-      "lastSeenInFeedAt": "2026-11-22T10:03:41Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -71,7 +152,7 @@
       "publishedAt": "2026-11-22T08:16:45+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T10:03:41Z",
-      "lastSeenInFeedAt": "2026-11-22T10:03:41Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -100,7 +181,7 @@
       "publishedAt": "2026-11-22T08:13:47+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T10:03:41Z",
-      "lastSeenInFeedAt": "2026-11-22T10:03:41Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -127,7 +208,7 @@
       "publishedAt": "2026-11-22T05:00:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T07:30:32Z",
-      "lastSeenInFeedAt": "2026-11-22T07:30:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -138,6 +219,60 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "HtCvLEe0WY4": {
+      "videoId": "HtCvLEe0WY4",
+      "title": "JANE DOE - 米津玄師, 宇多田ヒカル | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-21T13:31:33+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "sULk7TDa82Y": {
+      "videoId": "sULk7TDa82Y",
+      "title": "Lemon - 米津玄師 | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-21T13:26:28+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -154,7 +289,7 @@
       "publishedAt": "2026-11-21T13:01:02+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -181,7 +316,7 @@
       "publishedAt": "2026-11-21T10:00:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -206,7 +341,7 @@
       "publishedAt": "2026-11-21T09:30:20+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -233,7 +368,7 @@
       "publishedAt": "2026-11-21T09:06:51+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -260,7 +395,7 @@
       "publishedAt": "2026-11-21T08:30:25+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -287,7 +422,7 @@
       "publishedAt": "2026-11-21T05:30:23+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -314,7 +449,7 @@
       "publishedAt": "2026-11-21T05:00:03+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -341,7 +476,7 @@
       "publishedAt": "2026-11-21T04:00:17+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-22T00:05:08Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -411,6 +546,33 @@
         "reviewReasons": []
       }
     },
+    "KfacZOpc0QA": {
+      "videoId": "KfacZOpc0QA",
+      "title": "LAST STARDUST - Aimer | 토키노 메리 (Tokino Mary) 메리 스페 노래방",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-19T12:53:04+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "A9r_pgioImc": {
       "videoId": "A9r_pgioImc",
       "title": "대화가 통하는 후배 등장",
@@ -422,7 +584,7 @@
       "publishedAt": "2026-11-19T09:30:08+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -449,7 +611,7 @@
       "publishedAt": "2026-11-19T08:30:17+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -476,7 +638,7 @@
       "publishedAt": "2026-11-19T08:19:53+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -503,7 +665,7 @@
       "publishedAt": "2026-11-19T08:00:34+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -557,7 +719,7 @@
       "publishedAt": "2026-11-19T07:12:12+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -611,7 +773,7 @@
       "publishedAt": "2026-11-18T09:00:29+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -636,7 +798,7 @@
       "publishedAt": "2026-11-18T09:00:20+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -665,7 +827,7 @@
       "publishedAt": "2026-11-18T08:00:25+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -692,7 +854,7 @@
       "publishedAt": "2026-11-18T07:30:29+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -746,7 +908,7 @@
       "publishedAt": "2026-11-18T05:30:39+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -800,7 +962,7 @@
       "publishedAt": "2026-11-17T09:00:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -827,7 +989,7 @@
       "publishedAt": "2026-11-17T08:30:00+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -854,7 +1016,7 @@
       "publishedAt": "2026-11-17T08:00:30+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -908,7 +1070,7 @@
       "publishedAt": "2026-11-17T07:59:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -935,7 +1097,7 @@
       "publishedAt": "2026-11-17T06:00:51+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -989,7 +1151,7 @@
       "publishedAt": "2026-11-16T09:00:25+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1016,7 +1178,7 @@
       "publishedAt": "2026-11-16T08:00:23+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1097,7 +1259,7 @@
       "publishedAt": "2026-11-15T09:00:21+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1122,7 +1284,7 @@
       "publishedAt": "2026-11-15T09:00:19+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1149,7 +1311,7 @@
       "publishedAt": "2026-11-15T08:31:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1176,7 +1338,7 @@
       "publishedAt": "2026-11-15T05:30:35+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1203,7 +1365,7 @@
       "publishedAt": "2026-11-15T05:00:35+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1214,6 +1376,168 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "SVOPxrLsg4s": {
+      "videoId": "SVOPxrLsg4s",
+      "title": "toxic till the end - ROSÉ | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-14T14:24:16+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "zAtmD7AJaig": {
+      "videoId": "zAtmD7AJaig",
+      "title": "하루 끝 - 아이유 (IU) | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-14T14:19:33+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wmrHbX3dp9w": {
+      "videoId": "wmrHbX3dp9w",
+      "title": "モエチャッカファイア - エレン・ジョー | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-14T14:13:53+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "xbU9nnMYr1o": {
+      "videoId": "xbU9nnMYr1o",
+      "title": "プロポーズ - なとり | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-14T14:08:48+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "GO7QmeILXVo": {
+      "videoId": "GO7QmeILXVo",
+      "title": "Sabotage - 緑黄色社会 | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-14T14:05:51+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ZAbqB6lboaE": {
+      "videoId": "ZAbqB6lboaE",
+      "title": "トウキョウ・シャンディ・ランデヴ - MAISONdes | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-14T14:00:00+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -1230,7 +1554,7 @@
       "publishedAt": "2026-11-14T09:00:36+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1257,7 +1581,7 @@
       "publishedAt": "2026-11-14T09:00:34+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1311,7 +1635,7 @@
       "publishedAt": "2026-11-14T07:30:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1338,7 +1662,7 @@
       "publishedAt": "2026-11-14T06:30:02+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1365,7 +1689,7 @@
       "publishedAt": "2026-11-14T05:30:16+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1419,7 +1743,7 @@
       "publishedAt": "2026-11-14T05:00:10+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1430,6 +1754,60 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "BDTpL81_rBM": {
+      "videoId": "BDTpL81_rBM",
+      "title": "사랑하긴 했었나요 스쳐가는 인연이었나요 짧지 않은 우리 함께했던 시간들이 자꾸 내 마음을 가둬 두네 - 잔나비 | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-13T14:17:23+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "-V44l6dUmRs": {
+      "videoId": "-V44l6dUmRs",
+      "title": "ピースサイン (Peace Sign) - 米津玄師 (Kenshi Yonezu) | 토키노 메리 (Tokino Mary) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-13T14:03:43+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -1446,7 +1824,7 @@
       "publishedAt": "2026-11-13T09:00:18+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1473,7 +1851,7 @@
       "publishedAt": "2026-11-13T08:51:02+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1500,7 +1878,7 @@
       "publishedAt": "2026-11-13T08:12:35+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1581,7 +1959,7 @@
       "publishedAt": "2026-11-12T09:00:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1608,7 +1986,7 @@
       "publishedAt": "2026-11-12T09:00:06+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1633,7 +2011,7 @@
       "publishedAt": "2026-11-12T08:30:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1660,7 +2038,7 @@
       "publishedAt": "2026-11-12T08:00:36+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1671,6 +2049,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2yzG8Khcs3c": {
+      "videoId": "2yzG8Khcs3c",
+      "title": "하나코 나나 - Shut down (BLACKPINK) Live Cover. (2) [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-12T04:20:14+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -1714,7 +2119,7 @@
       "publishedAt": "2026-11-11T11:00:38+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1741,7 +2146,7 @@
       "publishedAt": "2026-11-11T10:28:41+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1768,7 +2173,7 @@
       "publishedAt": "2026-11-11T08:00:08+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1795,7 +2200,7 @@
       "publishedAt": "2026-11-11T07:30:28+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1908,7 +2313,7 @@
       "publishedAt": "2026-11-11",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -1954,6 +2359,33 @@
         "reviewReasons": []
       }
     },
+    "VPDx82jp1jw": {
+      "videoId": "VPDx82jp1jw",
+      "title": "For the First Time in Forever (태어나서 처음으로) - 코가네 랑 (Cogane Rang) live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-10T14:41:19+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "_DF_Vn0vBjk": {
       "videoId": "_DF_Vn0vBjk",
       "title": "참을 수 없는 호랑이 꼬순내",
@@ -1965,7 +2397,7 @@
       "publishedAt": "2026-11-10T09:00:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -1992,7 +2424,7 @@
       "publishedAt": "2026-11-10T08:30:28+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2019,7 +2451,7 @@
       "publishedAt": "2026-11-10T08:23:23+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2073,7 +2505,7 @@
       "publishedAt": "2026-11-10T05:30:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2116,6 +2548,171 @@
         "reviewReasons": []
       }
     },
+    "MLCMMfLhFnU": {
+      "videoId": "MLCMMfLhFnU",
+      "title": "숲의 아이 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T14:43:23+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "hVqr7LvmVFg": {
+      "videoId": "hVqr7LvmVFg",
+      "title": "마지막처럼 (As If It's Your Last) - BLACKPINK | 토키노 메리 (Tokino Mary) (feat. 토아) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T14:36:44+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Z4hvwXv0cPo": {
+      "videoId": "Z4hvwXv0cPo",
+      "title": "BORN HATER - EPIK HIGH | 토키노 메리 (Tokino Mary) (feat. 토아, 마시로) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T14:35:14+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "AJH4fJVA6s0": {
+      "videoId": "AJH4fJVA6s0",
+      "title": "IndiGO - JUSTHIS (저스디스) | 토키노 메리 (Tokino Mary) (feat. 토아, 마시로) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T14:32:10+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "tz6oQnPQIBw": {
+      "videoId": "tz6oQnPQIBw",
+      "title": "사랑의 배터리 (Love Battery) - 홍진영 (Hong Jin-young) | 토키노 메리 (Tokino Mary) (feat. 밍부장, 토아) Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T14:20:52+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLdUzWHjXdudE",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "l0kkrNdU5Ww": {
+      "videoId": "l0kkrNdU5Ww",
+      "title": "[싱크룸/어비스] 토키노메리 × 코가네 랑 × 시즈키 토아 × 하나요 히요리 - 실루엣 lyrics 가사",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T10:41:46+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri",
+          "shizuki-toa",
+          "hanayo-hiyori",
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "rIyw9PTW90Y": {
       "videoId": "rIyw9PTW90Y",
       "title": "대선배의 품격 - [스텔라 핫클립]",
@@ -2127,7 +2724,7 @@
       "publishedAt": "2026-11-09T09:30:22+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2152,7 +2749,7 @@
       "publishedAt": "2026-11-09T09:00:37+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2179,7 +2776,7 @@
       "publishedAt": "2026-11-09T09:00:14+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2206,7 +2803,7 @@
       "publishedAt": "2026-11-09T08:13:49+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2233,7 +2830,7 @@
       "publishedAt": "2026-11-09T08:00:04+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2260,7 +2857,7 @@
       "publishedAt": "2026-11-09T07:00:30+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2287,7 +2884,7 @@
       "publishedAt": "2026-11-09T06:17:34+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2298,6 +2895,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "FNsHi2tc-yg": {
+      "videoId": "FNsHi2tc-yg",
+      "title": "염따 - 존시나 / 코가네 랑 (Cogane Rang) live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-09T00:02:15+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -2314,7 +2938,7 @@
       "publishedAt": "2026-11-08T10:00:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T20:35:49Z",
       "failStreak": 0,
@@ -2344,7 +2968,7 @@
       "publishedAt": "2026-11-08T08:39:47+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2371,7 +2995,7 @@
       "publishedAt": "2026-11-08T05:30:00+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2392,6 +3016,36 @@
         ]
       }
     },
+    "hGAQzyUwBAg": {
+      "videoId": "hGAQzyUwBAg",
+      "title": "[싱크룸/어비스] 토키노메리 × 코가네 랑 × 시즈키 토아 × 하나요 히요리 - 블랙록슈터 lyrics 가사",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-08T00:16:11+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri",
+          "shizuki-toa",
+          "hanayo-hiyori",
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "2X7ZSY5HqyA": {
       "videoId": "2X7ZSY5HqyA",
       "title": "명조 대회에서도 여전히 사이좋은 기특 듀오 [띵킹 2]",
@@ -2403,7 +3057,7 @@
       "publishedAt": "2026-11-07T11:30:04+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2430,7 +3084,7 @@
       "publishedAt": "2026-11-07T10:35:18+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
@@ -2460,7 +3114,7 @@
       "publishedAt": "2026-11-07T07:30:26+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2487,7 +3141,7 @@
       "publishedAt": "2026-11-07T06:00:29+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2514,7 +3168,7 @@
       "publishedAt": "2026-11-07T05:30:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2541,7 +3195,7 @@
       "publishedAt": "2026-11-07T04:00:16+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2568,7 +3222,7 @@
       "publishedAt": "2026-11-07T03:15:22+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2579,6 +3233,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "TJuatdasQDk": {
+      "videoId": "TJuatdasQDk",
+      "title": "하나코 나나 - Rose (이하이) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-06T09:30:00+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -2595,7 +3276,7 @@
       "publishedAt": "2026-11-06T09:10:37+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2622,7 +3303,7 @@
       "publishedAt": "2026-11-06T09:00:30+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2649,7 +3330,7 @@
       "publishedAt": "2026-11-06T09:00:17+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2676,7 +3357,7 @@
       "publishedAt": "2026-11-06T08:01:19+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2719,6 +3400,33 @@
         "reviewReasons": []
       }
     },
+    "dWpO10ozHMA": {
+      "videoId": "dWpO10ozHMA",
+      "title": "미리 메리 크리스마스 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-06T02:12:12+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "liPEQZJLQh4": {
       "videoId": "liPEQZJLQh4",
       "title": "로스트원의 호곡 [ロストワンの号哭 / Neru]ㅣ아카네 리제(Akane Lize) 【COVER】",
@@ -2732,7 +3440,7 @@
       "publishedAt": "2026-11-06",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T22:35:19Z",
       "failStreak": 0,
@@ -2746,6 +3454,115 @@
         ],
         "matchedRules": [
           "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "S1WQPD9rxfo": {
+      "videoId": "S1WQPD9rxfo",
+      "title": "하나코 나나 - Villain (Stella Jang) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-05T21:27:39+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "fqitrS2uuO8": {
+      "videoId": "fqitrS2uuO8",
+      "title": "🪦[26.10.24] 시즈키 토아 & 코가네 랑 - 하나 둘 팬클럽(いーあるふぁんくらぶ) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-05T16:38:48+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shizuki-toa",
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "bY8UolqfLd0": {
+      "videoId": "bY8UolqfLd0",
+      "title": "🐯코가네 랑-존시나(cover)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-05T11:04:13+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "B1O6Vo-PUx4": {
+      "videoId": "B1O6Vo-PUx4",
+      "title": "하나코 나나 - wish you were gay (Billie Eilish) Live Cover. (2) [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-05T10:00:26+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -2789,7 +3606,7 @@
       "publishedAt": "2026-11-05T08:30:18+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2832,6 +3649,33 @@
         "reviewReasons": []
       }
     },
+    "HrmR03CRYJ0": {
+      "videoId": "HrmR03CRYJ0",
+      "title": "하나코 나나 - Kill Bill (SZA) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-04T23:38:55+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "UlXoiaNpDbI": {
       "videoId": "UlXoiaNpDbI",
       "title": "대화가 된다",
@@ -2843,7 +3687,7 @@
       "publishedAt": "2026-11-04T09:00:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2870,7 +3714,7 @@
       "publishedAt": "2026-11-04T08:26:06+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2881,6 +3725,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "7LLwbnQaOSk": {
+      "videoId": "7LLwbnQaOSk",
+      "title": "King - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-04T08:24:45+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -2897,7 +3768,7 @@
       "publishedAt": "2026-11-04T08:00:29+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2924,7 +3795,7 @@
       "publishedAt": "2026-11-04T07:30:36+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -2951,7 +3822,7 @@
       "publishedAt": "2026-11-04T06:06:05+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -2978,7 +3849,7 @@
       "publishedAt": "2026-11-04T06:00:34+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3021,6 +3892,33 @@
         "reviewReasons": []
       }
     },
+    "FjrHb-TRf6s": {
+      "videoId": "FjrHb-TRf6s",
+      "title": "취기를 빌려 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-03T14:47:58+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "w3J30Bqph4U": {
       "videoId": "w3J30Bqph4U",
       "title": "이리 타락 3초전",
@@ -3032,7 +3930,7 @@
       "publishedAt": "2026-11-03T09:00:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3059,7 +3957,7 @@
       "publishedAt": "2026-11-03T09:00:10+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3086,7 +3984,7 @@
       "publishedAt": "2026-11-03T08:30:35+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3111,7 +4009,7 @@
       "publishedAt": "2026-11-03T08:30:22+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -3138,7 +4036,7 @@
       "publishedAt": "2026-11-03T08:09:23+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3208,6 +4106,33 @@
         "reviewReasons": []
       }
     },
+    "xlNI4BGJ3_E": {
+      "videoId": "xlNI4BGJ3_E",
+      "title": "고양이 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-02T14:40:20+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "LFpdE3GByD4": {
       "videoId": "LFpdE3GByD4",
       "title": "갑자기 이상한 후야",
@@ -3219,7 +4144,7 @@
       "publishedAt": "2026-11-02T09:00:17+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3315,6 +4240,33 @@
         "reviewReasons": []
       }
     },
+    "qFS_VC_TET8": {
+      "videoId": "qFS_VC_TET8",
+      "title": "Happy Halloween - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-11-01T15:19:53+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "QPKA-czX-w4": {
       "videoId": "QPKA-czX-w4",
       "title": "스텔 대표 농농즈! 바로 전장에 투입ㅋㅋㅋ",
@@ -3326,7 +4278,7 @@
       "publishedAt": "2026-11-01T08:30:06+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3353,7 +4305,7 @@
       "publishedAt": "2026-11-01T08:26:19+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -3380,7 +4332,7 @@
       "publishedAt": "2026-11-01T08:20:01+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3407,7 +4359,7 @@
       "publishedAt": "2026-11-01T06:30:13+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3434,7 +4386,7 @@
       "publishedAt": "2026-11-01T05:30:20+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3461,7 +4413,7 @@
       "publishedAt": "2026-11-01T05:00:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3488,7 +4440,7 @@
       "publishedAt": "2026-11-01T04:00:25+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -3515,7 +4467,7 @@
       "publishedAt": "2026-10-31T11:30:22+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3540,7 +4492,7 @@
       "publishedAt": "2026-10-31T11:00:10+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3570,7 +4522,7 @@
       "publishedAt": "2026-10-31T09:00:34+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -3597,7 +4549,7 @@
       "publishedAt": "2026-10-31T07:30:19+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3624,7 +4576,7 @@
       "publishedAt": "2026-10-31T05:30:34+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3678,7 +4630,7 @@
       "publishedAt": "2026-10-30T06:46:12+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3759,7 +4711,7 @@
       "publishedAt": "2026-10-29T09:00:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3786,7 +4738,7 @@
       "publishedAt": "2026-10-29T08:56:49+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -3813,7 +4765,7 @@
       "publishedAt": "2026-10-29T08:30:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3840,7 +4792,7 @@
       "publishedAt": "2026-10-29T08:00:19+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3867,7 +4819,7 @@
       "publishedAt": "2026-10-29T07:00:17+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3894,7 +4846,7 @@
       "publishedAt": "2026-10-28T09:03:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -3948,7 +4900,7 @@
       "publishedAt": "2026-10-28T07:30:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -3975,7 +4927,7 @@
       "publishedAt": "2026-10-28T05:30:10+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4045,6 +4997,33 @@
         "reviewReasons": []
       }
     },
+    "DXcW0ac-r8U": {
+      "videoId": "DXcW0ac-r8U",
+      "title": "하나코 나나 - 서울의 달 (김건모) Live Cover. [가사]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-28T00:54:39+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "sdnyvo64QMA": {
       "videoId": "sdnyvo64QMA",
       "title": "🥔 : 후야님 좀 닥치세요 🐲 :굿바이 #shorts #vtuber",
@@ -4083,7 +5062,7 @@
       "publishedAt": "2026-10-27T09:03:54+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4110,7 +5089,7 @@
       "publishedAt": "2026-10-27T09:00:29+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4135,7 +5114,7 @@
       "publishedAt": "2026-10-27T09:00:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4162,7 +5141,7 @@
       "publishedAt": "2026-10-27T08:44:31+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4189,7 +5168,7 @@
       "publishedAt": "2026-10-27T08:30:16+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4243,7 +5222,7 @@
       "publishedAt": "2026-10-27T07:26:06+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4286,6 +5265,60 @@
         "reviewReasons": []
       }
     },
+    "galhCDs9fPk": {
+      "videoId": "galhCDs9fPk",
+      "title": "하나코 나나 - Unholy (Sam Smith, Kim Petras) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-27T01:27:22+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "L0rtkaopNm4": {
+      "videoId": "L0rtkaopNm4",
+      "title": "볼빨간사춘기 - 나만, 봄 / 하나요 히요리 live cover (26.10.26 방종곡)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T22:52:10+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "dxVjFQqeNnw": {
       "videoId": "dxVjFQqeNnw",
       "title": "스텔라이브 4기생 ABYSS 데뷔! - [4기생 데뷔 모음집]",
@@ -4297,7 +5330,7 @@
       "publishedAt": "2026-10-26T10:00:02+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4322,7 +5355,7 @@
       "publishedAt": "2026-10-26T09:30:21+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4349,7 +5382,7 @@
       "publishedAt": "2026-10-26T09:00:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4376,7 +5409,7 @@
       "publishedAt": "2026-10-26T08:30:24+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4403,7 +5436,7 @@
       "publishedAt": "2026-10-26T08:00:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4446,6 +5479,33 @@
         "reviewReasons": []
       }
     },
+    "ah1xOGdUVQk": {
+      "videoId": "ah1xOGdUVQk",
+      "title": "볼빨간사춘기 - 나만, 봄 / 하나요 히요리 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T07:46:05+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "c1yEKJrmm-c": {
       "videoId": "c1yEKJrmm-c",
       "title": "봉누도 퀵실버 사변… #shorts #vtuber #땁툰",
@@ -4473,6 +5533,254 @@
         "reviewReasons": []
       }
     },
+    "7tJotDE8t1w": {
+      "videoId": "7tJotDE8t1w",
+      "title": "shito - 시스x러브 / 하나요 히요리 X 토키노 메리 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:40:37+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri",
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Lj1eZiaBQNs": {
+      "videoId": "Lj1eZiaBQNs",
+      "title": "한로로 - 사랑하게 될거야 / 하나요 히요리 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:40:15+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "1wu9lqU6OK8": {
+      "videoId": "1wu9lqU6OK8",
+      "title": "ryo - 블랙 록 슈터 / 하나요 히요리 X 토키노 메리 X 코가네 랑 X 시즈키 토아 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:39:59+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri",
+          "shizuki-toa",
+          "hanayo-hiyori",
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "l57fhBBwI08": {
+      "videoId": "l57fhBBwI08",
+      "title": "나츠시로 타카아키 - 사랑하고 있는 거야 / 하나요 히요리 X 코가네 랑 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:39:44+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori",
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wquHhhiGwsA": {
+      "videoId": "wquHhhiGwsA",
+      "title": "요루시카 - 봄도둑 / 하나요 히요리 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:38:19+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "tpg26KN8eW8": {
+      "videoId": "tpg26KN8eW8",
+      "title": "B코마치 - 사인은B / 하나요 히요리 live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:38:09+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "1HfhMI29c-w": {
+      "videoId": "1HfhMI29c-w",
+      "title": "요루시카 - 봄도둑(연습) / 하나요 히요리 cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:37:57+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "A9He586HFuE": {
+      "videoId": "A9He586HFuE",
+      "title": "한로로 - 사랑하게 될 거야(연습) / 하나요 히요리 cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-26T01:37:44+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLFlLdtTq_r_U",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanayo-hiyori"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Ji6N9o_dqOE": {
+      "videoId": "Ji6N9o_dqOE",
+      "title": "하나코 나나 - Gasoline (Halsey) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-25T21:22:03+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "IP_mOtJaBP4": {
       "videoId": "IP_mOtJaBP4",
       "title": "레나야 친구한테 돈 좀 잃을 수도 있지ㅋㅋㅋ 【스다주밸리】",
@@ -4484,7 +5792,7 @@
       "publishedAt": "2026-10-25T08:32:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4511,7 +5819,7 @@
       "publishedAt": "2026-10-25T08:04:50+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4538,7 +5846,7 @@
       "publishedAt": "2026-10-25T07:30:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4565,7 +5873,7 @@
       "publishedAt": "2026-10-25T07:09:43+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4592,7 +5900,7 @@
       "publishedAt": "2026-10-25T05:30:19+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4619,7 +5927,7 @@
       "publishedAt": "2026-10-25T05:00:13+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4657,6 +5965,34 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wntx_cKS9SQ": {
+      "videoId": "wntx_cKS9SQ",
+      "title": "[ 열등상등 (劣等上等) - Giga ] 토키노 메리 X 시즈키 토아 Live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-24T15:51:33+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLaWgFzmpw2bQ",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tokino-meri",
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -4700,7 +6036,7 @@
       "publishedAt": "2026-10-24T07:51:26+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4727,7 +6063,7 @@
       "publishedAt": "2026-10-24T07:30:33+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4754,7 +6090,7 @@
       "publishedAt": "2026-10-24T07:30:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4851,6 +6187,35 @@
         "reviewReasons": []
       }
     },
+    "D07L5s9JPUA": {
+      "videoId": "D07L5s9JPUA",
+      "title": "코가네 랑 이누야샤 ost - 시대를 초월한 마음 (flute)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-23T13:45:20+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "playlist_official_candidate"
+        ]
+      }
+    },
     "SRMTyNLUnZY": {
       "videoId": "SRMTyNLUnZY",
       "title": "Letters to me [이환 OST / 아카네 린] l 사키하네 후야(Sakihane Huya) Cover",
@@ -4862,7 +6227,7 @@
       "publishedAt": "2026-10-23T09:00:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T19:42:05Z",
       "failStreak": 0,
@@ -4894,7 +6259,7 @@
       "publishedAt": "2026-10-23T09:00:02+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4921,7 +6286,7 @@
       "publishedAt": "2026-10-23T08:44:35+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -4948,7 +6313,7 @@
       "publishedAt": "2026-10-23T08:00:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -4975,7 +6340,7 @@
       "publishedAt": "2026-10-23T08:00:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5029,7 +6394,7 @@
       "publishedAt": "2026-10-23T05:30:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5067,6 +6432,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "OIX-TarvMxg": {
+      "videoId": "OIX-TarvMxg",
+      "title": "Whiteberry - 여름축제(夏祭り) ｜ Live Cover by 코가네 랑",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-22T14:58:12+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -5110,7 +6502,7 @@
       "publishedAt": "2026-10-22T09:05:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -5137,7 +6529,7 @@
       "publishedAt": "2026-10-22T09:00:37+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5191,7 +6583,7 @@
       "publishedAt": "2026-10-22T09:00:32+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -5218,7 +6610,7 @@
       "publishedAt": "2026-10-22T09:00:13+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -5245,7 +6637,7 @@
       "publishedAt": "2026-10-22T08:33:32+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5353,7 +6745,7 @@
       "publishedAt": "2026-10-21T11:30:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
@@ -5411,7 +6803,7 @@
       "publishedAt": "2026-10-21T09:00:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -5463,7 +6855,7 @@
       "publishedAt": "2026-10-21T08:00:33+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -5517,7 +6909,7 @@
       "publishedAt": "2026-10-21T07:30:16+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5571,7 +6963,7 @@
       "publishedAt": "2026-10-21T05:30:30+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5760,7 +7152,7 @@
       "publishedAt": "2026-10-20T09:00:22+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5814,7 +7206,7 @@
       "publishedAt": "2026-10-20T08:16:23+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -5868,7 +7260,7 @@
       "publishedAt": "2026-10-20T07:00:30+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -5949,7 +7341,7 @@
       "publishedAt": "2026-10-20T03:00:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -6129,7 +7521,7 @@
       "publishedAt": "2026-10-19T09:00:18+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6156,7 +7548,7 @@
       "publishedAt": "2026-10-19T09:00:14+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6183,7 +7575,7 @@
       "publishedAt": "2026-10-19T08:00:00+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6237,7 +7629,7 @@
       "publishedAt": "2026-10-18T12:00:20+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6262,7 +7654,7 @@
       "publishedAt": "2026-10-18T11:08:26+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -6368,7 +7760,7 @@
       "publishedAt": "2026-10-18T07:30:15+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6465,6 +7857,33 @@
         "reviewReasons": []
       }
     },
+    "RjXRj1j-EXE": {
+      "videoId": "RjXRj1j-EXE",
+      "title": "코가네 랑 - 연결고리 Live Cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-18T02:33:25+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "eSI7RsjZy1E": {
       "videoId": "eSI7RsjZy1E",
       "title": "도쿄 테디베어 [東京テディベア] / 토키노 메리 Cover",
@@ -6504,7 +7923,7 @@
       "publishedAt": "2026-10-18",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T22:35:19Z",
       "failStreak": 0,
@@ -6518,6 +7937,87 @@
         ],
         "matchedRules": [
           "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "GebdKkGgRkw": {
+      "videoId": "GebdKkGgRkw",
+      "title": "[코가네 랑] Samfree - Luka Luka★Night Fever(루카루카★나이트 피버) cover (26.10.17)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T14:13:02+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "JgNTliT-ztA": {
+      "videoId": "JgNTliT-ztA",
+      "title": "[코가네 랑] Whiteberry - 夏祭り(나츠마츠리) cover (26.10.17)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T12:44:38+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "OH0XN08Cp10": {
+      "videoId": "OH0XN08Cp10",
+      "title": "🎵 【루카루카★나이트 피버 - samfree】Live cover 코가네 랑",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T12:09:20+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -6550,6 +8050,116 @@
         "reviewReasons": []
       }
     },
+    "v5mBsYXWZXc": {
+      "videoId": "v5mBsYXWZXc",
+      "title": "블랙핑크 - stay cover.시즈키 토아",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T10:08:26+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLaWgFzmpw2bQ",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "CeMPptOg_t0": {
+      "videoId": "CeMPptOg_t0",
+      "title": "시대를 초월한 마음 - 코가네 랑 플룻 커버",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T09:28:00+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLWq_FnYQsJmM",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "kogane-rang"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "SkjqmixHsLw": {
+      "videoId": "SkjqmixHsLw",
+      "title": "시즈키 토아 데뷔 방송 + 노래(G4L / GIGA) 풀버전",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T09:10:12+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLaWgFzmpw2bQ",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "playlist_full_stream_candidate"
+        ]
+      }
+    },
+    "Y0c9J8WAn8k": {
+      "videoId": "Y0c9J8WAn8k",
+      "title": "Rock n roll - 시즈키 토아 커버",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-17T09:03:13+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLaWgFzmpw2bQ",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "brsd0gJ42Ss": {
       "videoId": "brsd0gJ42Ss",
       "title": "그냥 너무 좋잖아요.",
@@ -6561,7 +8171,7 @@
       "publishedAt": "2026-10-17T08:18:39+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6588,7 +8198,7 @@
       "publishedAt": "2026-10-17T08:00:33+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6615,7 +8225,7 @@
       "publishedAt": "2026-10-17T07:30:14+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6698,7 +8308,7 @@
       "publishedAt": "2026-10-17",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
@@ -6730,7 +8340,7 @@
       "publishedAt": "2026-10-17",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
@@ -6751,6 +8361,33 @@
         ]
       }
     },
+    "UDY4DXnWQ2k": {
+      "videoId": "UDY4DXnWQ2k",
+      "title": "레오루(REOL) - 치루치루(ちるちる) cover.시즈키 토아",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-16T14:03:48+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLaWgFzmpw2bQ",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "rKQptWhAvO0": {
       "videoId": "rKQptWhAvO0",
       "title": "도쿄 테디베어 [東京テディベア l Neru] / 토키노 메리 (Tokino Mary) Cover",
@@ -6762,7 +8399,7 @@
       "publishedAt": "2026-10-16T10:00:10+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6792,7 +8429,7 @@
       "publishedAt": "2026-10-16T08:00:26+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -6884,6 +8521,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "TL3JHiFS64U": {
+      "videoId": "TL3JHiFS64U",
+      "title": "용용 - 매초마다 죽어가고 있어 cover.시즈키 토아",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-16T05:17:36+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLaWgFzmpw2bQ",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shizuki-toa"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -7035,7 +8699,7 @@
       "publishedAt": "2026-10-15T09:00:39+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -7168,7 +8832,7 @@
       "publishedAt": "2026-10-15T07:30:27+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -7411,7 +9075,7 @@
       "publishedAt": "2026-10-14T08:00:16+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -7465,7 +9129,7 @@
       "publishedAt": "2026-10-14T07:30:12+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -7817,7 +9481,7 @@
       "publishedAt": "2026-10-12T09:00:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -8494,7 +10158,7 @@
       "publishedAt": "2026-10-09T06:00:01+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -8972,6 +10636,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2lNMSjcJYsU": {
+      "videoId": "2lNMSjcJYsU",
+      "title": "하나코 나나 - Hello Live Cover. (2) [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-10-06T23:14:26+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -17880,6 +19571,33 @@
         "reviewReasons": []
       }
     },
+    "Srs9a4KWGXc": {
+      "videoId": "Srs9a4KWGXc",
+      "title": "꽃다발 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-08-18T05:30:05+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "o9sLcVS4gXk": {
       "videoId": "o9sLcVS4gXk",
       "title": "자기야, 나 방송 끝났어~ - [스텔라 핫클립]",
@@ -19130,6 +20848,33 @@
         "reviewReasons": []
       }
     },
+    "raO-WA94ulE": {
+      "videoId": "raO-WA94ulE",
+      "title": "날 위해 웃어줘 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-08-09T15:41:40+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "-GWXzsvK9CA": {
       "videoId": "-GWXzsvK9CA",
       "title": "잘 가라, 포대장. 내가 없는 시대에 태어난 것뿐인 범부(凡夫)여.",
@@ -20047,6 +21792,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Q8mSuRrYQ6A": {
+      "videoId": "Q8mSuRrYQ6A",
+      "title": "악당주의보 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-08-04T03:30:01+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -23223,6 +24995,33 @@
         "reviewReasons": []
       }
     },
+    "KE71QIBEGo4": {
+      "videoId": "KE71QIBEGo4",
+      "title": "하나코 나나 - 신데렐라 보이 (シンデレラボーイ) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-07-19T02:18:31+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "OR9URrgtjq8": {
       "videoId": "OR9URrgtjq8",
       "title": "아오쿠모 린(Aokumo Rin) | 'Maid My Way' Teaser",
@@ -24414,6 +26213,33 @@
         ]
       }
     },
+    "YgmYjdmQNGo": {
+      "videoId": "YgmYjdmQNGo",
+      "title": "스물다섯, 스물하나 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-07-11T09:00:34+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "B7Xa42G62JA": {
       "videoId": "B7Xa42G62JA",
       "title": "일단 튀기면 맛있지 않을까?",
@@ -24926,6 +26752,33 @@
         "reviewReasons": [
           "weak_live_token"
         ]
+      }
+    },
+    "W9LKXFMKND4": {
+      "videoId": "W9LKXFMKND4",
+      "title": "안아줘 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-07-08T23:00:00+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
       }
     },
     "j9csrxAsdys": {
@@ -25685,6 +27538,33 @@
         "reviewReasons": []
       }
     },
+    "3RAkZe7JQdY": {
+      "videoId": "3RAkZe7JQdY",
+      "title": "Star Bubble - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-07-05T01:00:05+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "3Y7Ek6YSGPE": {
       "videoId": "3Y7Ek6YSGPE",
       "title": "청록[Blue Rock] - it'sㅣ아카네 리제(Akane Lize) 【COVER】",
@@ -25958,6 +27838,33 @@
         "reviewReasons": []
       }
     },
+    "HBbFcGq1K4I": {
+      "videoId": "HBbFcGq1K4I",
+      "title": "고양이 소리를 따라해보자 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-07-03T05:00:28+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "DXBFovGspkM": {
       "videoId": "DXBFovGspkM",
       "title": "싫은 소리, 막말 내뱉기 #vtuber #shorts",
@@ -26140,6 +28047,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "QS-oxIlcNZU": {
+      "videoId": "QS-oxIlcNZU",
+      "title": "잘 지내자, 우리 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-07-02T03:30:18+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -27661,6 +29595,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "OGBkSG_xQ3E": {
+      "videoId": "OGBkSG_xQ3E",
+      "title": "하나코 나나 - Flower (Johnny Stimson) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-06-23T22:24:06+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -29434,6 +31395,33 @@
         ],
         "matchedRules": [
           "R35-original"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "1cWgT_WWpPU": {
+      "videoId": "1cWgT_WWpPU",
+      "title": "하나코 나나 - Juice Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-06-14T00:17:19+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -38100,6 +40088,33 @@
         "reviewReasons": []
       }
     },
+    "Y-5YPpBfqK8": {
+      "videoId": "Y-5YPpBfqK8",
+      "title": "하나코 나나 - 잔혹한 천사의 테제 (残酷な天使のテーゼ) Live Cover. (2) [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-04-28T06:07:11+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "zSxYokLegcQ": {
       "videoId": "zSxYokLegcQ",
       "title": "히나와 타이밍에 맞춰 눈을 깜빡여 보세요! #cartoon #comic #vtuber #shorts",
@@ -38122,6 +40137,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "BhvjXSkGqK0": {
+      "videoId": "BhvjXSkGqK0",
+      "title": "하나코 나나 - deja vu (Olivia Rodrigo) Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-04-27T23:04:10+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -40504,6 +42546,33 @@
         "reviewReasons": []
       }
     },
+    "NWTKcU2QVyg": {
+      "videoId": "NWTKcU2QVyg",
+      "title": "도망가자 - 유즈하 리코 (Yuzuha Riko) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-04-13T08:30:12+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "qOcRIuU8GyU": {
       "videoId": "qOcRIuU8GyU",
       "title": "나가 #shorts #vtuber",
@@ -42711,6 +44780,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ekz86yeulOs": {
+      "videoId": "ekz86yeulOs",
+      "title": "하나코 나나 - 7 rings Live Cover. [가사/해석]",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2026-03-31T17:44:00+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "hanako-nana"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -96166,6 +98262,33 @@
         "reviewReasons": []
       }
     },
+    "tcd-aW4y0Vo": {
+      "videoId": "tcd-aW4y0Vo",
+      "title": "네네코 마시로 - 저글링 4마리  Live cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-06-11T04:39:30+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYsw0qfl6F3a37hYqYACI93B-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "WXVKnntJSrY": {
       "videoId": "WXVKnntJSrY",
       "title": "𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭🌙 | 여름밤, 감성을 자극하는 시라유키 히나 노래 [Part.1🎧]",
@@ -97645,6 +99768,35 @@
         ],
         "reviewRequired": false,
         "reviewReasons": []
+      }
+    },
+    "6Q78RPXk2es": {
+      "videoId": "6Q78RPXk2es",
+      "title": "Miiro 「목숨」 feat. 아카네 리제 OFFICIAL MV",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-05-30T12:15:03+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": true,
+        "reviewReasons": [
+          "playlist_official_candidate"
+        ]
       }
     },
     "WAnxs8UhpuU": {
@@ -116157,6 +118309,114 @@
         "reviewReasons": []
       }
     },
+    "c0K89Zf6uBQ": {
+      "videoId": "c0K89Zf6uBQ",
+      "title": "n-buna - 새벽과 반딧불이 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-26T14:48:15+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "jUgDPdZfuxI": {
+      "videoId": "jUgDPdZfuxI",
+      "title": "yukkedoluce - 사과팔이 물거품 소녀 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-26T14:44:16+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "8cc5YJeTutM": {
+      "videoId": "8cc5YJeTutM",
+      "title": "HarryP - 목소리 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-26T14:32:56+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "qpDKXAiOSfo": {
+      "videoId": "qpDKXAiOSfo",
+      "title": "Kanaria - 취한 줄을 모르고 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-26T13:55:52+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "PE4h4kflmmg": {
       "videoId": "PE4h4kflmmg",
       "title": "아는형님식 가오 충전하는 법  #스텔라이브 #하나코나나 #겟투워크",
@@ -116346,6 +118606,33 @@
         "reviewReasons": []
       }
     },
+    "4LY2pI3JipY": {
+      "videoId": "4LY2pI3JipY",
+      "title": "미키토P - 사리시노하라 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-25T08:45:33+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "VPHMXZ4JS8g": {
       "videoId": "VPHMXZ4JS8g",
       "title": "스텔라이브 4기생 모집!",
@@ -116447,6 +118734,87 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "4hub8C6kw18": {
+      "videoId": "4hub8C6kw18",
+      "title": "DECO*27 - 방해쟁이 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-24T15:44:01+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "BSeWjSZHt2g": {
+      "videoId": "BSeWjSZHt2g",
+      "title": "DATEKEN - 밀월 Un Deux Trois (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-24T15:18:48+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ti5X8OVEtsg": {
+      "videoId": "ti5X8OVEtsg",
+      "title": "네코보로 - 손바닥 원더랜드 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-24T15:01:44+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -116636,6 +119004,87 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "2TU0iZjYJ3I": {
+      "videoId": "2TU0iZjYJ3I",
+      "title": "Heavenz - 페이먼트 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-23T16:12:26+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "wJD-uQCKAnE": {
+      "videoId": "wJD-uQCKAnE",
+      "title": "Giga - CH4NGE (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-23T15:47:15+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "JUDQ6Es6yJA": {
+      "videoId": "JUDQ6Es6yJA",
+      "title": "코메다와라 - 스스로 안락에 빠지다 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-23T15:37:23+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -116934,6 +119383,87 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ruFSKnpXTjk": {
+      "videoId": "ruFSKnpXTjk",
+      "title": "EasyPop - 해피 신디사이저 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-21T15:58:39+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Jtbkt2TAGxU": {
+      "videoId": "Jtbkt2TAGxU",
+      "title": "스코프 - 결벽증 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-21T15:49:42+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "aCeeekcG1h0": {
+      "videoId": "aCeeekcG1h0",
+      "title": "나유탄 성인 - 에일리언 에일리언 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-21T15:38:26+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -117977,6 +120507,34 @@
         "members": [],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ZwCtKboewZ8": {
+      "videoId": "ZwCtKboewZ8",
+      "title": "용사와 여우신이 부르는 만찬가｜tuki.(츠키)_晩餐歌(만찬가) Live Cover.텐코 시부키 X 유즈하 리코",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-12T16:11:47+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki",
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -119254,6 +121812,33 @@
         ],
         "matchedRules": [
           "R10-short"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "f3ib7KTewzU": {
+      "videoId": "f3ib7KTewzU",
+      "title": "안예은 - 낮에 뜨는 달 (cover by 아오쿠모 린)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2025-01-03T09:39:41+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "aokumo-rin"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -122579,6 +125164,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "K7h1Wjg38uI": {
+      "videoId": "K7h1Wjg38uI",
+      "title": "Voyage",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-12-11T09:04:22+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYszCTHPI9Qual0EAKuwE7gu-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -130277,6 +132889,33 @@
         "reviewReasons": []
       }
     },
+    "YmSBbbqadrE": {
+      "videoId": "YmSBbbqadrE",
+      "title": "Springdream",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-16T09:02:11+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYsw0qfl6F3a37hYqYACI93B-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "h8jQ2WlLy2A": {
       "videoId": "h8jQ2WlLy2A",
       "title": "내껀 뿔이 아니라니깐!!",
@@ -130655,6 +133294,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "fcaJUUUmpxI": {
+      "videoId": "fcaJUUUmpxI",
+      "title": "텐코 시부키 - 시대를 초월한 마음",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-14T08:33:04+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -131248,6 +133914,114 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "cVt3sp8u2lo": {
+      "videoId": "cVt3sp8u2lo",
+      "title": "악마의 아이(悪魔の子) / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-10T09:24:22+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Th60R2WV7Rg": {
+      "videoId": "Th60R2WV7Rg",
+      "title": "무희(踊り子) / 텐코 시부키(Tenko Shibuki) cover 3",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-10T09:18:26+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "GMUFAttm77w": {
+      "videoId": "GMUFAttm77w",
+      "title": "별마을 역에서(星街の駅で) / 텐코 시부키(Tenko Shibuki) cover 2",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-10T09:12:06+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "YrMeQ1_F7Q4": {
+      "videoId": "YrMeQ1_F7Q4",
+      "title": "시대를 초월한 마음 / 텐코 시부키(Tenko Shibuki) cover 3",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-10T09:05:36+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -132143,6 +134917,222 @@
         "reviewReasons": []
       }
     },
+    "hasgMJLG0fY": {
+      "videoId": "hasgMJLG0fY",
+      "title": "아름다운 밤 / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T12:39:52+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "AvEkKp6-9D8": {
+      "videoId": "AvEkKp6-9D8",
+      "title": "I Love You / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T12:36:58+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "U_JSzah-v10": {
+      "videoId": "U_JSzah-v10",
+      "title": "후라이의 꿈 / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T12:33:50+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "K3KflHZdjUw": {
+      "videoId": "K3KflHZdjUw",
+      "title": "Give Love / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T12:30:49+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Xgk6uASU7jM": {
+      "videoId": "Xgk6uASU7jM",
+      "title": "Crescendo  / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T12:27:40+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "X7ZBwR2KF9o": {
+      "videoId": "X7ZBwR2KF9o",
+      "title": "200% / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T12:23:09+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "ch_Si6EB4j4": {
+      "videoId": "ch_Si6EB4j4",
+      "title": "요즘 너 말야 / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T10:18:50+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "TJPFp1qhxy8": {
+      "videoId": "TJPFp1qhxy8",
+      "title": "나의 X에게 / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-04T10:16:03+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "7CQuc6Jf4UE": {
       "videoId": "7CQuc6Jf4UE",
       "title": "GETCHA! (Giga & KIRA) - 유즈하 리코 x 아오쿠모 린 (Yuzuha Riko x Aokumo Rin) Cover",
@@ -132277,6 +135267,87 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "FdZfrf2zKec": {
+      "videoId": "FdZfrf2zKec",
+      "title": "내 손을 잡아 / 텐코 시부키(Tenko Shibuki) cover 2",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-03T17:10:34+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Sgd1QLeMv94": {
+      "videoId": "Sgd1QLeMv94",
+      "title": "Love poem / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-03T17:08:57+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "rKLebRsTBPA": {
+      "videoId": "rKLebRsTBPA",
+      "title": "드라마 / 텐코 시부키(Tenko Shibuki) cover 2",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-10-03T17:06:05+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -136168,7 +139239,7 @@
       "publishedAt": "2024-09-06T10:58:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -137912,6 +140983,33 @@
         "reviewReasons": []
       }
     },
+    "VieGTGr3gfo": {
+      "videoId": "VieGTGr3gfo",
+      "title": "[ 체리필터 - 오리 날다 ] 텐코 시부키",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-08-27T02:50:28+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "F1z4vkaZK8U": {
       "videoId": "F1z4vkaZK8U",
       "title": "[멋봉리마지막화] 아이돌 몰래 훔쳐보기",
@@ -138865,7 +141963,7 @@
       "publishedAt": "2024-08-18T11:58:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
@@ -141763,7 +144861,7 @@
       "publishedAt": "2024-07-25T09:00:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -141979,7 +145077,7 @@
       "publishedAt": "2024-07-24T03:02:33+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -143193,6 +146291,33 @@
         "reviewReasons": []
       }
     },
+    "jQps4B51ctM": {
+      "videoId": "jQps4B51ctM",
+      "title": "첫눈처럼 너에게 가겠다 / 텐코 시부키(Tenko Shibuki) cover",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-07-14T17:36:59+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "QQJ4bpCbt80": {
       "videoId": "QQJ4bpCbt80",
       "title": "오리꽥꽥병아리삐약삐약",
@@ -144328,7 +147453,7 @@
       "publishedAt": "2024-07-06T09:00:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -144664,6 +147789,34 @@
         "members": [],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "znAPzpGphaU": {
+      "videoId": "znAPzpGphaU",
+      "title": "용사와 여우신이 부르는 거북이｜Davichi(다비치)_Turtle(거북이) Live Cover.텐코 시부키 X 유즈하 리코",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-07-03T15:05:47+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki",
+          "yuzuha-riko"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -146964,6 +150117,33 @@
         "reviewReasons": []
       }
     },
+    "WM5MzlIuKas": {
+      "videoId": "WM5MzlIuKas",
+      "title": "최종화 - 타비 Cover(06.16)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-06-17T10:18:27+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYszCTHPI9Qual0EAKuwE7gu-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "pU6EL5Purlc": {
       "videoId": "pU6EL5Purlc",
       "title": "아야츠노 유니 | ‘SUPADOPA’ Teaser",
@@ -147689,6 +150869,33 @@
         "reviewReasons": []
       }
     },
+    "GC-TTRaeXBs": {
+      "videoId": "GC-TTRaeXBs",
+      "title": "Drowning - 타비 Cover(06.12)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-06-13T04:48:48+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYszCTHPI9Qual0EAKuwE7gu-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "4fQH9QNlwto": {
       "videoId": "4fQH9QNlwto",
       "title": "17세 메이드가 부른 'fake face dance music' #vtuber #shorts",
@@ -148223,7 +151430,7 @@
       "publishedAt": "2024-06-09T12:29:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -151428,6 +154635,33 @@
         "reviewReasons": []
       }
     },
+    "aB0G-DZfxfM": {
+      "videoId": "aB0G-DZfxfM",
+      "title": "[ 윤하 - 혜성 ] 텐코 시부키",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-05-21T02:45:34+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "tenko-shibuki"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "j_1GomMh08E": {
       "videoId": "j_1GomMh08E",
       "title": "[ 죽지마! / 콧치노 켄토 ] 하나코 나나 Short cover #vtuber #shorts",
@@ -152018,7 +155252,7 @@
       "publishedAt": "2024-05-15T11:00:08+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-21T00:24:54Z",
       "failStreak": 0,
@@ -155055,6 +158289,33 @@
         "reviewReasons": []
       }
     },
+    "kr4IRhj1pR4": {
+      "videoId": "kr4IRhj1pR4",
+      "title": "Hit on Shot (Inst.)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-04-03T09:04:00+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "akane-lize"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "suyhkCwKX48": {
       "videoId": "suyhkCwKX48",
       "title": "아이리 칸나 x 아카네 리제  | ‘Hit On Shot’",
@@ -157640,7 +160901,7 @@
       "publishedAt": "2024-03-01",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
@@ -159476,7 +162737,7 @@
       "publishedAt": "2024-02-10",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T22:35:19Z",
       "failStreak": 0,
@@ -159490,6 +162751,420 @@
         ],
         "matchedRules": [
           "R40-cover"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9yeoImGmywg": {
+      "videoId": "9yeoImGmywg",
+      "title": "Nxde / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:38:35+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "JOb_wvgP5IA": {
+      "videoId": "JOb_wvgP5IA",
+      "title": "빌런 (Villain) / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:38:01+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "HL-5WvRwxX4": {
+      "videoId": "HL-5WvRwxX4",
+      "title": "Lost stars / 시라유키 히나",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:36:31+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Z_yJDbus9ww": {
+      "videoId": "Z_yJDbus9ww",
+      "title": "Little star / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:35:23+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "q7tsSrnwbLw": {
+      "videoId": "q7tsSrnwbLw",
+      "title": "아틀란티스 소녀 / 시라유키 히나",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:33:59+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "GtoBCtFdyBw": {
+      "videoId": "GtoBCtFdyBw",
+      "title": "아라리 / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:32:38+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9E3CiG3zbKk": {
+      "videoId": "9E3CiG3zbKk",
+      "title": "아무것도 아니야(なんでもないや) / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:31:29+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "GH8vEc1820Q": {
+      "videoId": "GH8vEc1820Q",
+      "title": "Dear moon / 시라유키 히나",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:30:39+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "jR-P5cTgEl0": {
+      "videoId": "jR-P5cTgEl0",
+      "title": "D (half moon) / 시라유키 히나",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:26:46+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "mvzW19Gk8UU": {
+      "videoId": "mvzW19Gk8UU",
+      "title": "한숨 / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:25:44+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "FR5dwSPFOgo": {
+      "videoId": "FR5dwSPFOgo",
+      "title": "A Thousand Years / 시라유키 히나",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:25:01+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "SPQZY05Qnd0": {
+      "videoId": "SPQZY05Qnd0",
+      "title": "기억을 걷는 시간 / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:22:50+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "9FGS4Dqje1k": {
+      "videoId": "9FGS4Dqje1k",
+      "title": "comethru / 시라유키 히나",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:22:34+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "UNKGHrKegyI": {
+      "videoId": "UNKGHrKegyI",
+      "title": "괴수의 꽃 노래(怪獣の花唄) / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:17:56+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "YOF9rPbgyiQ": {
+      "videoId": "YOF9rPbgyiQ",
+      "title": "피날레(フィナーレ。) / 시라유키 히나, 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2024-02-09T13:14:47+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "shirayuki-hina",
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
@@ -161247,7 +164922,7 @@
       "publishedAt": "2024-01-15",
       "source": "seed",
       "firstSeenAt": "2026-11-17T00:00:00Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -163703,7 +167378,7 @@
       "publishedAt": "2023-12-02T15:13:44+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -164702,7 +168377,7 @@
       "publishedAt": "2023-11-18T13:58:07+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T21:33:01Z",
       "failStreak": 0,
@@ -165249,7 +168924,7 @@
       "publishedAt": "2023-11-09T09:00:10+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -165303,7 +168978,7 @@
       "publishedAt": "2023-11-08T11:00:09+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "unverified",
       "statusCheckedAt": null,
       "failStreak": 0,
@@ -165874,7 +169549,7 @@
       "publishedAt": "2023-10-31T10:00:11+00:00",
       "source": "rss",
       "firstSeenAt": "2026-11-21T00:24:54Z",
-      "lastSeenInFeedAt": "2026-11-22T00:05:08Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
       "status": "active",
       "statusCheckedAt": "2026-11-22T18:32:42Z",
       "failStreak": 0,
@@ -174141,6 +177816,33 @@
         "reviewReasons": []
       }
     },
+    "UqoCXgIu4Wc": {
+      "videoId": "UqoCXgIu4Wc",
+      "title": "유우리 - 베텔기우스(ベテルギウス) ｜ Cover by 아라하시 타비",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2023-07-06T21:39:46+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYszCTHPI9Qual0EAKuwE7gu-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "arahashi-tabi"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
     "8oJDvoCRxEs": {
       "videoId": "8oJDvoCRxEs",
       "title": "헉 때리려던건 아닌데",
@@ -175426,6 +179128,33 @@
         ],
         "matchedRules": [
           "R90-none"
+        ],
+        "reviewRequired": false,
+        "reviewReasons": []
+      }
+    },
+    "Hfu4fh1a9WA": {
+      "videoId": "Hfu4fh1a9WA",
+      "title": "네네코 마시로(Neneko Mashiro) - 무희(踊り子)",
+      "previousTitles": [],
+      "channelKey": null,
+      "seenOnChannels": [],
+      "publishedAt": "2023-06-10T10:39:54+00:00",
+      "source": "playlist",
+      "firstSeenAt": "2026-11-23T13:58:32Z",
+      "lastSeenInFeedAt": "2026-11-23T13:58:32Z",
+      "status": "unverified",
+      "statusCheckedAt": null,
+      "failStreak": 0,
+      "isShort": false,
+      "playlistId": "PLkpE8OHnsYsw0qfl6F3a37hYqYACI93B-",
+      "auto": {
+        "category": "stream_song",
+        "members": [
+          "neneko-mashiro"
+        ],
+        "matchedRules": [
+          "P01-playlist-song"
         ],
         "reviewRequired": false,
         "reviewReasons": []
