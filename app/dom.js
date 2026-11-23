@@ -51,6 +51,8 @@ export const DISCLAIMER = "모든 점수는 큐레이터 개인 평가이며 공
 
 export const REASON_LABELS = {
   stream_song_weak: "방송노래 후보 (약한 키워드: 노래·부른 등)",
+  playlist_official_candidate: "재생목록 영상이 공식 곡(MV·OST)일 수 있음",
+  playlist_full_stream_candidate: "재생목록 영상이 방송 풀버전(VOD)일 수 있음",
   weak_live_token: "약한 라이브 단어만 있음",
   unit_expansion: "유닛 별칭으로 멤버 확장",
   group_expansion: "그룹 별칭으로 전 재적 멤버 확장",

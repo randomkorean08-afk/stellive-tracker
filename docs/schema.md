@@ -289,11 +289,14 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 - `data/playlists.json`(사용자 소유, 스크립트는 읽기만 함, `schemaVersion: 1`): `playlists[]` = `{ playlistId, member, note? }`. `member`는 `channels-lock.json`의 멤버 key이며, 한 멤버에 재생목록이 여러 개여도 된다. 방송 라이브 노래 재생목록을 매시간(공식 16채널 수집 직후) 동기화한다.
 - 수집: `YOUTUBE_API_KEY`가 있으면 `playlistItems.list?part=snippet,contentDetails,status&maxResults=50`을 페이지 끝까지 호출한다(페이지당 1 quota). 사용 필드는 `contentDetails.videoId`, `snippet.title`, `contentDetails.videoPublishedAt`(영상 공개일), `snippet.videoOwnerChannelId`이고, `Private video`·`Deleted video`·`status.privacyStatus == private`는 건너뛴다. 키가 없거나 API 호출이 실패하면 재생목록 RSS(`feeds/videos.xml?playlist_id=`, 최신 약 15개, `<yt:channelId>`/`<author><uri>`에서 소유 채널 추출)로 대체한다. URL(키 포함)은 로그에 출력하지 않는다.
 - quota: 재생목록당 `ceil(항목 수 / 50)` 페이지. 14개 재생목록이 각 100개 안팎이면 실행당 약 28 unit(하루 약 700, 일일 한도 10,000의 7%). 재생목록 순서는 날짜순이 보장되지 않아 조기 중단하지 않는다(새 영상이 목록 끝에 붙는 경우가 많음). 한 재생목록은 최대 100페이지(5,000개)에서 멈춘다.
+- `rssOnly: true`(선택): 짧은 ID처럼 API가 거부할 수 있는 재생목록은 API 호출 없이 RSS(최신 15개)만 쓴다(quota·WARN 낭비 방지). 실행마다 `RSS-only (latest 15): ...` 한 줄을 남긴다.
 - 실패 처리: 재생목록 하나가 실패(HTTP 404, 잘못된 ID 등)하면 `ERROR playlist <id> (<member>): <사유>` 한 줄을 남기고 나머지는 계속 수집한다. API만 실패하고 RSS가 성공하면 `WARN` 후 RSS 결과를 쓴다. ID 길이는 검사하지 않는다(HTTP 응답으로 판단).
 - 분류 규칙 (`mergePlaylistEntries`, 공식 채널 병합 이후 실행):
   - 이미 `videos.json`에 있는 ID는 어떤 필드도 바꾸지 않는다(category·members·auto·overrides·ratings 불변, 재분류 없음).
   - 신규 영상의 소유 채널이 `channels-lock.json`의 공식 채널이면 `channelKey`를 그 채널로 두고 일반 공식 업로드와 똑같이 분류한다(방송노래 아님).
   - 그 외(팬·클리퍼 업로드)는 `stream_song`(노출, 평가 제외)으로 고정한다. `members` = 영상이 들어 있는 재생목록의 멤버(모두) + 제목에서 감지된 멤버, `reviewRequired: false`, `matchedRules: ["P01-playlist-song"]`.
+  - 자동 승격 금지(검토 대기, `reviewRequired: true`, 카테고리는 `stream_song` 유지): 제목 분류가 `original`/`live_special`이면 `playlist_official_candidate`(공식 MV·OST일 수 있음), 제목에 토큰 `방송`과 `풀버전`이 모두 있으면 `playlist_full_stream_candidate`(방송 풀 VOD일 수 있음). 큐레이터가 overrides로 결정한다.
+  - `collect: "none"` 채널(예: stellive-topic)이 소유한 영상은 의도적으로 수집하지 않으므로 추가하지 않고 건너뛴다.
   - 쇼츠(`isShort` 확인 시 R05, 제목의 shorts 키워드)와 노래방송 풀 VOD(R20)는 방송노래로 두지 않고 제외 카테고리로 둔다. 신규 항목도 기존 쇼츠 판정(영상당 1회)을 거친다.
   - `reclassify()`는 `source: "playlist"`이고 `channelKey`가 비어 있는 항목을 `source: "manual"`처럼 고정한다(`--reclassify-all`에서도). 예외: oEmbed로 공식 채널이 확인되어 `channelKey`가 채워지면 일반 분류로 돌아간다.
 - 영상 필드(선택, 신규 항목만): `source: "playlist"`, `playlistId`(처음 발견한 재생목록). 파생 계산(`lib/derive.mjs`)은 이 필드를 보지 않는다. `schemaVersion`은 그대로 1.

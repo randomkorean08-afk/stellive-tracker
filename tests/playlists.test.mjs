@@ -9,6 +9,7 @@ import {
 } from "../lib/collector.mjs";
 import { readJson, ROOT } from "./load.mjs";
 import { parseArgs, resolveMembers } from "../scripts/add-clip.mjs";
+import { REASON_LABELS } from "../app/dom.js";
 
 const lock = readJson("data/channels-lock.json");
 const seed = readJson("data/videos.json");
@@ -283,6 +284,105 @@ test("with a key: API failure falls back to RSS (WARN); both failing -> ERROR; q
   assert.ok(logs.every((l) => !l.includes("SECRETKEY")));
   assert.equal(r.incoming.filter((e) => e.playlistId === "PLfull").length, 2);
   assert.equal(r.incoming.filter((e) => e.playlistId === "PLshort").length, 3);
+});
+
+// ---------------------------------------------------------------- review follow-ups
+
+const EXPECTED_PLAYLISTS = {
+  "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae": "akane-lize",
+  "PLkpE8OHnsYszCTHPI9Qual0EAKuwE7gu-": "arahashi-tabi",
+  "PLkTfHUsbPfKW2cDW6jBPvltEXleOWo1ji": "shirayuki-hina",
+  "PLkpE8OHnsYsw0qfl6F3a37hYqYACI93B-": "neneko-mashiro",
+  "PLBHBs3cCXwbRm_I-iGgyOyOIFbKZHw41_": "yuzuha-riko",
+  "PLS_hcZPw0OSX8exQiAc3E03vFjnpOvoBh": "aokumo-rin",
+  "PLxXdp-Ka6v4f0_kX4lkqNIOAJ6i0FcW67": "aokumo-rin",
+  "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2": "tenko-shibuki",
+  "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd": "tenko-shibuki",
+  "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb": "hanako-nana",
+  "PLdUzWHjXdudE": "tokino-meri",
+  "PLaWgFzmpw2bQ": "shizuki-toa",
+  "PLWq_FnYQsJmM": "kogane-rang",
+  "PLFlLdtTq_r_U": "hanayo-hiyori",
+};
+const RSS_ONLY = ["PLdUzWHjXdudE", "PLaWgFzmpw2bQ", "PLWq_FnYQsJmM", "PLFlLdtTq_r_U"];
+
+test("data/playlists.json: exact playlistId -> member map; rssOnly exactly on the four short IDs", () => {
+  const cfg = readJson("data/playlists.json");
+  assert.deepEqual(Object.fromEntries(cfg.playlists.map((p) => [p.playlistId, p.member])), EXPECTED_PLAYLISTS);
+  assert.equal(cfg.playlists.length, 14);
+  assert.deepEqual(cfg.playlists.filter((p) => p.rssOnly === true).map((p) => p.playlistId).sort(), [...RSS_ONLY].sort());
+  assert.ok(cfg.playlists.every((p) => p.rssOnly === undefined || p.rssOnly === true));
+  assert.equal(validatePlaylists(cfg, lock).valid.filter((p) => p.rssOnly).length, 4);
+});
+
+test("review 1: official-looking playlist uploads (original / live_special) wait in the review queue as stream_song", () => {
+  for (const [title, member] of [
+    ["Miiro 「목숨」 feat. 아카네 리제 OFFICIAL MV", "akane-lize"],
+    ["코가네 랑 이누야샤 ost - 시대를 초월한 마음 (flute)", "kogane-rang"],
+    ["아카네 리제 3D live stage - 만찬가", "akane-lize"],
+  ]) {
+    const a = playlistAuto({ title, publishedAt: null }, [member], lock);
+    assert.equal(a.category, "stream_song", title);
+    assert.equal(a.reviewRequired, true, title);
+    assert.deepEqual(a.reviewReasons, ["playlist_official_candidate"], title);
+    assert.ok(a.members.includes(member));
+  }
+  const v = mergePlaylistEntries({}, [fan({ title: "Miiro 「목숨」 feat. 아카네 리제 OFFICIAL MV" })], lock, NOW).videos.ZZZZZZZZZZZ;
+  assert.equal(v.auto.reviewRequired, true);
+  assert.deepEqual(reclassify(structuredClone(v), lock).auto, v.auto, "stays fixed (no auto-promotion)");
+  const plain = playlistAuto({ title: "만찬가 / 아카네 리제 Cover", publishedAt: null }, ["akane-lize"], lock);
+  assert.equal(plain.reviewRequired, false);
+});
+
+test("review 2: title with whole tokens 방송 + 풀버전 -> review (playlist_full_stream_candidate)", () => {
+  const a = playlistAuto({ title: "[방송] 아카네 리제 풀버전", publishedAt: null }, ["akane-lize"], lock);
+  assert.equal(a.category, "stream_song");
+  assert.equal(a.reviewRequired, true);
+  assert.deepEqual(a.reviewReasons, ["playlist_full_stream_candidate"]);
+  for (const t of ["아카네 리제 풀버전", "아카네 리제 방송 중 한 곡", "아카네 리제 방송용 풀버전", "아카네 리제 오늘방송 풀버전"]) {
+    assert.deepEqual(playlistAuto({ title: t, publishedAt: null }, ["akane-lize"], lock).reviewReasons, [], t);
+  }
+  const both = playlistAuto({ title: "방송 풀버전 OFFICIAL MV", publishedAt: null }, ["akane-lize"], lock);
+  assert.deepEqual(both.reviewReasons, ["playlist_official_candidate", "playlist_full_stream_candidate"]);
+  assert.equal(playlistAuto({ title: "노래방송 풀버전", publishedAt: null }, ["akane-lize"], lock).category, "excluded_stream", "R20 keywords still exclude");
+});
+
+test("review 1+2: both reasons have Korean labels in the review UI", () => {
+  for (const k of ["playlist_official_candidate", "playlist_full_stream_candidate"]) assert.match(REASON_LABELS[k], /[가-힣]/, k);
+});
+
+test("review 3: videos owned by a collect:none channel (stellive-topic) are skipped, not added", () => {
+  const topic = lock.channels.find((c) => c.key === "stellive-topic");
+  assert.equal(topic.collect, "none");
+  const r = mergePlaylistEntries({}, [
+    fan({ videoId: "TTTTTTTTTTT", title: "아카네 리제 - 만찬가 Cover", ownerChannelId: topic.channelId }),
+    fan({ videoId: "AAAAAAAAAAA", title: "만찬가 / 아카네 리제 Cover", ownerChannelId: chId("akane-lize") }),
+  ], lock, NOW);
+  assert.deepEqual(r.added, ["AAAAAAAAAAA"]);
+  assert.ok(!("TTTTTTTTTTT" in r.videos));
+});
+
+test("review 4: rssOnly playlists never call the API (no quota, no WARN), one RSS-only log line per run", async () => {
+  const calls = [];
+  const fetchImpl = async (url) => {
+    calls.push(url);
+    if (url.includes("googleapis.com")) return reply(200, PAGE2);
+    return reply(200, ATOM);
+  };
+  const logs = [];
+  const r = await collectPlaylists([
+    { playlistId: "PLfull", member: "akane-lize" },
+    { playlistId: "PLdUzWHjXdudE", member: "tokino-meri", rssOnly: true },
+    { playlistId: "PLaWgFzmpw2bQ", member: "shizuki-toa", rssOnly: true },
+  ], { apiKey: "SECRETKEY", fetchImpl, log: (s) => logs.push(s) });
+  assert.equal(r.pages, 1, "only the non-rssOnly playlist spent quota");
+  assert.equal(r.ok, 3);
+  assert.equal(calls.filter((u) => u.includes("googleapis.com")).length, 1);
+  assert.ok(calls.some((u) => u.includes("playlist_id=PLdUzWHjXdudE")) && calls.some((u) => u.includes("playlist_id=PLaWgFzmpw2bQ")));
+  assert.deepEqual(logs, ["RSS-only (latest 15): PLdUzWHjXdudE (tokino-meri), PLaWgFzmpw2bQ (shizuki-toa)"]);
+  const none = [];
+  await collectPlaylists([{ playlistId: "PLfull", member: "akane-lize" }], { apiKey: "K", fetchImpl, log: (s) => none.push(s) });
+  assert.deepEqual(none, [], "no RSS-only line when there are none");
 });
 
 // ---------------------------------------------------------------- removed code paths / regex sanity
