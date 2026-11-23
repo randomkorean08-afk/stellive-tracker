@@ -123,6 +123,14 @@
       "exclude": true,
       "reviewed": true,
       "note": "노래가 아닌 일반 클립(방송노래 약한 키워드 오탐) — 제외 (사용자 승인 2026-11-22)"
+    },
+    "6Q78RPXk2es": {
+      "category": "original",
+      "members": [
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "목숨 — 아카네 리제 오리지널 곡 (Miiro feat. 아카네 리제 OFFICIAL MV, 외부 채널 업로드). 사용자 확인 2026-11-23"
     }
   }
 }
