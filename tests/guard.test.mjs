@@ -14,7 +14,7 @@ const sources = ["lib", "scripts"].flatMap((d) => walk(path.join(ROOT, d))).filt
 
 test("guard: lib/ and scripts/ never write to ratings/overrides/lock/baseline/docs/fixtures", () => {
   assert.ok(sources.length >= 5);
-  const forbidden = /(ratings|overrides|channels-lock|clip-channels|baseline|fixtures|docs)/i;
+  const forbidden = /(ratings|overrides|channels-lock|playlists|baseline|fixtures|docs)/i;
   for (const f of sources) {
     const src = readFileSync(f, "utf8");
     // every writeFile-like call must not mention a protected target in its argument list

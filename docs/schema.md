@@ -49,7 +49,7 @@
       "channelKey": "akane-lize",          // 업로드 채널. 미확인이면 null
       "seenOnChannels": ["akane-lize"],     // 피드에서 관측된 채널들
       "publishedAt": "2025-12-04",          // RSS는 ISO 8601 전체, 시드는 날짜만
-      "source": "seed",                     // seed | rss | backfill
+      "source": "seed",                     // seed | rss | backfill | manual | playlist
       "firstSeenAt": "2026-11-17T00:00:00Z",
       "lastSeenInFeedAt": null,
       "status": "unverified",               // active | unverified | private | deleted
@@ -281,5 +281,20 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 ## 부록: 멤버별 보기·키리누키 수집·중복 클립 (2026-11-22)
 
 - 멤버별 보기: 멤버가 effective `members`에 포함된 노출 곡만 보여준다. 단체곡은 실제 참여 멤버 창에만 나타난다. 요약에는 참여곡, 솔로·듀엣, 단체곡, 방송노래 수와 평균 기준 점수(B: 단체곡·방송노래 제외)를 표시한다.
-- `data/clip-channels.json`(사용자 소유, 스크립트는 읽기만 함): `channels[]`(`channelId` UC…24자, `name`, `note`, `collect`)는 매시간 수집해 방송노래로 분류한다(쇼츠·풀 VOD 제외). 제목에서 멤버를 못 찾으면 검토 대기로 보낸다. `searchQueries[]`는 `--search-clips`(매일 00 UTC = 09 KST, 쿼리당 100 quota)로 최근 24시간 업로드를 검색해 검토 대기(`search_candidate`)로 넣는다. 영상 필드는 `clipChannel` / `searchQuery`.
+- 클리퍼 채널 수집(`data/clip-channels.json`)과 키워드 검색(`--search-clips`)은 2026-11-23 폐지했다. 방송노래 수집은 아래 "멤버 재생목록 수집"으로 대체한다.
 - 중복 클립 접기(`lib/clip-dedupe.mjs`): 같은 멤버 구성, 같은 정규화 곡명, 업로드 3일 이내인 방송노래 클립은 조회수가 가장 높은 1개만 기본 노출하고 나머지는 접는다("중복 클립 모두 보기"로 펼침). 3일을 넘으면 다른 무대로 본다. 표시 전용이며 데이터는 지우지 않는다.
+
+## 부록: 멤버 재생목록 수집 (2026-11-23)
+
+- `data/playlists.json`(사용자 소유, 스크립트는 읽기만 함, `schemaVersion: 1`): `playlists[]` = `{ playlistId, member, note? }`. `member`는 `channels-lock.json`의 멤버 key이며, 한 멤버에 재생목록이 여러 개여도 된다. 방송 라이브 노래 재생목록을 매시간(공식 16채널 수집 직후) 동기화한다.
+- 수집: `YOUTUBE_API_KEY`가 있으면 `playlistItems.list?part=snippet,contentDetails,status&maxResults=50`을 페이지 끝까지 호출한다(페이지당 1 quota). 사용 필드는 `contentDetails.videoId`, `snippet.title`, `contentDetails.videoPublishedAt`(영상 공개일), `snippet.videoOwnerChannelId`이고, `Private video`·`Deleted video`·`status.privacyStatus == private`는 건너뛴다. 키가 없거나 API 호출이 실패하면 재생목록 RSS(`feeds/videos.xml?playlist_id=`, 최신 약 15개, `<yt:channelId>`/`<author><uri>`에서 소유 채널 추출)로 대체한다. URL(키 포함)은 로그에 출력하지 않는다.
+- quota: 재생목록당 `ceil(항목 수 / 50)` 페이지. 14개 재생목록이 각 100개 안팎이면 실행당 약 28 unit(하루 약 700, 일일 한도 10,000의 7%). 재생목록 순서는 날짜순이 보장되지 않아 조기 중단하지 않는다(새 영상이 목록 끝에 붙는 경우가 많음). 한 재생목록은 최대 100페이지(5,000개)에서 멈춘다.
+- 실패 처리: 재생목록 하나가 실패(HTTP 404, 잘못된 ID 등)하면 `ERROR playlist <id> (<member>): <사유>` 한 줄을 남기고 나머지는 계속 수집한다. API만 실패하고 RSS가 성공하면 `WARN` 후 RSS 결과를 쓴다. ID 길이는 검사하지 않는다(HTTP 응답으로 판단).
+- 분류 규칙 (`mergePlaylistEntries`, 공식 채널 병합 이후 실행):
+  - 이미 `videos.json`에 있는 ID는 어떤 필드도 바꾸지 않는다(category·members·auto·overrides·ratings 불변, 재분류 없음).
+  - 신규 영상의 소유 채널이 `channels-lock.json`의 공식 채널이면 `channelKey`를 그 채널로 두고 일반 공식 업로드와 똑같이 분류한다(방송노래 아님).
+  - 그 외(팬·클리퍼 업로드)는 `stream_song`(노출, 평가 제외)으로 고정한다. `members` = 영상이 들어 있는 재생목록의 멤버(모두) + 제목에서 감지된 멤버, `reviewRequired: false`, `matchedRules: ["P01-playlist-song"]`.
+  - 쇼츠(`isShort` 확인 시 R05, 제목의 shorts 키워드)와 노래방송 풀 VOD(R20)는 방송노래로 두지 않고 제외 카테고리로 둔다. 신규 항목도 기존 쇼츠 판정(영상당 1회)을 거친다.
+  - `reclassify()`는 `source: "playlist"`이고 `channelKey`가 비어 있는 항목을 `source: "manual"`처럼 고정한다(`--reclassify-all`에서도). 예외: oEmbed로 공식 채널이 확인되어 `channelKey`가 채워지면 일반 분류로 돌아간다.
+- 영상 필드(선택, 신규 항목만): `source: "playlist"`, `playlistId`(처음 발견한 재생목록). 파생 계산(`lib/derive.mjs`)은 이 필드를 보지 않는다. `schemaVersion`은 그대로 1.
+- 공식 16채널 수집·`--backfill`·`--force-views`(수동 실행)는 변경 없음. 매일 00:30 UTC 검색 cron과 `search_clips` 입력은 제거했다.

@@ -3,15 +3,10 @@ name: fetch-videos
 on:
   schedule:
     - cron: "0 * * * *" # hourly (view counts refresh every run)
-    - cron: "30 0 * * *" # daily clip search (00:30 UTC = 09:30 KST); separate slot so a delayed hourly run can't skip it
   workflow_dispatch:
     inputs:
       backfill:
         description: "Backfill full upload history (needs YOUTUBE_API_KEY secret)"
-        type: boolean
-        default: false
-      search_clips:
-        description: "Search last-24h singing clips now (needs YOUTUBE_API_KEY; 100 quota per query)"
         type: boolean
         default: false
       status_limit:
@@ -46,15 +41,11 @@ jobs:
           BACKFILL: ${{ github.event.inputs.backfill }}
           STATUS_LIMIT: ${{ github.event.inputs.status_limit }}
           EVENT: ${{ github.event_name }}
-          SEARCH_CLIPS: ${{ github.event.inputs.search_clips }}
-          SCHEDULE: ${{ github.event.schedule }}
         run: |
           ARGS="--longform-feed"
           if [ "$BACKFILL" = "true" ]; then ARGS="$ARGS --backfill"; fi
           if [ -n "$STATUS_LIMIT" ]; then ARGS="$ARGS --status-limit $STATUS_LIMIT"; fi
           if [ "$EVENT" = "workflow_dispatch" ]; then ARGS="$ARGS --force-views"; fi
-          # daily clip search: only the dedicated daily schedule, or on demand
-          if [ "$SCHEDULE" = "30 0 * * *" ] || [ "$SEARCH_CLIPS" = "true" ]; then ARGS="$ARGS --search-clips"; fi
           node scripts/fetch-videos.mjs $ARGS
 
       - name: Commit data/videos.json if changed
