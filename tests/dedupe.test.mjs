@@ -69,7 +69,8 @@ test("merge never touches ratings.json content (ratings object untouched)", () =
 
 for (const c of fx.merge.filter((m) => m.oembedSequence)) {
   test(`status ${c.id}`, () => {
-    let entry = clone(seed.videos[c.existing[0]]);
+    // start from a never-checked copy: the hourly collector may already have verified the real seed
+    let entry = { ...clone(seed.videos[c.existing[0]]), status: "unverified", failStreak: 0, statusCheckedAt: null };
     const steps = c.oembedSequence.map((code) => (entry = applyStatusResult(entry, { code }, NOW)));
     if (c.expect.afterFirst) {
       assert.equal(steps[0].status, c.expect.afterFirst.status);
@@ -82,7 +83,7 @@ for (const c of fx.merge.filter((m) => m.oembedSequence)) {
 }
 
 test("status: 401/403 -> private after 2; 5xx / network error -> no change", () => {
-  let e = clone(seed.videos["kNzGpNEdBqw"]);
+  let e = { ...clone(seed.videos["kNzGpNEdBqw"]), status: "unverified", failStreak: 0, statusCheckedAt: null };
   e = applyStatusResult(e, { code: 403 }, NOW);
   assert.equal(e.status, "unverified");
   e = applyStatusResult(e, { code: 401 }, NOW);
