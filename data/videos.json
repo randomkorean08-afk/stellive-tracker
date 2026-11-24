@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-24T12:56:38Z",
+  "updatedAt": "2026-11-24T13:18:37Z",
   "_note": "기준선 PDF(2026-11-17) 시드 27개. 제목의 조회수 표기는 제거함. status=unverified: 첫 수집 실행 때 oEmbed로 실존·업로드 채널을 검증해야 함(PDF 추출 ID는 l/1/0/O 혼동 위험).",
   "videos": {
     "E0-RUYMH26c": {
@@ -165068,7 +165068,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165098,7 +165097,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165128,7 +165126,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165158,7 +165155,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165188,7 +165184,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165218,7 +165213,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165248,7 +165242,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
@@ -165278,7 +165271,6 @@
       "auto": {
         "category": "stream_song",
         "members": [
-          "akane-lize",
           "aokumo-rin"
         ],
         "matchedRules": [
