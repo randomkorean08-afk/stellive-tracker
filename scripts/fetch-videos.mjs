@@ -5,8 +5,10 @@
 // Usage: node scripts/fetch-videos.mjs [--dry-run] [--no-status] [--status-limit N]
 //        [--recheck-hours N] [--longform-feed] [--backfill] [--no-views] [--views-limit N] [--force-views] [--no-shorts-check] [--shorts-limit N] [--reclassify-all]
 // Playlists (after the official channels): the member playlists in data/playlists.json are synced as 방송노래.
-// With YOUTUBE_API_KEY: playlistItems.list (50 items/page, 1 quota unit per page, all pages every run; ~2-3 pages per
-// playlist). Without a key (or when the API call fails): the playlist RSS feed (newest ~15 items).
+// With YOUTUBE_API_KEY: playlists.list (1 unit per 50 ids: itemCount + title for the coverage log), then playlistItems.list
+// for every playlist (50 items/page, 1 quota unit per page, all pages every run; ~2-3 pages per playlist).
+// Without a key (or when the API call fails): the playlist RSS feed (newest ~15 items).
+// Coverage: one "coverage <id> (<member>): collected N / total M" line per playlist; gaps are WARN, unknown ids ERROR.
 // Videos already in videos.json are never touched; new fan uploads become 방송노래, new official-channel uploads are
 // classified like any official upload. A failing playlist logs one "ERROR playlist ..." line; the others continue.
 // Existing videos keep their stored classification; only new/renamed videos are classified (use --reclassify-all after rule changes).
@@ -21,7 +23,7 @@ import path from "node:path";
 import {
   parseAtomFeed, mergeEntries, applyStatusAndAuthor, pickStatusTargets, checkOembed, httpGet,
   parseVideoStats, pickViewTargets, applyViewCounts, checkShortFormat, pickShortTargets, applyShortFormat,
-  validatePlaylists, collectPlaylists, mergePlaylistEntries,
+  validatePlaylists, collectPlaylists, mergePlaylistEntries, formatCoverageLine,
   videosEqual, serializeVideosDoc,
 }from "../lib/collector.mjs";
 import { normalizeVideoId } from "../lib/video-id.mjs";
@@ -230,7 +232,11 @@ async function main() {
   for (const [k, v] of Object.entries(perChannel)) console.log(`  ${k}: new ${v.added.size}, updated ${v.updated.size}`);
   console.log(`new: ${merged.added.length}, updated(existing): ${merged.updated.length}, total videos: ${Object.keys(videos).length}`);
   console.log(`playlists: ${plResult.ok}/${plCheck.valid.length} ok, ${plResult.incoming.length} items seen, new from playlists: ${plMerged.added.length}` +
-    (apiKey ? `, API quota spent: ${plResult.pages} unit(s)` : " (RSS fallback, no API key)"));
+    (apiKey ? `, API quota spent: ${plResult.pages + plResult.metaCalls} unit(s) (playlists.list ${plResult.metaCalls} + playlistItems ${plResult.pages})` : " (RSS fallback, no API key)"));
+  for (const row of plResult.coverage) {
+    const ids = new Set(plResult.incoming.filter((e) => e.playlistId === row.playlistId).map((e) => e.videoId));
+    console.log(formatCoverageLine(row, [...ids].filter((id) => id in videos).length));
+  }
   const plFailed = plResult.errors.length + plCheck.errors.length;
   if (plFailed) console.log(`playlist errors: ${plFailed} (see ERROR lines above)`);
   if (shortsChecked) console.log(`shorts check: ${shortsChecked} checked, ${shortsFound} are Shorts (excluded)`);

@@ -5,7 +5,7 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import {
   reclassify, mergeEntries, mergePlaylistEntries, playlistAuto, parsePlaylistFeed, parsePlaylistItemsPage,
-  fetchPlaylistViaApi, collectPlaylists, validatePlaylists, pickShortTargets, applyShortFormat, applyStatusAndAuthor,
+  fetchPlaylistViaApi, collectPlaylists, validatePlaylists, parsePlaylistsListResponse, fetchPlaylistsMeta, coverageRow, formatCoverageLine, pickShortTargets, applyShortFormat, applyStatusAndAuthor,
 } from "../lib/collector.mjs";
 import { readJson, ROOT } from "./load.mjs";
 import { parseArgs, resolveMembers } from "../scripts/add-clip.mjs";
@@ -216,6 +216,8 @@ test("API page parsing: private/deleted skipped, video publish date and owner us
 });
 
 const reply = (status, body, kind = "json") => ({ status, json: async () => body, text: async () => body });
+const listItem = (id, itemCount, title = `제목 ${id}`) => ({ id, snippet: { title }, contentDetails: { itemCount } });
+const LIST_ALL = { items: [listItem("PLfull", 3), listItem("PLshort", 3), listItem("PLnone", 3)] };
 
 test("API pagination: follows nextPageToken, counts pages, asks for snippet,contentDetails,status", async () => {
   const urls = [];
@@ -261,6 +263,7 @@ test("a failing playlist logs one ERROR line and does not abort the others (RSS 
 
 test("with a key: API failure falls back to RSS (WARN); both failing -> ERROR; quota pages are counted", async () => {
   const fetchImpl = async (url) => {
+    if (url.includes("googleapis.com/youtube/v3/playlists?")) return reply(200, LIST_ALL);
     if (url.includes("googleapis.com")) {
       if (url.includes("playlistId=PLshort")) return reply(404, {});
       if (url.includes("playlistId=PLnone")) return reply(404, {});
@@ -275,6 +278,7 @@ test("with a key: API failure falls back to RSS (WARN); both failing -> ERROR; q
     { playlistId: "PLnone", member: "kogane-rang" },
   ], { apiKey: "SECRETKEY", fetchImpl, log: (s) => logs.push(s) });
   assert.equal(r.pages, 2 + 1 + 1, "2 pages + two failed single calls");
+  assert.equal(r.metaCalls, 1, "one playlists.list call for all ids");
   assert.equal(r.ok, 2);
   assert.deepEqual(logs, [
     "WARN playlist PLshort (tokino-meri): playlistItems HTTP 404; trying RSS fallback",
@@ -304,15 +308,17 @@ const EXPECTED_PLAYLISTS = {
   "PLWq_FnYQsJmM": "kogane-rang",
   "PLFlLdtTq_r_U": "hanayo-hiyori",
 };
-const RSS_ONLY = ["PLdUzWHjXdudE", "PLaWgFzmpw2bQ", "PLWq_FnYQsJmM", "PLFlLdtTq_r_U"];
 
-test("data/playlists.json: exact playlistId -> member map; rssOnly exactly on the four short IDs", () => {
+test("data/playlists.json: exact playlistId -> member map; rssOnly mechanism is gone", () => {
   const cfg = readJson("data/playlists.json");
   assert.deepEqual(Object.fromEntries(cfg.playlists.map((p) => [p.playlistId, p.member])), EXPECTED_PLAYLISTS);
   assert.equal(cfg.playlists.length, 14);
-  assert.deepEqual(cfg.playlists.filter((p) => p.rssOnly === true).map((p) => p.playlistId).sort(), [...RSS_ONLY].sort());
-  assert.ok(cfg.playlists.every((p) => p.rssOnly === undefined || p.rssOnly === true));
-  assert.equal(validatePlaylists(cfg, lock).valid.filter((p) => p.rssOnly).length, 4);
+  assert.ok(cfg.playlists.every((p) => !("rssOnly" in p)), "no rssOnly flag on any entry");
+  assert.ok(!/rssOnly/.test(readFileSync(path.join(ROOT, "data", "playlists.json"), "utf8")));
+  assert.ok(validatePlaylists(cfg, lock).valid.every((p) => !("rssOnly" in p)));
+  for (const f of [["lib", "collector.mjs"], ["scripts", "fetch-videos.mjs"], ["docs", "schema.md"]]) {
+    assert.ok(!/rssOnly|RSS-only \(latest/.test(src(...f)), f.join("/"));
+  }
 });
 
 test("review 1: official-looking playlist uploads (original / live_special) wait in the review queue as stream_song", () => {
@@ -362,27 +368,136 @@ test("review 3: videos owned by a collect:none channel (stellive-topic) are skip
   assert.ok(!("TTTTTTTTTTT" in r.videos));
 });
 
-test("review 4: rssOnly playlists never call the API (no quota, no WARN), one RSS-only log line per run", async () => {
+test("every playlist (short IDs included) tries playlistItems.list first when a key exists; RSS only after an API failure", async () => {
   const calls = [];
   const fetchImpl = async (url) => {
     calls.push(url);
-    if (url.includes("googleapis.com")) return reply(200, PAGE2);
+    if (url.includes("googleapis.com/youtube/v3/playlists?")) return reply(200, { items: ["PLdUzWHjXdudE", "PLaWgFzmpw2bQ", "PLfull"].map((id) => listItem(id, 3)) });
+    if (url.includes("googleapis.com")) return url.includes("playlistId=PLaWgFzmpw2bQ") ? reply(404, {}) : reply(200, PAGE2);
     return reply(200, ATOM);
   };
   const logs = [];
   const r = await collectPlaylists([
     { playlistId: "PLfull", member: "akane-lize" },
-    { playlistId: "PLdUzWHjXdudE", member: "tokino-meri", rssOnly: true },
-    { playlistId: "PLaWgFzmpw2bQ", member: "shizuki-toa", rssOnly: true },
+    { playlistId: "PLdUzWHjXdudE", member: "tokino-meri" },
+    { playlistId: "PLaWgFzmpw2bQ", member: "shizuki-toa" },
   ], { apiKey: "SECRETKEY", fetchImpl, log: (s) => logs.push(s) });
-  assert.equal(r.pages, 1, "only the non-rssOnly playlist spent quota");
+  assert.equal(calls.filter((u) => u.includes("googleapis.com/youtube/v3/playlistItems")).length, 3, "all three tried the API");
+  assert.equal(calls.filter((u) => u.includes("feeds/videos.xml")).length, 1, "only the failing one used RSS");
+  assert.deepEqual(logs, ["WARN playlist PLaWgFzmpw2bQ (shizuki-toa): playlistItems HTTP 404; trying RSS fallback"]);
+  assert.equal(r.pages, 3);
+  assert.equal(r.metaCalls, 1);
   assert.equal(r.ok, 3);
-  assert.equal(calls.filter((u) => u.includes("googleapis.com")).length, 1);
-  assert.ok(calls.some((u) => u.includes("playlist_id=PLdUzWHjXdudE")) && calls.some((u) => u.includes("playlist_id=PLaWgFzmpw2bQ")));
-  assert.deepEqual(logs, ["RSS-only (latest 15): PLdUzWHjXdudE (tokino-meri), PLaWgFzmpw2bQ (shizuki-toa)"]);
-  const none = [];
-  await collectPlaylists([{ playlistId: "PLfull", member: "akane-lize" }], { apiKey: "K", fetchImpl, log: (s) => none.push(s) });
-  assert.deepEqual(none, [], "no RSS-only line when there are none");
+});
+
+// ---------------------------------------------------------------- coverage (playlists.list itemCount)
+
+test("parsePlaylistsListResponse: id -> {itemCount,title}; junk tolerated", () => {
+  const r = parsePlaylistsListResponse({ items: [
+    { id: "PLa", snippet: { title: "A 목록" }, contentDetails: { itemCount: 120 } },
+    { id: "PLb", snippet: {}, contentDetails: {} },
+    { snippet: { title: "no id" } },
+    { id: "", contentDetails: { itemCount: 1 } },
+  ] });
+  assert.deepEqual(r, { PLa: { itemCount: 120, title: "A 목록" }, PLb: { itemCount: null, title: "" } });
+  assert.deepEqual(parsePlaylistsListResponse({}), {});
+  assert.deepEqual(parsePlaylistsListResponse(null), {});
+});
+
+test("fetchPlaylistsMeta: one call for <=50 ids, chunks of 50, comma-joined ids, key never in errors", async () => {
+  const urls = [];
+  const ids = Array.from({ length: 120 }, (_, i) => `PL${String(i).padStart(3, "0")}`);
+  const fetchImpl = async (url) => {
+    urls.push(url);
+    const q = new URL(url).searchParams.get("id").split(",");
+    return reply(200, { items: q.map((id) => listItem(id, 7)) });
+  };
+  const r = await fetchPlaylistsMeta([...ids, ids[0]], "SECRETKEY", { fetchImpl });
+  assert.equal(r.calls, 3, "120 unique ids -> 50 + 50 + 20");
+  assert.equal(Object.keys(r.meta).length, 120);
+  assert.match(urls[0], /^https:\/\/www\.googleapis\.com\/youtube\/v3\/playlists\?part=contentDetails,snippet&maxResults=50&id=PL000,PL001,/);
+  assert.equal(new URL(urls[0]).searchParams.get("id").split(",").length, 50);
+  assert.equal((await fetchPlaylistsMeta(ids.slice(0, 14), "K", { fetchImpl })).calls, 1);
+  await assert.rejects(fetchPlaylistsMeta(["PLa"], "SECRETKEY", { fetchImpl: async () => reply(403, {}) }),
+    (e) => e.message === "playlists.list HTTP 403" && e.calls === 1 && !String(e.stack).includes("SECRETKEY"));
+});
+
+test("coverageRow / formatCoverageLine: ok, private-skipped, gap, RSS limit, failed", () => {
+  const base = { playlistId: "PLa", member: "akane-lize" };
+  const ok = coverageRow({ ...base, via: "api", returned: 100, meta: { itemCount: 100, title: "목록" } });
+  assert.equal(ok.status, "ok");
+  assert.equal(formatCoverageLine(ok, 90), 'coverage PLa (akane-lize) "목록": collected 100 / total 100 via api (90 in videos.json)');
+  const priv = coverageRow({ ...base, via: "api", returned: 98, skipped: 2, meta: { itemCount: 100, title: "" } });
+  assert.equal(priv.status, "ok", "private/deleted items explain the difference");
+  assert.equal(formatCoverageLine(priv), "coverage PLa (akane-lize): collected 98 / total 100 via api (2 private/deleted skipped)");
+  const gap = coverageRow({ ...base, via: "api", returned: 90, skipped: 2, meta: { itemCount: 100, title: "" } });
+  assert.equal(gap.status, "gap");
+  assert.equal(formatCoverageLine(gap), "WARN coverage PLa (akane-lize): collected 90 / total 100 via api (2 private/deleted skipped) GAP: 8 missing");
+  const rss = coverageRow({ ...base, via: "rss", returned: 15, meta: { itemCount: 120, title: "" } });
+  assert.equal(formatCoverageLine(rss), "WARN coverage PLa (akane-lize): collected 15 / total 120 via rss GAP: 105 missing (RSS limit ~15 items)");
+  assert.equal(coverageRow({ ...base, via: "rss", returned: 15, meta: null }).status, "ok", "unknown total (no key) is informational, not a WARN");
+  assert.equal(formatCoverageLine(coverageRow({ ...base, via: "rss", returned: 15, meta: null })), "coverage PLa (akane-lize): collected 15 / total ? via rss");
+  assert.equal(coverageRow({ ...base, via: "api", returned: 15, meta: null }).status, "ok", "API without totals (playlists.list failed) is not flagged");
+  const failed = coverageRow({ ...base, via: "failed", returned: 0, meta: { itemCount: 5, title: "" } });
+  assert.equal(formatCoverageLine(failed), "ERROR coverage PLa (akane-lize): collection failed (0 / 5)");
+});
+
+test("collectPlaylists coverage: totals from playlists.list, ERROR for ids it does not return, no URL/key in logs", async () => {
+  const fetchImpl = async (url) => {
+    if (url.includes("googleapis.com/youtube/v3/playlists?")) return reply(200, { items: [listItem("PLfull", 5, "전체"), listItem("PLgood", 3)] });
+    if (url.includes("playlistId=PLfull")) return reply(200, url.includes("pageToken=TOKEN2") ? PAGE2 : PAGE1);
+    if (url.includes("playlistId=PLgood")) return reply(200, { items: [item("GGGGGGGGGGG", "곡"), item("HHHHHHHHHHH", "곡"), item("IIIIIIIIIII", "곡")] });
+    if (url.includes("googleapis.com")) return reply(404, {}); // PLghost: invalid id
+    return url.includes("playlist_id=PLghost") ? reply(404, "") : reply(200, ATOM);
+  };
+  const logs = [];
+  const r = await collectPlaylists([
+    { playlistId: "PLfull", member: "akane-lize" },
+    { playlistId: "PLgood", member: "tokino-meri" },
+    { playlistId: "PLghost", member: "kogane-rang" },
+  ], { apiKey: "SECRETKEY", fetchImpl, log: (s) => logs.push(s) });
+  assert.deepEqual(logs, [
+    "ERROR playlist PLghost (kogane-rang): not returned by playlists.list (invalid, private or deleted playlist)",
+    "WARN playlist PLghost (kogane-rang): playlistItems HTTP 404; trying RSS fallback",
+    "ERROR playlist PLghost (kogane-rang): playlistItems HTTP 404; playlist RSS HTTP 404",
+  ]);
+  assert.ok(logs.every((l) => !l.includes("SECRETKEY") && !l.includes("googleapis")));
+  assert.equal(r.coverage.length, 3);
+  const [full, good, ghost] = r.coverage;
+  // PAGE1: 1 usable + 3 private/deleted, PAGE2: 1 usable -> 2 returned, 3 skipped vs total 5
+  assert.deepEqual([full.returned, full.skipped, full.total, full.title, full.status, full.via], [2, 3, 5, "전체", "ok", "api"]);
+  assert.deepEqual([good.returned, good.total, good.status], [3, 3, "ok"]);
+  assert.deepEqual([ghost.via, ghost.status, ghost.total], ["failed", "error", null]);
+  assert.equal(r.errors.length, 2, "missing-from-list and collection failure are both reported");
+  assert.equal(r.metaCalls, 1);
+});
+
+test("collectPlaylists coverage: playlists.list failure is a WARN, collection still runs; no key -> no meta call", async () => {
+  const urls = [];
+  const fetchImpl = async (url) => {
+    urls.push(url);
+    if (url.includes("googleapis.com/youtube/v3/playlists?")) return reply(403, {});
+    return reply(200, PAGE2);
+  };
+  const logs = [];
+  const r = await collectPlaylists([{ playlistId: "PLfull", member: "akane-lize" }], { apiKey: "SECRETKEY", fetchImpl, log: (s) => logs.push(s) });
+  assert.deepEqual(logs, ["WARN playlists.list failed: playlists.list HTTP 403; coverage totals unavailable"]);
+  assert.equal(r.ok, 1);
+  assert.equal(r.metaCalls, 1);
+  assert.deepEqual([r.coverage[0].returned, r.coverage[0].total, r.coverage[0].status], [1, null, "ok"]);
+  urls.length = 0;
+  const rss = await collectPlaylists([{ playlistId: "PLfull", member: "akane-lize" }], { fetchImpl: async (u) => { urls.push(u); return reply(200, ATOM); }, log: () => {} });
+  assert.ok(urls.every((u) => u.includes("feeds/videos.xml")));
+  assert.equal(rss.metaCalls, 0);
+  assert.deepEqual([rss.coverage[0].via, rss.coverage[0].total, rss.coverage[0].status], ["rss", null, "ok"]);
+});
+
+test("PLS_hc (aokumo-rin) has no playlist-sourced entries: its newest items are all official-channel videos already collected", () => {
+  // (videos.json changes hourly, so only the stable part is asserted: these ids never become playlist-sourced.)
+  // 15 newest RSS items (checked 2026-11-24): every one already exists under rss/backfill/seed with an official channelKey.
+  const known = ["qNOFi7GzpfM", "LmOl01G4DR4", "JLM7z8afU4s", "Qi_JLmXBFFo", "qv_VVUJOt0M", "9S3if_u5n_Q", "MhdJaaEhiHc", "ZYSQLv_L26Y",
+    "_g29-2fUPSA", "y1nUYj_D1Es", "pgxzbTzvYdY", "tZQOhC9Ktas", "So0ba8NuUq0", "aACJnJRuCLs", "GhHcaH6bAHQ"];
+  for (const v of known) assert.ok(seed.videos[v] && seed.videos[v].source !== "playlist" && seed.videos[v].channelKey, v);
 });
 
 // ---------------------------------------------------------------- removed code paths / regex sanity

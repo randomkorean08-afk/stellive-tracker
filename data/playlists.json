@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "_note": "사용자 관리 파일(스크립트는 읽기만 함). 멤버별 방송 라이브 노래 재생목록을 매시간 수집해 방송노래(stream_song)로 분류한다. 재생목록 안의 영상이 공식 16채널 업로드면 일반 공식 영상처럼 분류하고, 팬·클리퍼 업로드만 방송노래가 된다. 이미 videos.json에 있는 영상은 건드리지 않는다. 추가 방법: playlists[]에 { \"playlistId\": \"PL...\", \"member\": \"멤버 key(channels-lock.json)\", \"note\": \"선택 메모\" }를 넣는다. 한 멤버에 여러 재생목록도 가능. rssOnly:true를 붙이면 API 없이 RSS(최신 15개)만 사용한다(짧은 ID처럼 API가 거부할 수 있는 경우). 잘못된 ID는 수집 로그에 'ERROR playlist ...' 한 줄로 남고 나머지는 계속 수집한다. 출처: 사용자 제공(2026-11).",
+  "_note": "사용자 관리 파일(스크립트는 읽기만 함). 멤버별 방송 라이브 노래 재생목록을 매시간 수집해 방송노래(stream_song)로 분류한다. 재생목록 안의 영상이 공식 16채널 업로드면 일반 공식 영상처럼 분류하고, 팬·클리퍼 업로드만 방송노래가 된다. 이미 videos.json에 있는 영상은 건드리지 않는다. 추가 방법: playlists[]에 { \"playlistId\": \"PL...\", \"member\": \"멤버 key(channels-lock.json)\", \"note\": \"선택 메모\" }를 넣는다. 한 멤버에 여러 재생목록도 가능. 키가 있으면 모든 재생목록을 API(playlistItems.list)로 먼저 수집하고, API가 실패할 때만 RSS(최신 15개)로 대체한다. 잘못된 ID는 수집 로그에 'ERROR playlist ...' 한 줄로 남고 나머지는 계속 수집한다. 출처: 사용자 제공(2026-11).",
   "playlists": [
     { "playlistId": "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae", "member": "akane-lize" },
     { "playlistId": "PLkpE8OHnsYszCTHPI9Qual0EAKuwE7gu-", "member": "arahashi-tabi" },
@@ -12,9 +12,9 @@
     { "playlistId": "PLpnXmaljWC7OYKuR4NDkFXIJ_HddLplt2", "member": "tenko-shibuki" },
     { "playlistId": "PLIEEZFchbPfo7mcT2gJZErPkmX4K0gAFd", "member": "tenko-shibuki" },
     { "playlistId": "PLv3H3C09yvpgRGSqTDSWGSERzlrFRw_Qb", "member": "hanako-nana" },
-    { "playlistId": "PLdUzWHjXdudE", "member": "tokino-meri", "rssOnly": true, "note": "ID가 짧음(13자). RSS만 사용(최신 15개) — API 호출 안 함" },
-    { "playlistId": "PLaWgFzmpw2bQ", "member": "shizuki-toa", "rssOnly": true, "note": "ID가 짧음(13자). RSS만 사용(최신 15개) — API 호출 안 함" },
-    { "playlistId": "PLWq_FnYQsJmM", "member": "kogane-rang", "rssOnly": true, "note": "ID가 짧음(13자). RSS만 사용(최신 15개) — API 호출 안 함" },
-    { "playlistId": "PLFlLdtTq_r_U", "member": "hanayo-hiyori", "rssOnly": true, "note": "ID가 짧음(13자). RSS만 사용(최신 15개) — API 호출 안 함" }
+    { "playlistId": "PLdUzWHjXdudE", "member": "tokino-meri", "note": "ID가 짧음(13자). API가 거부하면 RSS(최신 15개)로 대체" },
+    { "playlistId": "PLaWgFzmpw2bQ", "member": "shizuki-toa", "note": "ID가 짧음(13자). API가 거부하면 RSS(최신 15개)로 대체" },
+    { "playlistId": "PLWq_FnYQsJmM", "member": "kogane-rang", "note": "ID가 짧음(13자). API가 거부하면 RSS(최신 15개)로 대체" },
+    { "playlistId": "PLFlLdtTq_r_U", "member": "hanayo-hiyori", "note": "ID가 짧음(13자). API가 거부하면 RSS(최신 15개)로 대체" }
   ]
 }
