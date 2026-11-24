@@ -128,6 +128,108 @@ test("reclassify keeps playlist 방송노래 fixed, also under --reclassify-all 
   assert.deepEqual(renamed.auto.members, ["shizuki-toa"]);
 });
 
+test("playlist attribution: three title cases + duet keeps both", () => {
+  // 1) Title names another StelLive member, not the playlist member -> detected member(s) only
+  const rinInLize = playlistAuto({ title: "정말 멋진 6월이었습니다(とても素敵な六月でした) (Eight) / 아오쿠모 린 Cover", publishedAt: null }, ["akane-lize"], lock);
+  assert.equal(rinInLize.category, "stream_song");
+  assert.deepEqual(rinInLize.members, ["aokumo-rin"]);
+  const mergedOther = mergePlaylistEntries({}, [
+    fan({ videoId: "LnjVkJA4Z7M", title: "정말 멋진 6월이었습니다(とても素敵な六月でした) (Eight) / 아오쿠모 린 Cover", member: "akane-lize", playlistId: "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae" }),
+  ], lock, NOW).videos.LnjVkJA4Z7M;
+  assert.deepEqual(mergedOther.auto.members, ["aokumo-rin"]);
+
+  // 2) Title names the playlist member (alone or with others) -> detected members
+  const solo = playlistAuto({ title: "아카네 리제 - 만찬가 (晩餐歌)", publishedAt: null }, ["akane-lize"], lock);
+  assert.deepEqual(solo.members, ["akane-lize"]);
+  const duetWithPl = playlistAuto({ title: "아카네 리제 x 아오쿠모 린 - 만찬가 Cover", publishedAt: null }, ["akane-lize"], lock);
+  assert.deepEqual(duetWithPl.members, ["akane-lize", "aokumo-rin"]);
+  const duetWithoutPl = playlistAuto({ title: "시라유키 히나 x 아라하시 타비 - 만찬가", publishedAt: null }, ["akane-lize"], lock);
+  assert.deepEqual(duetWithoutPl.members, ["shirayuki-hina", "arahashi-tabi"]);
+
+  // 3) Title names no member -> [playlist member]
+  const noName = playlistAuto({ title: "만찬가 (晩餐歌)", publishedAt: null }, ["akane-lize"], lock);
+  assert.deepEqual(noName.members, ["akane-lize"]);
+});
+
+test("reclassify-all re-attributes saved playlist entries using playlists config; normal merge and missing playlistId stay unchanged", () => {
+  const playlistsCfg = {
+    playlists: [
+      { playlistId: "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae", member: "akane-lize" },
+      { playlistId: "PLhina", member: "shirayuki-hina" },
+    ],
+  };
+  // Saved pre-fix entry where Rin's cover in Lize's playlist had [akane-lize, aokumo-rin]
+  const buggySaved = {
+    videoId: "LnjVkJA4Z7M",
+    title: "정말 멋진 6월이었습니다(とても素敵な六月でした) (Eight) / 아오쿠모 린 Cover",
+    previousTitles: [],
+    channelKey: null,
+    seenOnChannels: [],
+    publishedAt: "2026-11-20T00:00:00Z",
+    source: "playlist",
+    playlistId: "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae",
+    firstSeenAt: NOW,
+    lastSeenInFeedAt: NOW,
+    status: "active",
+    statusCheckedAt: NOW,
+    failStreak: 0,
+    isShort: false,
+    auto: { category: "stream_song", members: ["akane-lize", "aokumo-rin"], matchedRules: ["P01-playlist-song"], reviewRequired: false, reviewReasons: [] },
+  };
+  // Saved entry whose playlistId is no longer in playlistsCfg
+  const orphanSaved = {
+    ...structuredClone(buggySaved),
+    videoId: "ORPHAN12345",
+    playlistId: "PLremoved",
+    auto: { category: "stream_song", members: ["akane-lize", "aokumo-rin"], matchedRules: ["P01-playlist-song"], reviewRequired: false, reviewReasons: [] },
+  };
+  // Saved entry with title naming no member
+  const unnamedSaved = {
+    ...structuredClone(buggySaved),
+    videoId: "UNNAMED1234",
+    title: "만찬가 (晩餐歌)",
+    playlistId: "PLhina",
+    auto: { category: "stream_song", members: ["shirayuki-hina"], matchedRules: ["P01-playlist-song"], reviewRequired: false, reviewReasons: [] },
+  };
+
+  // Without playlists config: reclassify and reclassifyAll keep entries fixed as before
+  assert.deepEqual(reclassify(structuredClone(buggySaved), lock).auto.members, ["akane-lize", "aokumo-rin"]);
+  assert.deepEqual(mergeEntries({ LnjVkJA4Z7M: buggySaved }, [], lock, NOW, { reclassifyAll: true }).videos.LnjVkJA4Z7M.auto.members, ["akane-lize", "aokumo-rin"]);
+
+  // Normal merge (even with playlists config passed, reclassifyAll=false) never touches existing entries
+  const normal = mergeEntries(
+    { LnjVkJA4Z7M: buggySaved, ORPHAN12345: orphanSaved },
+    [],
+    lock,
+    NOW,
+    { reclassifyAll: false, playlists: playlistsCfg },
+  );
+  assert.deepEqual(normal.updated, []);
+  assert.deepEqual(normal.videos.LnjVkJA4Z7M.auto.members, ["akane-lize", "aokumo-rin"]);
+  const normalPl = mergePlaylistEntries(
+    normal.videos,
+    [fan({ videoId: "LnjVkJA4Z7M", title: buggySaved.title, member: "akane-lize", playlistId: "PLDrTKwLrFhOf9nTergtjGnb7TC6CpFzae" })],
+    lock,
+    NOW,
+  );
+  assert.deepEqual(normalPl.added, []);
+  assert.deepEqual(normalPl.videos.LnjVkJA4Z7M.auto.members, ["akane-lize", "aokumo-rin"]);
+
+  // reclassify with playlists config + reclassifyAll with playlists config re-attribute saved entries
+  assert.deepEqual(reclassify(structuredClone(buggySaved), lock, { playlists: playlistsCfg }).auto.members, ["aokumo-rin"]);
+  const all = mergeEntries(
+    { LnjVkJA4Z7M: buggySaved, ORPHAN12345: orphanSaved, UNNAMED1234: unnamedSaved },
+    [],
+    lock,
+    NOW,
+    { reclassifyAll: true, playlists: playlistsCfg },
+  );
+  assert.deepEqual(all.updated, ["LnjVkJA4Z7M"]);
+  assert.deepEqual(all.videos.LnjVkJA4Z7M.auto.members, ["aokumo-rin"]);
+  assert.deepEqual(all.videos.ORPHAN12345.auto.members, ["akane-lize", "aokumo-rin"], "missing playlistId mapping stays unchanged");
+  assert.deepEqual(all.videos.UNNAMED1234.auto.members, ["shirayuki-hina"]);
+});
+
 test("rule d: Shorts are excluded (title keyword, verified format, and the once-per-video format check covers them)", () => {
   assert.equal(playlistAuto({ title: "만찬가 #shorts", publishedAt: null }, ["akane-lize"], lock).category, "excluded_short");
   const v = mergePlaylistEntries({}, [fan({ title: "만찬가 (晩餐歌)" })], lock, NOW).videos.ZZZZZZZZZZZ;

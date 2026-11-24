@@ -168,7 +168,7 @@ async function main() {
   const plResult = await collectPlaylists(plCheck.valid, { apiKey, sleepMs: DELAY_MS, log: (s) => console.log(s) });
 
   // ---- 2) merge (+ reclassify with current rules); playlists last so they never override an official-channel entry ----
-  const merged = mergeEntries(prevVideos, incoming, lock, now, { reclassifyAll: opts.reclassifyAll });
+  const merged = mergeEntries(prevVideos, incoming, lock, now, { reclassifyAll: opts.reclassifyAll, playlists: playlistCfg });
   const plMerged = mergePlaylistEntries(merged.videos, plResult.incoming, lock, now);
   let videos = plMerged.videos;
 

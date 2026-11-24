@@ -295,10 +295,10 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 - 분류 규칙 (`mergePlaylistEntries`, 공식 채널 병합 이후 실행):
   - 이미 `videos.json`에 있는 ID는 어떤 필드도 바꾸지 않는다(category·members·auto·overrides·ratings 불변, 재분류 없음).
   - 신규 영상의 소유 채널이 `channels-lock.json`의 공식 채널이면 `channelKey`를 그 채널로 두고 일반 공식 업로드와 똑같이 분류한다(방송노래 아님).
-  - 그 외(팬·클리퍼 업로드)는 `stream_song`(노출, 평가 제외)으로 고정한다. `members` = 영상이 들어 있는 재생목록의 멤버(모두) + 제목에서 감지된 멤버, `reviewRequired: false`, `matchedRules: ["P01-playlist-song"]`.
+  - 그 외(팬·클리퍼 업로드)는 `stream_song`(노출, 평가 제외)으로 고정한다. `members` = 제목에서 스텔라이브 멤버가 감지되면 감지된 멤버만(재생목록 멤버가 포함되지 않은 경우 재생목록 멤버는 추가하지 않음), 제목에 멤버명이 없으면 영상이 들어 있는 재생목록의 멤버(모두). `reviewRequired: false`, `matchedRules: ["P01-playlist-song"]`.
   - 자동 승격 금지(검토 대기, `reviewRequired: true`, 카테고리는 `stream_song` 유지): 제목 분류가 `original`/`live_special`이면 `playlist_official_candidate`(공식 MV·OST일 수 있음), 제목에 토큰 `방송`과 `풀버전`이 모두 있으면 `playlist_full_stream_candidate`(방송 풀 VOD일 수 있음). 큐레이터가 overrides로 결정한다.
   - `collect: "none"` 채널(예: stellive-topic)이 소유한 영상은 의도적으로 수집하지 않으므로 추가하지 않고 건너뛴다.
   - 쇼츠(`isShort` 확인 시 R05, 제목의 shorts 키워드)와 노래방송 풀 VOD(R20)는 방송노래로 두지 않고 제외 카테고리로 둔다. 신규 항목도 기존 쇼츠 판정(영상당 1회)을 거친다.
-  - `reclassify()`는 `source: "playlist"`이고 `channelKey`가 비어 있는 항목을 `source: "manual"`처럼 고정한다(`--reclassify-all`에서도). 예외: oEmbed로 공식 채널이 확인되어 `channelKey`가 채워지면 일반 분류로 돌아간다.
+  - `reclassify()`는 일반 실행에서 `source: "playlist"`이고 `channelKey`가 비어 있는 항목을 `source: "manual"`처럼 고정한다. 단, `--reclassify-all`에서 `playlists` 설정이 전달되면 저장된 `playlistId`로 `data/playlists.json`의 멤버를 찾아 `playlistAuto` 규칙으로 재계산한다(`playlistId` 매핑이 없으면 유지). oEmbed로 공식 채널이 확인되어 `channelKey`가 채워지면 일반 분류로 돌아간다.
 - 영상 필드(선택, 신규 항목만): `source: "playlist"`, `playlistId`(처음 발견한 재생목록). 파생 계산(`lib/derive.mjs`)은 이 필드를 보지 않는다. `schemaVersion`은 그대로 1.
 - 공식 16채널 수집·`--backfill`·`--force-views`(수동 실행)는 변경 없음. 매일 00:30 UTC 검색 cron과 `search_clips` 입력은 제거했다.
