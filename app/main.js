@@ -3,7 +3,7 @@ import { loadAll, state, subscribe, dirtyCount, discardDraft, discardCount, stor
 import { renderStaleNotice, confirmDiscard } from "./stale-notice.js";
 import { renderScorecard } from "./scorecard.js";
 import { renderGallery } from "./gallery.js";
-import { renderMembers } from "./members.js";
+import { renderMembers, selectMember } from "./members.js";
 import { renderReview } from "./review.js";
 import { renderBaseline } from "./baseline.js";
 import { renderExport } from "./exporter.js";
@@ -18,13 +18,20 @@ const TABS = [
 ];
 let current = "scorecard";
 
+function openMember(key) {
+  selectMember(key);
+  show("members");
+  const reduce = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+  window.scrollTo?.({ top: 0, behavior: reduce ? "auto" : "smooth" });
+}
+
 function show(tab) {
   current = tab;
   const root = document.getElementById("view");
   document.querySelectorAll("[role=tab]").forEach((b) => b.setAttribute("aria-selected", String(b.dataset.tab === tab)));
   const rerender = () => show(tab);
   try {
-    if (tab === "scorecard") renderScorecard(root);
+    if (tab === "scorecard") renderScorecard(root, { openMember });
     else if (tab === "gallery") renderGallery(root);
     else if (tab === "members") renderMembers(root);
     else if (tab === "review" && ADMIN) renderReview(root, rerender);

@@ -66,7 +66,7 @@ function statCard(kind, value, label, sub) {
   );
 }
 
-function memberCard(c) {
+function memberCard(c, openMember) {
   const bars = RUBRIC_ITEMS.map((it) => {
     const v = c.rubricItems?.[it.key];
     return h(
@@ -89,7 +89,12 @@ function memberCard(c) {
       { class: "card-head" },
       h("span", { class: "rank" }, c.rankA ? `#${c.rankA}` : "-"),
       h("div", {},
-        h("strong", { class: "name" }, c.displayName),
+        h("button", {
+          type: "button",
+          class: "member-card-btn",
+          "aria-label": `${c.displayName} 노래 모음 보기`,
+          onclick: () => openMember?.(c.key),
+        }, h("strong", { class: "name" }, c.displayName)),
         h("div", { class: "muted small" }, unitLabel(c.unit), c.status === "graduated" ? h("span", { class: "badge grad" }, "졸업") : null)),
       h("div", { class: "a-block" },
         h("div", { class: "a-score" }, c.rubricTotal === null ? "-" : fmt1(c.rubricTotal)),
@@ -103,11 +108,15 @@ function memberCard(c) {
       CATEGORIES.filter((k) => k.counted).map((k) => h("span", { class: "slot" }, `${k.label} ${c.slots[k.key]}`)),
       h("strong", {}, ` 합계 ${c.slots.total}`)),
     h("p", { class: "small muted" }, `미채점 ${c.unratedCount} · 삭제됨 ${c.deletedCount}`),
-    h("p", { class: "tiny muted" }, "A = 멤버 직접 평가(10항목), B = 채점된 영상 평균. 개인 평가."),
+    h("footer", { class: "member-card-foot" },
+      h("p", { class: "tiny muted member-card-note" }, "A = 멤버 직접 평가(10항목), B = 채점된 영상 평균. 개인 평가."),
+      h("span", { class: "member-card-hint", "aria-hidden": "true" }, "노래 모음 보기 →"),
+    ),
   );
 }
 
-export function renderScorecard(root) {
+export function renderScorecard(root, opts = {}) {
+  const { openMember } = opts ?? {};
   clear(root);
   const d = derived();
   const totalVideos = Object.keys(state.repo?.videos?.videos ?? {}).length;
@@ -124,17 +133,17 @@ export function renderScorecard(root) {
     songSearchSection(d),
     h("div", { class: "sort-bar" },
       h("label", { class: "inline" }, "정렬 ",
-        h("select", { onchange: (e) => { sortMode = e.target.value; renderScorecard(root); } },
+        h("select", { onchange: (e) => { sortMode = e.target.value; renderScorecard(root, opts); } },
           h("option", { value: "A", selected: sortMode === "A" }, "A 루브릭 순"),
           h("option", { value: "B", selected: sortMode === "B" }, "B 곡 평균 순위")))),
   );
   const cards = sortMode === "B"
     ? d.memberCards.filter((c) => c.rankB !== null).sort((a, b) => a.rankB - b.rankB)
     : d.memberCards;
-  add(root, h("div", { class: "grid" }, cards.map(memberCard)));
+  add(root, h("div", { class: "grid" }, cards.map((c) => memberCard(c, openMember))));
 
   radarMember ??= d.memberCards[0]?.key;
-  const sel = h("select", { onchange: (e) => { radarMember = e.target.value; renderScorecard(root); } },
+  const sel = h("select", { onchange: (e) => { radarMember = e.target.value; renderScorecard(root, opts); } },
     d.memberCards.map((c) => h("option", { value: c.key, selected: c.key === radarMember }, c.displayName)));
   const charts = h("section", { class: "charts" },
     h("h2", {}, "차트 ", h("span", { class: "tag" }, "개인 평가")),
