@@ -191,7 +191,7 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 ```
 - **A. 루브릭 총점** = `sum(memberRubric[m].items)` (물리·해석 소계도 합으로 계산). 루브릭 없으면 null.
 - **B. 곡 평균** = counted 영상 중 `m ∈ members` 이고 `contribution ≠ null`인 값들의 평균. `n` = 그 개수.
-- B 순위는 `n ≥ MIN_RATED (=3)`인 멤버만. 미달 멤버도 카드에 `B값 (n곡)`과 "순위 산정 기준 미달" 표시.
+- B 순위는 `n ≥ MIN_RATED (=3)`인 멤버만. 미달 멤버는 카드에 `B값 (n곡)`만 보이고 순위 배지는 없다. "B 곡 평균 순위" 정렬 목록에서는 제외된다(2026-11-24 사용자 요청).
 - 미채점 영상(`contribution = null`)은 A·B·순위 어디에도 영향 없음 → 새 영상은 자동으로 무영향.
 - 메인 순위 = A 내림차순(동점 시 B, 그다음 멤버 key). 반올림은 표시 시점에만(소수 1자리), 계산은 원값.
 
