@@ -1,11 +1,14 @@
 import { h, clear, fmt1, add } from "./dom.js";
 import { derived, state } from "./store.js";
-import { RUBRIC_ITEMS, CATEGORIES, MIN_RATED } from "../lib/derive.mjs";
+import { RUBRIC_ITEMS, CATEGORIES } from "../lib/derive.mjs";
 import { radarChart, abChart, categoryChart } from "./charts.js";
 import { songSearchSection } from "./song-search.js";
 
 let sortMode = "A";
 let radarMember = null;
+
+/** Test hook to switch dashboard sort mode ("A" | "B"). */
+export function setSortMode(mode) { sortMode = mode === "B" ? "B" : "A"; }
 
 function unitLabel(key) {
   return state.repo.channels.units.find((u) => u.key === key)?.label ?? "";
@@ -42,8 +45,8 @@ function memberCard(c) {
     ),
     h("p", { class: "small" }, h("strong", {}, "A. 루브릭 총점"), ` (개인 평가) · 물리 ${fmt1(c.physical)}/55 · 해석 ${fmt1(c.interpretive)}/45`),
     h("div", { class: "bars" }, bars),
-    h("p", { class: "b-line" }, h("strong", {}, bText), " ",
-      c.rankB !== null ? h("span", { class: "badge" }, `B 순위 #${c.rankB}`) : h("span", { class: "badge warn" }, `순위 산정 기준 미달 (${c.songAvgN}/${MIN_RATED}곡)`)),
+    h("p", { class: "b-line" }, h("strong", {}, bText),
+      c.rankB !== null ? [" ", h("span", { class: "badge" }, `B 순위 #${c.rankB}`)] : null),
     h("p", { class: "slots small" }, "아카이브 슬롯 ",
       CATEGORIES.filter((k) => k.counted).map((k) => h("span", { class: "slot" }, `${k.label} ${c.slots[k.key]}`)),
       h("strong", {}, ` 합계 ${c.slots.total}`)),
@@ -69,8 +72,9 @@ export function renderScorecard(root) {
         h("option", { value: "A", selected: sortMode === "A" }, "A 루브릭 순"),
         h("option", { value: "B", selected: sortMode === "B" }, "B 곡 평균 순위"))),
   );
-  let cards = d.memberCards;
-  if (sortMode === "B") cards = [...cards].sort((a, b) => (a.rankB ?? 1e9) - (b.rankB ?? 1e9) || a.rankA - b.rankA);
+  const cards = sortMode === "B"
+    ? d.memberCards.filter((c) => c.rankB !== null).sort((a, b) => a.rankB - b.rankB)
+    : d.memberCards;
   add(root, h("div", { class: "grid" }, cards.map(memberCard)));
 
   radarMember ??= d.memberCards[0]?.key;

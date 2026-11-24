@@ -60,8 +60,6 @@ export function abChart(cards) {
     if (c.songAvg !== null) {
       svg.append(s("rect", { class: "bar-b", x: left, y: y + 16, width: scale(c.songAvg), height: 13 }, s("title", {}, `${c.displayName} B ${fmt1(c.songAvg)} (${c.songAvgN}곡)`)));
       svg.append(s("text", { class: "val", x: left + scale(c.songAvg) + 4, y: y + 27 }, `B ${fmt1(c.songAvg)} (${c.songAvgN}곡)`));
-    } else {
-      svg.append(s("text", { class: "val muted-svg", x: left, y: y + 27 }, "B 없음(미채점)"));
     }
     if (c.unratedCount) svg.append(s("text", { class: "val muted-svg", x: W - 4, y: y + 11, "text-anchor": "end" }, `미채점 ${c.unratedCount}`));
   });
