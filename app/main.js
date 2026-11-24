@@ -42,13 +42,21 @@ function header() {
   subscribe(refresh);
   refresh();
   const link = h("a", { href: location.href, target: "_blank", rel: "noopener", class: "newwin" }, "새 창에서 열기");
-  add(document.getElementById("topbar"), 
-    h("h1", {}, "스텔라이브 보컬 트래커"),
-    h("span", { class: "muted small" }, `데이터 갱신 ${formatKst(state.repo.videos.updatedAt)}`),
+  const brand = h("div", { class: "brand" },
+    h("span", { class: "brand-logo", "aria-hidden": "true" }, "♪"),
+    h("div", { class: "brand-text" },
+      h("h1", { class: "brand-title" }, "STELLIVE ARCHIVE"),
+      h("span", { class: "brand-sub" }, "MUSIC DATABASE · 스텔라이브 보컬 트래커"),
+    ),
+  );
+  const right = h("div", { class: "topbar-meta" },
+    h("span", { class: "live-pill" }, h("span", { class: "live-dot", "aria-hidden": "true" }), "LIVE DATA"),
+    h("span", { class: "muted small updated-at" }, `데이터 갱신 ${formatKst(state.repo.videos.updatedAt)}`),
     ADMIN ? dirty : null,
     ADMIN && h("button", { type: "button", class: "small-btn", onclick: () => { if (discardCount() === 0 || confirmDiscard()) { discardDraft(); show(current); } } }, "초안 폐기"),
     link,
   );
+  add(document.getElementById("topbar"), brand, right);
   document.getElementById("banner").textContent = DISCLAIMER;
   if (!storageOk) document.getElementById("memwarn").hidden = false;
   const stale = h("div", { id: "stale", class: "stale-warn", role: "alert", hidden: true });

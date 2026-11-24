@@ -67,7 +67,7 @@ export function renderSongBrowser(root, st, { fixedMember = null, note = null } 
     ];
     const v = vids[id];
     add(preview,
-      h("div", { class: "player-wrap" }, player),
+      h("div", { class: `player-wrap${st.playing ? " is-playing" : ""}` }, player),
       h("h3", { class: "ptitle" }, r.title),
       h("div", { class: "chips" }, r.members.map((m) => {
         const c = cardOf.get(m);
@@ -89,6 +89,16 @@ export function renderSongBrowser(root, st, { fixedMember = null, note = null } 
     preview.scrollIntoView?.({ behavior: "smooth", block: "nearest" });
   }
 
+  function cardBadges(r) {
+    const out = [];
+    const evalAllowed = !r.groupSong && r.category !== "stream_song";
+    if (evalAllowed && r.songScore !== null) out.push(h("span", { class: "badge pill-eval" }, "평가 포함"));
+    if (r.category === "stream_song") out.push(h("span", { class: "badge pill-stream" }, "방송노래"));
+    if (r.groupSong) out.push(h("span", { class: "badge pill-group" }, "단체곡"));
+    if (r.dupCount && !st.showDups) out.push(h("span", { class: "badge pill-dup" }, `같은 무대 클립 +${r.dupCount}`));
+    return out;
+  }
+
   function paintGrid() {
     const filtered = filterSongs(d.videoRows, { ...st.f, altTitles });
     const { rows: collapsed, hidden } = collapseDuplicateClips(filtered, { views, aliasesOf: memberAliases });
@@ -97,14 +107,20 @@ export function renderSongBrowser(root, st, { fixedMember = null, note = null } 
     clear(grid);
     if (!rows.length) { add(grid, h("p", { class: "muted" }, "조건에 맞는 노래 영상이 없습니다.")); return; }
     if (!st.selectedId || !rows.some((r) => r.videoId === st.selectedId)) { st.selectedId = rows[0].videoId; st.playing = false; }
-    add(grid, rows.map((r) => h("button", { type: "button", class: `gcard${r.videoId === st.selectedId ? " on" : ""}`, "data-id": r.videoId, onclick: () => select(r.videoId) },
-      h("img", { class: "gthumb", loading: "lazy", alt: "", src: thumb(r.videoId, "mqdefault") }),
-      h("span", { class: "gtitle" }, r.title),
-      h("span", { class: "gmembers small" }, r.members.map(memberName).join(", ")),
-      h("span", { class: "gmeta tiny muted" }, metaLine(r)),
-      r.dupCount && !st.showDups ? h("span", { class: "tiny muted" }, `같은 무대 클립 +${r.dupCount}`) : null,
-      noEvalLabel(r) ? h("span", { class: "badge gscore muted" }, noEvalLabel(r)) : r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
-    )));
+    add(grid, rows.map((r) => {
+      const badges = cardBadges(r);
+      return h("button", { type: "button", class: `gcard${r.videoId === st.selectedId ? " on" : ""}`, "data-id": r.videoId, onclick: () => select(r.videoId) },
+        h("span", { class: "gthumb-wrap" },
+          h("img", { class: "gthumb", loading: "lazy", alt: "", src: thumb(r.videoId, "mqdefault") }),
+          h("span", { class: "gplay", "aria-hidden": "true" }, "▶"),
+          !noEvalLabel(r) && r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
+        ),
+        h("span", { class: "gtitle" }, r.title),
+        h("span", { class: "gmembers small" }, r.members.map(memberName).join(", ")),
+        h("span", { class: "gmeta tiny muted" }, metaLine(r)),
+        badges.length ? h("span", { class: "gbadges" }, badges) : null,
+      );
+    }));
     paintPreview();
   }
 
