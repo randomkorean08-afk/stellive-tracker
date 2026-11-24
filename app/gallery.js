@@ -27,7 +27,7 @@ export function openInGallery(id) { galleryState.selectedId = id; galleryState.p
  * Song browser: preview + filters + card grid. opts.fixedMember locks the member filter (멤버별 보기);
  * group songs then appear only if that member is in the song's members array.
  */
-export function renderSongBrowser(root, st, { fixedMember = null, note = null } = {}) {
+export function renderSongBrowser(root, st, { fixedMember = null, precomputed = null, note = null } = {}) {
   const d = derived();
   const vids = state.repo?.videos?.videos ?? {};
   const views = {};
@@ -100,8 +100,9 @@ export function renderSongBrowser(root, st, { fixedMember = null, note = null } 
   }
 
   function paintGrid() {
-    const filtered = filterSongs(d.videoRows, { ...st.f, altTitles });
-    const { rows: collapsed, hidden } = collapseDuplicateClips(filtered, { views, aliasesOf: memberAliases });
+    const usePre = precomputed && st.f.category === "" && st.f.query === "";
+    const filtered = usePre ? precomputed.allListed : filterSongs(d.videoRows, { ...st.f, altTitles });
+    const { rows: collapsed, hidden } = usePre ? precomputed.collapsed : collapseDuplicateClips(filtered, { views, aliasesOf: memberAliases });
     const rows = sortSongs(st.showDups ? filtered : collapsed, st.f.sort, views);
     count.textContent = `노래 영상 ${rows.length}곡${hidden.size ? ` · 같은 무대 중복 클립 ${hidden.size}개 ${st.showDups ? "포함" : "접음"}` : ""}`;
     clear(grid);

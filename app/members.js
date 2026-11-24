@@ -8,8 +8,24 @@ import { renderSongBrowser, newBrowserState, memberName } from "./gallery.js";
 
 let current = null;
 const states = new Map(); // member -> browser state (kept while switching)
+const statsCache = new WeakMap(); // derived() object -> Map<memberKey, { allListed, collapsed, rows, songs, videos }>
 
 export function selectMember(key) { current = key; }
+
+function getStatsByMember(d, members) {
+  let cached = statsCache.get(d);
+  if (cached) return cached;
+  const views = {};
+  for (const [id, v] of Object.entries(state.repo?.videos?.videos ?? {})) if (typeof v.viewCount === "number") views[id] = v.viewCount;
+  const aliasesOf = (k) => { const c = members.find((x) => x.key === k); return c ? [c.displayName, ...(c.aliases ?? [])] : []; };
+  cached = new Map(members.map((m) => {
+    const allListed = filterSongs(d.videoRows, { member: m.key });
+    const collapsed = collapseDuplicateClips(allListed, { views, aliasesOf });
+    return [m.key, { allListed, collapsed, rows: collapsed.rows, songs: collapsed.rows.length, videos: allListed.length }];
+  }));
+  statsCache.set(d, cached);
+  return cached;
+}
 
 function groupUnitsByGeneration(units, members) {
   const groups = [];
@@ -33,14 +49,7 @@ export function renderMembers(root) {
   const members = (lock.channels ?? []).filter((c) => c.type === "member");
   current ??= members[0]?.key ?? null;
 
-  const views = {};
-  for (const [id, v] of Object.entries(state.repo?.videos?.videos ?? {})) if (typeof v.viewCount === "number") views[id] = v.viewCount;
-  const aliasesOf = (k) => { const c = members.find((x) => x.key === k); return c ? [c.displayName, ...(c.aliases ?? [])] : []; };
-  const statsByMember = new Map(members.map((m) => {
-    const allListed = filterSongs(d.videoRows, { member: m.key });
-    const rows = collapseDuplicateClips(allListed, { views, aliasesOf }).rows;
-    return [m.key, { songs: rows.length, videos: allListed.length, rows }];
-  }));
+  const statsByMember = getStatsByMember(d, members);
 
   const genGroups = groupUnitsByGeneration(units, members);
   const picker = h("section", { class: "member-picker" },
@@ -101,6 +110,9 @@ export function renderMembers(root) {
   ));
 
   if (!states.has(current)) states.set(current, newBrowserState(current));
-  renderSongBrowser(root, states.get(current), { fixedMember: current,
-    note: "이 멤버가 실제로 참여한 곡만 표시합니다. 단체곡은 참여 멤버 명단에 있는 멤버의 창에만 나타납니다." });
+  renderSongBrowser(root, states.get(current), {
+    fixedMember: current,
+    precomputed: statsByMember.get(current),
+    note: "이 멤버가 실제로 참여한 곡만 표시합니다. 단체곡은 참여 멤버 명단에 있는 멤버의 창에만 나타납니다.",
+  });
 }
