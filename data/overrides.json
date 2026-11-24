@@ -28,7 +28,11 @@
     },
     "E_G9otMLf64": {
       "category": "live_special",
-      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인)"
+      "note": "Phase 3: 실제 YouTube 제목에 분류 키워드가 없어 재수집 시 오분류 방지용 카테고리 고정 (2026-11-21 사용자 승인) / 검토 대기열 일괄 처리: 아라하시 타비 공식 채널 59분 58초 3D 데뷔 4K 다시보기(기존 override 및 사용자 선례 live_special 확정). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)",
+      "members": [
+        "arahashi-tabi"
+      ],
+      "reviewed": true
     },
     "G5tTozKJRD4": {
       "category": "original",
@@ -131,6 +135,589 @@
       ],
       "reviewed": true,
       "note": "목숨 — 아카네 리제 오리지널 곡 (Miiro feat. 아카네 리제 OFFICIAL MV, 외부 채널 업로드). 사용자 확인 2026-11-23"
+    },
+    "ReYMri39pPg": {
+      "category": "stream_song",
+      "members": [
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '호치1'(@hochii-rang) 팬 클립, 설명란 치지직 생방송 풀영상 링크 기재(2분 17초). 방송 중 연주 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "D07L5s9JPUA": {
+      "category": "stream_song",
+      "members": [
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '딸랑딸랑', 설명란 #키리누키·코가네 다시보기 채널 기재(2분 18초). 생방송 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "SkjqmixHsLw": {
+      "category": "stream_song",
+      "members": [
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '유사스텔라이브', 3분 21초 영상으로 데뷔 방송 중 부른 G4L 단일 곡 클립(풀 VOD 아님). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "_Ek8LoDlsTk": {
+      "category": "live_special",
+      "members": [
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 129분 44초 'Arahashi Tabi BIRTHDAY 3D LIVE'(REQ 음악감독·8STAR 안무). E_G9otMLf64 3D 데뷔 선례 준용. Guest Artist 유즈하 리코 기재되나 호스트 단독 생일 3D 라이브 기준으로 본인만 표기. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "FzefgoF26Ac": {
+      "category": "solo_cover",
+      "members": [
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아카네 리제 공식 채널 업로드(3분 39초), 제목 【COVER】 및 설명란 Vocal Akane Lize·원곡 명조 OST 명시. OST 커버는 solo_cover. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "JsnnXkxNGQU": {
+      "category": "collab_cover",
+      "members": [
+        "ayatsuno-yuni",
+        "sakihane-fuya"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 업로드(3분 30초), 설명란 Vocal & Chorus: Sakihane Huya, Ayatsuno Yuni(에버리스 2인) 확인. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "F1Z0uUObYao": {
+      "category": "live_special",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 134분 5초 'Hanako Nana BIRTHDAY 3D LIVE'(다수 곡 안무·세트리스트 기재). Guest Artist 시라유키 히나·아오쿠모 린 기재되나 호스트 단독 생일 3D 라이브 기준으로 본인만 표기. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "sSMCY6Bz15g": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아라하시 타비 채널 10분 47초 【팰월드】 게임 방송 하이라이트(#palworld #스텔서버), 노래 영상 아님. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "qtViNFVh9Us": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아카네 리제 채널 16분 21초 솔로 콘서트 스트리머 후기 리액션 모음 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "GatQ1sfLX1g": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아카네 리제 채널 14분 1초 콘서트 홍보 잡담 하이라이트 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "NA8R2zAXFzo": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 29분 32초(is_live=True) ZAIKO 온라인 스트리밍 안내/생중계 페이지이나 oEmbed 401 제한 및 설명란 티켓 정보만 존재하고 무료 노래 무대 송출 여부 미확인. 점수 과대집계 방지를 위해 보수적으로 non_music 분류. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "-gPzb46wo30": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아카네 리제 채널 10분 50초 첫 단독 콘서트 대비 설명회(안내/토크) 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "_BrWJ31tzYs": {
+      "category": "collab_cover",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 3분 55초 커버 업로드(유니버스 3주년 3D 컷). 설명란 Artist: 히나·마시로·리제·타비(2기생 4인) 확인. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "imggwZXeePQ": {
+      "category": "collab_cover",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 2분 45초 커버 업로드(유니버스 3주년 3D 컷). 설명란 Artist: 히나·마시로·리제·타비(2기생 4인) 확인. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "I3f1TXOC3Rk": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아카네 리제 채널 13분 4초 콘서트 굿즈 검수·일상 토크 하이라이트. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "ZgSmvMLeNxo": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 12분 31초 대기실 잡담 3D 토크 영상(노가리 타임). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "_7Q2UErls0M": {
+      "category": "live_special",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 105분 43초 'Universe 3rd Anniversary 3D LIVE'. 설명란 Main Performance 2기 유니버스 4인(히나·마시로·리제·타비) 명시. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "u5Ud4h9K8gs": {
+      "category": "live_special",
+      "members": [
+        "ayatsuno-yuni"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 101분 13초 'Ayatsuno Yuni BIRTHDAY 3D LIVE'(다수 공연 곡·안무 기재). Guest Artist 타비·나나·린 기재되나 호스트 단독 생일 3D 라이브 기준으로 본인만 표기. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "pZhrPsa5OuY": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아오쿠모 린 채널 8분 3초 생일 3D 상황극/예능 콘텐츠(설명란 브금대통령 BGM만 기재, 노래 공연 아님). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "wnBbcE_zopY": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아오쿠모 린 채널 8분 6초 생일 3D 상황극/예능 콘텐츠(설명란 브금대통령 BGM만 기재, 노래 공연 아님). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "U2KOUVULzrQ": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 40초 콘서트 개최 티저(COMING SOON 공지). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "wJG9Ty_3_Jw": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 11분 6초 STAR TRAIL MV 멤버별 리액션 모음 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "AIdhzFiKJwA": {
+      "category": "live_special",
+      "members": [
+        "aokumo-rin"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 142분 4초 'Aokumo Rin BIRTHDAY 3D LIVE'(안무·음악 제작 크레딧 기재). Guest Artist 유니·히나·타비·나나·네리사 기재되나 호스트 단독 생일 3D 라이브 기준으로 본인만 표기. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "PSeGHBK-ZO0": {
+      "category": "live_special",
+      "members": [
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 110분 34초 'Yuzuha Riko BIRTHDAY 3D LIVE'(세카이 등 안무·음악 크레딧 기재). Guest Artist 시부키·린·나나 기재되나 호스트 단독 생일 3D 라이브 기준으로 본인만 표기. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "uVtfLhN38v0": {
+      "category": "live_special",
+      "members": [
+        "tenko-shibuki"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 126분 10초 'Tenko Shibuki BIRTHDAY 3D LIVE'(타임라인에 숨바꼭질·여우비·StaRt 등 다수 무대 기재). Guest Artist 마시로·린·나나·리코 기재되나 호스트 단독 생일 3D 라이브 기준으로 본인만 표기. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "IoBUWPQ3dwc": {
+      "category": "solo_cover",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 하나코 나나 공식 채널 4분 18초, 제목 COVER 및 설명란 Original 우타다 히카루·Vocal 하나코 나나 명시. OST 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "VEVY72AA_Jk": {
+      "category": "live_special",
+      "members": [
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 106분 24초 'NENEKO MASHIRO BIRTHDAY 3D LIVE'(단독 출연, REQ 음악감독·안무 크레딧). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "aurVmylo4_Y": {
+      "category": "solo_cover",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 하나코 나나 공식 채널 4분 16초, 제목 COVER 및 설명란 Original SID - RAIN 명시. OST 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "c6JymG9AAyI": {
+      "category": "live_special",
+      "members": [
+        "shirayuki-hina"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 업로드 88분 11초 'SHIRAYUKI HINA BIRTHDAY 3D LIVE'(설명란 생일 라이브 다시보기·단독 퍼포먼스·REQ 음악감독·안무 명시). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "CumVjB42Iqw": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아라하시 타비 채널 9분 14초 콘서트 후기 토크 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "vc5DJaP06_Q": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 네네코 마시로 채널 8분 8초 콘서트 후기 토크 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "qx6K3hARZB0": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 하나코 나나 채널 8분 STARTRAIL 콘서트 후기 토크 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "kwfqq3wMXwo": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아야츠노 유니 채널 14분 36초 STARTRAIL 콘서트 후기 토크 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "von2Aae7kNI": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 시라유키 히나 채널 8분 46초 영상 및 웹검색 확인 결과 콘서트 전 멘트·연출을 상상하는 방송 토크 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "D0DBLDv_HJM": {
+      "category": "solo_cover",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 하나코 나나 공식 채널 3분 57초 스튜디오 믹싱 커버 업로드(나나 드라이브 '불러보았다', MIX: Mocacci). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "JExHQAbRy1w": {
+      "category": "stream_song",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '어오세 저장소', 설명란 10/10 치지직 생방송 출처 명시(3분 57초). 생방송 노래 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "ZXPMg_ntBAM": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 유즈하 리코 채널 10분 6초 [핫클립], 타임라인상 3D 방송 예능·토크 하이라이트. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "_CoeM1flrfU": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 12분 22초 클리셰 단체 3D 게임·예능 콘텐츠. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "x7VnP5sAZiQ": {
+      "category": "live_special",
+      "members": [
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 68분 25초 3D 데뷔 공연 업로드(REQ 음악감독·8STAR 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "L8uU2RlsA9k": {
+      "category": "live_special",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 58분 46초 3D 데뷔 공연 업로드(REQ 음악감독·Crystal 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "KmoZvVh4rFw": {
+      "category": "live_special",
+      "members": [
+        "aokumo-rin"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 57분 53초 3D 데뷔 공연 업로드(REQ 음악감독·Crystal 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "nvRgBhHky7Q": {
+      "category": "live_special",
+      "members": [
+        "tenko-shibuki"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 57분 24초 3D 데뷔 공연 업로드(REQ 음악감독·8STAR 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "WICzT2lsQa8": {
+      "category": "collab_cover",
+      "members": [
+        "ayatsuno-yuni",
+        "akane-lize",
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 유즈하 리코 공식 채널 4분 28초, 제목 Cover 및 설명란 리코×유니×리제 3인 보컬 명시. 최애의 아이 OST 합동 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "TZdLNWsJqoc": {
+      "category": "stream_song",
+      "members": [
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '이베리코의 일대기'(팬 클립 채널), 설명란 방송소스 링크 기재(2분 33초). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "lv43T1XSFuU": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 26분 46초 3D 콘텐츠(운동회 등) 하이라이트 모음집. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "i5ZEIsWt0Fk": {
+      "category": "solo_cover",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 하나코 나나 공식 채널 3분 43초, 제목 COVER 및 설명란 Original 이터널 리턴 OST 명시. OST 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "dDay-h1Q_kQ": {
+      "category": "stream_song",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '어오세 저장소', 설명란 6/21 치지직 생방송 출처 명시(4분 17초). 생방송 라이브 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "CbuiRlGeA-g": {
+      "category": "collab_cover",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 4분 14초, 설명란 Vocal & Chorus 2기 유니버스 4인(히나·마시로·타비·리제) 명시. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "dmhInBli0sQ": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아야츠노 유니 채널 9분 1초 영상 및 웹검색 확인 결과 2025/05/21 방송 3D 방 구경 토크 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "L-GJ9pYICDM": {
+      "category": "collab_cover",
+      "members": [
+        "tenko-shibuki",
+        "aokumo-rin",
+        "hanako-nana",
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 하나코 나나 공식 채널 5분 36초, 설명란 Vocal 하나코 나나·Special Chorus 시부키·리코·린(클리셰 전원 4인) 명시. OST 합동 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "5kTp7SQCR_Y": {
+      "category": "collab_cover",
+      "members": [
+        "ayatsuno-yuni",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi",
+        "tenko-shibuki",
+        "aokumo-rin",
+        "hanako-nana",
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 4분 25초(2025-05-05), 설명란 Vocal & Chorus 크레딧 9인 확인(칸나 졸업·후야 미참여로 9인). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "2EnupmjJ770": {
+      "category": "non_music",
+      "members": [],
+      "exclude": true,
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 24초 영상으로 동일 커버 본편(5kTp7SQCR_Y) 공개 4시간 전 올라온 중복 티저 → exclude: true. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "zVNbcnSQrCU": {
+      "category": "solo_cover",
+      "members": [
+        "aokumo-rin"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아오쿠모 린 공식 채널 3분 46초, 제목 Cover 및 설명란 Original 니케 OST 명시. OST 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "N_vYUNEktsA": {
+      "category": "original",
+      "members": [
+        "tenko-shibuki"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: TAK / DORIDORI 공식 채널 3분 11초 오리지널 MV, 설명란 Vocal 텐코 시부키 피처링 참여 명시(프롬프트 선례 original). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "YkwcJQ604UA": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 29분 21초 '2기생 3D 데뷔 하이라이트' 모음집(풀버전은 각 멤버 채널 별도 존재). 노래 무대 단독 업로드가 아니며 중복 집계를 피하기 위해 보수적으로 non_music 분류. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "TETDbJy2roc": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 네네코 마시로 채널 8분 35초 귀여움 포인트 모음(설명란 브금대통령 BGM 기재, 토크/예능 하이라이트). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "rEF1LDrnDDA": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 23분 6초 유니버스 단체 3D 미션 예능 콘텐츠. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "clB8h54Yhss": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아라하시 타비 채널 16분 3D 데뷔 후기 토크 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "fUi4Ej9guxs": {
+      "category": "live_special",
+      "members": [
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 65분 26초 3D 데뷔 공연 업로드(REQ 음악감독·안무 크레딧, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "UdxIDFa1pTM": {
+      "category": "live_special",
+      "members": [
+        "shirayuki-hina"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 62분 59초 3D 데뷔 공연 업로드(REQ 음악감독·8star 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "uxh1meOZKhA": {
+      "category": "live_special",
+      "members": [
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 49분 48초 3D 데뷔 공연 업로드(REQ 음악감독·8star 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "4NKmdOMgMYg": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 35초 아야츠노 유니 콘서트 온라인 스트리밍 예매 공지 영상. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "UoHgn4PW_l8": {
+      "category": "stream_song",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '어오세 저장소', 설명란 12/28 치지직 생방송 출처 명시(3분 37초). 생방송 라이브 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "RddMaUtzPr8": {
+      "category": "live_special",
+      "members": [
+        "ayatsuno-yuni"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아야츠노 유니 공식 채널 30분 21초(is_live=True). 웹검색 확인 결과 첫 단독 콘서트 초반부 유튜브 무료 맛보기 생중계(나 아이돌 선언·굿바이 선언 등 무대 포함)이나 풀/편집본이 아닌 맛보기 송출본. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "2U9B62m9OVo": {
+      "category": "stream_song",
+      "members": [
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '어오세 저장소', 설명란 9/1 치지직 생방송 출처 명시(3분 12초). 생방송 라이브 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "6-Kz5sWJBg4": {
+      "category": "collab_cover",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 3분 38초, 설명란 Vocal & Chorus 2기 유니버스 4인(히나·마시로·타비·리제) 명시. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "Htyf_n2yT-A": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 시라유키 히나 채널 9분 9초 핫클립 #13(설명란 #구스구스덕 게임·토크 클립). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "YnEs826EXPI": {
+      "category": "stream_song",
+      "members": [
+        "shirayuki-hina",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '히나의 노래방 저장소'(@notsleephaedungarchive, 팬 노래방 아카이브 채널) 3분 46초 방송 라이브 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "XncmUYeKue4": {
+      "category": "live_special",
+      "members": [
+        "airi-kanna"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아이리 칸나 공식 채널 15분 20초(is_live=True, 2024-01-27 졸업 전). 웹검색 확인 결과 첫 단독 콘서트 초반부 유튜브 무료 맛보기 생중계(오프닝·ADDICT!ON 무대 포함)이나 풀콘서트가 아닌 맛보기 송출본. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "RHbfhJUeCpE": {
+      "category": "live_special",
+      "members": [
+        "ayatsuno-yuni"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 공식 채널 66분 3초 3D 데뷔 공연 업로드(REQ 음악감독·8STAR 안무, E_G9otMLf64 선례 동일 계열). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "eKzcHQznAlY": {
+      "category": "non_music",
+      "members": [],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 스텔라이브 공식 채널 14분 11초(is_live=True, 2023-11-08). 웹검색 확인 결과 음원 발매(11/9) 전날 진행된 곡 소개·비하인드 쇼케이스 토크 방송으로, 정식 MV·음원과의 중복 집계를 피하기 위해 보수적으로 non_music 분류. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "8VdlQZQ46D4": {
+      "category": "solo_cover",
+      "members": [
+        "airi-kanna"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: 아이리 칸나 공식 채널 4분 37초(2023-10-25 졸업 전), 제목 Cover 및 설명란 Vocal Airi Kanna·원곡 요네즈 켄시 명시. OST 커버. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "rO-Uxmc7IZ0": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '서아린'(팬 편집 채널), 설명란 2023.09.07 방송 원본 타임스탬프 링크 기재(3분 2초). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "zbqMpz8aMB8": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '서아린'(팬 편집 채널), 설명란 2023.09.07 방송 원본 타임스탬프 링크 기재(4분 39초). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "epXNniiYP7g": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '취미가 파스텔'(팬 클립 채널), 설명란 2023-07-23 마시로 방송 원본 링크 기재(2분 48초). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "RQfJsxGDW5U": {
+      "category": "stream_song",
+      "members": [
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '취미가 파스텔'(팬 클립 채널), 설명란 2023-07-13 타비 방송 원본 링크 기재(4분 7초). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
     }
   }
 }
