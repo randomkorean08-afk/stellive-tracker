@@ -191,6 +191,15 @@ test("reclassify-all re-attributes saved playlist entries using playlists config
     playlistId: "PLhina",
     auto: { category: "stream_song", members: ["shirayuki-hina"], matchedRules: ["P01-playlist-song"], reviewRequired: false, reviewReasons: [] },
   };
+  // Saved entry with title naming no member, previously collected from two playlists (only one playlistId stored)
+  const multiPlUnnamed = {
+    ...structuredClone(buggySaved),
+    videoId: "apIEv9mOyUw",
+    title: "2023 06 11 따뜻하니까-♪ ｜ Cover by 스텔라이브 2기생 유니버스",
+    playlistId: "PLtabi",
+    auto: { category: "stream_song", members: ["neneko-mashiro", "arahashi-tabi"], matchedRules: ["P01-playlist-song"], reviewRequired: false, reviewReasons: [] },
+  };
+  const playlistsWithTabi = { playlists: [...playlistsCfg.playlists, { playlistId: "PLtabi", member: "arahashi-tabi" }] };
 
   // Without playlists config: reclassify and reclassifyAll keep entries fixed as before
   assert.deepEqual(reclassify(structuredClone(buggySaved), lock).auto.members, ["akane-lize", "aokumo-rin"]);
@@ -218,16 +227,17 @@ test("reclassify-all re-attributes saved playlist entries using playlists config
   // reclassify with playlists config + reclassifyAll with playlists config re-attribute saved entries
   assert.deepEqual(reclassify(structuredClone(buggySaved), lock, { playlists: playlistsCfg }).auto.members, ["aokumo-rin"]);
   const all = mergeEntries(
-    { LnjVkJA4Z7M: buggySaved, ORPHAN12345: orphanSaved, UNNAMED1234: unnamedSaved },
+    { LnjVkJA4Z7M: buggySaved, ORPHAN12345: orphanSaved, UNNAMED1234: unnamedSaved, apIEv9mOyUw: multiPlUnnamed },
     [],
     lock,
     NOW,
-    { reclassifyAll: true, playlists: playlistsCfg },
+    { reclassifyAll: true, playlists: playlistsWithTabi },
   );
   assert.deepEqual(all.updated, ["LnjVkJA4Z7M"]);
   assert.deepEqual(all.videos.LnjVkJA4Z7M.auto.members, ["aokumo-rin"]);
   assert.deepEqual(all.videos.ORPHAN12345.auto.members, ["akane-lize", "aokumo-rin"], "missing playlistId mapping stays unchanged");
   assert.deepEqual(all.videos.UNNAMED1234.auto.members, ["shirayuki-hina"]);
+  assert.deepEqual(all.videos.apIEv9mOyUw.auto.members, ["neneko-mashiro", "arahashi-tabi"], "no-member title preserves existing multi-playlist members");
 });
 
 test("rule d: Shorts are excluded (title keyword, verified format, and the once-per-video format check covers them)", () => {
