@@ -5,7 +5,7 @@ import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 import {
   reclassify, mergeEntries, mergePlaylistEntries, playlistAuto, parsePlaylistFeed, parsePlaylistItemsPage,
-  fetchPlaylistViaApi, collectPlaylists, validatePlaylists, parsePlaylistsListResponse, fetchPlaylistsMeta, coverageRow, formatCoverageLine, pickShortTargets, applyShortFormat, applyStatusAndAuthor,
+  fetchPlaylistViaApi, collectPlaylists, validatePlaylists, parsePlaylistsListResponse, fetchPlaylistsMeta, redactKey, coverageRow, formatCoverageLine, pickShortTargets, applyShortFormat, applyStatusAndAuthor,
 } from "../lib/collector.mjs";
 import { readJson, ROOT } from "./load.mjs";
 import { parseArgs, resolveMembers } from "../scripts/add-clip.mjs";
@@ -415,11 +415,31 @@ test("fetchPlaylistsMeta: one call for <=50 ids, chunks of 50, comma-joined ids,
   const r = await fetchPlaylistsMeta([...ids, ids[0]], "SECRETKEY", { fetchImpl });
   assert.equal(r.calls, 3, "120 unique ids -> 50 + 50 + 20");
   assert.equal(Object.keys(r.meta).length, 120);
-  assert.match(urls[0], /^https:\/\/www\.googleapis\.com\/youtube\/v3\/playlists\?part=contentDetails,snippet&maxResults=50&id=PL000,PL001,/);
+  assert.match(urls[0], /^https:\/\/www\.googleapis\.com\/youtube\/v3\/playlists\?part=contentDetails,snippet&id=PL000,PL001,/);
   assert.equal(new URL(urls[0]).searchParams.get("id").split(",").length, 50);
   assert.equal((await fetchPlaylistsMeta(ids.slice(0, 14), "K", { fetchImpl })).calls, 1);
   await assert.rejects(fetchPlaylistsMeta(["PLa"], "SECRETKEY", { fetchImpl: async () => reply(403, {}) }),
     (e) => e.message === "playlists.list HTTP 403" && e.calls === 1 && !String(e.stack).includes("SECRETKEY"));
+});
+
+test("redactKey + collectPlaylists: an error message containing the key is logged/returned as [REDACTED]", async () => {
+  assert.equal(redactKey("boom key=SECRETKEY&x SECRETKEY", "SECRETKEY"), "boom key=[REDACTED]&x [REDACTED]");
+  assert.equal(redactKey("a b/c", "a b/c"), "[REDACTED]");
+  assert.equal(redactKey("k=a%20b%2Fc", "a b/c"), "k=[REDACTED]", "URL-encoded form too");
+  assert.equal(redactKey("no key here", ""), "no key here");
+  const KEY = "AIzaSECRETKEY123";
+  const fetchImpl = async (url) => { throw new Error(`request to ${url} failed`); }; // url contains the key
+  await assert.rejects(fetchPlaylistViaApi("PLx", KEY, { fetchImpl }), (e) => e.message.includes("[REDACTED]") && !e.message.includes(KEY) && !e.stack.includes(KEY));
+  await assert.rejects(fetchPlaylistsMeta(["PLx"], KEY, { fetchImpl }), (e) => e.message.includes("[REDACTED]") && !e.message.includes(KEY) && !e.stack.includes(KEY));
+  const logs = [];
+  const r = await collectPlaylists([{ playlistId: "PLx", member: "akane-lize" }], {
+    apiKey: KEY, log: (s) => logs.push(s),
+    fetchImpl: async (url) => { if (url.includes("googleapis.com")) throw new Error(`socket hang up ${url}`); throw new Error(`rss down key=${KEY}`); },
+  });
+  const all = [...logs, ...r.errors].join(" | ");
+  assert.ok(all.includes("[REDACTED]"), all);
+  assert.ok(!all.includes(KEY) && !all.includes(encodeURIComponent(KEY)), all);
+  assert.equal(r.errors.length, 1);
 });
 
 test("coverageRow / formatCoverageLine: ok, private-skipped, gap, RSS limit, failed", () => {

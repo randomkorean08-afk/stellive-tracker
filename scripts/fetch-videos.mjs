@@ -22,7 +22,7 @@ import { fileURLToPath } from "node:url";
 import path from "node:path";
 import {
   parseAtomFeed, mergeEntries, applyStatusAndAuthor, pickStatusTargets, checkOembed, httpGet,
-  parseVideoStats, pickViewTargets, applyViewCounts, checkShortFormat, pickShortTargets, applyShortFormat,
+  parseVideoStats, pickViewTargets, applyViewCounts, redactKey, checkShortFormat, pickShortTargets, applyShortFormat,
   validatePlaylists, collectPlaylists, mergePlaylistEntries, formatCoverageLine,
   videosEqual, serializeVideosDoc,
 }from "../lib/collector.mjs";
@@ -155,7 +155,7 @@ async function main() {
         const entries = await fetchBackfill(ch, apiKey, opts.longform);
         for (const e of entries) incoming.push({ ...e, channelKey: ch.key, source: "backfill" });
       } catch (e) {
-        feedErrors.push(`${ch.key} (backfill): ${e.message}`);
+        feedErrors.push(`${ch.key} (backfill): ${redactKey(e.message, apiKey)}`);
       }
     }
   }
@@ -212,7 +212,7 @@ async function main() {
       videos = applyViewCounts(videos, stats, now);
       viewsUpdated = Object.keys(stats).length;
     } catch (e) {
-      feedErrors.push(`view counts: ${e.message}`);
+      feedErrors.push(`view counts: ${redactKey(e.message, apiKey)}`);
     }
   } else if (opts.views && !apiKey) console.log("view counts: skipped (YOUTUBE_API_KEY not set)");
 
