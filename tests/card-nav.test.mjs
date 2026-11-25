@@ -96,9 +96,14 @@ test("clicking a scorecard member card invokes openMember with that member's key
 
   const cardsB = all(root, (e) => hasClass(e, "member-card"));
   assert.equal(cardsB.length, rankedB.length);
-  const firstBtnB = all(cardsB[0], (e) => e instanceof FakeEl && e.tag === "button")[0];
-  firstBtnB.click();
-  assert.deepEqual(opened, [rankedB[0].key]);
+  for (let i = 0; i < cardsB.length; i++) {
+    const btnB = all(cardsB[i], (e) => e instanceof FakeEl && e.tag === "button")[0];
+    assert.ok(btnB, `member card ${rankedB[i].key} has a button`);
+    assert.equal(btnB.attrs.type, "button");
+    assert.equal(btnB.attrs["aria-label"], `${rankedB[i].displayName} 노래 모음 보기`);
+    btnB.click();
+  }
+  assert.deepEqual(opened, rankedB.map((c) => c.key));
 
   setSortMode("A");
 });
