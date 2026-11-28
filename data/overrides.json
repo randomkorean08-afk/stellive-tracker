@@ -137,20 +137,20 @@
       "note": "목숨 — 아카네 리제 오리지널 곡 (Miiro feat. 아카네 리제 OFFICIAL MV, 외부 채널 업로드). 사용자 확인 2026-11-23"
     },
     "ReYMri39pPg": {
-      "category": "stream_song",
+      "category": "non_music",
       "members": [
         "kogane-rang"
       ],
       "reviewed": true,
-      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '호치1'(@hochii-rang) 팬 클립, 설명란 치지직 생방송 풀영상 링크 기재(2분 17초). 방송 중 연주 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '호치1'(@hochii-rang) 팬 클립, 설명란 치지직 생방송 풀영상 링크 기재(2분 17초). 방송 중 연주 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청) / 데이터 정리(외부 감사 보고서 #447 flute): 코가네 랑 방송 중 플루트 연주 클립(가창 없음). 기존 \"사용자 요청\" 일괄 오버라이드(stream_song)는 비보컬 제외 기준과 배치되어 수정 제안. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
     },
     "D07L5s9JPUA": {
-      "category": "stream_song",
+      "category": "non_music",
       "members": [
         "kogane-rang"
       ],
       "reviewed": true,
-      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '딸랑딸랑', 설명란 #키리누키·코가네 다시보기 채널 기재(2분 18초). 생방송 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+      "note": "검토 대기열 일괄 처리: oEmbed 업로더 '딸랑딸랑', 설명란 #키리누키·코가네 다시보기 채널 기재(2분 18초). 생방송 클립. (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청) / 데이터 정리(외부 감사 보고서 #466 flute): 코가네 랑 방송 중 플루트 연주 클립(가창 없음). 기존 \"사용자 요청\" 일괄 오버라이드(stream_song)는 비보컬 제외 기준과 배치되어 수정 제안. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
     },
     "SkjqmixHsLw": {
       "category": "stream_song",
@@ -718,6 +718,565 @@
       ],
       "reviewed": true,
       "note": "검토 대기열 일괄 처리: oEmbed 업로더 '취미가 파스텔'(팬 클립 채널), 설명란 2023-07-13 타비 방송 원본 링크 기재(4분 7초). (Hydrogen 제안·리드 검토, 2026-11-24 사용자 요청)"
+    },
+    "qNOFi7GzpfM": {
+      "category": "collab_cover",
+      "members": [
+        "ayatsuno-yuni",
+        "sakihane-fuya",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi",
+        "tenko-shibuki",
+        "aokumo-rin",
+        "hanako-nana",
+        "yuzuha-riko"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #6 group_song_mixed): 공식 설명란 Vocal & Chorus 크레딧 확인: 1~3기 현역 10인 전원(유니·후야·히나·마시로·리제·타비·시부키·린·나나·리코) 참여 단체 커버. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "DMk4_4Xytz4": {
+      "category": "collab_cover",
+      "members": [
+        "airi-kanna",
+        "ayatsuno-yuni",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #185 group_song_mixed): 공식 설명란 배역 크레딧 확인(2024-11-24, 칸나 졸업 전): 히나·유니·마시로·타비·리제·칸나 6인 참여 단체 커버. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Z4hvwXv0cPo": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro",
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #373 group_song_mixed): 업로더 메리마루 방송 클립, 제목에 토키노 메리(feat. 토아, 마시로) 명시. 3명 모두 당시 활동 멤버. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "AJH4fJVA6s0": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro",
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #374 group_song_mixed): 업로더 메리마루 방송 클립, 제목에 토키노 메리(feat. 토아, 마시로) 명시. 3명 모두 당시 활동 멤버. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "6EynyEQbbgU": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro",
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #375 group_song_mixed): 업로더 메리마루 방송 클립, 제목에 토키노 메리(feat. 토아, 마시로) 명시. 3명 모두 당시 활동 멤버. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "tz6oQnPQIBw": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #376 group_song_mixed): 업로더 메리마루 방송 클립. 제목의 밍부장은 외부 스트리머(바밍)이므로 제외하고 메리·토아만 반영. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "R80OTjS4vc8": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #377 group_song_mixed): 업로더 메리마루 방송 클립. 제목의 밍부장은 외부 스트리머(바밍)이므로 제외하고 메리·토아만 반영. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "IEj0US1rEz8": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #378 group_song_mixed): 업로더 메리마루 방송 클립. 제목의 밍부장은 외부 스트리머(바밍)이므로 제외하고 메리·토아만 반영. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "mlViDLWB5to": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa",
+        "hanayo-hiyori",
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #413 group_song_mixed): 출처 NOcpQZDULn8([26.10.24] 어비스 싱크룸) 및 웹 검색 확인: 4기 어비스 4인 전원 단체 라이브 커버 클립. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "WDE3htCIf9s": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa",
+        "hanayo-hiyori",
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #415 group_song_mixed): 출처 NOcpQZDULn8([26.10.24] 어비스 싱크룸) 및 웹 검색 확인: 4기 어비스 4인 전원 단체 라이브 커버 클립. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "gc0oBXWQFWA": {
+      "category": "stream_song",
+      "members": [
+        "airi-kanna",
+        "ayatsuno-yuni",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "exclude": true,
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1393 group_song_mixed): 팬 채널(히나의 노래방 저장소) 업로드 공식곡 Milky Way 파트·가사 재업로드 영상으로 공식 음원 중복이므로 exclude 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "PwpI8WO7nKc": {
+      "category": "stream_song",
+      "members": [
+        "airi-kanna",
+        "ayatsuno-yuni",
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "exclude": true,
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1394 group_song_mixed): 팬 채널(히나의 노래방 저장소) 업로드 공식곡 Starry Way 파트·가사 재업로드 영상으로 공식 음원 중복이므로 exclude 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "WBRmvlnIhpg": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1530 group_song_mixed): 2023-09-17 유니버스 100일 합방 원본(3ksRVn_Fbvo) 및 설명란 2기 4인(타비·마시로·리제·히나) 명시 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "rMsF-NPXo0g": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1582 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "gxKWSPg6cHg": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1583 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "fqrtiJL7yW8": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1584 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Vez6XEhdBy0": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1585 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "_OouhUDt6dI": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1586 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "qRNBWerwhfg": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1587 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "r-AM0odgehQ": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1588 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "LHh4qUgMS1M": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1589 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "NASbdq2MytA": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1590 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "J8CHLPvNLIs": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1591 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "KgPLNOVV_oE": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1592 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "SjwgEWxIqwE": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1593 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Z2zSDvrqwQU": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1594 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Fh8yu4wSUQs": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1595 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "XQuNJUIOX-4": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1596 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Mh0QL2kgWm4": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1597 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "LcGaum2or7Y": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1598 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "4o-r7lxoFVg": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1599 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "adxfky3_Ps8": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1600 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "2cXP53RaTE4": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1601 group_song_mixed): 2023-09-17 유니버스 100일 합방 노래방 클립(아라하시타비 노래 저장소). 제목(스텔라이브 2기생) 및 설명란 4인 태그(#마로 #마시로 #히나 #리제 #아라하시타비) 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "apIEv9mOyUw": {
+      "category": "stream_song",
+      "members": [
+        "akane-lize",
+        "shirayuki-hina",
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1856 group_song_mixed): 2023-06-11 타비 데뷔방송 원본(15jJlojMbDE) 및 설명란 \"히나, 마시로, 리제, 타비\" 2기 4인 참여 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Zioujsl4Jn4": {
+      "category": "non_music",
+      "members": [
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #467 flute): 팬 클립(랑아가) 확인: 가창 없는 플루트 기악 연주 영상이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "CeMPptOg_t0": {
+      "category": "non_music",
+      "members": [
+        "kogane-rang"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #488 flute): 팬 클립(KANC_soomap) 확인: 가창 없는 플루트 기악 연주 영상이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "wRhJnU52QrI": {
+      "category": "non_music",
+      "members": [
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #542 fan_edit_meme): 팬 채널(다르다) 제작 93초 밈/매드무비 팬영상(원 커버 aH8Io8klASU 별도 존재)이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "3E-AzBVbmkw": {
+      "category": "non_music",
+      "members": [
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #639 fan_edit_meme): 팬 채널(다르다) 제작 76초 밈 리믹스(\"나는 땃쥐\") 팬영상이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "of9DiI0-FPI": {
+      "category": "non_music",
+      "members": [
+        "shirayuki-hina"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1390 fan_edit_meme): 공식 커버(2024-11-24) 이전 2024-03-22 팬 채널 업로드 커버 기원/파트 소개 영상(보컬로이드 원곡 사용)이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "wtFCipOdLIU": {
+      "category": "non_music",
+      "members": [
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1630 fan_edit_meme): 팬 채널 제작 31초 발로란트 방송 음성 밈 리믹스이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "87he6Uu1ofQ": {
+      "category": "non_music",
+      "members": [
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #805 inst): Akane Lize - Topic 자동 생성 공식 Inst.(반주 전용, 보컬 없음) 트랙이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "kr4IRhj1pR4": {
+      "category": "non_music",
+      "members": [
+        "airi-kanna",
+        "akane-lize"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1371 inst): Airi Kanna - Topic 자동 생성 공식 Inst.(반주 전용, 크레딧 아이리 칸나·아카네 리제) 트랙이므로 non_music 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "vVQy6YNGXLI": {
+      "category": "solo_cover",
+      "members": [
+        "aokumo-rin"
+      ],
+      "exclude": true,
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #158 teaser): 31초 분량 커버 티저 영상(\"2025년 5월 1일 오후 6시 업로드 예정\")으로 본편 커버 중복이므로 exclude 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "C_BFxd5bIQ0": {
+      "category": "collab_cover",
+      "members": [
+        "aokumo-rin",
+        "yuzuha-riko"
+      ],
+      "exclude": true,
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #303 teaser): 20초 분량 듀엣 커버 티저 영상(\"2024.10.04 19:00\")으로 본편 커버 중복이므로 exclude 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "UO2GpasFAuo": {
+      "category": "solo_cover",
+      "members": [
+        "arahashi-tabi"
+      ],
+      "exclude": true,
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #9 loop_or_reveal_clip): 타비 공식 채널 1시간(3593초) 반복 영상으로 원 커버와 순수 중복이므로 exclude 처리. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "znst6XbYoDY": {
+      "category": "stream_song",
+      "members": [
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #310 loop_or_reveal_clip): 공식 MV(G5tTozKJRD4, 205초)가 별도 존재하는 2024-12-11 공개 방송 하이라이트 클립(485초)이므로 original이 아닌 stream_song 제안(실제 오디오 내 완곡 가창/토크 비중 미확인). (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "Sj51pWOnW1o": {
+      "category": "solo_cover",
+      "members": [
+        "sakihane-fuya"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #280 solo_mistag): 설명란 확인: 원곡 아티스트가 아야츠노 유니이며 가창은 사키하네 후야 솔로 커버. 멤버를 후야 단독, 분류를 solo_cover로 수정. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "zVaqutQJ9SA": {
+      "category": "stream_song",
+      "members": [
+        "aokumo-rin"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1134 solo_mistag): 제목의 \"시유 & 유니\"는 보컬로이드 원곡자이며 아오쿠모 린 솔로 가창 팬 클립이므로 아야츠노 유니를 제외하고 린 단독으로 수정. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "tmk0qlr4AeM": {
+      "category": "collab_cover",
+      "members": [
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #227 duet_missing_member): 마시로 공식 채널 업로드, 설명란 Vocal & Chorus에 네네코 마시로·아라하시 타비 2인 명시 확인. collab_cover로 수정. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "hVqr7LvmVFg": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #372 duet_missing_member): 업로더 메리마루 방송 클립, 제목에 토키노 메리 (feat. 토아) 명시 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "W_gH4zpvlCw": {
+      "category": "stream_song",
+      "members": [
+        "tokino-meri",
+        "shizuki-toa"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #379 duet_missing_member): 업로더 메리마루 방송 클립, 제목에 토키노 메리 (feat. 토아) 명시 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "A5UaHq4zEn0": {
+      "category": "stream_song",
+      "members": [
+        "neneko-mashiro",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1373 duet_missing_member): 팬 클립(JaNyaNya), 제목에 시로&타비 듀엣 명시 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "-p9S21tuHqE": {
+      "category": "stream_song",
+      "members": [
+        "shirayuki-hina",
+        "neneko-mashiro"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1467 duet_missing_member): 팬 클립(Fi Mu), 제목·설명란에 시라유키 히나·네네코 마시로 듀엣 명시 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "rrhrV8RcSVE": {
+      "category": "stream_song",
+      "members": [
+        "shirayuki-hina",
+        "arahashi-tabi"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #1655 duet_missing_member): 팬 클립(아라하시타비 노래 저장소), 제목·태그에 타비·히나 듀엣 명시 확인. (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
+    },
+    "0HL091Poh8E": {
+      "category": "stream_song",
+      "members": [
+        "aokumo-rin",
+        "hanako-nana"
+      ],
+      "reviewed": true,
+      "note": "데이터 정리(외부 감사 보고서 #305 headcount_check): 공식 불꽃 MV(NGyCzUHjorI, 175초)는 린·나나(코맹맹즈) 가창이며, 본 영상은 2026-05-13 방송(Tn6Lp3V-ywU) 하이라이트 클립(579초)이라 stream_song으로 변경 제안(태그에 리코 포함되나 가창 참여 여부 오디오 미확인). (Hydrogen 확인·리드 검토, 2026-11-28 사용자 승인)"
     }
   }
 }
