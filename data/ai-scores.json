@@ -3,7 +3,35 @@
   "model": "gemini-flash-latest",
   "promptVersion": 2,
   "scoreSince": "2000-01-01T00:00:00Z",
-  "updatedAt": null,
-  "usage": {},
-  "videos": {}
+  "updatedAt": "2026-11-28T14:36:03Z",
+  "usage": {
+    "2026-11-28": {
+      "seconds": 600,
+      "requests": 1
+    }
+  },
+  "videos": {
+    "rFOYNcD51S0": {
+      "scoredAt": "2026-11-28T14:36:03Z",
+      "model": "gemini-flash-latest",
+      "promptVersion": 2,
+      "members": {
+        "aokumo-rin": {
+          "items": {
+            "vocalization": 13.8,
+            "pitch": 9.3,
+            "rhythm": 9.3,
+            "range": 8.9,
+            "volume": 8.9,
+            "tone": 9.3,
+            "technique": 8.9,
+            "expression": 9,
+            "breath": 9,
+            "live": 4.6
+          },
+          "confidence": "high"
+        }
+      }
+    }
+  }
 }
