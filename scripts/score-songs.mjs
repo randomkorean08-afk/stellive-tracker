@@ -137,6 +137,7 @@ export function parseRateLimitError(rawText) {
         const desc = typeof v.description === "string" ? v.description : "";
         if (qid) quotaLabels.push(qid);
         if (qm) quotaLabels.push(qm);
+        if (v.quotaValue === 0 || (typeof v.quotaValue === "string" && v.quotaValue.trim() === "0")) isPerDay = true;
         const combined = `${qid} ${qm} ${desc}`;
         if (/per[-_\s]*day/i.test(combined)) isPerDay = true;
         if (/per[-_\s]*minute/i.test(combined)) isPerMinute = true;
@@ -363,144 +364,165 @@ export async function scoreSongs({
   let stoppedReason = null;
 
   for (let i = 0; i < targets.length; i++) {
-    if (maxRunMs > 0 && clockMs() - startedAtMs >= maxRunMs) {
-      log("time budget reached");
-      stoppedReason = "time_budget";
-      break;
-    }
-
-    const t = targets[i];
-    const reqSeconds = estimateVideoRequestSeconds(t);
-    if (!canSpendBudget(nextUsage, todayKey, reqSeconds, dailySeconds)) {
-      log("daily budget reached");
-      stoppedReason = "daily_budget";
-      break;
-    }
-
-    const body = buildScoringRequest({ ...t, calibration });
-    const backoffOpts = {
-      apiKey,
-      fetchImpl,
-      sleepImpl,
-      maxRetries,
-      baseDelayMs,
-      unavailableBaseDelayMs,
-      maxRateLimitWaits,
-      rateLimitState,
-      jitterMs,
-      canWaitMs,
-      onRateLimitWait: ({ waitMs, attempt, maxAttempts, quotaInfo }) => {
-        warn(`[warn] rate limited (429${quotaInfo ? `; ${quotaInfo}` : ""}) on ${t.videoId}; waiting ${Math.round(waitMs / 1000)}s before retry (${attempt}/${maxAttempts}).`);
-      },
-    };
-    let usedModel = model;
-    let res = await postWithBackoff(url, body, backoffOpts);
-
-    if (res.kind === "transient" && res.status === 503 && fallbackModel && fallbackModel !== model) {
+    try {
       if (maxRunMs > 0 && clockMs() - startedAtMs >= maxRunMs) {
         log("time budget reached");
         stoppedReason = "time_budget";
         break;
       }
-      warn(`[warn] primary model ${model} returned 503 on ${t.videoId}; trying fallback ${fallbackModel} once.`);
-      usedModel = fallbackModel;
-      res = await postWithBackoff(endpointUrl(fallbackModel), body, {
-        ...backoffOpts,
-        maxRetries: 0,
-        maxRateLimitWaits: 0,
-      });
-    }
 
-    if (res.kind === "time_budget") {
-      log("time budget reached");
-      stoppedReason = "time_budget";
-      break;
-    }
-    if (res.kind === "quota_exhausted") {
-      warn(`[warn] quota exhausted (429 RESOURCE_EXHAUSTED${res.quotaInfo ? `; ${res.quotaInfo}` : ""}) on ${t.videoId}; stopping cleanly.`);
-      stoppedReason = "quota_exhausted";
-      break;
-    }
-    if (res.kind === "rate_limited") {
-      warn(`[warn] rate limited (429${res.quotaInfo ? `; ${res.quotaInfo}` : ""}) cap reached on ${t.videoId}; stopping cleanly.`);
-      stoppedReason = "rate_limited";
-      break;
-    }
-    if (res.kind === "auth_error" || res.kind === "config_error") {
-      warn(`[warn] Gemini API ${res.kind} (${res.status}) on ${t.videoId}: ${res.detail}`);
-      stoppedReason = res.kind;
-      break;
-    }
-    if (res.kind === "transient") {
-      errors++;
-      warn(`[warn] transient error on ${t.videoId} (${res.status ?? "network"}): ${res.detail}`);
-      if (res.status === 503) {
-        consecutive503++;
-        if (consecutive503 >= MAX_CONSECUTIVE_503) {
-          warn(`[warn] ${consecutive503} consecutive 503 errors; stopping cleanly.`);
-          stoppedReason = "model_unavailable";
+      const t = targets[i];
+      const reqSeconds = estimateVideoRequestSeconds(t);
+      if (!canSpendBudget(nextUsage, todayKey, reqSeconds, dailySeconds)) {
+        log("daily budget reached");
+        stoppedReason = "daily_budget";
+        break;
+      }
+
+      const body = buildScoringRequest({ ...t, calibration });
+      const backoffOpts = {
+        apiKey,
+        fetchImpl,
+        sleepImpl,
+        maxRetries,
+        baseDelayMs,
+        unavailableBaseDelayMs,
+        maxRateLimitWaits,
+        rateLimitState,
+        jitterMs,
+        canWaitMs,
+        onRateLimitWait: ({ waitMs, attempt, maxAttempts, quotaInfo }) => {
+          warn(`[warn] rate limited (429${quotaInfo ? `; ${quotaInfo}` : ""}) on ${t.videoId}; waiting ${Math.round(waitMs / 1000)}s before retry (${attempt}/${maxAttempts}).`);
+        },
+      };
+      let usedModel = model;
+      let usedFallback = false;
+      let res = await postWithBackoff(url, body, backoffOpts);
+
+      if (res.kind === "transient" && res.status === 503 && fallbackModel && fallbackModel !== model) {
+        if (maxRunMs > 0 && clockMs() - startedAtMs >= maxRunMs) {
+          log("time budget reached");
+          stoppedReason = "time_budget";
           break;
         }
-      } else {
-        consecutive503 = 0;
+        warn(`[warn] primary model ${model} returned 503 on ${t.videoId}; trying fallback ${fallbackModel} once.`);
+        usedModel = fallbackModel;
+        usedFallback = true;
+        res = await postWithBackoff(endpointUrl(fallbackModel), body, {
+          ...backoffOpts,
+          maxRetries: 0,
+          maxRateLimitWaits: 0,
+        });
       }
-    } else if (res.kind === "permanent") {
-      consecutive503 = 0;
-      nextVideos[t.videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: res.reason };
-      videosChanged = true;
-      skipped++;
-      log(`skipped ${t.videoId}: ${res.reason} (HTTP ${res.status})`);
-    } else if (res.kind === "unparseable") {
-      consecutive503 = 0;
-      const outcome = recordUnparseableFailure(nextVideos, t.videoId, now);
-      videosChanged = true;
-      if (outcome.permanent) skipped++;
-      else errors++;
-      warn(`[warn] unparseable JSON response on ${t.videoId} (fail ${outcome.failCount}/${MAX_UNPARSEABLE_FAILS}): ${res.detail}`);
-    } else if (res.kind === "ok") {
-      consecutive503 = 0;
-      nextUsage = recordUsage(nextUsage, todayKey, reqSeconds);
-      usageChanged = true;
-      const parsed = parseScoringResponse(res.json, t.members);
-      if (!parsed.ok) {
-        const outcome = recordUnparseableFailure(nextVideos, t.videoId, now);
-        videosChanged = true;
-        if (outcome.permanent) skipped++;
-        else errors++;
-        warn(`[warn] invalid scoring payload on ${t.videoId} (fail ${outcome.failCount}/${MAX_UNPARSEABLE_FAILS}): ${parsed.error}`);
-      } else if (parsed.notSinging) {
-        nextVideos[t.videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: "not_singing" };
-        videosChanged = true;
-        skipped++;
-        log(`skipped ${t.videoId}: not_singing`);
-      } else {
-        const prevVideo = prevVideos[t.videoId];
-        const mergedMembers = { ...parsed.scores };
-        for (const [mKey, mEntry] of Object.entries(prevVideo?.members ?? {})) {
-          const ver = mEntry?.promptVersion ?? prevVideo?.promptVersion;
-          if (ver === "import-v1") {
-            mergedMembers[mKey] = mEntry;
-          }
-        }
-        nextVideos[t.videoId] = {
-          scoredAt: now,
-          model: usedModel,
-          promptVersion: PROMPT_VERSION,
-          members: mergedMembers,
-        };
-        videosChanged = true;
-        scored++;
-        log(`scored ${t.videoId} (${t.members.map((m) => m.key).join(",")})`);
-      }
-    }
 
-    if (delayMs > 0 && i < targets.length - 1) {
-      if (maxRunMs > 0 && clockMs() - startedAtMs + delayMs >= maxRunMs) {
+      if (res.kind === "time_budget") {
         log("time budget reached");
         stoppedReason = "time_budget";
         break;
       }
-      await sleepImpl(delayMs);
+      if (res.kind === "quota_exhausted") {
+        warn(`[warn] quota exhausted (429 RESOURCE_EXHAUSTED${res.quotaInfo ? `; ${res.quotaInfo}` : ""}) on ${t.videoId}; stopping cleanly.`);
+        stoppedReason = "quota_exhausted";
+        break;
+      }
+      if (res.kind === "rate_limited") {
+        if (usedFallback) {
+          errors++;
+          warn(`[warn] fallback model ${fallbackModel} rate limited (429${res.quotaInfo ? `; ${res.quotaInfo}` : ""}) on ${t.videoId} after primary 503; counting as transient.`);
+          consecutive503++;
+          if (consecutive503 >= MAX_CONSECUTIVE_503) {
+            warn(`[warn] ${consecutive503} consecutive 503 errors; stopping cleanly.`);
+            stoppedReason = "model_unavailable";
+            break;
+          }
+        } else {
+          warn(`[warn] rate limited (429${res.quotaInfo ? `; ${res.quotaInfo}` : ""}) cap reached on ${t.videoId}; stopping cleanly.`);
+          stoppedReason = "rate_limited";
+          break;
+        }
+      } else if (res.kind === "auth_error" || res.kind === "config_error") {
+        if (usedFallback && res.kind === "config_error") {
+          warn(`[warn] fallback model config error (${fallbackModel}, ${res.status}) on ${t.videoId}: ${res.detail}`);
+        } else {
+          warn(`[warn] Gemini API ${res.kind} (${res.status}) on ${t.videoId}: ${res.detail}`);
+        }
+        stoppedReason = res.kind;
+        break;
+      } else if (res.kind === "transient") {
+        errors++;
+        warn(`[warn] transient error on ${t.videoId} (${res.status ?? "network"}): ${res.detail}`);
+        if (res.status === 503) {
+          consecutive503++;
+          if (consecutive503 >= MAX_CONSECUTIVE_503) {
+            warn(`[warn] ${consecutive503} consecutive 503 errors; stopping cleanly.`);
+            stoppedReason = "model_unavailable";
+            break;
+          }
+        } else {
+          consecutive503 = 0;
+        }
+      } else if (res.kind === "permanent") {
+        consecutive503 = 0;
+        nextVideos[t.videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: res.reason };
+        videosChanged = true;
+        skipped++;
+        log(`skipped ${t.videoId}: ${res.reason} (HTTP ${res.status})`);
+      } else if (res.kind === "unparseable") {
+        consecutive503 = 0;
+        const outcome = recordUnparseableFailure(nextVideos, t.videoId, now);
+        videosChanged = true;
+        if (outcome.permanent) skipped++;
+        else errors++;
+        warn(`[warn] unparseable JSON response on ${t.videoId} (fail ${outcome.failCount}/${MAX_UNPARSEABLE_FAILS}): ${res.detail}`);
+      } else if (res.kind === "ok") {
+        consecutive503 = 0;
+        nextUsage = recordUsage(nextUsage, todayKey, reqSeconds);
+        usageChanged = true;
+        const parsed = parseScoringResponse(res.json, t.members);
+        if (!parsed.ok) {
+          const outcome = recordUnparseableFailure(nextVideos, t.videoId, now);
+          videosChanged = true;
+          if (outcome.permanent) skipped++;
+          else errors++;
+          warn(`[warn] invalid scoring payload on ${t.videoId} (fail ${outcome.failCount}/${MAX_UNPARSEABLE_FAILS}): ${parsed.error}`);
+        } else if (parsed.notSinging) {
+          nextVideos[t.videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: "not_singing" };
+          videosChanged = true;
+          skipped++;
+          log(`skipped ${t.videoId}: not_singing`);
+        } else {
+          const prevVideo = prevVideos[t.videoId];
+          const mergedMembers = { ...parsed.scores };
+          for (const [mKey, mEntry] of Object.entries(prevVideo?.members ?? {})) {
+            const ver = mEntry?.promptVersion ?? prevVideo?.promptVersion;
+            if (ver === "import-v1") {
+              mergedMembers[mKey] = mEntry;
+            }
+          }
+          nextVideos[t.videoId] = {
+            scoredAt: now,
+            model: usedModel,
+            promptVersion: PROMPT_VERSION,
+            members: mergedMembers,
+          };
+          videosChanged = true;
+          scored++;
+          log(`scored ${t.videoId} (${t.members.map((m) => m.key).join(",")})`);
+        }
+      }
+
+      if (delayMs > 0 && i < targets.length - 1) {
+        if (maxRunMs > 0 && clockMs() - startedAtMs + delayMs >= maxRunMs) {
+          log("time budget reached");
+          stoppedReason = "time_budget";
+          break;
+        }
+        await sleepImpl(delayMs);
+      }
+    } catch (e) {
+      warn(`[warn] unexpected error on ${targets[i]?.videoId ?? "loop"}: ${redactKey(e?.message ?? String(e), apiKey)}`);
+      stoppedReason = "error";
+      break;
     }
   }
 
@@ -561,6 +583,9 @@ async function main() {
     await writeFile(tmpPath, res.text, "utf8");
     await rename(tmpPath, AI_SCORES_PATH);
     console.log("wrote data/ai-scores.json");
+  }
+  if (res.stoppedReason === "error") {
+    process.exitCode = 1;
   }
 }
 

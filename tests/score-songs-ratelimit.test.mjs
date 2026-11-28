@@ -441,3 +441,173 @@ test("scoreSongs: GEMINI_FALLBACK_MODEL tries fallback once on 503 and records a
   assert.equal(res.doc.videos.v1aaaaaaaaa.model, "gemini-2.5-flash-lite");
   assert.equal(res.doc.videos.v1aaaaaaaaa.promptVersion, PROMPT_VERSION);
 });
+
+test("scoreSongs: unexpected exception inside loop preserves already-scored results and stops with error", async () => {
+  const SECRET = "AIzaSyLoopErrSecret777";
+  const videos = {
+    videos: {
+      v1aaaaaaaaa: mkVideo("v1aaaaaaaaa", "2026-11-30"),
+      v2aaaaaaaaa: mkVideo("v2aaaaaaaaa", "2026-11-29"),
+    },
+  };
+  const logs = [];
+  const res = await scoreSongs({
+    videos,
+    lock,
+    aiScores: { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} },
+    apiKey: SECRET,
+    delayMs: 10,
+    now: "2026-11-28T12:00:00Z",
+    sleepImpl: async () => {
+      throw new Error(`boom with key=${SECRET}`);
+    },
+    fetchImpl: async () => ({ status: 200, json: async () => validPayload(["akane-lize"]) }),
+    log: (s) => logs.push(s),
+    warn: (s) => logs.push(s),
+  });
+
+  assert.equal(res.scored, 1);
+  assert.equal(res.stoppedReason, "error");
+  assert.equal(res.changed, true);
+  assert.ok(res.doc.videos.v1aaaaaaaaa.members["akane-lize"], "first video kept despite exception on gap sleep");
+  assert.deepEqual(res.doc.usage["2026-11-28"], { seconds: 300, requests: 1 });
+  assert.ok(logs.some((l) => l.includes("unexpected error") && l.includes("[REDACTED]")));
+  for (const line of logs) {
+    assert.ok(!line.includes(SECRET), `API key leaked: ${line}`);
+  }
+});
+
+test("scoreSongs: QuotaFailure quotaValue '0' or 0 is treated as per-day (stops immediately)", async () => {
+  for (const qVal of ["0", 0]) {
+    const parsed = parseRateLimitError(JSON.stringify({
+      error: {
+        code: 429,
+        status: "RESOURCE_EXHAUSTED",
+        message: "Quota exceeded",
+        details: [
+          {
+            "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+            violations: [{ quotaId: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier", quotaValue: qVal }],
+          },
+          { "@type": "type.googleapis.com/google.rpc.RetryInfo", retryDelay: "30s" },
+        ],
+      },
+    }));
+    assert.equal(parsed.classification, "per_day");
+  }
+
+  const videos = { videos: { v1aaaaaaaaa: mkVideo("v1aaaaaaaaa", "2026-11-30") } };
+  const sleeps = [];
+  const res = await scoreSongs({
+    videos,
+    lock,
+    aiScores: { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} },
+    apiKey: "TEST_KEY",
+    delayMs: 0,
+    sleepImpl: async (ms) => sleeps.push(ms),
+    log: () => {},
+    warn: () => {},
+    fetchImpl: async () => ({
+      status: 429,
+      text: async () => JSON.stringify({
+        error: {
+          code: 429,
+          status: "RESOURCE_EXHAUSTED",
+          message: "Quota blocked",
+          details: [
+            {
+              "@type": "type.googleapis.com/google.rpc.QuotaFailure",
+              violations: [{ quotaId: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier", quotaValue: "0" }],
+            },
+            { "@type": "type.googleapis.com/google.rpc.RetryInfo", retryDelay: "40s" },
+          ],
+        },
+      }),
+    }),
+  });
+  assert.deepEqual(sleeps, []);
+  assert.equal(res.stoppedReason, "quota_exhausted");
+});
+
+test("scoreSongs: fallback 429 counts as transient & keeps 503 streak; fallback 404 stops with fallback model config error; postWithBackoff respects time_budget", async () => {
+  // 1) Fallback 429 per-minute -> counts as transient, keeps 503 counter (stops on 3rd primary 503), continues before 3
+  const videos429 = {
+    videos: {
+      v1aaaaaaaaa: mkVideo("v1aaaaaaaaa", "2026-11-30"),
+      v2aaaaaaaaa: mkVideo("v2aaaaaaaaa", "2026-11-29"),
+    },
+  };
+  const logs429 = [];
+  const resFb429 = await scoreSongs({
+    videos: videos429,
+    lock,
+    aiScores: { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} },
+    apiKey: "TEST_KEY",
+    model: "gemini-2.5-flash",
+    fallbackModel: "gemini-2.5-flash-lite",
+    delayMs: 0,
+    maxRetries: 0,
+    sleepImpl: async () => {},
+    log: (s) => logs429.push(s),
+    warn: (s) => logs429.push(s),
+    fetchImpl: async (url) => {
+      if (url.includes("gemini-2.5-flash:") && url.includes("generateContent")) {
+        return { status: 503, text: async () => JSON.stringify({ error: { code: 503, status: "UNAVAILABLE", message: "high demand" } }) };
+      }
+      return mk429({ quotaId: "GenerateRequestsPerMinutePerProjectPerModel-FreeTier", retryDelay: "15s" });
+    },
+  });
+  assert.equal(resFb429.errors, 2);
+  assert.equal(resFb429.stoppedReason, null, "did not stop with rate_limited on fallback 429");
+  assert.ok(!logs429.some((l) => l.includes("cap reached")));
+
+  // 2) Fallback 404 -> stops cleanly with clear fallback model config error message
+  const logs404 = [];
+  const resFb404 = await scoreSongs({
+    videos: { videos: { v1aaaaaaaaa: mkVideo("v1aaaaaaaaa", "2026-11-30") } },
+    lock,
+    aiScores: { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} },
+    apiKey: "TEST_KEY",
+    model: "gemini-2.5-flash",
+    fallbackModel: "gemini-bad-fallback",
+    delayMs: 0,
+    maxRetries: 0,
+    sleepImpl: async () => {},
+    log: (s) => logs404.push(s),
+    warn: (s) => logs404.push(s),
+    fetchImpl: async (url) => {
+      if (url.includes("gemini-2.5-flash:")) {
+        return { status: 503, text: async () => JSON.stringify({ error: { code: 503, status: "UNAVAILABLE", message: "high demand" } }) };
+      }
+      return { status: 404, text: async () => "models/gemini-bad-fallback is not found for API version v1beta" };
+    },
+  });
+  assert.equal(resFb404.stoppedReason, "config_error");
+  assert.ok(logs404.some((l) => l.includes("fallback model config error")));
+
+  // 3) postWithBackoff wait cut by run time cap (time_budget) without sleeping past cap
+  let nowMs = 0;
+  const sleepsCut = [];
+  const logsCut = [];
+  const resCut = await scoreSongs({
+    videos: { videos: { v1aaaaaaaaa: mkVideo("v1aaaaaaaaa", "2026-11-30") } },
+    lock,
+    aiScores: { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} },
+    apiKey: "TEST_KEY",
+    delayMs: 0,
+    maxRunMs: 10000,
+    jitterMs: () => 0,
+    clockMs: () => nowMs,
+    sleepImpl: async (ms) => { sleepsCut.push(ms); nowMs += ms; },
+    log: (s) => logsCut.push(s),
+    warn: (s) => logsCut.push(s),
+    fetchImpl: async () => {
+      nowMs += 2000;
+      // retryDelay 30s -> 2000 + 30000 > 10000 maxRunMs -> must not sleep 30s
+      return mk429({ quotaId: "PerMinute", retryDelay: "30s" });
+    },
+  });
+  assert.deepEqual(sleepsCut, []);
+  assert.equal(resCut.stoppedReason, "time_budget");
+  assert.ok(logsCut.includes("time budget reached"));
+});
