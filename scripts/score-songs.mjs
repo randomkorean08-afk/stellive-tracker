@@ -28,12 +28,14 @@ const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const VIDEOS_PATH = path.join(ROOT, "data", "videos.json");
 const OVERRIDES_PATH = path.join(ROOT, "data", "overrides.json");
 const LOCK_PATH = path.join(ROOT, "data", "channels-lock.json");
+const RATINGS_PATH = path.join(ROOT, "data", "ratings.json"); // read-only: memberRubric calibration
 const AI_SCORES_PATH = path.join(ROOT, "data", "ai-scores.json");
 
 const DEFAULT_MODEL = "gemini-flash-latest";
 const DEFAULT_LIMIT = 15;
 const DELAY_MS = 500;
 const BASE_BACKOFF_MS = 1000;
+const MAX_UNPARSEABLE_FAILS = 3;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 function positiveIntOr(raw, fallback) {
@@ -72,34 +74,41 @@ async function readResponseText(res) {
   return "";
 }
 
-function classifyPermanentError(status, bodyText) {
-  if (/API_KEY_INVALID|API key not valid|API key expired/i.test(bodyText)) {
+/**
+ * Distinguish auth/config errors (model 404, schema 400, invalid key) from genuine video-level permanent errors.
+ * Ambiguous 400/403/404 responses are treated as config_error so we never poison videos as permanently skipped.
+ */
+function classifyClientError(status, bodyText) {
+  if (status === 401 || /API_KEY_INVALID|API key not valid|API key expired/i.test(bodyText)) {
     return { kind: "auth_error", status };
   }
-  if (/private/i.test(bodyText)) return { kind: "permanent", reason: "private", status };
-  if (status === 404 || /unavailable|not found|does not exist|removed|deleted|inaccessible|unplayable|no longer available/i.test(bodyText)) {
+  if (/models\/|is not found for API version|not supported for generateContent|Invalid JSON payload|Unknown name|response_schema|GenerateContentRequest|generation_config|media_resolution/i.test(bodyText)) {
+    return { kind: "config_error", status };
+  }
+  if (/\bprivate\b/i.test(bodyText) && !/API key|permission/i.test(bodyText)) {
+    return { kind: "permanent", reason: "private", status };
+  }
+  if (/video.*(unavailable|not found|does not exist|removed|deleted|inaccessible|unplayable|unsupported|restricted|blocked)|unavailable|unplayable|no longer available|age.?restricted|members.?only|cannot access.*youtube|unsupported.*(media|url|mime)/i.test(bodyText)) {
     return { kind: "permanent", reason: "unavailable", status };
   }
-  if (status === 400) return { kind: "permanent", reason: "invalid_request", status };
-  if (status === 403) return { kind: "permanent", reason: "forbidden", status };
-  return null;
+  return { kind: "config_error", status };
 }
 
 async function postWithBackoff(url, body, { apiKey, fetchImpl, sleepImpl, maxRetries = 3, baseDelayMs = BASE_BACKOFF_MS }) {
-  const init = {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      "x-goog-api-key": apiKey,
-    },
-    body: JSON.stringify(body),
-    signal: AbortSignal.timeout(120000),
-  };
+  const payload = JSON.stringify(body);
 
   for (let attempt = 0; attempt <= maxRetries; attempt++) {
     let res;
     try {
-      res = await fetchImpl(url, init);
+      res = await fetchImpl(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-goog-api-key": apiKey,
+        },
+        body: payload,
+        signal: AbortSignal.timeout(120000),
+      });
     } catch (e) {
       const detail = redactKey(e?.message ?? String(e), apiKey);
       if (attempt < maxRetries) {
@@ -132,14 +141,24 @@ async function postWithBackoff(url, body, { apiKey, fetchImpl, sleepImpl, maxRet
       return { kind: "transient", status: res.status, detail: safeDetail };
     }
 
-    if (res.status === 400 || res.status === 403 || res.status === 404) {
-      const classified = classifyPermanentError(res.status, rawText);
-      if (classified) return { ...classified, detail: safeDetail };
+    if (res.status === 400 || res.status === 401 || res.status === 403 || res.status === 404) {
+      return { ...classifyClientError(res.status, rawText), detail: safeDetail };
     }
 
     return { kind: "transient", status: res.status, detail: safeDetail };
   }
   return { kind: "transient", detail: "max retries exceeded" };
+}
+
+function recordUnparseableFailure(nextVideos, videoId, now) {
+  const prevFails = Number(nextVideos[videoId]?.failCount) || 0;
+  const failCount = prevFails + 1;
+  if (failCount >= MAX_UNPARSEABLE_FAILS) {
+    nextVideos[videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: "unparseable", failCount };
+    return { permanent: true, failCount };
+  }
+  nextVideos[videoId] = { failCount, lastErrorAt: now };
+  return { permanent: false, failCount };
 }
 
 /**
@@ -150,6 +169,7 @@ export async function scoreSongs({
   videos,
   overrides = { videos: {} },
   lock,
+  calibration = null,
   aiScores = null,
   apiKey = "",
   model = DEFAULT_MODEL,
@@ -178,7 +198,7 @@ export async function scoreSongs({
       log(`  ${t.videoId} [${t.category}] (${t.publishedAt ?? "-"}) ${t.members.map((m) => m.key).join(",")} — ${t.title}`);
     }
     if (targets.length > 0) {
-      const sample = buildScoringRequest(targets[0]);
+      const sample = buildScoringRequest({ ...targets[0], calibration });
       log(`sample request for ${targets[0].videoId}:`);
       log(JSON.stringify(sample, null, 2));
     }
@@ -213,7 +233,7 @@ export async function scoreSongs({
       break;
     }
 
-    const body = buildScoringRequest(t);
+    const body = buildScoringRequest({ ...t, calibration });
     const res = await postWithBackoff(url, body, { apiKey, fetchImpl, sleepImpl, maxRetries, baseDelayMs });
 
     if (res.kind === "quota_exhausted") {
@@ -221,35 +241,37 @@ export async function scoreSongs({
       stoppedReason = "quota_exhausted";
       break;
     }
-    if (res.kind === "auth_error") {
-      warn(`[warn] Gemini API auth error (${res.status}) on ${t.videoId}: ${res.detail}`);
-      stoppedReason = "auth_error";
+    if (res.kind === "auth_error" || res.kind === "config_error") {
+      warn(`[warn] Gemini API ${res.kind} (${res.status}) on ${t.videoId}: ${res.detail}`);
+      stoppedReason = res.kind;
       break;
     }
     if (res.kind === "transient") {
       errors++;
       warn(`[warn] transient error on ${t.videoId} (${res.status ?? "network"}): ${res.detail}`);
     } else if (res.kind === "permanent") {
-      nextVideos[t.videoId] = { scoredAt: now, skipped: res.reason };
+      nextVideos[t.videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: res.reason };
       videosChanged = true;
       skipped++;
       log(`skipped ${t.videoId}: ${res.reason} (HTTP ${res.status})`);
     } else if (res.kind === "unparseable") {
-      nextVideos[t.videoId] = { scoredAt: now, skipped: "unparseable" };
+      const outcome = recordUnparseableFailure(nextVideos, t.videoId, now);
       videosChanged = true;
-      skipped++;
-      warn(`[warn] unparseable JSON response on ${t.videoId}: ${res.detail}`);
+      if (outcome.permanent) skipped++;
+      else errors++;
+      warn(`[warn] unparseable JSON response on ${t.videoId} (fail ${outcome.failCount}/${MAX_UNPARSEABLE_FAILS}): ${res.detail}`);
     } else if (res.kind === "ok") {
       nextUsage = recordUsage(nextUsage, todayKey, reqSeconds);
       usageChanged = true;
       const parsed = parseScoringResponse(res.json, t.members);
       if (!parsed.ok) {
-        nextVideos[t.videoId] = { scoredAt: now, skipped: "unparseable" };
+        const outcome = recordUnparseableFailure(nextVideos, t.videoId, now);
         videosChanged = true;
-        skipped++;
-        warn(`[warn] invalid scoring payload on ${t.videoId}: ${parsed.error}`);
+        if (outcome.permanent) skipped++;
+        else errors++;
+        warn(`[warn] invalid scoring payload on ${t.videoId} (fail ${outcome.failCount}/${MAX_UNPARSEABLE_FAILS}): ${parsed.error}`);
       } else if (parsed.notSinging) {
-        nextVideos[t.videoId] = { scoredAt: now, skipped: "not_singing" };
+        nextVideos[t.videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: "not_singing" };
         videosChanged = true;
         skipped++;
         log(`skipped ${t.videoId}: not_singing`);
@@ -296,10 +318,11 @@ async function main() {
     return;
   }
 
-  const [videos, overrides, lock, aiScores] = await Promise.all([
+  const [videos, overrides, lock, ratings, aiScores] = await Promise.all([
     readJson(VIDEOS_PATH),
     readJson(OVERRIDES_PATH, { schemaVersion: 1, videos: {} }),
     readJson(LOCK_PATH),
+    readJson(RATINGS_PATH, { memberRubric: {} }),
     readJson(AI_SCORES_PATH, { schemaVersion: 1, model, promptVersion: PROMPT_VERSION, updatedAt: null, usage: {}, videos: {} }),
   ]);
 
@@ -307,6 +330,7 @@ async function main() {
     videos,
     overrides,
     lock,
+    calibration: ratings?.memberRubric ?? null,
     aiScores,
     apiKey,
     model,

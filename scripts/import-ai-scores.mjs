@@ -8,7 +8,7 @@ import { readFile, rename, writeFile } from "node:fs/promises";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 import { RUBRIC_ITEMS, effective } from "../lib/derive.mjs";
-import { PROMPT_VERSION, serializeAiScoresDoc } from "../lib/ai-score.mjs";
+import { PROMPT_VERSION, isAiScoreEligible, serializeAiScoresDoc } from "../lib/ai-score.mjs";
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const VIDEOS_PATH = path.join(ROOT, "data", "videos.json");
@@ -162,6 +162,11 @@ export function importAiScores({
       continue;
     }
 
+    if (!isAiScoreEligible(vMap[videoId], ovMap[videoId])) {
+      rejected.push({ row: rowNum, videoId, member: rawMember, reason: "not_eligible" });
+      continue;
+    }
+
     const memberKey = resolveMember(rawMember);
     if (!memberKey) {
       rejected.push({ row: rowNum, videoId, member: rawMember, reason: `unknown member "${rawMember}"` });
@@ -219,25 +224,40 @@ export function importAiScores({
       continue;
     }
 
-    const baseMembers = existing && !existing.skipped && existing.members ? { ...existing.members } : {};
+    const hasExistingMembers = !!(existing && !existing.skipped && existing.members);
+    const baseMembers = hasExistingMembers ? { ...existing.members } : {};
     let videoTouched = false;
     for (const e of rows) {
       if (baseMembers[e.memberKey] && !overwrite) {
         rejected.push({ row: e.row, videoId, member: e.memberKey, reason: "already exists; pass --overwrite to replace" });
         continue;
       }
-      baseMembers[e.memberKey] = { items: e.items, confidence: "high" };
+      baseMembers[e.memberKey] = {
+        items: e.items,
+        confidence: "high",
+        scoredAt: now,
+        model: IMPORT_MODEL,
+        promptVersion: IMPORT_PROMPT_VERSION,
+      };
       imported++;
       videoTouched = true;
     }
 
     if (videoTouched) {
-      nextVideos[videoId] = {
-        scoredAt: now,
-        model: IMPORT_MODEL,
-        promptVersion: IMPORT_PROMPT_VERSION,
-        members: baseMembers,
-      };
+      // Preserve existing bot video-level provenance when adding a second member into a bot-scored video.
+      nextVideos[videoId] = hasExistingMembers
+        ? {
+            scoredAt: existing.scoredAt ?? now,
+            model: existing.model ?? IMPORT_MODEL,
+            promptVersion: existing.promptVersion ?? IMPORT_PROMPT_VERSION,
+            members: baseMembers,
+          }
+        : {
+            scoredAt: now,
+            model: IMPORT_MODEL,
+            promptVersion: IMPORT_PROMPT_VERSION,
+            members: baseMembers,
+          };
     }
   }
 

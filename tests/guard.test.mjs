@@ -52,9 +52,11 @@ test("guard: lib/ modules used by the browser have no Node-only imports", () => 
   }
 });
 
-test("guard: ai-score.mjs has no Node-only imports and AI scoring scripts only write data/ai-scores.json", () => {
-  const aiSrc = readFileSync(path.join(ROOT, "lib", "ai-score.mjs"), "utf8");
-  assert.ok(!/from\s+["']node:/.test(aiSrc) && !/require\(/.test(aiSrc) && !/process\./.test(aiSrc), "lib/ai-score.mjs");
+test("guard: ai-score.mjs and rubric-anchors.mjs have no Node-only imports and AI scoring scripts only write data/ai-scores.json", () => {
+  for (const f of ["ai-score.mjs", "rubric-anchors.mjs"]) {
+    const src = readFileSync(path.join(ROOT, "lib", f), "utf8");
+    assert.ok(!/from\s+["']node:/.test(src) && !/require\(/.test(src) && !/process\./.test(src), `lib/${f}`);
+  }
   for (const script of ["score-songs.mjs", "import-ai-scores.mjs"]) {
     const src = readFileSync(path.join(ROOT, "scripts", script), "utf8");
     assert.match(src, /AI_SCORES_PATH\s*=\s*path\.join\(ROOT,\s*"data",\s*"ai-scores\.json"\)/, script);

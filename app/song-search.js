@@ -6,6 +6,8 @@ import { CATEGORY_FILTERS, SORT_OPTIONS, filterSongs, sortSongs, formatDateOnly,
 const noEvalLabel = (r) => (r.category === "stream_song" ? "방송노래" : r.groupSong ? "단체곡" : null); // 평가 제외 대상
 const filters = { member: "", query: "", category: "", sort: "newest" }; // music only (counted); no hidden toggle
 const catLabel = (k) => CATEGORIES.find((c) => c.key === k)?.label ?? k;
+const isAdmin = () => new URLSearchParams(globalThis.location?.search ?? "").has("admin");
+const sortOptions = () => (isAdmin() ? SORT_OPTIONS : SORT_OPTIONS.filter((o) => o.key !== "score"));
 
 /**
  * Build the member song search section for the scorecard dashboard.
@@ -16,6 +18,7 @@ export function songSearchSection(d) {
   const out = h("div", { class: "song-results" });
 
   function renderList() {
+    if (!isAdmin() && filters.sort === "score") filters.sort = "newest";
     const altTitles = Object.fromEntries(Object.entries(state.repo?.videos?.videos ?? {}).map(([id, v]) => [id, v.previousTitles ?? []]));
     const views = Object.fromEntries(Object.entries(state.repo?.videos?.videos ?? {}).filter(([, v]) => typeof v.viewCount === "number").map(([id, v]) => [id, v.viewCount]));
     const rows = sortSongs(filterSongs(d.videoRows, { ...filters, altTitles }), filters.sort, views);
@@ -61,7 +64,7 @@ export function songSearchSection(d) {
         CATEGORY_FILTERS.map((c) => h("option", { value: c.key, selected: filters.category === c.key }, c.label)))),
     h("label", {}, "정렬 ",
       h("select", { "aria-label": "정렬", onchange: (e) => { filters.sort = e.target.value; renderList(); } },
-        SORT_OPTIONS.map((o) => h("option", { value: o.key, selected: filters.sort === o.key }, o.label)))),
+        sortOptions().map((o) => h("option", { value: o.key, selected: filters.sort === o.key }, o.label)))),
     h("label", {}, "곡 검색 ",
       h("input", { type: "search", value: filters.query, placeholder: "곡명 입력…", "aria-label": "곡 키워드 검색",
         oninput: (e) => { filters.query = e.target.value; renderList(); } })),

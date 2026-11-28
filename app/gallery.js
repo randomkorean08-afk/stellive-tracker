@@ -16,6 +16,9 @@ const catLabel = (k) => CATEGORIES.find((c) => c.key === k)?.label ?? k;
 const noEvalLabel = (r) => (r.category === "stream_song" ? "방송노래" : r.groupSong ? "단체곡" : null); // 평가 제외 대상
 const thumb = (id, q = "hqdefault") => `https://i.ytimg.com/vi/${encodeURIComponent(id)}/${q}.jpg`;
 
+const isAdmin = () => new URLSearchParams(globalThis.location?.search ?? "").has("admin");
+const sortOptions = () => (isAdmin() ? SORT_OPTIONS : SORT_OPTIONS.filter((o) => o.key !== "score"));
+
 /** Per-view state, kept across re-renders. */
 export const newBrowserState = (member = "") => ({ f: { member, category: "", query: "", sort: "newest" }, selectedId: null, playing: false, showDups: false });
 const galleryState = newBrowserState();
@@ -97,6 +100,7 @@ export function renderSongBrowser(root, st, { fixedMember = null, precomputed = 
   }
 
   function paintGrid() {
+    if (!isAdmin() && st.f.sort === "score") st.f.sort = "newest";
     const usePre = precomputed && st.f.category === "" && st.f.query === "";
     const filtered = usePre ? precomputed.allListed : filterSongs(d.videoRows, { ...st.f, altTitles });
     const { rows: collapsed, hidden } = usePre ? precomputed.collapsed : collapseDuplicateClips(filtered, { views, aliasesOf: memberAliases });
@@ -131,7 +135,7 @@ export function renderSongBrowser(root, st, { fixedMember = null, precomputed = 
         CATEGORY_FILTERS.map((c) => h("option", { value: c.key, selected: st.f.category === c.key }, c.label)))),
     h("label", {}, "정렬 ",
       h("select", { "aria-label": "정렬", onchange: (e) => { st.f.sort = e.target.value; paintGrid(); } },
-        SORT_OPTIONS.map((o) => h("option", { value: o.key, selected: st.f.sort === o.key }, o.label)))),
+        sortOptions().map((o) => h("option", { value: o.key, selected: st.f.sort === o.key }, o.label)))),
     h("label", {}, "곡 검색 ",
       h("input", { type: "search", value: st.f.query, placeholder: "곡명 입력…", "aria-label": "곡 검색",
         oninput: (e) => { st.f.query = e.target.value; paintGrid(); } })),

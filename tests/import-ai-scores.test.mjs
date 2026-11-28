@@ -150,3 +150,69 @@ test("dryRun and overwrite behavior: existing entries preserved unless --overwri
     dBefore.memberCards.find((c) => c.key === "akane-lize").rubricItems.pitch,
   );
 });
+
+test("importer rejects ineligible videos (group songs, non-music, excluded) and preserves bot provenance on duet second-member import", () => {
+  const nonMusicId = Object.keys(videos.videos).find((id) => videos.videos[id].auto?.category === "non_music");
+  const groupId = "v094-E3Pmtk"; // 9-member STAR TRAIL
+  const resIneligible = importAiScores({
+    records: [
+      sampleRow(groupId, "akane-lize", 9.0),
+      sampleRow(nonMusicId, videos.videos[nonMusicId].auto.members[0] ?? "akane-lize", 9.0),
+    ],
+    videos,
+    overrides,
+    lock,
+    aiScores: { schemaVersion: 1, videos: {} },
+    log: () => {},
+    warn: () => {},
+  });
+  assert.equal(resIneligible.imported, 0);
+  assert.deepEqual(resIneligible.rejected.map((r) => r.reason), ["not_eligible", "not_eligible"]);
+
+  // Duet video where bot already scored member 1; importing member 2 keeps bot video & member 1 provenance
+  const duetRow = deriveAll({ channels: lock, videos, overrides, ratings, baseline }).videoRows.find(
+    (r) => r.listed && r.members.length === 2 && r.status !== "deleted" && r.status !== "private",
+  );
+  assert.ok(duetRow, "repo has an eligible duet song");
+  const [m1, m2] = duetRow.members;
+  const botDoc = {
+    schemaVersion: 1,
+    videos: {
+      [duetRow.videoId]: {
+        scoredAt: "2026-11-28T01:00:00Z",
+        model: "gemini-flash-latest",
+        promptVersion: 2,
+        members: {
+          [m1]: {
+            items: sampleRow(duetRow.videoId, m1, 8.5),
+            confidence: "high",
+          },
+        },
+      },
+    },
+  };
+  // Normalize m1 items to only the 10 rubric keys
+  botDoc.videos[duetRow.videoId].members[m1].items = {
+    vocalization: 14, pitch: 8.5, rhythm: 8.5, range: 8.5, volume: 8.5,
+    tone: 8.5, technique: 8.5, expression: 8.5, breath: 8.5, live: 4.5,
+  };
+
+  const merged = importAiScores({
+    records: [sampleRow(duetRow.videoId, m2, 9.1)],
+    videos,
+    overrides,
+    lock,
+    aiScores: botDoc,
+    now: "2026-11-28T15:00:00Z",
+    log: () => {},
+    warn: () => {},
+  });
+  assert.equal(merged.imported, 1);
+  const vEntry = merged.doc.videos[duetRow.videoId];
+  assert.equal(vEntry.model, "gemini-flash-latest", "video-level bot model preserved");
+  assert.equal(vEntry.promptVersion, 2, "video-level bot promptVersion preserved");
+  assert.equal(vEntry.members[m1].model, undefined, "bot member entry untouched");
+  assert.equal(vEntry.members[m2].model, IMPORT_MODEL, "imported member has external-import provenance");
+  assert.equal(vEntry.members[m2].promptVersion, IMPORT_PROMPT_VERSION);
+  assert.equal(vEntry.members[m2].scoredAt, "2026-11-28T15:00:00Z");
+});

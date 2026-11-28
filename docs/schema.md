@@ -308,6 +308,7 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 ## 부록: Gemini AI 곡별 평가 및 점진 반영 (`data/ai-scores.json`)
 
 - **파일 소유권**: `data/ai-scores.json`은 봇(`scripts/score-songs.mjs`)과 일괄 가져오기(`scripts/import-ai-scores.mjs`)가 소유한다. 병합 시 기존 항목은 삭제하지 않는다.
+- **모델 설정**: 기본 모델은 `"gemini-flash-latest"`이며, GitHub Actions 저장소 변수 `vars.GEMINI_MODEL`(예: `gemini-2.5-flash`)로 특정 안정 버전을 고정(pin)할 수 있다.
 - **대상 영상**: 유효 상태(`deleted`/`private` 아님), `exclude !== true`, `needsReview !== true`, 유효 카테고리가 `solo_cover` · `collab_cover` · `live_special` · `original` · `stream_song`이고 유효 멤버 수가 `1–2`명인 곡(단체곡 ≥ 3명 제외).
 - **`scoreSince` 컷오프**: `scripts/score-songs.mjs`는 `videos.json`의 `firstSeenAt`이 `ai-scores.json`의 `scoreSince`(초기값 `"2026-11-28T00:00:00Z"`)보다 엄격히 이후(`>`)인 신규 곡만 Gemini API로 채점한다. 기존 곡은 `scripts/import-ai-scores.mjs`로 외부 채점 결과를 가져온다.
 - **일일 영상 길이 예산**: `usage["YYYY-MM-DD"]` (UTC 기준, 최근 7일만 유지)에 `{ seconds, requests }`를 누적한다. 장시간 영상(`durationSec > 720` 또는 `live_special`이면서 길이 미상)은 `0s–600s` 구간만 전송하고 600초로 계산하며, 그 외에는 `durationSec`(미상 시 600초 가정)을 사용한다. `SCORE_DAILY_SECONDS`(기본 `25200` = 7시간)을 넘기면 요청 전 중단한다.
@@ -316,7 +317,7 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 {
   "schemaVersion": 1,
   "model": "gemini-flash-latest",
-  "promptVersion": 1,
+  "promptVersion": 2,
   "scoreSince": "2026-11-28T00:00:00Z",
   "updatedAt": "2026-11-28T10:00:00Z",
   "usage": {
@@ -326,7 +327,7 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
     "R_B4tmy2DVA": {
       "scoredAt": "2026-11-28T10:00:00Z",
       "model": "gemini-flash-latest",
-      "promptVersion": 1,
+      "promptVersion": 2,
       "members": {
         "akane-lize": {
           "items": {
@@ -339,6 +340,7 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
     },
     "XXXXXXXXXXX": {
       "scoredAt": "2026-11-28T10:05:00Z",
+      "promptVersion": 2,
       "skipped": "not_singing"
     }
   }
@@ -347,9 +349,11 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
 
 - **점진 반영 (`lib/derive.mjs`)**: `aiScores`가 주어지면 현재 유효 대상 곡의 멤버별 10항목 점수를 기존 기준 루브릭(`prior = ratings.json memberRubric[member].items`)과 가중치 `K = 5`로 결합한다.
   - `blended_item = (prior_item * K + sum(song_items)) / (K + n)` (`n = 0`이면 `prior` 그대로, `prior`가 없으면 `n ≥ 1`일 때 단순 평균, `n = 0`이면 `null`).
-  - 총점·물리/해석 소계·등급·A 순위는 결합된 항목으로 `rubricOf()`를 통해 재계산한다.
-  - UI에서는 곡별 개별 점수를 공개 화면에 노출하지 않고 멤버 대시보드 카드에 `"AI 평가 N곡 반영"`만 표시한다.
+  - 총점·물리/해석 소계·등급·A 순위는 결합된 항목으로 `rubricOf()`(고해상도 정수 스케일 합산)를 통해 재계산한다.
+  - UI에서는 곡별 개별 점수를 공개 화면에 노출하지 않고(정렬 `"점수순"` 포함) 멤버 대시보드 카드에 `"AI 평가 N곡 반영"`만 표시한다.
+- **오류/재시도 정책**: `skipped` 항목은 `promptVersion`을 저장해 `PROMPT_VERSION` 변경 시 재시도한다. 응답 파싱 실패(`unparseable`)는 `failCount`를 기록해 1~2회까지는 다음 실행에서 재시도하고 3회 누적 시 영구 스킵한다. 모델 404·스키마 400 등 설정 오류는 스킵을 기록하지 않고 즉시 중단한다.
 - **외부 일괄 가져오기 (`scripts/import-ai-scores.mjs`)**:
   - `node scripts/import-ai-scores.mjs <file.csv|file.json> [--dry-run] [--overwrite]`
   - CSV 헤더: `videoId,member,vocalization,pitch,rhythm,range,volume,tone,technique,expression,breath,live` (`member`는 멤버 키 또는 한국어 표시명).
-  - 검증 통과 항목은 `model: "external-import"`, `promptVersion: "import-v1"`으로 기록하며 `--overwrite` 없이는 기존 항목을 덮어쓰지 않는다.
+  - 현재 AI 채점 대상이 아닌 영상(단체곡 ≥3명, 비음악/제외/검토대기)은 `not_eligible`로 거부한다.
+  - 검증 통과 항목은 멤버별로 `model: "external-import"`, `promptVersion: "import-v1"`, `scoredAt`을 기록해(기존 봇 채점 영상에 2번째 멤버를 추가할 때도 기존 멤버/영상 출처를 유지) `--overwrite` 없이는 기존 항목을 덮어쓰지 않는다.

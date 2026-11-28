@@ -141,7 +141,7 @@ test("scoreSongs: x-goog-api-key header, key never in URL/logs, 429/5xx backoff,
   }
 });
 
-test("scoreSongs: permanent errors record skipped, notSinging records skipped, transient leaves unscored", async () => {
+test("scoreSongs: permanent video errors record skipped+promptVersion; unparseable retries 3x via failCount; config errors stop without recording", async () => {
   const videos = {
     videos: {
       vPrivaaaaaa: mkVideo("vPrivaaaaaa", "2026-11-30"),
@@ -150,7 +150,7 @@ test("scoreSongs: permanent errors record skipped, notSinging records skipped, t
       vTransaaaaa: mkVideo("vTransaaaaa", "2026-11-27"),
     },
   };
-  const aiScores = { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} };
+  let aiDoc = { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} };
   let idx = 0;
   const fetchMock = async () => {
     idx++;
@@ -163,7 +163,7 @@ test("scoreSongs: permanent errors record skipped, notSinging records skipped, t
   const res = await scoreSongs({
     videos,
     lock,
-    aiScores,
+    aiScores: aiDoc,
     apiKey: "TEST_KEY",
     fetchImpl: fetchMock,
     sleepImpl: async () => {},
@@ -175,11 +175,65 @@ test("scoreSongs: permanent errors record skipped, notSinging records skipped, t
   });
 
   assert.equal(res.doc.videos.vPrivaaaaaa.skipped, "private");
+  assert.equal(res.doc.videos.vPrivaaaaaa.promptVersion, PROMPT_VERSION);
   assert.equal(res.doc.videos.vNotSingaaa.skipped, "not_singing");
-  assert.equal(res.doc.videos.vBadJsonaaa.skipped, "unparseable");
-  assert.equal(res.doc.videos.vTransaaaaa, undefined, "transient error leaves video unscored");
-  assert.equal(res.skipped, 3);
-  assert.equal(res.errors, 1);
+  assert.equal(res.doc.videos.vNotSingaaa.promptVersion, PROMPT_VERSION);
+  // 1st unparseable is transient -> failCount=1, no skipped yet!
+  assert.equal(res.doc.videos.vBadJsonaaa.skipped, undefined);
+  assert.equal(res.doc.videos.vBadJsonaaa.failCount, 1);
+  assert.equal(res.doc.videos.vTransaaaaa, undefined, "transient network error leaves video unscored");
+  assert.equal(res.skipped, 2);
+  assert.equal(res.errors, 2);
+
+  // 2nd and 3rd unparseable failures -> becomes permanent skipped: "unparseable" on 3rd failure
+  const badFetch = async () => ({ status: 200, json: async () => ({ candidates: [{ content: { parts: [{ text: "bad" }] } }] }) });
+  const run2 = await scoreSongs({
+    videos: { videos: { vBadJsonaaa: videos.videos.vBadJsonaaa } },
+    lock,
+    aiScores: res.doc,
+    apiKey: "TEST_KEY",
+    fetchImpl: badFetch,
+    sleepImpl: async () => {},
+    delayMs: 0,
+    maxRetries: 0,
+    now: "2026-11-28T13:00:00Z",
+    log: () => {},
+    warn: () => {},
+  });
+  assert.equal(run2.doc.videos.vBadJsonaaa.failCount, 2);
+  assert.equal(run2.doc.videos.vBadJsonaaa.skipped, undefined);
+
+  const run3 = await scoreSongs({
+    videos: { videos: { vBadJsonaaa: videos.videos.vBadJsonaaa } },
+    lock,
+    aiScores: run2.doc,
+    apiKey: "TEST_KEY",
+    fetchImpl: badFetch,
+    sleepImpl: async () => {},
+    delayMs: 0,
+    maxRetries: 0,
+    now: "2026-11-28T14:00:00Z",
+    log: () => {},
+    warn: () => {},
+  });
+  assert.equal(run3.doc.videos.vBadJsonaaa.failCount, 3);
+  assert.equal(run3.doc.videos.vBadJsonaaa.skipped, "unparseable");
+  assert.equal(run3.doc.videos.vBadJsonaaa.promptVersion, PROMPT_VERSION);
+
+  // Model-not-found 404 or schema 400 stops as config_error without recording skipped
+  const cfg404 = await scoreSongs({
+    videos: { videos: { vCfg404aaaa: mkVideo("vCfg404aaaa", "2026-11-30") } },
+    lock,
+    aiScores: { schemaVersion: 1, scoreSince: "2026-11-28T00:00:00Z", usage: {}, videos: {} },
+    apiKey: "TEST_KEY",
+    fetchImpl: async () => ({ status: 404, text: async () => "models/bad-model is not found for API version v1beta" }),
+    sleepImpl: async () => {},
+    delayMs: 0,
+    log: () => {},
+    warn: () => {},
+  });
+  assert.equal(cfg404.stoppedReason, "config_error");
+  assert.equal(cfg404.doc.videos.vCfg404aaaa, undefined, "config error must not mark video skipped");
 });
 
 test("scoreSongs: daily budget stops before exceeding limit, rolls over on new UTC day, and prunes >7 days", async () => {

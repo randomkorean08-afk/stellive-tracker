@@ -13,8 +13,9 @@ import {
   utcDayKey,
 } from "../lib/ai-score.mjs";
 import { RUBRIC_ITEMS, deriveAll } from "../lib/derive.mjs";
+import { RUBRIC_ANCHORS } from "../lib/rubric-anchors.mjs";
 import { fingerprintRepo } from "../lib/draft-guard.mjs";
-import { readJson, clone } from "./load.mjs";
+import { readJson } from "./load.mjs";
 
 const channels = readJson("data/channels-lock.json");
 const videos = readJson("data/videos.json");
@@ -35,13 +36,15 @@ const sampleItems = (v = 8.0) => ({
   live: Math.min(5, v / 2),
 });
 
-test("buildScoringRequest: YouTube fileData, generationConfig, schema, and long-video offsets", () => {
+test("buildScoringRequest: YouTube fileData, generationConfig, schema, long-video offsets, full anchors, and calibration", () => {
+  assert.equal(PROMPT_VERSION, 2);
   const shortReq = buildScoringRequest({
     videoId: "R_B4tmy2DVA",
     title: "출항 Cover",
     members: [{ key: "akane-lize", displayName: "아카네 리제" }],
     category: "solo_cover",
     durationSec: 245,
+    calibration: ratings.memberRubric,
   });
   const part0 = shortReq.contents[0].parts[0];
   assert.deepEqual(part0.fileData, {
@@ -52,11 +55,27 @@ test("buildScoringRequest: YouTube fileData, generationConfig, schema, and long-
   assert.equal(shortReq.generationConfig.temperature, 0);
   assert.equal(shortReq.generationConfig.responseMimeType, "application/json");
   assert.equal(shortReq.generationConfig.mediaResolution, "MEDIA_RESOLUTION_LOW");
+  // notSinging:true must not force dummy member scores
+  assert.deepEqual(shortReq.generationConfig.responseSchema.required, ["notSinging"]);
   assert.deepEqual(shortReq.generationConfig.responseSchema.properties.members.required, ["akane-lize"]);
   assert.deepEqual(
     shortReq.generationConfig.responseSchema.properties.members.properties["akane-lize"].properties.items.required,
     RUBRIC_ITEMS.map((i) => i.key),
   );
+
+  // Prompt contains full anchor bands, observation points, common misjudgments, and all 15 calibration rows
+  const promptText = shortReq.contents[0].parts[1].text;
+  for (const it of RUBRIC_ITEMS) {
+    const anchor = RUBRIC_ANCHORS[it.key];
+    for (const band of anchor.bands) {
+      assert.ok(promptText.includes(band.range) && promptText.includes(band.descriptor), `missing band ${it.key} ${band.range}`);
+    }
+    assert.ok(promptText.includes(anchor.commonMisjudgments), `missing misjudgment for ${it.key}`);
+  }
+  assert.ok(promptText.includes("스튜디오 보정 편향") && promptText.includes("믹싱 게인 편향"));
+  for (const memberKey of Object.keys(ratings.memberRubric)) {
+    assert.ok(promptText.includes(`- ${memberKey} (total `), `missing calibration row for ${memberKey}`);
+  }
 
   // Long video (> 720s) gets 0s-600s videoMetadata
   const longReq = buildScoringRequest({
@@ -208,18 +227,23 @@ test("pickScoreTargets: eligibility, priority, scoreSince cutoff, and promptVers
     videos: {
       done1aaaaaa: { scoredAt: "2026-11-28T02:00:00Z", model: "m", promptVersion: PROMPT_VERSION, members: {} },
       imp1aaaaaaa: { scoredAt: "2026-11-28T02:00:00Z", model: "external-import", promptVersion: "import-v1", members: {} },
-      skip1aaaaaa: { scoredAt: "2026-11-28T02:00:00Z", skipped: "not_singing" },
+      skip1aaaaaa: { scoredAt: "2026-11-28T02:00:00Z", promptVersion: PROMPT_VERSION, skipped: "not_singing" },
       stale1aaaaa: { scoredAt: "2026-11-28T02:00:00Z", model: "m", promptVersion: 0, members: {} },
+      staleSkipaa: { scoredAt: "2026-11-28T02:00:00Z", promptVersion: 1, skipped: "not_singing" },
     },
   };
+  vDoc.videos.staleSkipaa = mk("staleSkipaa", "original", ["akane-lize"], "2026-11-27T12:00:00Z", "2026-11-28T01:00:00Z");
+  vDoc.videos.done1aaaaaa.auto.members = ["akane-lize"];
+  aiDoc.videos.done1aaaaaa.members = { "akane-lize": { items: sampleItems(8) } };
+  aiDoc.videos.imp1aaaaaaa.members = { "akane-lize": { items: sampleItems(8) } };
 
   const targets = pickScoreTargets(vDoc, ovDoc, channels, aiDoc);
   assert.deepEqual(
     targets.map((t) => t.videoId),
-    ["soloNewaaaa", "stale1aaaaa", "duetOldaaaa", "streamNewaa"],
-    "counted newest-first, then stream_song; respects scoreSince, promptVersion, import-v1, skipped, group, excluded, review, deleted/private",
+    ["soloNewaaaa", "stale1aaaaa", "staleSkipaa", "duetOldaaaa", "streamNewaa"],
+    "counted newest-first, then stream_song; respects scoreSince, promptVersion (incl. skipped retry on bump), import-v1, group, excluded, review, deleted/private",
   );
-  assert.equal(targets[2].members[1].displayName, "시라유키 히나");
+  assert.equal(targets.find((t) => t.videoId === "duetOldaaaa").members[1].displayName, "시라유키 히나");
   assert.equal(pickScoreTargets(vDoc, ovDoc, channels, aiDoc, { limit: 2 }).length, 2);
 });
 
@@ -298,9 +322,30 @@ test("deriveAll: absent aiScores is byte-identical; provided aiScores blends eli
   assert.equal(yuniAfter.songAvg, yuniBefore.songAvg, "B songAvg unchanged");
   assert.equal(yuniAfter.rankB, yuniBefore.rankB, "B rank unchanged");
   assert.equal(withAi.memberCards.find((c) => c.key === "tokino-meri").aiSongsN, 0, "excluded video ignored");
+
+  // Precision test: blended items with repeating decimals (e.g. 1/6) must sum accurately without 0.1-per-item rounding drift
+  const lizeRow = withoutAi.videoRows.find((r) => r.listed && !r.groupSong && r.members.length === 1 && r.members[0] === "akane-lize" && r.status !== "deleted");
+  const fractionalSong = { vocalization: 14.5, pitch: 9.8, rhythm: 9.8, range: 10.0, volume: 9.6, tone: 9.6, technique: 9.5, expression: 9.6, breath: 9.4, live: 5.0 };
+  const fracAi = {
+    schemaVersion: 1,
+    videos: {
+      [lizeRow.videoId]: {
+        scoredAt: "2026-11-28T01:00:00Z",
+        model: "gemini-flash-latest",
+        promptVersion: PROMPT_VERSION,
+        members: { "akane-lize": { items: fractionalSong, confidence: "high" } },
+      },
+    },
+  };
+  const dFrac = deriveAll({ ...baseArgs, aiScores: fracAi });
+  const lizeCard = dFrac.memberCards.find((c) => c.key === "akane-lize");
+  const exactSum = RUBRIC_ITEMS.reduce((s, it) => s + lizeCard.rubricItems[it.key], 0);
+  // Prior Lize = 95.8, song = 96.8 => exact blended total = (95.8*5 + 96.8)/6 = 95.966666...
+  assert.ok(Math.abs(lizeCard.rubricTotal - exactSum) < 1e-5, `rubricTotal ${lizeCard.rubricTotal} matches unrounded sum ${exactSum}`);
+  assert.ok(Math.abs(lizeCard.rubricTotal - (95.8 * 5 + 96.8) / 6) < 1e-5);
 });
 
-test("UI: scorecard shows 'AI 평가 N곡 반영', disclaimer updated, and gallery/search hide per-song scores", async () => {
+test("UI: scorecard shows 'AI 평가 N곡 반영', disclaimer updated, and gallery/search hide per-song scores & 'score' sort", async () => {
   class FakeNode {}
   class FakeText extends FakeNode { constructor(t) { super(); this.text = String(t); } get textContent() { return this.text; } }
   class FakeEl extends FakeNode {
@@ -358,9 +403,21 @@ test("UI: scorecard shows 'AI 평가 N곡 반영', disclaimer updated, and galle
   renderScorecard(scoreRoot);
   assert.ok(scoreRoot.textContent.includes("AI 평가 1곡 반영"));
   assert.ok(!scoreRoot.textContent.includes("점수 98.4"), "song search in dashboard hides per-song score");
+  assert.ok(!scoreRoot.textContent.includes("점수순"), "public song search hides '점수순' sort option");
 
   const galRoot = new FakeEl("div");
   renderGallery(galRoot);
   assert.equal(all(galRoot, (e) => hasClass(e, "gscore")).length, 0, "no .gscore badges in gallery");
   assert.ok(!galRoot.textContent.includes("기준 점수"), "no per-song score text in preview");
+  assert.ok(!galRoot.textContent.includes("점수순"), "public gallery hides '점수순' sort option");
+
+  // With ?admin=1, '점수순' option is visible
+  globalThis.location = { search: "?admin=1" };
+  try {
+    const adminGal = new FakeEl("div");
+    renderGallery(adminGal);
+    assert.ok(adminGal.textContent.includes("점수순"), "admin gallery retains '점수순'");
+  } finally {
+    delete globalThis.location;
+  }
 });
