@@ -251,7 +251,8 @@ test("budget helpers: window length accounting, limit check, day rollover, and 7
   assert.equal(estimateVideoRequestSeconds({ category: "solo_cover", durationSec: 210 }), 210);
   assert.equal(estimateVideoRequestSeconds({ category: "solo_cover", durationSec: 900 }), 600);
   assert.equal(estimateVideoRequestSeconds({ category: "live_special", durationSec: null }), 600);
-  assert.equal(estimateVideoRequestSeconds({ category: "solo_cover", durationSec: null }), 600);
+  // Unknown-length songs are estimated at 300 s since fix/score-rate-limit (live_special remains 600 s above).
+  assert.equal(estimateVideoRequestSeconds({ category: "solo_cover", durationSec: null }), 300);
 
   const day1 = utcDayKey("2026-11-28T10:00:00Z");
   const day2 = utcDayKey("2026-11-29T00:01:00Z");
