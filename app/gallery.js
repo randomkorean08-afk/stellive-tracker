@@ -61,22 +61,19 @@ export function renderSongBrowser(root, st, { fixedMember = null, precomputed = 
           h("img", { alt: "", src: thumb(id, "maxresdefault"), onerror: (e) => { if (!e.target.src.includes("hqdefault")) e.target.src = thumb(id); } }),
           h("span", { class: "play" }, "▶"));
     const ne = noEvalLabel(r);
-    const scoreBadges = ne ? [h("span", { class: "badge muted", title: "단체곡·방송노래는 개별 보컬 평가 대상이 아닙니다 (감상·조회수 정렬용)" }, `${ne} · 평가 제외`)] : [
-      r.songScore !== null ? h("span", { class: "badge" }, `기준 점수 ${fmt1(r.songScore)}`) : null,
-      Object.entries(r.memberScores ?? {}).filter(([, s]) => s !== null).map(([m, s]) => h("span", { class: "badge" }, `${memberName(m)} ${fmt1(s)}`)),
-    ];
+    const scoreBadges = ne ? [h("span", { class: "badge muted", title: "단체곡·방송노래는 개별 보컬 평가 대상이 아닙니다 (감상·조회수 정렬용)" }, `${ne} · 평가 제외`)] : [];
     const v = vids[id];
     add(preview,
       h("div", { class: `player-wrap${st.playing ? " is-playing" : ""}` }, player),
       h("h3", { class: "ptitle" }, r.title),
       h("div", { class: "chips" }, r.members.map((m) => {
         const c = cardOf.get(m);
-        return h("span", { class: "chip", title: c?.rubricTotal != null ? `루브릭 A ${fmt1(c.rubricTotal)} (${c.grade}) · 개인 평가` : null },
+        return h("span", { class: "chip", title: c?.rubricTotal != null ? `루브릭 A ${fmt1(c.rubricTotal)} (${c.grade}) · Gemini AI 평가` : null },
           memberName(m), c?.grade ? h("span", { class: "tiny muted" }, ` ${c.grade}`) : null);
       })),
       h("p", { class: "small muted" }, metaLine(r)),
       v?.manual?.uploader ? h("p", { class: "tiny muted" }, `클립 출처: ${v.manual.uploader}${v.manual.song ? ` · 곡: ${v.manual.song}` : ""}`) : null,
-      h("div", { class: "badges" }, scoreBadges),
+      scoreBadges.length ? h("div", { class: "badges" }, scoreBadges) : null,
       h("p", { class: "small" }, h("a", { href: `https://www.youtube.com/watch?v=${encodeURIComponent(id)}`, target: "_blank", rel: "noopener" }, "YouTube에서 보기 ↗")),
     );
   }
@@ -114,7 +111,6 @@ export function renderSongBrowser(root, st, { fixedMember = null, precomputed = 
         h("span", { class: "gthumb-wrap" },
           h("img", { class: "gthumb", loading: "lazy", alt: "", src: thumb(r.videoId, "mqdefault") }),
           h("span", { class: "gplay", "aria-hidden": "true" }, "▶"),
-          !noEvalLabel(r) && r.songScore !== null ? h("span", { class: "badge gscore" }, fmt1(r.songScore)) : null,
         ),
         h("span", { class: "gtitle" }, r.title),
         h("span", { class: "gmembers small" }, r.members.map(memberName).join(", ")),
@@ -151,6 +147,6 @@ export function renderSongBrowser(root, st, { fixedMember = null, precomputed = 
 export function renderGallery(root) {
   clear(root);
   renderSongBrowser(root, galleryState, {
-    note: "노래 영상(개인커버·협동커버·오리지널·3D/라이브)과 방송노래(방송에서 부른 노래 클립)만 표시합니다. 쇼츠·잡담 클립·방송 다시보기·제외/검토 대기 영상은 나오지 않습니다. 같은 멤버가 같은 곡을 3일 이내에 부른 방송노래 클립이 여러 개면 조회수가 가장 높은 1개만 보입니다. 점수는 기존 기준 데이터(개인 평가)의 읽기 전용 표시이며, 단체곡·방송노래는 평가하지 않습니다.",
+    note: "노래 영상(개인커버·협동커버·오리지널·3D/라이브)과 방송노래(방송에서 부른 노래 클립)만 표시합니다. 쇼츠·잡담 클립·방송 다시보기·제외/검토 대기 영상은 나오지 않습니다. 같은 멤버가 같은 곡을 3일 이내에 부른 방송노래 클립이 여러 개면 조회수가 가장 높은 1개만 보입니다.",
   });
 }

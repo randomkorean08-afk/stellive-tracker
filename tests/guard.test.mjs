@@ -51,3 +51,16 @@ test("guard: lib/ modules used by the browser have no Node-only imports", () => 
     assert.ok(!/from\s+["']node:/.test(src) && !/require\(/.test(src) && !/process\./.test(src), f);
   }
 });
+
+test("guard: ai-score.mjs has no Node-only imports and AI scoring scripts only write data/ai-scores.json", () => {
+  const aiSrc = readFileSync(path.join(ROOT, "lib", "ai-score.mjs"), "utf8");
+  assert.ok(!/from\s+["']node:/.test(aiSrc) && !/require\(/.test(aiSrc) && !/process\./.test(aiSrc), "lib/ai-score.mjs");
+  for (const script of ["score-songs.mjs", "import-ai-scores.mjs"]) {
+    const src = readFileSync(path.join(ROOT, "scripts", script), "utf8");
+    assert.match(src, /AI_SCORES_PATH\s*=\s*path\.join\(ROOT,\s*"data",\s*"ai-scores\.json"\)/, script);
+    const writes = [...src.matchAll(/\bwriteFile\s*\(\s*([A-Za-z_]+)/g)].map((m) => m[1]);
+    assert.ok(writes.length >= 1 && writes.every((v) => v === "tmpPath" || v === "AI_SCORES_PATH"), `${script}: ${writes}`);
+    const renames = [...src.matchAll(/\brename\s*\(\s*[^,]+,\s*([A-Za-z_]+)/g)].map((m) => m[1]);
+    assert.deepEqual(renames, ["AI_SCORES_PATH"], script);
+  }
+});

@@ -13,7 +13,7 @@ function sortKeys(v) {
 export function buildRatingsJson() {
   return serializeRatings(state.repo.ratings, mergedRatings(), {
     exportedAt: new Date().toISOString(),
-    disclaimer: DISCLAIMER.replace("큐레이터 개인 평가이며", "큐레이터 개인 평가(Personal Curated Ratings)이며"),
+    disclaimer: state.repo.ratings.disclaimer ?? "모든 점수는 큐레이터 개인 평가(Personal Curated Ratings)이며 공식 평가가 아닙니다.",
   });
 }
 

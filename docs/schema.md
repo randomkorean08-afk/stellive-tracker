@@ -302,3 +302,54 @@ contribution(m, v)     = memberVideoScore(m, v) ?? songScore(v)          // 둘 
   - `reclassify()`는 일반 실행에서 `source: "playlist"`이고 `channelKey`가 비어 있는 항목을 `source: "manual"`처럼 고정한다. 단, `--reclassify-all`에서 `playlists` 설정이 전달되면 저장된 `playlistId`로 `data/playlists.json`의 멤버를 찾아 `playlistAuto` 규칙으로 재계산한다(제목에 멤버명이 없으면 기존 `members`를 축소하지 않고 유지하며 `playlistId` 멤버를 포함; `playlistId` 매핑이 없으면 변경 안 함). oEmbed로 공식 채널이 확인되어 `channelKey`가 채워지면 일반 분류로 돌아간다.
 - 영상 필드(선택, 신규 항목만): `source: "playlist"`, `playlistId`(처음 발견한 재생목록). 파생 계산(`lib/derive.mjs`)은 이 필드를 보지 않는다. `schemaVersion`은 그대로 1.
 - 공식 16채널 수집·`--backfill`·`--force-views`(수동 실행)는 변경 없음. 매일 00:30 UTC 검색 cron과 `search_clips` 입력은 제거했다.
+
+---
+
+## 부록: Gemini AI 곡별 평가 및 점진 반영 (`data/ai-scores.json`)
+
+- **파일 소유권**: `data/ai-scores.json`은 봇(`scripts/score-songs.mjs`)과 일괄 가져오기(`scripts/import-ai-scores.mjs`)가 소유한다. 병합 시 기존 항목은 삭제하지 않는다.
+- **대상 영상**: 유효 상태(`deleted`/`private` 아님), `exclude !== true`, `needsReview !== true`, 유효 카테고리가 `solo_cover` · `collab_cover` · `live_special` · `original` · `stream_song`이고 유효 멤버 수가 `1–2`명인 곡(단체곡 ≥ 3명 제외).
+- **`scoreSince` 컷오프**: `scripts/score-songs.mjs`는 `videos.json`의 `firstSeenAt`이 `ai-scores.json`의 `scoreSince`(초기값 `"2026-11-28T00:00:00Z"`)보다 엄격히 이후(`>`)인 신규 곡만 Gemini API로 채점한다. 기존 곡은 `scripts/import-ai-scores.mjs`로 외부 채점 결과를 가져온다.
+- **일일 영상 길이 예산**: `usage["YYYY-MM-DD"]` (UTC 기준, 최근 7일만 유지)에 `{ seconds, requests }`를 누적한다. 장시간 영상(`durationSec > 720` 또는 `live_special`이면서 길이 미상)은 `0s–600s` 구간만 전송하고 600초로 계산하며, 그 외에는 `durationSec`(미상 시 600초 가정)을 사용한다. `SCORE_DAILY_SECONDS`(기본 `25200` = 7시간)을 넘기면 요청 전 중단한다.
+
+```jsonc
+{
+  "schemaVersion": 1,
+  "model": "gemini-flash-latest",
+  "promptVersion": 1,
+  "scoreSince": "2026-11-28T00:00:00Z",
+  "updatedAt": "2026-11-28T10:00:00Z",
+  "usage": {
+    "2026-11-28": { "seconds": 600, "requests": 1 }
+  },
+  "videos": {
+    "R_B4tmy2DVA": {
+      "scoredAt": "2026-11-28T10:00:00Z",
+      "model": "gemini-flash-latest",
+      "promptVersion": 1,
+      "members": {
+        "akane-lize": {
+          "items": {
+            "vocalization": 14.3, "pitch": 9.5, "rhythm": 9.5, "range": 9.7, "volume": 9.3,
+            "tone": 9.9, "technique": 9.8, "expression": 9.9, "breath": 9.1, "live": 4.8
+          },
+          "confidence": "high"
+        }
+      }
+    },
+    "XXXXXXXXXXX": {
+      "scoredAt": "2026-11-28T10:05:00Z",
+      "skipped": "not_singing"
+    }
+  }
+}
+```
+
+- **점진 반영 (`lib/derive.mjs`)**: `aiScores`가 주어지면 현재 유효 대상 곡의 멤버별 10항목 점수를 기존 기준 루브릭(`prior = ratings.json memberRubric[member].items`)과 가중치 `K = 5`로 결합한다.
+  - `blended_item = (prior_item * K + sum(song_items)) / (K + n)` (`n = 0`이면 `prior` 그대로, `prior`가 없으면 `n ≥ 1`일 때 단순 평균, `n = 0`이면 `null`).
+  - 총점·물리/해석 소계·등급·A 순위는 결합된 항목으로 `rubricOf()`를 통해 재계산한다.
+  - UI에서는 곡별 개별 점수를 공개 화면에 노출하지 않고 멤버 대시보드 카드에 `"AI 평가 N곡 반영"`만 표시한다.
+- **외부 일괄 가져오기 (`scripts/import-ai-scores.mjs`)**:
+  - `node scripts/import-ai-scores.mjs <file.csv|file.json> [--dry-run] [--overwrite]`
+  - CSV 헤더: `videoId,member,vocalization,pitch,rhythm,range,volume,tone,technique,expression,breath,live` (`member`는 멤버 키 또는 한국어 표시명).
+  - 검증 통과 항목은 `model: "external-import"`, `promptVersion: "import-v1"`으로 기록하며 `--overwrite` 없이는 기존 항목을 덮어쓰지 않는다.

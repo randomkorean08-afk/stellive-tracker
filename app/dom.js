@@ -47,7 +47,7 @@ export function formatKst(iso) {
   return `${k.getUTCFullYear()}-${p(k.getUTCMonth() + 1)}-${p(k.getUTCDate())} ${p(k.getUTCHours())}:${p(k.getUTCMinutes())} (KST)`;
 }
 export const fmt1 = (x) => (x === null || x === undefined || Number.isNaN(x) ? "-" : (Math.round(x * 10) / 10).toFixed(1));
-export const DISCLAIMER = "모든 점수는 큐레이터 개인 평가이며 공식 평가가 아닙니다.";
+export const DISCLAIMER = "모든 점수는 Gemini AI 분석 기반 평가이며 공식 평가가 아닙니다.";
 
 export const REASON_LABELS = {
   stream_song_weak: "방송노래 후보 (약한 키워드: 노래·부른 등)",

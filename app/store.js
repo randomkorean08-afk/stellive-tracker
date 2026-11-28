@@ -74,14 +74,15 @@ async function getJson(url, fallback) {
 }
 
 export async function loadAll() {
-  const [channels, videos, overrides, ratings, baseline] = await Promise.all([
+  const [channels, videos, overrides, ratings, baseline, aiScores] = await Promise.all([
     getJson("./data/channels-lock.json"),
     getJson("./data/videos.json"),
     getJson("./data/overrides.json", { schemaVersion: 1, videos: {} }),
     getJson("./data/ratings.json", { schemaVersion: 1, memberRubric: {}, videoRatings: {} }),
     getJson("./data/baseline/baseline-2026-11-17.json", null),
+    getJson("./data/ai-scores.json", null),
   ]);
-  state.repo = { channels, videos, overrides, ratings, baseline, fingerprint: fingerprintRepo(ratings, overrides) };
+  state.repo = { channels, videos, overrides, ratings, baseline, aiScores, fingerprint: fingerprintRepo(ratings, overrides) };
   state.stale = null;
   loadDraft();
   cache = null;
@@ -108,8 +109,8 @@ export const mergedOverrides = () => ({
 
 export function derived() {
   if (!cache) {
-    const { channels, videos, baseline } = state.repo;
-    cache = deriveAll({ channels, videos, overrides: mergedOverrides(), ratings: mergedRatings(), baseline });
+    const { channels, videos, baseline, aiScores } = state.repo;
+    cache = deriveAll({ channels, videos, overrides: mergedOverrides(), ratings: mergedRatings(), baseline, aiScores });
   }
   return cache;
 }

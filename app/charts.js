@@ -6,7 +6,7 @@ export const CAT_COLORS = { solo_cover: "var(--c-solo)", collab_cover: "var(--c-
 const COUNTED = CATEGORIES.filter((c) => c.counted);
 
 function title(text) {
-  return h("h3", { class: "chart-title" }, text, " ", h("span", { class: "tag" }, "개인 평가"));
+  return h("h3", { class: "chart-title" }, text, " ", h("span", { class: "tag" }, "Gemini AI 평가"));
 }
 
 /** 10-axis radar. Each axis = value / item max (0..1). */

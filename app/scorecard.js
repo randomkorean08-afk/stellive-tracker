@@ -100,7 +100,8 @@ function memberCard(c, openMember) {
         h("div", { class: "a-score" }, c.rubricTotal === null ? "-" : fmt1(c.rubricTotal)),
         c.grade ? h("span", { class: `grade g-${c.grade.replace("+", "p")}` }, c.grade) : null),
     ),
-    h("p", { class: "small" }, h("strong", {}, "A. 루브릭 총점"), ` (개인 평가) · 물리 ${fmt1(c.physical)}/55 · 해석 ${fmt1(c.interpretive)}/45`),
+    h("p", { class: "small" }, h("strong", {}, "A. 루브릭 총점"), ` (Gemini AI 평가) · 물리 ${fmt1(c.physical)}/55 · 해석 ${fmt1(c.interpretive)}/45`),
+    c.aiSongsN > 0 ? h("p", { class: "small muted ai-blended" }, `AI 평가 ${c.aiSongsN}곡 반영`) : null,
     h("div", { class: "bars" }, bars),
     h("p", { class: "b-line" }, h("strong", {}, bText),
       c.rankB !== null ? [" ", h("span", { class: "badge" }, `B 순위 #${c.rankB}`)] : null),
@@ -109,7 +110,7 @@ function memberCard(c, openMember) {
       h("strong", {}, ` 합계 ${c.slots.total}`)),
     h("p", { class: "small muted" }, `미채점 ${c.unratedCount} · 삭제됨 ${c.deletedCount}`),
     h("footer", { class: "member-card-foot" },
-      h("p", { class: "tiny muted member-card-note" }, "A = 멤버 직접 평가(10항목), B = 채점된 영상 평균. 개인 평가."),
+      h("p", { class: "tiny muted member-card-note" }, "A = 멤버 루브릭(10항목 · Gemini AI 반영), B = 채점된 영상 평균. 비공식 평가."),
       h("span", { class: "member-card-hint", "aria-hidden": "true" }, "노래 모음 보기 →"),
     ),
   );
@@ -146,7 +147,7 @@ export function renderScorecard(root, opts = {}) {
   const sel = h("select", { onchange: (e) => { radarMember = e.target.value; renderScorecard(root, opts); } },
     d.memberCards.map((c) => h("option", { value: c.key, selected: c.key === radarMember }, c.displayName)));
   const charts = h("section", { class: "charts" },
-    h("h2", {}, "차트 ", h("span", { class: "tag" }, "개인 평가")),
+    h("h2", {}, "차트 ", h("span", { class: "tag" }, "Gemini AI 평가")),
     h("label", { class: "inline" }, "레이더 멤버 ", sel),
     radarChart(d.memberCards.find((c) => c.key === radarMember) ?? d.memberCards[0]),
     abChart(d.memberCards),
