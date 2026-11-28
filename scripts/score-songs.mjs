@@ -151,13 +151,15 @@ async function postWithBackoff(url, body, { apiKey, fetchImpl, sleepImpl, maxRet
 }
 
 function recordUnparseableFailure(nextVideos, videoId, now) {
-  const prevFails = Number(nextVideos[videoId]?.failCount) || 0;
+  const prev = nextVideos[videoId];
+  const sameVersion = prev?.promptVersion == null || prev.promptVersion === PROMPT_VERSION;
+  const prevFails = sameVersion ? (Number(prev?.failCount) || 0) : 0;
   const failCount = prevFails + 1;
   if (failCount >= MAX_UNPARSEABLE_FAILS) {
     nextVideos[videoId] = { scoredAt: now, promptVersion: PROMPT_VERSION, skipped: "unparseable", failCount };
     return { permanent: true, failCount };
   }
-  nextVideos[videoId] = { failCount, lastErrorAt: now };
+  nextVideos[videoId] = { promptVersion: PROMPT_VERSION, failCount, lastErrorAt: now };
   return { permanent: false, failCount };
 }
 
@@ -276,11 +278,19 @@ export async function scoreSongs({
         skipped++;
         log(`skipped ${t.videoId}: not_singing`);
       } else {
+        const prevVideo = prevVideos[t.videoId];
+        const mergedMembers = { ...parsed.scores };
+        for (const [mKey, mEntry] of Object.entries(prevVideo?.members ?? {})) {
+          const ver = mEntry?.promptVersion ?? prevVideo?.promptVersion;
+          if (ver === "import-v1") {
+            mergedMembers[mKey] = mEntry;
+          }
+        }
         nextVideos[t.videoId] = {
           scoredAt: now,
           model,
           promptVersion: PROMPT_VERSION,
-          members: parsed.scores,
+          members: mergedMembers,
         };
         videosChanged = true;
         scored++;

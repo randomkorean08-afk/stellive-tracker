@@ -301,3 +301,88 @@ test("parseArgs: respects SCORE_LIMIT env and --limit CLI flag", () => {
   assert.equal(parseArgs(["--limit", "3", "--dry-run"], { SCORE_LIMIT: "8" }).limit, 3);
   assert.equal(parseArgs(["--limit=5"], {}).limit, 5);
 });
+
+test("scoreSongs: duet with one import-v1 member preserves imported member when bot scores the missing member", async () => {
+  const duetId = "duetImp1234";
+  const videos = {
+    videos: {
+      [duetId]: mkVideo(duetId, "2026-11-30", "2026-11-28T01:00:00Z", {
+        category: "collab_cover",
+        members: ["akane-lize", "shirayuki-hina"],
+      }),
+    },
+  };
+  const importedItems = { vocalization: 14.9, pitch: 9.9, rhythm: 9.9, range: 9.9, volume: 9.9, tone: 9.9, technique: 9.9, expression: 9.9, breath: 9.9, live: 4.9 };
+  const aiScores = {
+    schemaVersion: 1,
+    scoreSince: "2026-11-28T00:00:00Z",
+    usage: {},
+    videos: {
+      [duetId]: {
+        scoredAt: "2026-11-28T02:00:00Z",
+        model: "external-import",
+        promptVersion: "import-v1",
+        members: {
+          "akane-lize": {
+            items: importedItems,
+            confidence: "high",
+            scoredAt: "2026-11-28T02:00:00Z",
+            model: "external-import",
+            promptVersion: "import-v1",
+          },
+        },
+      },
+    },
+  };
+
+  const res = await scoreSongs({
+    videos,
+    lock,
+    aiScores,
+    apiKey: "TEST_KEY",
+    fetchImpl: async () => ({ status: 200, json: async () => validPayload(["akane-lize", "shirayuki-hina"]) }),
+    sleepImpl: async () => {},
+    delayMs: 0,
+    now: "2026-11-28T12:00:00Z",
+    log: () => {},
+    warn: () => {},
+  });
+
+  assert.equal(res.scored, 1);
+  const saved = res.doc.videos[duetId];
+  assert.deepEqual(saved.members["akane-lize"].items, importedItems, "imported member score preserved");
+  assert.equal(saved.members["akane-lize"].promptVersion, "import-v1", "imported member provenance preserved");
+  assert.equal(saved.members["shirayuki-hina"].items.pitch, 9, "missing member filled by bot");
+});
+
+test("scoreSongs: unparseable failure after older promptVersion restarts failCount at 1", async () => {
+  const id = "oldSkip1234";
+  const videos = { videos: { [id]: mkVideo(id, "2026-11-30") } };
+  const aiScores = {
+    schemaVersion: 1,
+    scoreSince: "2026-11-28T00:00:00Z",
+    usage: {},
+    videos: {
+      [id]: { scoredAt: "2026-11-28T02:00:00Z", promptVersion: 1, skipped: "unparseable", failCount: 3 },
+    },
+  };
+
+  const res = await scoreSongs({
+    videos,
+    lock,
+    aiScores,
+    apiKey: "TEST_KEY",
+    fetchImpl: async () => ({ status: 200, json: async () => ({ candidates: [{ content: { parts: [{ text: "bad" }] } }] }) }),
+    sleepImpl: async () => {},
+    delayMs: 0,
+    now: "2026-11-28T12:00:00Z",
+    log: () => {},
+    warn: () => {},
+  });
+
+  assert.equal(res.errors, 1);
+  assert.equal(res.skipped, 0);
+  assert.equal(res.doc.videos[id].failCount, 1);
+  assert.equal(res.doc.videos[id].promptVersion, PROMPT_VERSION);
+  assert.equal(res.doc.videos[id].skipped, undefined);
+});
